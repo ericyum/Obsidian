@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "908b512822f2e09b",
+            "id": "1907b30cbb739d62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python과 anaconda.md",
+                "file": "Qt Desinger.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "python과 anaconda"
+              "title": "Qt Desinger"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python과 anaconda.md",
+                "file": "Qt Desinger.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "python과 anaconda 의 백링크"
+              "title": "Qt Desinger 의 백링크"
             }
           },
           {
@@ -165,13 +165,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "908b512822f2e09b",
+  "active": "1907b30cbb739d62",
   "lastOpenFiles": [
-    "Colab 파일 작성 및 수정 방법.md",
-    "AI Coding Tool.md",
-    "python과 anaconda.md",
-    "참고) NotebookLM과 Gemini의 Gem활용.md",
-    "참고) 클라우드 컴퓨팅.md",
+    "기술 스택과 프레임 워크/참고) NotebookLM과 Gemini의 Gem활용.md",
+    "Qt Desinger.md",
+    "기술 스택과 프레임 워크/Colab 파일 작성 및 수정 방법.md",
+    "기술 스택과 프레임 워크/python과 anaconda.md",
+    "기술 스택과 프레임 워크/AI Coding Tool.md",
+    "개념/참고) 클라우드 컴퓨팅.md",
+    "기술 스택과 프레임 워크",
+    "개념",
     "첨부파일/Pasted image 20250701093817.png",
     "desktop.ini",
     "프롬프트 엔지니어링/사람인 추천(프롬프트 엔지니어).md",

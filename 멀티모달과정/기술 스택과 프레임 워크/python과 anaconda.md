@@ -230,11 +230,11 @@ VS Code 터미널에서 다음 명령어를 실행하여 PyQt5 창을 띄웁니�
 
 1. **Miniconda 설치 및 Anaconda Prompt 실행.**
     
-2. **가상 환경 생성:** `conda create -n my_project_env python=3.10`
+2. **가상 환경 생성:** `conda create -n pyqt5(내가 만들 가상환경) python=3.10`
     
-3. **가상 환경 활성화:** `conda activate my_project_env`
+3. **가상 환경 활성화:** `conda activate pyqt5(내가 만든 가상환경)
     
-4. **VS Code에서 인터프리터 선택:** `Ctrl + Shift + P` -> `Python: Select Interpreter` -> `my_project_env` 선택.
+4. **VS Code에서 인터프리터 선택:** `Ctrl + Shift + P` -> `Python: Select Interpreter` -> `pyqt5(내가 만든 가상환경)` 선택.
     
 5. **필요한 패키지 설치:** `pip install pyqt5` (필요한 다른 패키지들도 설치)
     
