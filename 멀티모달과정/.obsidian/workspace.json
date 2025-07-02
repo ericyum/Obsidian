@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Qt Desinger.md",
+                "file": "기술 스택과 프레임 워크/Qt Desinger.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Qt Desinger.md",
+                "file": "기술 스택과 프레임 워크/Qt Desinger.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,10 +167,11 @@
   },
   "active": "1907b30cbb739d62",
   "lastOpenFiles": [
-    "기술 스택과 프레임 워크/참고) NotebookLM과 Gemini의 Gem활용.md",
-    "Qt Desinger.md",
-    "기술 스택과 프레임 워크/Colab 파일 작성 및 수정 방법.md",
+    "첨부파일/Pasted image 20250702173222.png",
     "기술 스택과 프레임 워크/python과 anaconda.md",
+    "기술 스택과 프레임 워크/Qt Desinger.md",
+    "기술 스택과 프레임 워크/참고) NotebookLM과 Gemini의 Gem활용.md",
+    "기술 스택과 프레임 워크/Colab 파일 작성 및 수정 방법.md",
     "기술 스택과 프레임 워크/AI Coding Tool.md",
     "개념/참고) 클라우드 컴퓨팅.md",
     "기술 스택과 프레임 워크",

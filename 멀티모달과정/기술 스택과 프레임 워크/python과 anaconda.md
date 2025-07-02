@@ -246,3 +246,30 @@ VS Code 터미널에서 다음 명령어를 실행하여 PyQt5 창을 띄웁니�
     
 
 이러한 과정을 통해 Python 개발 환경을 체계적으로 설정하고 관리할 수 있습니다.
+
+
+
+환경 설정 정리
+
+1. 파이썬 개발환경
+   VSCode + Anaconda(가상환경)
+   Ctrl+Shift+P를 눌러서 Python Select Interpreter설정
+   A 가상환경 : Python 3.10, numpy==1.35.2, pandas, matplotlib (데이터 분석용1)
+   B 가상환경 : Python 3.11, numpy==2.10.0, pandas, matplotlib (데이터 분석용2)
+
+2. 파이썬 + 생성형AI(gemini-cli)를 사용
+    gemini-cli(command line interface) : claude code(터미널기반)
+    1. nodejs설치 : https://nodejs.org/en/download 다운로드 받아 설치
+    2. npm install -g @google/gemini-cli  : PC에 설치하고
+       gemini : 이 명령으로 실행
+    3. 실행시 gemini-cli의 working디렉터리는 터미널에서 이동해서 working dir로
+       사용하고자 하는 위치로 이동해서 거기서 gemini를 실행하자.
+
+3. 소스 코드의 버전 관리 (Github)
+   VSCode + Github
+   4. Github에서 리모트 레포지터리를 생성
+   5. 로컬 PC에서 git clone [레포지터리 주소] -> 로컬 레포지터리
+   6. VSCode에서 로컬 레포지터리 디렉토리를 open directory로 설정 
+      VSCode Source Control에서 commit(메시지 꼭 적어주기, add+commit), sync(push)
+   7. Gemini-cli를 활용할 때에는 gemini-cli를 실행할 working dir로  [로컬 레포지터리]로 
+      설정하면 사람이 수정하는것과 동일하게 현재 폴더에 파일이 추가된다.
