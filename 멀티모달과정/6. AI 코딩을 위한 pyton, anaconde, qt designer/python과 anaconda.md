@@ -273,3 +273,6 @@ VS Code 터미널에서 다음 명령어를 실행하여 PyQt5 창을 띄웁니�
       VSCode Source Control에서 commit(메시지 꼭 적어주기, add+commit), sync(push)
    7. Gemini-cli를 활용할 때에는 gemini-cli를 실행할 working dir로  [로컬 레포지터리]로 
       설정하면 사람이 수정하는것과 동일하게 현재 폴더에 파일이 추가된다.
+
+
+추가) vsCode에서 확장으로 **Gemini Code Assist** 를 추가하면 vsCode에서 Gemini를 사용할 수 있다.
