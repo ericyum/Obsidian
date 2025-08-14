@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c072486c88929350",
+        "id": "b11259fab044f127",
         "type": "tabs",
         "children": [
           {
-            "id": "1a3fc6ef3329556e",
+            "id": "55a4f12e5857fcf7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "13. LangChain을 통한 RAG 활용/01-Basic/02. OpenAI-LLM.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "02. OpenAI-LLM"
+              "title": "새 탭"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "13. LangChain을 통한 RAG 활용/01-Basic/02. OpenAI-LLM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "02. OpenAI-LLM 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -165,23 +160,33 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "1a3fc6ef3329556e",
+  "active": "55a4f12e5857fcf7",
   "lastOpenFiles": [
+    "13. LangChain을 통한 RAG 활용/01-Basic/05. Runnable.md",
+    "13. LangChain을 통한 RAG 활용/01-Basic/무제.md",
+    "13. LangChain을 통한 RAG 활용/01-Basic/04. LCEL-Advanced.md",
+    "13. LangChain을 통한 RAG 활용/01-Basic/03. LCEL.md",
+    "13. LangChain을 통한 RAG 활용/01-Basic/02-3. LMStudio-LLM.md",
+    "첨부파일/Pasted image 20250814171617.png",
+    "첨부파일/Pasted image 20250814171548.png",
+    "13. LangChain을 통한 RAG 활용/01-Basic/02-2. Gemini-LLM.md",
+    "첨부파일/Pasted image 20250814170349.png",
+    "첨부파일/Pasted image 20250814170333.png",
+    "첨부파일/Pasted image 20250814170316.png",
+    "첨부파일/Pasted image 20250814165642.png",
+    "첨부파일/Pasted image 20250814165616.png",
+    "13. LangChain을 통한 RAG 활용/01-Basic/02-1. OpenAI-LLM.md",
     "13. LangChain을 통한 RAG 활용/01-Basic/01. OpenAI-APIKey.md",
-    "13. LangChain을 통한 RAG 활용/01-Basic/02. OpenAI-LLM.md",
+    "13. LangChain을 통한 RAG 활용/사전 준비(LM Studio).md",
+    "13. LangChain을 통한 RAG 활용/사전 준비(LangChain).md",
+    "첨부파일/Pasted image 20250814163408.png",
+    "첨부파일/Pasted image 20250814163051.png",
+    "첨부파일/Pasted image 20250814162920.png",
     "12. RAG관련 개념 정리/3. pyenv-win, Poetry 방법 VS Anaconda 방법.md",
     "12. RAG관련 개념 정리/2. 기존 LLM 한계와 RAG의 필요성, 그리고 작동원리.md",
-    "13. LangChain을 통한 RAG 활용/사전 준비.md",
     "머신 러닝 기록.md",
     "12. RAG관련 개념 정리/1. RAG, 프롬프트, 임베딩, 벡터 스토어, LangChain.md",
-    "첨부파일/Pasted image 20250813155425.png",
-    "첨부파일/Pasted image 20250813155407.png",
-    "첨부파일/Pasted image 20250813155349.png",
-    "첨부파일/Pasted image 20250813154230.png",
     "13. LangChain을 통한 RAG 활용/01-Basic",
-    "첨부파일/Pasted image 20250813151659.png",
-    "첨부파일/Pasted image 20250813145744.png",
-    "첨부파일/Pasted image 20250813131001.png",
     "11. Without LangChain/8. OpenAI호환성.md",
     "13. LangChain을 통한 RAG 활용",
     "desktop.ini",
@@ -189,27 +194,16 @@
     "11. Without LangChain/7. Gemini-코드실행.md",
     "11. Without LangChain/11. A_OpenAI-텍스트-오디오생성.md",
     "11. Without LangChain/10. Gemini-임베딩.md",
-    "첨부파일/Pasted image 20250812174353.png",
-    "첨부파일/Pasted image 20250812174336.png",
     "10. LLM 서비스 구현을 위한 개념 정리/3. LangChain, OpenAI API, Gemini API의 역할.md",
     "10. LLM 서비스 구현을 위한 개념 정리/2. LLM과 API의 개념 및 관계.md",
     "10. LLM 서비스 구현을 위한 개념 정리/1. 생성형 AI의 전체 동작 과정.md",
     "12. RAG관련 개념 정리",
     "10. LLM 서비스 구현을 위한 개념 정리",
-    "첨부파일/Pasted image 20250812143801.png",
     "11. Without LangChain/6. Gemini-이미지생성.md",
     "11. With LangChain/1. 소개.md",
     "11. Without LangChain/4. Gemini-음성생성.md",
-    "11. Without LangChain/5. Gemini-동영상 생성.md",
-    "11. Without LangChain/1. Gemini-텍스트생성.md",
     "11. With LangChain",
-    "11. Without LangChain/3. Gemini-grounding.md",
-    "11. Without LangChain/2. Gemini-ThinkingBudget.md",
-    "9. 머신 러닝/13. 미니 프로젝트(머신 러닝 기록).md",
     "11. Without LangChain",
-    "9. 머신 러닝/10. YOLO 데이터 전처리 및 어노테이션 도구.md",
-    "9. 머신 러닝/11. YOLO의 구조.md",
-    "9. 머신 러닝/12. YOLO와 Gemini의 인지 및 분류 능력 비교.md",
     "7. 데이터 분석/desktop.ini",
     "9. 머신 러닝",
     "첨부파일/1. cloud run 쉬운 예제 1.pdf"
