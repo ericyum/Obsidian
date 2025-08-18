@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b11259fab044f127",
+        "id": "438ae2ac47f18d0e",
         "type": "tabs",
         "children": [
           {
-            "id": "55a4f12e5857fcf7",
+            "id": "3aed5759805c0250",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "13. LangChain을 통한 RAG 활용/02-Prompt/05. ChatPromptTemplate.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "05. ChatPromptTemplate"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "13. LangChain을 통한 RAG 활용/02-Prompt/05. ChatPromptTemplate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "05. ChatPromptTemplate 의 백링크"
             }
           },
           {
@@ -160,28 +165,35 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "55a4f12e5857fcf7",
+  "active": "3aed5759805c0250",
   "lastOpenFiles": [
+    "첨부파일/Pasted image 20250818183840.png",
+    "첨부파일/Pasted image 20250818183815.png",
+    "첨부파일/Pasted image 20250818183755.png",
+    "13. LangChain을 통한 RAG 활용/02-Prompt/04. Personal-Prompts.md",
+    "13. LangChain을 통한 RAG 활용/02-Prompt/05. ChatPromptTemplate.md",
+    "13. LangChain을 통한 RAG 활용/02-Prompt/참고) LangSmith에서 프롬프트를 한 개 등록하는 방법.md",
+    "13. LangChain을 통한 RAG 활용/02-Prompt/03. LangChain-Hub.md",
+    "13. LangChain을 통한 RAG 활용/02-Prompt/02. FewShotTemplates.md",
+    "13. LangChain을 통한 RAG 활용/02-Prompt/01. PromptTemplate.md",
+    "13. LangChain을 통한 RAG 활용/02-Prompt",
+    "첨부파일/Pasted image 20250818174831.png",
+    "첨부파일/Pasted image 20250818174748.png",
+    "첨부파일/Pasted image 20250818174657.png",
+    "첨부파일/Pasted image 20250818174625.png",
+    "첨부파일/Pasted image 20250818174448.png",
+    "첨부파일/Pasted image 20250818174434.png",
+    "첨부파일/Pasted image 20250818174400.png",
+    "첨부파일/Pasted image 20250818174358.png",
     "13. LangChain을 통한 RAG 활용/01-Basic/05. Runnable.md",
-    "13. LangChain을 통한 RAG 활용/01-Basic/무제.md",
     "13. LangChain을 통한 RAG 활용/01-Basic/04. LCEL-Advanced.md",
     "13. LangChain을 통한 RAG 활용/01-Basic/03. LCEL.md",
     "13. LangChain을 통한 RAG 활용/01-Basic/02-3. LMStudio-LLM.md",
-    "첨부파일/Pasted image 20250814171617.png",
-    "첨부파일/Pasted image 20250814171548.png",
     "13. LangChain을 통한 RAG 활용/01-Basic/02-2. Gemini-LLM.md",
-    "첨부파일/Pasted image 20250814170349.png",
-    "첨부파일/Pasted image 20250814170333.png",
-    "첨부파일/Pasted image 20250814170316.png",
-    "첨부파일/Pasted image 20250814165642.png",
-    "첨부파일/Pasted image 20250814165616.png",
     "13. LangChain을 통한 RAG 활용/01-Basic/02-1. OpenAI-LLM.md",
     "13. LangChain을 통한 RAG 활용/01-Basic/01. OpenAI-APIKey.md",
     "13. LangChain을 통한 RAG 활용/사전 준비(LM Studio).md",
     "13. LangChain을 통한 RAG 활용/사전 준비(LangChain).md",
-    "첨부파일/Pasted image 20250814163408.png",
-    "첨부파일/Pasted image 20250814163051.png",
-    "첨부파일/Pasted image 20250814162920.png",
     "12. RAG관련 개념 정리/3. pyenv-win, Poetry 방법 VS Anaconda 방법.md",
     "12. RAG관련 개념 정리/2. 기존 LLM 한계와 RAG의 필요성, 그리고 작동원리.md",
     "머신 러닝 기록.md",
@@ -195,17 +207,11 @@
     "11. Without LangChain/11. A_OpenAI-텍스트-오디오생성.md",
     "11. Without LangChain/10. Gemini-임베딩.md",
     "10. LLM 서비스 구현을 위한 개념 정리/3. LangChain, OpenAI API, Gemini API의 역할.md",
-    "10. LLM 서비스 구현을 위한 개념 정리/2. LLM과 API의 개념 및 관계.md",
-    "10. LLM 서비스 구현을 위한 개념 정리/1. 생성형 AI의 전체 동작 과정.md",
     "12. RAG관련 개념 정리",
     "10. LLM 서비스 구현을 위한 개념 정리",
-    "11. Without LangChain/6. Gemini-이미지생성.md",
-    "11. With LangChain/1. 소개.md",
-    "11. Without LangChain/4. Gemini-음성생성.md",
     "11. With LangChain",
     "11. Without LangChain",
     "7. 데이터 분석/desktop.ini",
-    "9. 머신 러닝",
-    "첨부파일/1. cloud run 쉬운 예제 1.pdf"
+    "9. 머신 러닝"
   ]
 }
