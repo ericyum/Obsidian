@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4ad5ca6709d3f604",
+        "id": "07f054b511da719b",
         "type": "tabs",
         "children": [
           {
-            "id": "70b93c4fc418fbb5",
+            "id": "0b969de0cb3f763f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "13. LangChain을 통한 RAG 활용/04-Model/01. Chat-Models.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "01. Chat-Models"
+              "title": "새 탭"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "13. LangChain을 통한 RAG 활용/04-Model/01. Chat-Models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "01. Chat-Models 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -157,6 +152,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:새 베이스 생성하기": false,
       "switcher:빠른 전환기 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
@@ -165,11 +161,26 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "70b93c4fc418fbb5",
+  "active": "42f544712f6e33e8",
   "lastOpenFiles": [
+    "13. LangChain을 통한 RAG 활용/04-Model/11. Gemini-Video.md",
+    "13. LangChain을 통한 RAG 활용/04-Model/09. Ollama.md",
+    "13. LangChain을 통한 RAG 활용/04-Model/07. HuggingFace-Local.md",
+    "13. LangChain을 통한 RAG 활용/04-Model/06. HuggingFace-Endpoint.md",
+    "13. LangChain을 통한 RAG 활용/04-Model/05. Google-Generative-AI.md",
+    "13. LangChain을 통한 RAG 활용/04-Model/04. TokenUsage.md",
+    "13. LangChain을 통한 RAG 활용/04-Model/huggingface, serpapi API KEY와 ollama에서 모델 설치, 그리고 wget설치.md",
+    "첨부파일/Pasted image 20250820162820.png",
+    "첨부파일/Pasted image 20250820162754.png",
+    "첨부파일/Pasted image 20250820161340.png",
+    "첨부파일/Pasted image 20250820161204.png",
+    "첨부파일/Pasted image 20250820161134.png",
+    "첨부파일/Pasted image 20250820143422.png",
+    "첨부파일/Pasted image 20250820112911.png",
+    "첨부파일/Pasted image 20250820112818.png",
+    "13. LangChain을 통한 RAG 활용/04-Model/01. Chat-Models.md",
     "13. LangChain을 통한 RAG 활용/03-OutputParser/03. StructuredOutputParser.md",
     "13. LangChain을 통한 RAG 활용/03-OutputParser/04. JsonOutputParser.md",
-    "13. LangChain을 통한 RAG 활용/04-Model/01. Chat-Models.md",
     "13. LangChain을 통한 RAG 활용/03-OutputParser/02. CommaSeparatedListOutputParser.md",
     "13. LangChain을 통한 RAG 활용/03-OutputParser/01. PydanticOuputParser.md",
     "13. LangChain을 통한 RAG 활용/03-OutputParser/05. PandasDataFrameOutputParser.md",
@@ -189,25 +200,10 @@
     "13. LangChain을 통한 RAG 활용/03-OutputParser",
     "첨부파일/Pasted image 20250818183840.png",
     "첨부파일/Pasted image 20250818183815.png",
-    "첨부파일/Pasted image 20250818183755.png",
     "13. LangChain을 통한 RAG 활용/02-Prompt/04. Personal-Prompts.md",
     "13. LangChain을 통한 RAG 활용/02-Prompt/05. ChatPromptTemplate.md",
     "13. LangChain을 통한 RAG 활용/02-Prompt/03. LangChain-Hub.md",
-    "13. LangChain을 통한 RAG 활용/02-Prompt/02. FewShotTemplates.md",
-    "13. LangChain을 통한 RAG 활용/02-Prompt/01. PromptTemplate.md",
     "13. LangChain을 통한 RAG 활용/02-Prompt",
-    "첨부파일/Pasted image 20250818174831.png",
-    "첨부파일/Pasted image 20250818174748.png",
-    "첨부파일/Pasted image 20250818174657.png",
-    "첨부파일/Pasted image 20250818174625.png",
-    "첨부파일/Pasted image 20250818174448.png",
-    "첨부파일/Pasted image 20250818174434.png",
-    "첨부파일/Pasted image 20250818174400.png",
-    "13. LangChain을 통한 RAG 활용/01-Basic/05. Runnable.md",
-    "13. LangChain을 통한 RAG 활용/01-Basic/04. LCEL-Advanced.md",
-    "13. LangChain을 통한 RAG 활용/01-Basic/03. LCEL.md",
-    "13. LangChain을 통한 RAG 활용/01-Basic/02-3. LMStudio-LLM.md",
-    "13. LangChain을 통한 RAG 활용/01-Basic/02-2. Gemini-LLM.md",
     "13. LangChain을 통한 RAG 활용/01-Basic",
     "13. LangChain을 통한 RAG 활용",
     "desktop.ini",
