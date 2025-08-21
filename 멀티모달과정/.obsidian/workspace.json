@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "07f054b511da719b",
+        "id": "7abbf65ebc18e9bd",
         "type": "tabs",
         "children": [
           {
-            "id": "0b969de0cb3f763f",
+            "id": "43536258b04dd148",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -161,8 +161,23 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "42f544712f6e33e8",
+  "active": "43536258b04dd148",
   "lastOpenFiles": [
+    "13. LangChain을 통한 RAG 활용/05-Memory/10. Conversation-With-History.md",
+    "13. LangChain을 통한 RAG 활용/05-Memory/09. Memory-using-SQLite.md",
+    "13. LangChain을 통한 RAG 활용/05-Memory/08. LCEL-add-memory.md",
+    "13. LangChain을 통한 RAG 활용/05-Memory/07. VectorStoreRetrieverMemory.md",
+    "13. LangChain을 통한 RAG 활용/05-Memory/06. ConversationSummary.md",
+    "13. LangChain을 통한 RAG 활용/05-Memory/05. ConversationKnowledgeGraph.md",
+    "13. LangChain을 통한 RAG 활용/05-Memory/04. ConversationEntityMemory.md",
+    "13. LangChain을 통한 RAG 활용/05-Memory/03. ConversationTokenBufferMemory.md",
+    "13. LangChain을 통한 RAG 활용/05-Memory/02. ConversationBufferWindowMemory.md",
+    "13. LangChain을 통한 RAG 활용/05-Memory/01. ConversationBufferMemory.md",
+    "13. LangChain을 통한 RAG 활용/06-DocumentLoader/00. Document-Loader.md",
+    "13. LangChain을 통한 RAG 활용/06-DocumentLoader/01. PDF-Loader.md",
+    "첨부파일/Pasted image 20250821211506.png",
+    "13. LangChain을 통한 RAG 활용/06-DocumentLoader",
+    "13. LangChain을 통한 RAG 활용/05-Memory",
     "13. LangChain을 통한 RAG 활용/04-Model/11. Gemini-Video.md",
     "13. LangChain을 통한 RAG 활용/04-Model/09. Ollama.md",
     "13. LangChain을 통한 RAG 활용/04-Model/07. HuggingFace-Local.md",
@@ -184,30 +199,14 @@
     "13. LangChain을 통한 RAG 활용/03-OutputParser/02. CommaSeparatedListOutputParser.md",
     "13. LangChain을 통한 RAG 활용/03-OutputParser/01. PydanticOuputParser.md",
     "13. LangChain을 통한 RAG 활용/03-OutputParser/05. PandasDataFrameOutputParser.md",
-    "13. LangChain을 통한 RAG 활용/03-OutputParser/06. DatetimeOutputParser.md",
-    "13. LangChain을 통한 RAG 활용/03-OutputParser/07. EnumOutputParser.md",
-    "13. LangChain을 통한 RAG 활용/04-Model/02. Cache.md",
-    "13. LangChain을 통한 RAG 활용/04-Model/03. ModelSerialization.md",
-    "13. LangChain을 통한 RAG 활용/03-OutputParser/08. OutputFixingParser.md",
     "13. LangChain을 통한 RAG 활용/04-Model/무제",
-    "13. LangChain을 통한 RAG 활용/03-OutputParser/data/titanic.csv.md",
     "13. LangChain을 통한 RAG 활용/03-OutputParser/data",
-    "13. LangChain을 통한 RAG 활용/04-Model/00. 모델 관리 기능.md",
-    "13. LangChain을 통한 RAG 활용/03-OutputParser/00. LangChain Output Parsers.md",
     "13. LangChain을 통한 RAG 활용/04-Model",
-    "13. LangChain을 통한 RAG 활용/02-Prompt/참고) LangSmith에서 프롬프트를 한 개 등록하는 방법.md",
-    "13. LangChain을 통한 RAG 활용/02-Prompt/00. LangChain 프롬프트 개념.md",
     "13. LangChain을 통한 RAG 활용/03-OutputParser",
     "첨부파일/Pasted image 20250818183840.png",
-    "첨부파일/Pasted image 20250818183815.png",
-    "13. LangChain을 통한 RAG 활용/02-Prompt/04. Personal-Prompts.md",
-    "13. LangChain을 통한 RAG 활용/02-Prompt/05. ChatPromptTemplate.md",
-    "13. LangChain을 통한 RAG 활용/02-Prompt/03. LangChain-Hub.md",
     "13. LangChain을 통한 RAG 활용/02-Prompt",
     "13. LangChain을 통한 RAG 활용/01-Basic",
     "13. LangChain을 통한 RAG 활용",
-    "desktop.ini",
-    "12. RAG관련 개념 정리",
-    "10. LLM 서비스 구현을 위한 개념 정리"
+    "desktop.ini"
   ]
 }
