@@ -11,10 +11,14 @@
             "id": "f9158eb574b0304c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "13. LangChain을 통한 RAG 활용/06-DocumentLoader/13. Llamaparser.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "13. Llamaparser"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "13. LangChain을 통한 RAG 활용/06-DocumentLoader/13. Llamaparser.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "13. Llamaparser 의 백링크"
             }
           },
           {
@@ -163,8 +168,16 @@
   },
   "active": "f9158eb574b0304c",
   "lastOpenFiles": [
-    "13. LangChain을 통한 RAG 활용/06-DocumentLoader/11. Directory-Loader.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/14. Document-Parser.md",
+    "13. LangChain을 통한 RAG 활용/06-DocumentLoader/13. Llamaparser.md",
+    "12. RAG관련 개념 정리/1. RAG, 프롬프트, 임베딩, 벡터 스토어, LangChain.md",
+    "무제.md",
+    "12. RAG관련 개념 정리/2. 기존 LLM 한계와 RAG의 필요성, 그리고 작동원리.md",
+    "12. RAG관련 개념 정리/3. pyenv-win, Poetry 방법 VS Anaconda 방법.md",
+    "11. Without LangChain/10. Gemini-임베딩.md",
+    "11. Without LangChain/9. GoogleAI_VS_VertexAI.md",
+    "11. Without LangChain/3. Gemini-grounding.md",
+    "13. LangChain을 통한 RAG 활용/06-DocumentLoader/11. Directory-Loader.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/09. JSON-Loader.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/08. TXT-Loader.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/07. WebBase-Loader.md",
@@ -183,16 +196,9 @@
     "13. LangChain을 통한 RAG 활용/05-Memory/05. ConversationKnowledgeGraph.md",
     "13. LangChain을 통한 RAG 활용/05-Memory/04. ConversationEntityMemory.md",
     "13. LangChain을 통한 RAG 활용/05-Memory/03. ConversationTokenBufferMemory.md",
-    "13. LangChain을 통한 RAG 활용/05-Memory/02. ConversationBufferWindowMemory.md",
-    "13. LangChain을 통한 RAG 활용/05-Memory/01. ConversationBufferMemory.md",
-    "13. LangChain을 통한 RAG 활용/06-DocumentLoader/00. Document-Loader.md",
-    "13. LangChain을 통한 RAG 활용/06-DocumentLoader/01. PDF-Loader.md",
     "첨부파일/Pasted image 20250821211506.png",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader",
     "13. LangChain을 통한 RAG 활용/05-Memory",
-    "13. LangChain을 통한 RAG 활용/04-Model/11. Gemini-Video.md",
-    "13. LangChain을 통한 RAG 활용/04-Model/09. Ollama.md",
-    "13. LangChain을 통한 RAG 활용/04-Model/07. HuggingFace-Local.md",
     "첨부파일/Pasted image 20250820162820.png",
     "첨부파일/Pasted image 20250820162754.png",
     "첨부파일/Pasted image 20250820161340.png",
