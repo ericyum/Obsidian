@@ -171,6 +171,12 @@
   },
   "active": "1c40cc2b53876ab4",
   "lastOpenFiles": [
+    "멀티모달과정/13. LangChain을 통한 RAG 활용/09-VectorStore",
+    "멀티모달과정/13. LangChain을 통한 RAG 활용/08-Embeddings/06-llamacpp.md",
+    "멀티모달과정/13. LangChain을 통한 RAG 활용/08-Embeddings/05-OllamaEmbeddings.md",
+    "멀티모달과정/13. LangChain을 통한 RAG 활용/08-Embeddings/04-UpstageEmbeddings.md",
+    "멀티모달과정/13. LangChain을 통한 RAG 활용/08-Embeddings/03-HuggingFaceEmbeddings.md",
+    "멀티모달과정/13. LangChain을 통한 RAG 활용/08-Embeddings/02-CacheBackedEmbeddings.md",
     "멀티모달과정/13. LangChain을 통한 RAG 활용/07-TextSplitter/01. CharacterTextSplitter.md",
     "멀티모달과정/13. LangChain을 통한 RAG 활용/07-TextSplitter/00. TextSplitter특징.md",
     "멀티모달과정/13. LangChain을 통한 RAG 활용/07-TextSplitter/08. RecursiveJsonSplitter.md",
