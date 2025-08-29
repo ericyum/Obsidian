@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "13. LangChain을 통한 RAG 활용/09-VectorStore/01-MultiModal_with_Chroma.md",
+                "file": "13. LangChain을 통한 RAG 활용/09-VectorStore/03-Pinecone.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-MultiModal_with_Chroma"
+              "title": "03-Pinecone"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "13. LangChain을 통한 RAG 활용/09-VectorStore/01-MultiModal_with_Chroma.md",
+                "file": "13. LangChain을 통한 RAG 활용/09-VectorStore/03-Pinecone.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "01-MultiModal_with_Chroma 의 백링크"
+              "title": "03-Pinecone 의 백링크"
             }
           },
           {
@@ -168,6 +168,11 @@
   },
   "active": "e73ead88d92224c6",
   "lastOpenFiles": [
+    "13. LangChain을 통한 RAG 활용/09-VectorStore/02-FAISS.md",
+    "13. LangChain을 통한 RAG 활용/09-VectorStore/01-MultiModal_with_Chroma.md",
+    "13. LangChain을 통한 RAG 활용/09-VectorStore/01-Chroma.md",
+    "13. LangChain을 통한 RAG 활용/09-VectorStore/01-open_clip.md",
+    "13. LangChain을 통한 RAG 활용/09-VectorStore/03-Pinecone.md",
     "첨부파일/Pasted image 20250828202818.png",
     "첨부파일/Pasted image 20250828202758.png",
     "첨부파일/Pasted image 20250828202748.png",
@@ -176,12 +181,7 @@
     "첨부파일/Pasted image 20250828202659.png",
     "첨부파일/Pasted image 20250828202636.png",
     "첨부파일/Pasted image 20250828202628.png",
-    "13. LangChain을 통한 RAG 활용/09-VectorStore/01-Chroma.md",
-    "13. LangChain을 통한 RAG 활용/09-VectorStore/01-MultiModal_with_Chroma.md",
     "13. LangChain을 통한 RAG 활용/09-VectorStore/00-Chromadb_vs_Faiss.md",
-    "13. LangChain을 통한 RAG 활용/09-VectorStore/01-open_clip.md",
-    "13. LangChain을 통한 RAG 활용/09-VectorStore/02-FAISS.md",
-    "13. LangChain을 통한 RAG 활용/09-VectorStore/03-Pinecone.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/01. PDF-Loader.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/05. Word-Loader.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/13. Llamaparser.md",
@@ -194,7 +194,6 @@
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/08. RecursiveJsonSplitter.md",
     "첨부파일/pinecone-02.png",
     "첨부파일/pinecone-01.png",
-    "첨부파일/image.png",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/07.HTMLHeaderTextSplitter.md",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/07. HTMLHeaderTextSplitter.md",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/06. MarkdownHeaderTextSplitter.md",
