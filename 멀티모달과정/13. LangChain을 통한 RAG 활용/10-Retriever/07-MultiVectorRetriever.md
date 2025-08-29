@@ -1,0 +1,920 @@
+# 다중 벡터저장소 검색기(MultiVectorRetriever)
+
+LangChain에서는 문서를 다양한 상황에서 효율적으로 쿼리할 수 있는 특별한 기능, 바로 `MultiVectorRetriever`를 제공합니다. 이 기능을 사용하면 문서를 여러 벡터로 저장하고 관리할 수 있어, 정보 검색의 정확도와 효율성을 대폭 향상시킬 수 있습니다. 
+
+`MultiVectorRetriever`를 활용해 문서당 여러 벡터를 생성하는 몇 가지 방법을 살펴보겠습니다.
+
+**문서당 여러 벡터 생성 방법 소개**
+
+1. **작은 청크 생성**: 문서를 더 작은 단위로 나눈 후, 각 청크에 대해 별도의 임베딩을 생성합니다. 이 방식을 사용하면 문서의 특정 부분에 좀 더 세심한 주의를 기울일 수 있습니다. 이 과정은 `ParentDocumentRetriever`를 통해 구현할 수 있어, 세부 정보에 대한 탐색이 용이해집니다.
+
+2. **요약 임베딩**: 각 문서의 요약을 생성하고, 이 요약으로부터 임베딩을 만듭니다. 이 요약 임베딩은 문서의 핵심 내용을 신속하게 파악하는 데 큰 도움이 됩니다. 문서 전체를 분석하는 대신 핵심적인 요약 부분만을 활용하여 효율성을 극대화할 수 있습니다.
+
+3. **가설 질문 활용**: 각 문서에 대해 적합한 가설 질문을 만들고, 이 질문에 기반한 임베딩을 생성합니다. 특정 주제나 내용에 대해 깊이 있는 탐색을 원할 때 이 방법이 유용합니다. 가설 질문은 문서의 내용을 다양한 관점에서 접근하게 해주며, 더 광범위한 이해를 가능하게 합니다.
+
+4. **수동 추가 방식**: 사용자가 문서 검색 시 고려해야 할 특정 질문이나 쿼리를 직접 추가할 수 있습니다. 이 방법을 통해 사용자는 검색 과정에서 보다 세밀한 제어를 할 수 있으며, 자신의 요구 사항에 맞춘 맞춤형 검색이 가능해집니다.
+
+## 실습에 활용한 문서
+
+소프트웨어정책연구소(SPRi) - 2023년 12월호
+
+- 저자: 유재흥(AI정책연구실 책임연구원), 이지수(AI정책연구실 위촉연구원)
+- 링크: https://spri.kr/posts/view/23669
+- 파일명: `SPRI_AI_Brief_2023년12월호_F.pdf`
+
+**참고**: 위의 파일은 `data` 폴더 내에 다운로드 받으세요
+
+```python
+# API 키를 환경변수로 관리하기 위한 설정 파일
+from dotenv import load_dotenv
+
+# API 키 정보 로드
+load_dotenv()
+```
+
+```text
+True
+```
+
+```python
+# LangSmith 추적을 설정합니다. https://smith.langchain.com
+# !pip install langchain-teddynote
+from langchain_teddynote import logging
+
+# 프로젝트 이름을 입력합니다.
+logging.langsmith("CH10-Retriever")
+```
+
+```text
+LangSmith 추적을 시작합니다.
+[프로젝트명]
+CH10-Retriever
+```
+
+텍스트 파일에서 데이터를 로드하고, 로드된 문서들을 지정된 크기로 분할하는 전처리 과정을 수행합니다.
+
+분할된 문서들은 추후 벡터화 및 검색 등의 작업에 사용될 수 있습니다.
+
+```python
+from langchain_community.document_loaders import PyMuPDFLoader
+
+loader = PyMuPDFLoader("data/SPRI_AI_Brief_2023년12월호_F.pdf")
+docs = loader.load()
+```
+
+데이터로부터 로드한 원본 도큐먼트는 `docs` 변수에 담았습니다.
+
+```python
+print(docs[5].page_content[:500])
+```
+
+```text
+1. 정책/법제  
+2. 기업/산업 
+3. 기술/연구 
+ 4. 인력/교육
+영국 AI 안전성 정상회의에 참가한 28개국, AI 위험에 공동 대응 선언
+n 영국 블레츨리 파크에서 개최된 AI 안전성 정상회의에 참가한 28개국들이 AI 안전 보장을 
+위한 협력 방안을 담은 블레츨리 선언을 발표
+n 첨단 AI를 개발하는 국가와 기업들은 AI 시스템에 대한 안전 테스트 계획에 합의했으며, 
+영국의 AI 안전 연구소가 전 세계 국가와 협력해 테스트를 주도할 예정 
+KEY Contents
+£ AI 안전성 정상회의 참가국들, 블레츨리 선언 통해 AI 안전 보장을 위한 협력에 합의
+n 2023년 11월 1~2일 영국 블레츨리 파크에서 열린 AI 안전성 정상회의(AI Safety Summit)에 
+참가한 28개국 대표들이 AI 위험 관리를 위한 ‘블레츨리 선언’을 발표 
+∙선언은 AI 안전 보장을 위해 국가, 국제기구, 기업, 시민사회, 학계를 포함한 모든 이해관계자의 협력이 
+중요하다고 강조했으며,
+```
+
+## Chunk + 원본 문서 검색
+
+대용량 정보를 검색하는 경우, 더 작은 단위로 정보를 임베딩하는 것이 유용할 수 있습니다.
+
+`MultiVectorRetriever` 를 통해 문서를 여러 벡터로 저장하고 관리할 수 있습니다.
+
+`docstore` 에 원본 문서를 저장하고, `vectorstore` 에 임베딩된 문서를 저장합니다. 
+
+이로써 문서를 더 작은 단위로 나누어 더 정확한 검색이 가능해집니다. 때에 따라서는 원본 문서의 내용을 조회할 수 있습니다.
+
+```python
+# 자식 청크를 인덱싱하는 데 사용할 벡터 저장소
+import uuid
+from langchain.storage import InMemoryStore
+from langchain_chroma import Chroma
+from langchain_openai import OpenAIEmbeddings
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain.retrievers.multi_vector import MultiVectorRetriever
+
+vectorstore = Chroma(
+    collection_name="small_bigger_chunks",
+    embedding_function=OpenAIEmbeddings(model="text-embedding-3-small"),
+)
+# 부모 문서의 저장소 계층
+store = InMemoryStore()
+
+id_key = "doc_id"
+
+# 검색기 (시작 시 비어 있음)
+retriever = MultiVectorRetriever(
+    vectorstore=vectorstore,
+    byte_store=store,
+    id_key=id_key,
+)
+
+# 문서 ID를 생성합니다.
+doc_ids = [str(uuid.uuid4()) for _ in docs]
+
+# 생성된 id를 확인합니다.
+doc_ids
+```
+
+```text
+['2b850786-e1a2-4e5c-83b7-b8be269abfec',
+ 'b5703e45-1a1c-44d1-9797-1779252bd7d0',
+ '584b38a9-da45-4b82-9972-e1085c3fe029',
+ 'ffb1e792-8808-4972-aa4c-f372af463d89',
+ 'd1963e31-76c9-44d5-a28d-2bdfe168638b',
+ '0afa320f-ba62-412f-914c-66a19466dae9',
+ '83940de8-3eb4-4b7b-98de-64947c49f328',
+ '1dfdb2ae-a6bd-4a49-b61f-aa9cd1f887f6',
+ 'b71abe78-b006-408d-82db-a2d78338cdb3',
+ '3d56e8a9-b441-450a-b1d6-11516fa8a9bc',
+ '60e7f90a-4652-4520-af37-7c4e90893c44',
+ 'f9b33255-b7f3-4a1c-ba46-aac2db97a85d',
+ '044c80e6-166f-412f-be85-6aea8959164b',
+ '8441ffff-6ca1-4d3c-9dc9-b2efe4709720',
+ 'e72067bd-72a9-44ba-ad47-06ab86471df0',
+ '53c59ace-ab60-4832-9494-50d33bd499a9',
+ 'f314f59b-b665-46dd-9929-8765c8682d0a',
+ '2aa0fbef-40ab-4e48-a6cd-695549ab8452',
+ '512c238f-e54f-4ad2-9c15-7673d3ff48cd',
+ '62aff9fc-6e41-4b8c-8381-0c526ec35aa0',
+ '49f044a8-67af-4549-af07-bd4f3a5754b6',
+ '5ef236f8-1c07-4ec0-bc0c-95e906387ca8',
+ '6a950b25-18b9-4bb9-a812-f7a35c6b1173']
+```
+
+여기서 큰 청크로 분할하기 위한 `parent_text_splitter`
+
+더 작은 청크로 분할하기 위한 `child_text_splitter` 를 정의합니다.
+
+```python
+# RecursiveCharacterTextSplitter 객체를 생성합니다.
+parent_text_splitter = RecursiveCharacterTextSplitter(chunk_size=600)
+
+# 더 작은 청크를 생성하는 데 사용할 분할기
+child_text_splitter = RecursiveCharacterTextSplitter(chunk_size=200)
+```
+
+더 큰 Chunk인 Parent 문서를 생성합니다.
+
+```python
+parent_docs = []
+
+for i, doc in enumerate(docs):
+    # 현재 문서의 ID를 가져옵니다.
+    _id = doc_ids[i]
+    # 현재 문서를 하위 문서로 분할
+    parent_doc = parent_text_splitter.split_documents([doc])
+
+    for _doc in parent_doc:
+        # metadata에 문서 ID 를 저장
+        _doc.metadata[id_key] = _id
+    parent_docs.extend(parent_doc)
+```
+
+`parent_docs` 에 기입된 `doc_id` 를 확인합니다.
+
+```python
+# 생성된 Parent 문서의 메타데이터를 확인합니다.
+parent_docs[0].metadata
+```
+
+```text
+{'producer': 'Hancom PDF 1.3.0.542',
+ 'creator': 'Hwp 2018 10.0.0.13462',
+ 'creationdate': '2023-12-08T13:28:38+09:00',
+ 'source': 'data/SPRI_AI_Brief_2023년12월호_F.pdf',
+ 'file_path': 'data/SPRI_AI_Brief_2023년12월호_F.pdf',
+ 'total_pages': 23,
+ 'format': 'PDF 1.4',
+ 'title': '',
+ 'author': 'dj',
+ 'subject': '',
+ 'keywords': '',
+ 'moddate': '2023-12-08T13:28:38+09:00',
+ 'trapped': '',
+ 'modDate': "D:20231208132838+09'00'",
+ 'creationDate': "D:20231208132838+09'00'",
+ 'page': 0,
+ 'doc_id': '2b850786-e1a2-4e5c-83b7-b8be269abfec'}
+```
+
+상대적으로 더 작은 Chunk인 Child 문서를 생성합니다.
+
+```python
+child_docs = []
+for i, doc in enumerate(docs):
+    # 현재 문서의 ID를 가져옵니다.
+    _id = doc_ids[i]
+    # 현재 문서를 하위 문서로 분할
+    child_doc = child_text_splitter.split_documents([doc])
+    for _doc in child_doc:
+        # metadata에 문서 ID 를 저장
+        _doc.metadata[id_key] = _id
+    child_docs.extend(child_doc)
+```
+
+`child_docs` 에 기입된 `doc_id` 를 확인합니다.
+
+```python
+# 생성된 Child 문서의 메타데이터를 확인합니다.
+child_docs[0].metadata
+```
+
+```text
+{'producer': 'Hancom PDF 1.3.0.542',
+ 'creator': 'Hwp 2018 10.0.0.13462',
+ 'creationdate': '2023-12-08T13:28:38+09:00',
+ 'source': 'data/SPRI_AI_Brief_2023년12월호_F.pdf',
+ 'file_path': 'data/SPRI_AI_Brief_2023년12월호_F.pdf',
+ 'total_pages': 23,
+ 'format': 'PDF 1.4',
+ 'title': '',
+ 'author': 'dj',
+ 'subject': '',
+ 'keywords': '',
+ 'moddate': '2023-12-08T13:28:38+09:00',
+ 'trapped': '',
+ 'modDate': "D:20231208132838+09'00'",
+ 'creationDate': "D:20231208132838+09'00'",
+ 'page': 0,
+ 'doc_id': '2b850786-e1a2-4e5c-83b7-b8be269abfec'}
+```
+
+각각 분할된 청크의 수를 확인합니다.
+
+```python
+print(f"분할된 parent_docs의 개수: {len(parent_docs)}")
+print(f"분할된 child_docs의 개수: {len(child_docs)}")
+```
+
+```text
+분할된 parent_docs의 개수: 73
+분할된 child_docs의 개수: 440
+```
+
+벡터저장소에 새롭게 생성한 작게 쪼개진 하위문서 집합을 추가합니다.
+
+다음으로는 상위 문서는 생성한 UUID 와 맵핑하여 `docstore` 에 추가합니다.
+
+- `mset()` 메서드를 통해 문서 ID와 문서 내용을 key-value 쌍으로 문서 저장소에 저장합니다.
+
+```python
+# 벡터 저장소에 parent + child 문서를 추가
+retriever.vectorstore.add_documents(parent_docs)
+retriever.vectorstore.add_documents(child_docs)
+
+# docstore 에 원본 문서를 저장
+retriever.docstore.mset(list(zip(doc_ids, docs)))
+```
+
+유사도 검색을 수행합니다. 가장 유사도가 높은 첫 번째 문서 조각을 출력합니다.
+
+여기서 `retriever.vectorstore.similarity_search` 메서드는 child + parent 문서 chunk 내에서 검색을 수행합니다.
+
+```python
+# vectorstore의 유사도 검색을 수행합니다.
+relevant_chunks = retriever.vectorstore.similarity_search(
+    "삼성전자가 만든 생성형 AI 의 이름은?"
+)
+print(f"검색된 문서의 개수: {len(relevant_chunks)}")
+```
+
+```text
+검색된 문서의 개수: 4
+```
+
+```python
+for chunk in relevant_chunks:
+    print(chunk.page_content, end="\n\n")
+    print(">" * 100, end="\n\n")
+```
+
+```text
+☞ 출처 : 삼성전자, ‘삼성 AI 포럼’서 자체 개발 생성형 AI ‘삼성 가우스’ 공개, 2023.11.08.
+삼성전자, ‘삼성 개발자 콘퍼런스 코리아 2023’ 개최, 2023.11.14.
+TechRepublic, Samsung Gauss: Samsung Research Reveals Generative AI, 2023.11.08.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+SPRi AI Brief |  
+2023-12월호
+10
+삼성전자, 자체 개발 생성 AI ‘삼성 가우스’ 공개
+n 삼성전자가 온디바이스에서 작동 가능하며 언어, 코드, 이미지의 3개 모델로 구성된 자체 개발 생성 
+AI 모델 ‘삼성 가우스’를 공개
+n 삼성전자는 삼성 가우스를 다양한 제품에 단계적으로 탑재할 계획으로, 온디바이스 작동이 가능한
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+▹ 삼성전자, 자체 개발 생성 AI ‘삼성 가우스’ 공개 ··························································· 10
+   ▹ 구글, 앤스로픽에 20억 달러 투자로 생성 AI 협력 강화 ················································ 11
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+SPRi AI Brief |  
+2023-12월호
+10
+삼성전자, 자체 개발 생성 AI ‘삼성 가우스’ 공개
+n 삼성전자가 온디바이스에서 작동 가능하며 언어, 코드, 이미지의 3개 모델로 구성된 자체 개발 생성 
+AI 모델 ‘삼성 가우스’를 공개
+n 삼성전자는 삼성 가우스를 다양한 제품에 단계적으로 탑재할 계획으로, 온디바이스 작동이 가능한 
+삼성 가우스는 외부로 사용자 정보가 유출될 위험이 없다는 장점을 보유
+KEY Contents
+£ 언어, 코드, 이미지의 3개 모델로 구성된 삼성 가우스, 온디바이스 작동 지원
+n 삼성전자가 2023년 11월 8일 열린 ‘삼성 AI 포럼 2023’ 행사에서 자체 개발한 생성 AI 모델 
+‘삼성 가우스’를 최초 공개
+∙정규분포 이론을 정립한 천재 수학자 가우스(Gauss)의 이름을 본뜬 삼성 가우스는 다양한 상황에 
+최적화된 크기의 모델 선택이 가능
+∙삼성 가우스는 라이선스나 개인정보를 침해하지 않는 안전한 데이터를 통해 학습되었으며, 
+온디바이스에서 작동하도록 설계되어 외부로 사용자의 정보가 유출되지 않는 장점을 보유
+∙삼성전자는 삼성 가우스를 활용한 온디바이스 AI 기술도 소개했으며, 생성 AI 모델을 다양한 제품에
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+```
+
+이번에는 `retriever.invoke()` 메서드를 사용하여 쿼리를 실행합니다.
+
+`retriever.invoke()` 메서드는 원본 문서의 전체 내용을 검색합니다.
+
+```python
+relevant_docs = retriever.invoke("삼성전자가 만든 생성형 AI 의 이름은?")
+print(f"검색된 문서의 개수: {len(relevant_docs)}", end="\n\n")
+print("=" * 100, end="\n\n")
+print(relevant_docs[0].page_content)
+```
+
+```text
+검색된 문서의 개수: 2
+
+====================================================================================================
+
+SPRi AI Brief |  
+2023-12월호
+10
+삼성전자, 자체 개발 생성 AI ‘삼성 가우스’ 공개
+n 삼성전자가 온디바이스에서 작동 가능하며 언어, 코드, 이미지의 3개 모델로 구성된 자체 개발 생성 
+AI 모델 ‘삼성 가우스’를 공개
+n 삼성전자는 삼성 가우스를 다양한 제품에 단계적으로 탑재할 계획으로, 온디바이스 작동이 가능한 
+삼성 가우스는 외부로 사용자 정보가 유출될 위험이 없다는 장점을 보유
+KEY Contents
+£ 언어, 코드, 이미지의 3개 모델로 구성된 삼성 가우스, 온디바이스 작동 지원
+n 삼성전자가 2023년 11월 8일 열린 ‘삼성 AI 포럼 2023’ 행사에서 자체 개발한 생성 AI 모델 
+‘삼성 가우스’를 최초 공개
+∙정규분포 이론을 정립한 천재 수학자 가우스(Gauss)의 이름을 본뜬 삼성 가우스는 다양한 상황에 
+최적화된 크기의 모델 선택이 가능
+∙삼성 가우스는 라이선스나 개인정보를 침해하지 않는 안전한 데이터를 통해 학습되었으며, 
+온디바이스에서 작동하도록 설계되어 외부로 사용자의 정보가 유출되지 않는 장점을 보유
+∙삼성전자는 삼성 가우스를 활용한 온디바이스 AI 기술도 소개했으며, 생성 AI 모델을 다양한 제품에 
+단계적으로 탑재할 계획
+n 삼성 가우스는 △텍스트를 생성하는 언어모델 △코드를 생성하는 코드 모델 △이미지를 생성하는 
+이미지 모델의 3개 모델로 구성
+∙언어 모델은 클라우드와 온디바이스 대상 다양한 모델로 구성되며, 메일 작성, 문서 요약, 번역 업무의 
+처리를 지원
+∙코드 모델 기반의 AI 코딩 어시스턴트 ‘코드아이(code.i)’는 대화형 인터페이스로 서비스를 제공하며 
+사내 소프트웨어 개발에 최적화
+∙이미지 모델은 창의적인 이미지를 생성하고 기존 이미지를 원하는 대로 바꿀 수 있도록 지원하며 
+저해상도 이미지의 고해상도 전환도 지원
+n IT 전문지 테크리퍼블릭(TechRepublic)은 온디바이스 AI가 주요 기술 트렌드로 부상했다며, 
+2024년부터 가우스를 탑재한 삼성 스마트폰이 메타의 라마(Llama)2를 탑재한 퀄컴 기기 및 구글 
+어시스턴트를 적용한 구글 픽셀(Pixel)과 경쟁할 것으로 예상
+☞ 출처 : 삼성전자, ‘삼성 AI 포럼’서 자체 개발 생성형 AI ‘삼성 가우스’ 공개, 2023.11.08.
+삼성전자, ‘삼성 개발자 콘퍼런스 코리아 2023’ 개최, 2023.11.14.
+TechRepublic, Samsung Gauss: Samsung Research Reveals Generative AI, 2023.11.08.
+```
+
+리트리버(retriever)가 벡터 데이터베이스에서 기본적으로 수행하는 검색 유형은 유사도 검색입니다.
+
+LangChain Vector Stores는 [Max Marginal Relevance](https://api.python.langchain.com/en/latest/vectorstores/langchain_core.vectorstores.VectorStore.html#langchain_core.vectorstores.VectorStore.max_marginal_relevance_search)를 통한 검색도 지원하므로, 이를 대신 사용하고 싶다면 다음과 같이 `search_type` 속성을 설정하면 됩니다.
+
+- `retriever` 객체의 `search_type` 속성을 `SearchType.mmr`로 설정합니다.
+  - 이는 검색 시 MMR(Maximal Marginal Relevance) 알고리즘을 사용하도록 지정하는 것입니다.
+
+```python
+from langchain.retrievers.multi_vector import SearchType
+
+# 검색 유형을 MMR(Maximal Marginal Relevance)로 설정
+retriever.search_type = SearchType.mmr
+
+# 관련 문서 전체를 검색
+print(retriever.invoke("삼성전자가 만든 생성형 AI 의 이름은?")[0].page_content)
+```
+
+```text
+SPRi AI Brief |  
+2023-12월호
+10
+삼성전자, 자체 개발 생성 AI ‘삼성 가우스’ 공개
+n 삼성전자가 온디바이스에서 작동 가능하며 언어, 코드, 이미지의 3개 모델로 구성된 자체 개발 생성 
+AI 모델 ‘삼성 가우스’를 공개
+n 삼성전자는 삼성 가우스를 다양한 제품에 단계적으로 탑재할 계획으로, 온디바이스 작동이 가능한 
+삼성 가우스는 외부로 사용자 정보가 유출될 위험이 없다는 장점을 보유
+KEY Contents
+£ 언어, 코드, 이미지의 3개 모델로 구성된 삼성 가우스, 온디바이스 작동 지원
+n 삼성전자가 2023년 11월 8일 열린 ‘삼성 AI 포럼 2023’ 행사에서 자체 개발한 생성 AI 모델 
+‘삼성 가우스’를 최초 공개
+∙정규분포 이론을 정립한 천재 수학자 가우스(Gauss)의 이름을 본뜬 삼성 가우스는 다양한 상황에 
+최적화된 크기의 모델 선택이 가능
+∙삼성 가우스는 라이선스나 개인정보를 침해하지 않는 안전한 데이터를 통해 학습되었으며, 
+온디바이스에서 작동하도록 설계되어 외부로 사용자의 정보가 유출되지 않는 장점을 보유
+∙삼성전자는 삼성 가우스를 활용한 온디바이스 AI 기술도 소개했으며, 생성 AI 모델을 다양한 제품에 
+단계적으로 탑재할 계획
+n 삼성 가우스는 △텍스트를 생성하는 언어모델 △코드를 생성하는 코드 모델 △이미지를 생성하는 
+이미지 모델의 3개 모델로 구성
+∙언어 모델은 클라우드와 온디바이스 대상 다양한 모델로 구성되며, 메일 작성, 문서 요약, 번역 업무의 
+처리를 지원
+∙코드 모델 기반의 AI 코딩 어시스턴트 ‘코드아이(code.i)’는 대화형 인터페이스로 서비스를 제공하며 
+사내 소프트웨어 개발에 최적화
+∙이미지 모델은 창의적인 이미지를 생성하고 기존 이미지를 원하는 대로 바꿀 수 있도록 지원하며 
+저해상도 이미지의 고해상도 전환도 지원
+n IT 전문지 테크리퍼블릭(TechRepublic)은 온디바이스 AI가 주요 기술 트렌드로 부상했다며, 
+2024년부터 가우스를 탑재한 삼성 스마트폰이 메타의 라마(Llama)2를 탑재한 퀄컴 기기 및 구글 
+어시스턴트를 적용한 구글 픽셀(Pixel)과 경쟁할 것으로 예상
+☞ 출처 : 삼성전자, ‘삼성 AI 포럼’서 자체 개발 생성형 AI ‘삼성 가우스’ 공개, 2023.11.08.
+삼성전자, ‘삼성 개발자 콘퍼런스 코리아 2023’ 개최, 2023.11.14.
+TechRepublic, Samsung Gauss: Samsung Research Reveals Generative AI, 2023.11.08.
+```
+
+```python
+from langchain.retrievers.multi_vector import SearchType
+
+# 검색 유형을 similarity_score_threshold로 설정
+retriever.search_type = SearchType.similarity_score_threshold
+retriever.search_kwargs = {"score_threshold": 0.3}
+
+# 관련 문서 전체를 검색
+print(retriever.invoke("삼성전자가 만든 생성형 AI 의 이름은?")[0].page_content)
+```
+
+```text
+SPRi AI Brief |  
+2023-12월호
+10
+삼성전자, 자체 개발 생성 AI ‘삼성 가우스’ 공개
+n 삼성전자가 온디바이스에서 작동 가능하며 언어, 코드, 이미지의 3개 모델로 구성된 자체 개발 생성 
+AI 모델 ‘삼성 가우스’를 공개
+n 삼성전자는 삼성 가우스를 다양한 제품에 단계적으로 탑재할 계획으로, 온디바이스 작동이 가능한 
+삼성 가우스는 외부로 사용자 정보가 유출될 위험이 없다는 장점을 보유
+KEY Contents
+£ 언어, 코드, 이미지의 3개 모델로 구성된 삼성 가우스, 온디바이스 작동 지원
+n 삼성전자가 2023년 11월 8일 열린 ‘삼성 AI 포럼 2023’ 행사에서 자체 개발한 생성 AI 모델 
+‘삼성 가우스’를 최초 공개
+∙정규분포 이론을 정립한 천재 수학자 가우스(Gauss)의 이름을 본뜬 삼성 가우스는 다양한 상황에 
+최적화된 크기의 모델 선택이 가능
+∙삼성 가우스는 라이선스나 개인정보를 침해하지 않는 안전한 데이터를 통해 학습되었으며, 
+온디바이스에서 작동하도록 설계되어 외부로 사용자의 정보가 유출되지 않는 장점을 보유
+∙삼성전자는 삼성 가우스를 활용한 온디바이스 AI 기술도 소개했으며, 생성 AI 모델을 다양한 제품에 
+단계적으로 탑재할 계획
+n 삼성 가우스는 △텍스트를 생성하는 언어모델 △코드를 생성하는 코드 모델 △이미지를 생성하는 
+이미지 모델의 3개 모델로 구성
+∙언어 모델은 클라우드와 온디바이스 대상 다양한 모델로 구성되며, 메일 작성, 문서 요약, 번역 업무의 
+처리를 지원
+∙코드 모델 기반의 AI 코딩 어시스턴트 ‘코드아이(code.i)’는 대화형 인터페이스로 서비스를 제공하며 
+사내 소프트웨어 개발에 최적화
+∙이미지 모델은 창의적인 이미지를 생성하고 기존 이미지를 원하는 대로 바꿀 수 있도록 지원하며 
+저해상도 이미지의 고해상도 전환도 지원
+n IT 전문지 테크리퍼블릭(TechRepublic)은 온디바이스 AI가 주요 기술 트렌드로 부상했다며, 
+2024년부터 가우스를 탑재한 삼성 스마트폰이 메타의 라마(Llama)2를 탑재한 퀄컴 기기 및 구글 
+어시스턴트를 적용한 구글 픽셀(Pixel)과 경쟁할 것으로 예상
+☞ 출처 : 삼성전자, ‘삼성 AI 포럼’서 자체 개발 생성형 AI ‘삼성 가우스’ 공개, 2023.11.08.
+삼성전자, ‘삼성 개발자 콘퍼런스 코리아 2023’ 개최, 2023.11.14.
+TechRepublic, Samsung Gauss: Samsung Research Reveals Generative AI, 2023.11.08.
+```
+
+```python
+from langchain.retrievers.multi_vector import SearchType
+
+# 검색 유형을 similarity로 설정, k값을 1로 설정
+retriever.search_type = SearchType.similarity
+retriever.search_kwargs = {"k": 1}
+
+# 관련 문서 전체를 검색
+print(len(retriever.invoke("삼성전자가 만든 생성형 AI 의 이름은?")))
+```
+
+```text
+1
+```
+
+## 요약본(summary)을 벡터저장소에 저장
+
+요약은 종종 청크(chunk)의 내용을 보다 정확하게 추출할 수 있어 더 나은 검색 결과를 얻을 수 있습니다.
+
+여기서는 요약을 생성하는 방법과 이를 임베딩하는 방법에 대해 설명합니다.
+
+```python
+# PDF 파일을 로드하고 텍스트를 분할하기 위한 라이브러리 임포트
+from langchain_community.document_loaders import PyMuPDFLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+# PDF 파일 로더 초기화
+loader = PyMuPDFLoader("data/SPRI_AI_Brief_2023년12월호_F.pdf")
+
+# 텍스트 분할
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=600, chunk_overlap=50)
+
+# PDF 파일 로드 및 텍스트 분할 실행
+split_docs = loader.load_and_split(text_splitter)
+
+# 분할된 문서의 개수 출력
+print(f"분할된 문서의 개수: {len(split_docs)}")
+```
+
+```text
+분할된 문서의 개수: 61
+```
+
+```python
+from langchain_core.documents import Document
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_openai import ChatOpenAI
+
+
+summary_chain = (
+    {"doc": lambda x: x.page_content}
+    # 문서 요약을 위한 프롬프트 템플릿 생성
+    | ChatPromptTemplate.from_messages(
+        [
+            ("system", "You are an expert in summarizing documents in Korean."),
+            (
+                "user",
+                "Summarize the following documents in 3 sentences in bullet points format.\n\n{doc}",
+            ),
+        ]
+    )
+    # OpenAI의 ChatGPT 모델을 사용하여 요약 생성
+    | ChatOpenAI(temperature=0, model="gpt-4o-mini")
+    | StrOutputParser()
+)
+```
+
+`chain.batch` 메서드를 사용하여 `docs` 리스트의 문서들을 일괄 요약합니다.
+- 여기서 `max_concurrency` 매개변수를 10 으로 설정하여 최대 10개의 문서를 동시에 처리할 수 있도록 합니다.
+
+```python
+# 문서 배치 처리
+summaries = summary_chain.batch(split_docs, {"max_concurrency": 10})
+```
+
+```python
+len(summaries)
+```
+
+```text
+61
+```
+
+요약된 내용을 출력하여 결과를 확인합니다.
+
+```python
+# 원본 문서의 내용을 출력합니다.
+print(split_docs[33].page_content, end="\n\n")
+# 요약을 출력합니다.
+print("[요약]")
+print(summaries[33])
+```
+
+```text
+SPRi AI Brief |  
+2023-12월호
+10
+삼성전자, 자체 개발 생성 AI ‘삼성 가우스’ 공개
+n 삼성전자가 온디바이스에서 작동 가능하며 언어, 코드, 이미지의 3개 모델로 구성된 자체 개발 생성 
+AI 모델 ‘삼성 가우스’를 공개
+n 삼성전자는 삼성 가우스를 다양한 제품에 단계적으로 탑재할 계획으로, 온디바이스 작동이 가능한 
+삼성 가우스는 외부로 사용자 정보가 유출될 위험이 없다는 장점을 보유
+KEY Contents
+£ 언어, 코드, 이미지의 3개 모델로 구성된 삼성 가우스, 온디바이스 작동 지원
+n 삼성전자가 2023년 11월 8일 열린 ‘삼성 AI 포럼 2023’ 행사에서 자체 개발한 생성 AI 모델 
+‘삼성 가우스’를 최초 공개
+∙정규분포 이론을 정립한 천재 수학자 가우스(Gauss)의 이름을 본뜬 삼성 가우스는 다양한 상황에 
+최적화된 크기의 모델 선택이 가능
+∙삼성 가우스는 라이선스나 개인정보를 침해하지 않는 안전한 데이터를 통해 학습되었으며, 
+온디바이스에서 작동하도록 설계되어 외부로 사용자의 정보가 유출되지 않는 장점을 보유
+∙삼성전자는 삼성 가우스를 활용한 온디바이스 AI 기술도 소개했으며, 생성 AI 모델을 다양한 제품에
+
+[요약]
+- 삼성전자가 온디바이스에서 작동 가능한 생성 AI 모델 '삼성 가우스'를 공개하였으며, 이 모델은 언어, 코드, 이미지의 3개 모델로 구성되어 있다.
+- '삼성 가우스'는 정규분포 이론을 정립한 수학자 가우스의 이름을 따왔으며, 다양한 상황에 최적화된 모델 선택이 가능하다.
+- 삼성전자는 이 AI 모델이 사용자 정보를 외부로 유출하지 않도록 설계되었으며, 향후 다양한 제품에 단계적으로 탑재할 계획이다.
+```
+
+`Chroma` 벡터 저장소를 초기화하여 자식 청크(child chunks)를 인덱싱합니다. 이때 `OpenAIEmbeddings`를 임베딩 함수로 사용합니다.
+
+- 문서 ID를 나타내는 키로 `"doc_id"`를 사용합니다.
+
+```python
+import uuid
+
+# 요약 정보를 저장할 벡터 저장소를 생성합니다.
+summary_vectorstore = Chroma(
+    collection_name="summaries",
+    embedding_function=OpenAIEmbeddings(model="text-embedding-3-small"),
+)
+
+# 부모 문서를 저장할 저장소를 생성합니다.
+store = InMemoryStore()
+
+# 문서 ID를 저장할 키 이름을 지정합니다.
+id_key = "doc_id"
+
+# 검색기를 초기화합니다. (시작 시 비어 있음)
+retriever = MultiVectorRetriever(
+    vectorstore=summary_vectorstore,  # 벡터 저장소
+    byte_store=store,  # 바이트 저장소
+    id_key=id_key,  # 문서 ID 키
+)
+# 문서 ID를 생성합니다.
+doc_ids = [str(uuid.uuid4()) for _ in split_docs]
+```
+
+요약된 문서와 메타데이터(여기서는 생성한 요약본에 대한 `Document ID` 입니다)를 저장합니다.
+
+```python
+summary_docs = [
+    # 요약된 내용을 페이지 콘텐츠로 하고, 문서 ID를 메타데이터로 포함하는 Document 객체를 생성합니다.
+    Document(page_content=s, metadata={id_key: doc_ids[i]})
+    for i, s in enumerate(summaries)
+]
+```
+
+요약본의 문서의 개수는 원본 문서의 개수와 일치합니다.
+
+```python
+# 요약본의 문서의 개수
+len(summary_docs)
+```
+
+```text
+61
+```
+
+- `retriever.vectorstore.add_documents(summary_docs)`를 통해 `summary_docs`를 벡터 저장소에 추가합니다.
+- `retriever.docstore.mset(list(zip(doc_ids, docs)))`를 사용하여 `doc_ids`와 `docs`를 매핑하여 문서 저장소에 저장합니다.
+
+```python
+retriever.vectorstore.add_documents(
+    summary_docs
+)  # 요약된 문서를 벡터 저장소에 추가합니다.
+
+# 문서 ID와 문서를 매핑하여 문서 저장소에 저장합니다.
+retriever.docstore.mset(list(zip(doc_ids, split_docs)))
+```
+
+`vectorstore` 객체의 `similarity_search` 메서드를 사용하여 유사도 검색을 수행합니다.
+
+```python
+# 유사도 검색을 수행합니다.
+result_docs = summary_vectorstore.similarity_search(
+    "삼성전자가 만든 생성형 AI 의 이름은?"
+)
+```
+
+```python
+# 1개의 결과 문서를 출력합니다.
+print(result_docs[0].page_content)
+```
+
+```text
+- 삼성전자가 온디바이스에서 작동 가능한 생성 AI 모델 '삼성 가우스'를 공개하였으며, 이 모델은 언어, 코드, 이미지의 3개 모델로 구성되어 있다.
+- '삼성 가우스'는 정규분포 이론을 정립한 수학자 가우스의 이름을 따왔으며, 다양한 상황에 최적화된 모델 선택이 가능하다.
+- 삼성전자는 이 AI 모델이 사용자 정보를 외부로 유출하지 않도록 설계되었으며, 향후 다양한 제품에 단계적으로 탑재할 계획이다.
+```
+
+`retriever` 객체의 `invoke()` 사용하여 질문과 관련된 문서를 검색합니다.
+
+```python
+# 관련된 문서를 검색하여 가져옵니다.
+retrieved_docs = retriever.invoke("삼성전자가 만든 생성형 AI 의 이름은?")
+print(retrieved_docs[0].page_content)
+```
+
+```text
+SPRi AI Brief |  
+2023-12월호
+10
+삼성전자, 자체 개발 생성 AI ‘삼성 가우스’ 공개
+n 삼성전자가 온디바이스에서 작동 가능하며 언어, 코드, 이미지의 3개 모델로 구성된 자체 개발 생성 
+AI 모델 ‘삼성 가우스’를 공개
+n 삼성전자는 삼성 가우스를 다양한 제품에 단계적으로 탑재할 계획으로, 온디바이스 작동이 가능한 
+삼성 가우스는 외부로 사용자 정보가 유출될 위험이 없다는 장점을 보유
+KEY Contents
+£ 언어, 코드, 이미지의 3개 모델로 구성된 삼성 가우스, 온디바이스 작동 지원
+n 삼성전자가 2023년 11월 8일 열린 ‘삼성 AI 포럼 2023’ 행사에서 자체 개발한 생성 AI 모델 
+‘삼성 가우스’를 최초 공개
+∙정규분포 이론을 정립한 천재 수학자 가우스(Gauss)의 이름을 본뜬 삼성 가우스는 다양한 상황에 
+최적화된 크기의 모델 선택이 가능
+∙삼성 가우스는 라이선스나 개인정보를 침해하지 않는 안전한 데이터를 통해 학습되었으며, 
+온디바이스에서 작동하도록 설계되어 외부로 사용자의 정보가 유출되지 않는 장점을 보유
+∙삼성전자는 삼성 가우스를 활용한 온디바이스 AI 기술도 소개했으며, 생성 AI 모델을 다양한 제품에
+```
+
+## 가설 쿼리(Hypothetical Queries) 를 활용하여 문서 내용 탐색
+
+LLM은 특정 문서에 대해 가정할 수 있는 질문 목록을 생성하는 데에도 사용될 수 있습니다.
+
+이렇게 생성된 질문들은 임베딩(embedding)될 수 있으며, 이를 통해 문서의 내용을 더욱 깊이 있게 탐색하고 이해할 수 있습니다.
+
+가정 질문 생성은 문서의 주요 주제와 개념을 파악하는 데 도움이 되며, 독자들이 문서 내용에 대해 더 많은 궁금증을 갖도록 유도할 수 있습니다.
+
+아래는 `Function Calling` 을 활용하여 가설 질문을 생성하는 예제입니다.
+
+```python
+functions = [
+    {
+        "name": "hypothetical_questions",  # 함수의 이름을 지정합니다.
+        "description": "Generate hypothetical questions",  # 함수에 대한 설명을 작성합니다.
+        "parameters": {  # 함수의 매개변수를 정의합니다.
+            "type": "object",  # 매개변수의 타입을 객체로 지정합니다.
+            "properties": {  # 객체의 속성을 정의합니다.
+                "questions": {  # 'questions' 속성을 정의합니다.
+                    "type": "array",  # 'questions'의 타입을 배열로 지정합니다.
+                    "items": {
+                        "type": "string"
+                    },  # 배열의 요소 타입을 문자열로 지정합니다.
+                },
+            },
+            "required": ["questions"],  # 필수 매개변수로 'questions'를 지정합니다.
+        },
+    }
+]
+```
+
+`ChatPromptTemplate`을 사용하여 주어진 문서를 기반으로 3개의 가상 질문을 생성하는 프롬프트 템플릿을 정의합니다.
+
+- `functions`와 `function_call`을 설정하여 가상 질문 생성 함수를 호출합니다.
+- `JsonKeyOutputFunctionsParser`를 사용하여 생성된 가상 질문을 파싱하고, `questions` 키에 해당하는 값을 추출합니다.
+
+```python
+from langchain_core.prompts import ChatPromptTemplate
+from langchain.output_parsers.openai_functions import JsonKeyOutputFunctionsParser
+from langchain_openai import ChatOpenAI
+
+hypothetical_query_chain = (
+    {"doc": lambda x: x.page_content}
+    # 아래 문서를 사용하여 답변할 수 있는 가상의 질문을 정확히 3개 생성하도록 요청합니다. 이 숫자는 조정될 수 있습니다.
+    | ChatPromptTemplate.from_template(
+        "Generate a list of exactly 3 hypothetical questions that the below document could be used to answer. "
+        "Potential users are those interested in the AI industry. Create questions that they would be interested in. "
+        "Output should be written in Korean:\n\n{doc}"
+    )
+    | ChatOpenAI(max_retries=0, model="gpt-4o-mini").bind(
+        functions=functions, function_call={"name": "hypothetical_questions"}
+    )
+    # 출력에서 "questions" 키에 해당하는 값을 추출합니다.
+    | JsonKeyOutputFunctionsParser(key_name="questions")
+)
+```
+
+문서에 대한 답변을 출력합니다.
+
+- 출력은 생성한 3개의 가설 쿼리(Hypothetical Queries) 가 담겨 있습니다.
+
+```python
+# 주어진 문서에 대해 체인을 실행합니다.
+hypothetical_query_chain.invoke(split_docs[33])
+```
+
+```text
+['삼성 가우스가 공개되지 않았다면, 삼성전자의 AI 기술 발전에 어떤 영향을 미쳤을까요?',
+ '삼성 가우스가 경쟁업체의 AI 모델과 비교했을 때, 어떤 장점이 있을까요?',
+ '온디바이스에서 운영되는 AI 기술이 사용자 개인정보 보호에 대한 우려를 어떻게 해결할 수 있을까요?']
+```
+
+`chain.batch` 메서드를 사용하여 `split_docs` 데이터에 대해 동시에 여러 개의 요청을 처리합니다.
+
+```python
+# 문서 목록에 대해 가설 질문을 배치 생성
+hypothetical_questions = hypothetical_query_chain.batch(
+    split_docs, {"max_concurrency": 10}
+)
+```
+
+```python
+hypothetical_questions[33]
+```
+
+```text
+['삼성전자가 개발한 생성 AI ‘삼성 가우스’가 다른 AI 모델과 비교하여 제공할 수 있는 주요한 장점은 무엇일까?',
+ '‘삼성 가우스’가 온디바이스에서 운영될 때, 사용자 개인정보의 보호는 어떻게 이루어질까?',
+ '삼성전자의 ‘삼성 가우스’가 다양한 산업 및 제품에 적용될 경우, AI 산업에 미치는 영향은 어떠할까?']
+```
+
+아래는 이전에 진행했던 방식과 동일하게 생성한 가설 쿼리(Hypothetical Queries) 를 벡터저장소에 저장하는 과정입니다.
+
+```python
+# 자식 청크를 인덱싱하는 데 사용할 벡터 저장소
+hypothetical_vectorstore = Chroma(
+    collection_name="hypo-questions", embedding_function=OpenAIEmbeddings()
+)
+# 부모 문서의 저장소 계층
+store = InMemoryStore()
+
+id_key = "doc_id"
+# 검색기 (시작 시 비어 있음)
+retriever = MultiVectorRetriever(
+    vectorstore=hypothetical_vectorstore,
+    byte_store=store,
+    id_key=id_key,
+)
+doc_ids = [str(uuid.uuid4()) for _ in split_docs]  # 문서 ID 생성
+```
+
+`question_docs` 리스트에 메타데이터(문서 ID) 를 추가합니다.
+
+```python
+question_docs = []
+# hypothetical_questions 저장
+for i, question_list in enumerate(hypothetical_questions):
+    question_docs.extend(
+        # 질문 리스트의 각 질문에 대해 Document 객체를 생성하고, 메타데이터에 해당 질문의 문서 ID를 포함시킵니다.
+        [Document(page_content=s, metadata={id_key: doc_ids[i]}) for s in question_list]
+    )
+```
+
+가설 쿼리를 문서에 추가하고, 원본 문서를 `docstore` 에 추가합니다.
+
+```python
+# hypothetical_questions 문서를 벡터 저장소에 추가합니다.
+retriever.vectorstore.add_documents(question_docs)
+
+# 문서 ID와 문서를 매핑하여 문서 저장소에 저장합니다.
+retriever.docstore.mset(list(zip(doc_ids, split_docs)))
+```
+
+`vectorstore` 객체의 `similarity_search` 메서드를 사용하여 유사도 검색을 수행합니다.
+
+```python
+# 유사한 문서를 벡터 저장소에서 검색합니다.
+result_docs = hypothetical_vectorstore.similarity_search(
+    "삼성전자가 만든 생성형 AI 의 이름은?"
+)
+```
+
+아래는 유사도 검색 결과입니다.
+
+여기서는 생성한 가설 쿼리만 추가해 놓은 상태이기 때문에, 생성한 가설 쿼리 중 유사도가 가장 높은 문서를 반환합니다.
+
+```python
+# 유사도 검색 결과를 출력합니다.
+for doc in result_docs:
+    print(doc.page_content)
+    print(doc.metadata)
+```
+
+```text
+삼성전자의 최근 발표가 생성적 AI의 발전에 어떤 영향을 미칠까요?
+{'doc_id': '48be30d4-2aeb-44a2-90b4-55cc600aba67'}
+삼성전자가 개발한 생성 AI ‘삼성 가우스’가 다른 AI 모델과 비교하여 제공할 수 있는 주요한 장점은 무엇일까?
+{'doc_id': 'bdd478a9-7135-4ead-9382-3e456dbb6dc6'}
+삼성 개발자 콘퍼런스에서 다루어진 주제가 AI 산업의 미래에 어떤 기여를 할 수 있을까요?
+{'doc_id': '48be30d4-2aeb-44a2-90b4-55cc600aba67'}
+삼성전자의 ‘삼성 가우스’가 다양한 산업 및 제품에 적용될 경우, AI 산업에 미치는 영향은 어떠할까?
+{'doc_id': 'bdd478a9-7135-4ead-9382-3e456dbb6dc6'}
+```
+
+`retriever` 객체의 `invoke` 메서드를 사용하여 쿼리와 관련된 문서를 검색합니다.
+
+```python
+# 관련된 문서를 검색하여 가져옵니다.
+retrieved_docs = retriever.invoke(result_docs[1].page_content)
+
+# 검색된 문서를 출력합니다.
+for doc in retrieved_docs:
+    print(doc.page_content)
+```
+
+```text
+SPRi AI Brief |  
+2023-12월호
+10
+삼성전자, 자체 개발 생성 AI ‘삼성 가우스’ 공개
+n 삼성전자가 온디바이스에서 작동 가능하며 언어, 코드, 이미지의 3개 모델로 구성된 자체 개발 생성 
+AI 모델 ‘삼성 가우스’를 공개
+n 삼성전자는 삼성 가우스를 다양한 제품에 단계적으로 탑재할 계획으로, 온디바이스 작동이 가능한 
+삼성 가우스는 외부로 사용자 정보가 유출될 위험이 없다는 장점을 보유
+KEY Contents
+£ 언어, 코드, 이미지의 3개 모델로 구성된 삼성 가우스, 온디바이스 작동 지원
+n 삼성전자가 2023년 11월 8일 열린 ‘삼성 AI 포럼 2023’ 행사에서 자체 개발한 생성 AI 모델 
+‘삼성 가우스’를 최초 공개
+∙정규분포 이론을 정립한 천재 수학자 가우스(Gauss)의 이름을 본뜬 삼성 가우스는 다양한 상황에 
+최적화된 크기의 모델 선택이 가능
+∙삼성 가우스는 라이선스나 개인정보를 침해하지 않는 안전한 데이터를 통해 학습되었으며, 
+온디바이스에서 작동하도록 설계되어 외부로 사용자의 정보가 유출되지 않는 장점을 보유
+∙삼성전자는 삼성 가우스를 활용한 온디바이스 AI 기술도 소개했으며, 생성 AI 모델을 다양한 제품에
+삼성전자, ‘삼성 개발자 콘퍼런스 코리아 2023’ 개최, 2023.11.14.
+TechRepublic, Samsung Gauss: Samsung Research Reveals Generative AI, 2023.11.08.
+```
