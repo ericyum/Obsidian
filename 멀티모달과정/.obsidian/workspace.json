@@ -11,10 +11,14 @@
             "id": "0559fb1ef8b12d49",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "13. LangChain을 통한 RAG 활용/10-Retriever/07-MultiVectorRetriever.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "07-MultiVectorRetriever"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "13. LangChain을 통한 RAG 활용/10-Retriever/07-MultiVectorRetriever.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "07-MultiVectorRetriever 의 백링크"
             }
           },
           {
@@ -161,7 +166,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "0559fb1ef8b12d49",
+  "active": "42f544712f6e33e8",
   "lastOpenFiles": [
     "13. LangChain을 통한 RAG 활용/10-Retriever/06-MultiQueryRetriever.md",
     "13. LangChain을 통한 RAG 활용/09-VectorStore/03-Pinecone.md",
