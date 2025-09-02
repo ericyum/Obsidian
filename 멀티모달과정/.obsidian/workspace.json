@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "13. LangChain을 통한 RAG 활용/10-Retriever/07-MultiVectorRetriever.md",
+                "file": "9. 머신 러닝/13. 미니 프로젝트(머신 러닝 기록).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07-MultiVectorRetriever"
+              "title": "13. 미니 프로젝트(머신 러닝 기록)"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "13. LangChain을 통한 RAG 활용/10-Retriever/07-MultiVectorRetriever.md",
+                "file": "9. 머신 러닝/13. 미니 프로젝트(머신 러닝 기록).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "07-MultiVectorRetriever 의 백링크"
+              "title": "13. 미니 프로젝트(머신 러닝 기록) 의 백링크"
             }
           },
           {
@@ -166,8 +166,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "42f544712f6e33e8",
+  "active": "0559fb1ef8b12d49",
   "lastOpenFiles": [
+    "13. LangChain을 통한 RAG 활용/10-Retriever/07-MultiVectorRetriever.md",
     "13. LangChain을 통한 RAG 활용/10-Retriever/06-MultiQueryRetriever.md",
     "13. LangChain을 통한 RAG 활용/09-VectorStore/03-Pinecone.md",
     "13. LangChain을 통한 RAG 활용/09-VectorStore/02-FAISS.md",
@@ -204,7 +205,6 @@
     "13. LangChain을 통한 RAG 활용/07-TextSplitter",
     "12. RAG관련 개념 정리/1. RAG, 프롬프트, 임베딩, 벡터 스토어, LangChain.md",
     "무제.md",
-    "12. RAG관련 개념 정리/2. 기존 LLM 한계와 RAG의 필요성, 그리고 작동원리.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader",
     "13. LangChain을 통한 RAG 활용/05-Memory",
     "13. LangChain을 통한 RAG 활용/04-Model/무제",
