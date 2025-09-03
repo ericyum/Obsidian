@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "9. 머신 러닝/13. 미니 프로젝트(머신 러닝 기록).md",
+                "file": "무제.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "13. 미니 프로젝트(머신 러닝 기록)"
+              "title": "무제"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "9. 머신 러닝/13. 미니 프로젝트(머신 러닝 기록).md",
+                "file": "무제.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "13. 미니 프로젝트(머신 러닝 기록) 의 백링크"
+              "title": "무제 의 백링크"
             }
           },
           {
@@ -168,6 +168,18 @@
   },
   "active": "0559fb1ef8b12d49",
   "lastOpenFiles": [
+    "첨부파일/Pasted image 20250903160535.png",
+    "첨부파일/Pasted image 20250903160522.png",
+    "첨부파일/Pasted image 20250903155828.png",
+    "첨부파일/Pasted image 20250903155236.png",
+    "첨부파일/Pasted image 20250903155208.png",
+    "첨부파일/Pasted image 20250903153432.png",
+    "첨부파일/Pasted image 20250903143938.png",
+    "첨부파일/Pasted image 20250903141528.png",
+    "첨부파일/Pasted image 20250903141318.png",
+    "첨부파일/Pasted image 20250903141220.png",
+    "9. 머신 러닝/13. 미니 프로젝트(머신 러닝 기록).md",
+    "무제.md",
     "13. LangChain을 통한 RAG 활용/10-Retriever/07-MultiVectorRetriever.md",
     "13. LangChain을 통한 RAG 활용/10-Retriever/06-MultiQueryRetriever.md",
     "13. LangChain을 통한 RAG 활용/09-VectorStore/03-Pinecone.md",
@@ -176,13 +188,6 @@
     "13. LangChain을 통한 RAG 활용/09-VectorStore/01-Chroma.md",
     "13. LangChain을 통한 RAG 활용/09-VectorStore/01-open_clip.md",
     "첨부파일/Pasted image 20250828202818.png",
-    "첨부파일/Pasted image 20250828202758.png",
-    "첨부파일/Pasted image 20250828202748.png",
-    "첨부파일/Pasted image 20250828202742.png",
-    "첨부파일/Pasted image 20250828202726.png",
-    "첨부파일/Pasted image 20250828202659.png",
-    "첨부파일/Pasted image 20250828202636.png",
-    "첨부파일/Pasted image 20250828202628.png",
     "13. LangChain을 통한 RAG 활용/09-VectorStore/00-Chromadb_vs_Faiss.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/01. PDF-Loader.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/05. Word-Loader.md",
@@ -194,17 +199,12 @@
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/01. CharacterTextSplitter.md",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/02. RecursiveCharacterTextSplitter.md",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/08. RecursiveJsonSplitter.md",
-    "첨부파일/pinecone-02.png",
-    "첨부파일/pinecone-01.png",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/07.HTMLHeaderTextSplitter.md",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/07. HTMLHeaderTextSplitter.md",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/06. MarkdownHeaderTextSplitter.md",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/05. CodeSplitter.md",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter/04. SemanticChunker.md",
-    "13. LangChain을 통한 RAG 활용/07-TextSplitter/03. TokenTextSplitter.md",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter",
-    "12. RAG관련 개념 정리/1. RAG, 프롬프트, 임베딩, 벡터 스토어, LangChain.md",
-    "무제.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader",
     "13. LangChain을 통한 RAG 활용/05-Memory",
     "13. LangChain을 통한 RAG 활용/04-Model/무제",
