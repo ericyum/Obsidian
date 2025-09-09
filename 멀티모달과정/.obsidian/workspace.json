@@ -166,8 +166,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "7b35f99f58ca69cd",
+  "active": "42f544712f6e33e8",
   "lastOpenFiles": [
+    "13. LangChain을 통한 RAG 활용/15-Agent/02-Bind-Tools.md",
+    "13. LangChain을 통한 RAG 활용/15-Agent/01-Tools.md",
+    "13. LangChain을 통한 RAG 활용/15-Agent/03-Agent.md",
+    "13. LangChain을 통한 RAG 활용/15-Agent",
+    "13. LangChain을 통한 RAG 활용/새 폴더",
+    "13. LangChain을 통한 RAG 활용/14-Chains/03-Structured-Output-Chain.md",
+    "13. LangChain을 통한 RAG 활용/14-Chains/02-SQL.md",
+    "13. LangChain을 통한 RAG 활용/14-Chains/04-Structured-Data-Chat.md",
+    "13. LangChain을 통한 RAG 활용/14-Chains/01-RAG이해하기_summary.md",
     "13. LangChain을 통한 RAG 활용/14-Chains/01-pdfLoader_with_gemini2.md",
     "13. LangChain을 통한 RAG 활용/14-Chains/01-pdfLoader_with_gemini.md",
     "13. LangChain을 통한 RAG 활용/14-Chains/01-pdfLoader_with_gemini3.md",
@@ -197,13 +206,6 @@
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/01. PDF-Loader.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/05. Word-Loader.md",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader/13. Llamaparser.md",
-    "13. LangChain을 통한 RAG 활용/06-DocumentLoader/14. Document-Parser.md",
-    "13. LangChain을 통한 RAG 활용/06-DocumentLoader/06. PowerPoint-Loader.md",
-    "13. LangChain을 통한 RAG 활용/06-DocumentLoader/02. HWP-Loader.md",
-    "13. LangChain을 통한 RAG 활용/07-TextSplitter/00. TextSplitter특징.md",
-    "13. LangChain을 통한 RAG 활용/07-TextSplitter/01. CharacterTextSplitter.md",
-    "13. LangChain을 통한 RAG 활용/07-TextSplitter/02. RecursiveCharacterTextSplitter.md",
-    "13. LangChain을 통한 RAG 활용/07-TextSplitter/08. RecursiveJsonSplitter.md",
     "13. LangChain을 통한 RAG 활용/07-TextSplitter",
     "13. LangChain을 통한 RAG 활용/06-DocumentLoader",
     "13. LangChain을 통한 RAG 활용/05-Memory",
@@ -211,8 +213,6 @@
     "13. LangChain을 통한 RAG 활용/03-OutputParser/data",
     "13. LangChain을 통한 RAG 활용/04-Model",
     "13. LangChain을 통한 RAG 활용/03-OutputParser",
-    "13. LangChain을 통한 RAG 활용/02-Prompt",
-    "13. LangChain을 통한 RAG 활용/01-Basic",
-    "13. LangChain을 통한 RAG 활용"
+    "13. LangChain을 통한 RAG 활용/02-Prompt"
   ]
 }
