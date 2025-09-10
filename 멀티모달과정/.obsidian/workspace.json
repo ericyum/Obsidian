@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "13. LangChain을 통한 RAG 활용/14-Chains/01-pdfLoader_with_gemini3.md",
+                "file": "13. LangChain을 통한 RAG 활용/15-Agent/02-Bind-Tools.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-pdfLoader_with_gemini3"
+              "title": "02-Bind-Tools"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "13. LangChain을 통한 RAG 활용/14-Chains/01-pdfLoader_with_gemini3.md",
+                "file": "13. LangChain을 통한 RAG 활용/15-Agent/02-Bind-Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "01-pdfLoader_with_gemini3 의 백링크"
+              "title": "02-Bind-Tools 의 백링크"
             }
           },
           {
@@ -166,11 +166,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "42f544712f6e33e8",
+  "active": "7b35f99f58ca69cd",
   "lastOpenFiles": [
+    "13. LangChain을 통한 RAG 활용/15-Agent/03-Agent.md",
+    "13. LangChain을 통한 RAG 활용/14-Chains/01-pdfLoader_with_gemini3.md",
     "13. LangChain을 통한 RAG 활용/15-Agent/02-Bind-Tools.md",
     "13. LangChain을 통한 RAG 활용/15-Agent/01-Tools.md",
-    "13. LangChain을 통한 RAG 활용/15-Agent/03-Agent.md",
     "13. LangChain을 통한 RAG 활용/15-Agent",
     "13. LangChain을 통한 RAG 활용/새 폴더",
     "13. LangChain을 통한 RAG 활용/14-Chains/03-Structured-Output-Chain.md",
@@ -179,7 +180,6 @@
     "13. LangChain을 통한 RAG 활용/14-Chains/01-RAG이해하기_summary.md",
     "13. LangChain을 통한 RAG 활용/14-Chains/01-pdfLoader_with_gemini2.md",
     "13. LangChain을 통한 RAG 활용/14-Chains/01-pdfLoader_with_gemini.md",
-    "13. LangChain을 통한 RAG 활용/14-Chains/01-pdfLoader_with_gemini3.md",
     "13. LangChain을 통한 RAG 활용/14-Chains/01-Summary.md",
     "13. LangChain을 통한 RAG 활용/14-Chains/01-Summary_example.md",
     "독후감 보조 프로그램.md",
