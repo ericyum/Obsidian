@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "13. LangChain을 통한 RAG 활용/15-Agent/02-Bind-Tools.md",
+                "file": "본 프로젝트 계획서.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-Bind-Tools"
+              "title": "본 프로젝트 계획서"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "13. LangChain을 통한 RAG 활용/15-Agent/02-Bind-Tools.md",
+                "file": "본 프로젝트 계획서.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "02-Bind-Tools 의 백링크"
+              "title": "본 프로젝트 계획서 의 백링크"
             }
           },
           {
@@ -168,9 +168,10 @@
   },
   "active": "7b35f99f58ca69cd",
   "lastOpenFiles": [
+    "13. LangChain을 통한 RAG 활용/15-Agent/02-Bind-Tools.md",
+    "본 프로젝트 계획서.md",
     "13. LangChain을 통한 RAG 활용/15-Agent/03-Agent.md",
     "13. LangChain을 통한 RAG 활용/14-Chains/01-pdfLoader_with_gemini3.md",
-    "13. LangChain을 통한 RAG 활용/15-Agent/02-Bind-Tools.md",
     "13. LangChain을 통한 RAG 활용/15-Agent/01-Tools.md",
     "13. LangChain을 통한 RAG 활용/15-Agent",
     "13. LangChain을 통한 RAG 활용/새 폴더",
@@ -187,7 +188,6 @@
     "첨부파일/Pasted image 20250905161904.png",
     "첨부파일/Pasted image 20250905161830.png",
     "첨부파일/Pasted image 20250905161813.png",
-    "무제.md",
     "첨부파일/Pasted image 20250905144420.png",
     "첨부파일/Pasted image 20250905132150.png",
     "첨부파일/Pasted image 20250904133015.png",
