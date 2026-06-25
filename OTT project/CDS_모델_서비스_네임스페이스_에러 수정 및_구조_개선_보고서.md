@@ -8,14 +8,60 @@
 
 ## 1. 변경 배경
 
-### 1-1. VS Code CDS 언어 서버 오류
+### 1-1. VS Code CDS 언어 서버 오류 — 왜 런타임은 멀쩡한데 VS Code만 빨간줄인가?
+
+**증상**: 서버는 잘 돌아가는데 VS Code 에디터에서 아래 같은 오류가 표시됨
 
 ```
 FreeBoard-service.cds(15, 52): Artifact "com.cap.ott.Post" has not been found
 ```
 
-- `cds watch` 런타임은 정상 동작했으나, VS Code의 CDS 언어 서버(compiler)가 `db/index.cds`의 `using from` 체인을 따라가지 않고 각 파일을 **개별 검사**하면서 cross-file artifact not found 오류 발생
-- 모든 cross-file 참조에 대해 동일 오류: `Post`, `Comment`, `Users`, `SubscriptionPlans`, `Partners`, `Contents`, `SubscriberGroup` 등
+**원인**: CDS에는 같은 파일을 읽는 두 가지 방식(컴파일러)이 존재하는데, 이 둘의 **파일 탐색 전략이 서로 다르기 때문**입니다.
+
+#### 🔵 `cds watch` 런타임 — "책을 처음부터 순서대로 읽는" 방식
+
+런타임은 루트 `index.cds`에서 출발해 `using from`을 만날 때마다 해당 파일로 점프하면서 **모든 파일을 하나의 연쇄 체인으로 읽어나갑니다**. 마치 책 목차를 1페이지부터 순서대로 읽듯이:
+
+```
+📄 index.cds (루트)
+    ↓ using from './db'
+📄 db/index.cds
+    ↓ using from './cds/Core-model.cds'              ← Users, Contents 등이 여기서 정의됨
+    ↓ using from './cds/board/Freeboard-model.cds'    ← Post, Comment 가 여기서 정의됨
+    ↓ ...
+    ↓ using from './srv'
+📄 srv/index.cds
+    ↓ using from './cds/board/FreeBoard-service'      ← Post, Comment 를 사용함
+```
+
+`FreeBoard-service.cds`를 읽는 시점에는 이미 `Freeboard-model.cds`가 앞에서 로드되어 `Post`, `Comment`가 "알고 있는" 상태이므로 아무 문제가 없습니다.
+
+#### 🔴 VS Code CDS 언어 서버 — "파일 한 장만 뽑아서 검사하는" 방식
+
+반면 VS Code에 내장된 CDS 언어 서버는 **지금 열려있는 파일 하나만 단독으로 검사**합니다. `index.cds` 체인을 타고 올라가서 앞뒤 문맥을 파악하지 않습니다. 사전에서 단어 하나만 뽑아놓고 "이 단어, 우리 사전에 정의된 적 없는데요?"라고 따지는 것과 같습니다.
+
+```
+📄 FreeBoard-service.cds (이 파일만 단독 검사)
+
+    service com.cap.ott.FreeBoard {
+        entity PostSet    as projection on com.cap.ott.Post;     ← ❓ "Post"? 들어본 적 없는데?
+        entity CommentSet as projection on com.cap.ott.Comment;  ← ❓ "Comment"? 들어본 적 없는데?
+    }
+```
+
+이 파일 안에는 `Post`나 `Comment`가 어디에 정의됐는지 알려주는 `using from`이 없기 때문에 **"Artifact has not been found"** 오류가 발생합니다.
+
+#### 영향을 받은 모든 cross-file 참조
+
+같은 원리로 다음 엔티티들도 각각의 파일에서 동일한 오류가 발생했습니다:
+
+`Post`, `Comment`, `Users`, `SubscriptionPlans`, `Partners`, `Contents`, `SubscriberGroup`
+
+#### 해결: 각 파일에 "이거 어디 있는지" 직접 알려주기
+
+각 파일 상단에 `using from`을 추가하여, 언어 서버가 단독 검사할 때도 참조 대상을 찾을 수 있게 했습니다 (→ [2-4절](#2-4-vs-code-언어-서버-오류-해결--using-from-지시문-추가) 참조).
+
+> 💡 **핵심 교훈**: `cds watch`가 성공한다고 CDS 문법이 완벽한 것은 아닙니다. VS Code 언어 서버는 더 엄격하게 각 파일의 **자급자족성**(self-contained)을 요구합니다. 모든 cross-file 참조는 해당 파일 안에 `using from`으로 명시하는 습관을 들이세요.
 
 ### 1-2. 유지보수성 개선
 

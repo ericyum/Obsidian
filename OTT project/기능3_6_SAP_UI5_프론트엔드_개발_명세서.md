@@ -19,6 +19,20 @@
 
 > 로컬에서 백엔드만 단독 기동: `cd cap-node/ott && npm run watch` → `http://localhost:8083`. 테스트: `node test/run-all-tests.mjs`
 
+### ⚠️ V2 어댑터 의존성 (필수)
+
+본 명세서의 모든 API는 **OData V2** 경로(`/srv-api/odata/v2/...`)를 기준으로 한다. CAP 백엔드는 기본 V4 프로토콜만 제공하므로, V2 접근을 위해 `@cap-js-community/odata-v2-adapter` 패키지가 **반드시** 설치되어 있어야 한다.
+
+| 항목 | 값 |
+|---|---|
+| 패키지명 | `@cap-js-community/odata-v2-adapter` |
+| 설치 위치 | `cap-node/ott/package.json` → `dependencies` |
+| 버전 | `^1.15.1` (`core`와 동일) |
+| 설치 확인 | `GET /odata/v2/ott/...` → 200 OK (미설치 시 404) |
+| 배포 시 | `dependencies`에 포함되어 있으므로 자동 설치됨 |
+
+> **참고**: `cap-node/core`는 이미 설치되어 있으나, `cap-node/ott`는 별도 프로젝트이므로 개별 추가해야 한다. 배포(MTA build) 시 `package.json` 기준으로 설치되므로 운영 환경에서도 정상 작동한다.
+
 ---
 
 ## 1. 구독자 추세 분석 대시보드 (기능3) — Admin 전용
