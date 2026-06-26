@@ -11,14 +11,10 @@
             "id": "ec90841aa27adc6a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OTT project/ott_분리_작업_계획서.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "ott_분리_작업_계획서"
+              "title": "새 탭"
             }
           }
         ]
@@ -171,17 +167,18 @@
   },
   "active": "ec90841aa27adc6a",
   "lastOpenFiles": [
-    "OTT project/프론트엔드_오류_최종_수정_보고서_2026-06-25.md",
     "UI5/2026-06-26 CAP 온보딩 신입 공유.md",
+    "UI5/2026-06-26 CAP 온보딩 신입 공유 (1).md",
+    "OTT project/기능2_4_프론트엔드_아키텍처_및_개발_산출물.md",
+    "OTT project/ott_분리_작업_계획서.md",
+    "OTT project/프론트엔드_오류_최종_수정_보고서_2026-06-25.md",
     "UI5",
     "새 폴더",
-    "OTT project/ott_분리_작업_계획서.md",
     "OTT project/default-env.json_민감정보_커밋_해결_총정리.md",
     "OTT project/core_ott_E2E_테스트_결과보고서.md",
     "OTT project/core_ott_approuter_ott_수정사항_보고서.md",
     "OTT project/sedFw0eHL",
     "OTT project/sedSjYBK6",
-    "OTT project/기능2_4_프론트엔드_아키텍처_및_개발_산출물.md",
     "OTT project/기능4_5_SAP_UI5_프론트엔드_가이드.md",
     "OTT project/기능3_6_SAP_UI5_프론트엔드_개발_명세서.md",
     "OTT project/기능1_2_서비스_아키텍처_및_커스텀로직.md",
@@ -201,7 +198,6 @@
     "대상 POC/2026-06-13 대상 POC 정리 및 피드백.md",
     "2026-06-13 대상 POC 정리 및 피드백 (정리본).md",
     "OTT project/Module3_6_서비스설계_상세.md",
-    "OTT/02-백엔드-core-공통서비스.md",
     "대상 POC",
     "OTT",
     "OTT 팀 프로젝트/6_자유게시판",
