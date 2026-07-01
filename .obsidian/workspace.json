@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UI5/3. index.html_완전_이해.md",
+                "file": "OTT project/기능2_4_프론트엔드_아키텍처_및_개발_산출물.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. index.html_완전_이해"
+              "title": "기능2_4_프론트엔드_아키텍처_및_개발_산출물"
             }
           }
         ]
@@ -169,14 +169,20 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "e81b0b7180cf226c",
+  "active": "4c30d6e97cc58ab6",
   "lastOpenFiles": [
-    "UI5/2. Component.js_완전_이해.md",
+    "OTT project/2026-07-01 ObjectPageLayout_및_관련_컨트롤_원리_조사.md",
+    "OTT project/2026-07-01 프론트엔드_피드백_수정_계획서.md",
+    "OTT project/2026-07-01 프론트엔드_런타임_감사_보고서.md",
+    "OTT project/default-env.json_민감정보_커밋_해결_총정리.md",
+    "OTT project/기능2_4_프론트엔드_아키텍처_및_개발_산출물.md",
+    "UI5/2026-06-26 CAP 온보딩 신입 공유.md",
+    "UI5/4. BaseController.js_완전_이해.md",
     "UI5/3. index.html_완전_이해.md",
+    "UI5/2. Component.js_완전_이해.md",
     "UI5/1-1. V2_OData_핵심_버그와_해결_useBatch_router_getView.md",
     "UI5/1. manifest.json_완전_이해.md",
     "UI5/V2_OData_핵심_버그와_해결_useBatch_router_getView.md",
-    "UI5/2026-06-26 CAP 온보딩 신입 공유.md",
     "UI5/1-1. 2026-06-26 CAP 온보딩 신입 공유.md",
     "UI5/manifest.json_완전_이해.md",
     "UI5/추가 적인 질문.md",
@@ -185,22 +191,16 @@
     "OTT/08-CICD-배포.md",
     "OTT/09-한눈에-보는-전체-정리.md",
     "UI5/2026-06-26 CAP 온보딩 신입 공유 (1).md",
-    "OTT project/기능2_4_프론트엔드_아키텍처_및_개발_산출물.md",
     "OTT project/ott_분리_작업_계획서.md",
     "OTT project/프론트엔드_오류_최종_수정_보고서_2026-06-25.md",
     "UI5",
     "새 폴더",
-    "OTT project/default-env.json_민감정보_커밋_해결_총정리.md",
     "OTT project/core_ott_E2E_테스트_결과보고서.md",
     "OTT project/core_ott_approuter_ott_수정사항_보고서.md",
     "OTT project/sedFw0eHL",
     "OTT project/sedSjYBK6",
     "OTT project/기능4_5_SAP_UI5_프론트엔드_가이드.md",
     "OTT project/기능3_6_SAP_UI5_프론트엔드_개발_명세서.md",
-    "OTT project/기능1_2_서비스_아키텍처_및_커스텀로직.md",
-    "OTT project/Module3_6_서비스_아키텍처_및_커스텀로직.md",
-    "OTT project/OTT-기능1-2-엔티티, 서비스 설계.md",
-    "01_계획단계/OTT-기능1-2-엔티티, 서비스 설계.md",
     "01_계획단계",
     "대상 POC",
     "OTT",
