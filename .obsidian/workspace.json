@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b35a387ce95e67f2",
+        "id": "f384fd7a970ca362",
         "type": "tabs",
         "children": [
           {
-            "id": "e81b0b7180cf226c",
+            "id": "e51338a4ec559416",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OTT project/기능2_4_프론트엔드_아키텍처_및_개발_산출물.md",
+                "file": "UI5/5. DetailMain.view.xml_완전_이해.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "기능2_4_프론트엔드_아키텍처_및_개발_산출물"
+              "title": "5. DetailMain.view.xml_완전_이해"
             }
           }
         ]
@@ -169,18 +169,23 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4c30d6e97cc58ab6",
+  "active": "e51338a4ec559416",
   "lastOpenFiles": [
+    "UI5/4. BaseController.js_완전_이해.md",
+    "UI5/5. DetailMain.view.xml_완전_이해.md",
+    "UI5/1-1. V2_OData_핵심_버그와_해결_useBatch_router_getView.md",
+    "OTT project/기능2_4_프론트엔드_아키텍처_및_개발_산출물.md",
+    "OTT project/2026-07-02_수정_세션_총정리.md",
+    "OTT project/세션_총정리_2026-07-02.md",
+    "OTT project/무제.md",
+    "세션_총정리_2026-07-02.md",
     "OTT project/2026-07-01 ObjectPageLayout_및_관련_컨트롤_원리_조사.md",
     "OTT project/2026-07-01 프론트엔드_피드백_수정_계획서.md",
     "OTT project/2026-07-01 프론트엔드_런타임_감사_보고서.md",
     "OTT project/default-env.json_민감정보_커밋_해결_총정리.md",
-    "OTT project/기능2_4_프론트엔드_아키텍처_및_개발_산출물.md",
     "UI5/2026-06-26 CAP 온보딩 신입 공유.md",
-    "UI5/4. BaseController.js_완전_이해.md",
     "UI5/3. index.html_완전_이해.md",
     "UI5/2. Component.js_완전_이해.md",
-    "UI5/1-1. V2_OData_핵심_버그와_해결_useBatch_router_getView.md",
     "UI5/1. manifest.json_완전_이해.md",
     "UI5/V2_OData_핵심_버그와_해결_useBatch_router_getView.md",
     "UI5/1-1. 2026-06-26 CAP 온보딩 신입 공유.md",
@@ -192,15 +197,10 @@
     "OTT/09-한눈에-보는-전체-정리.md",
     "UI5/2026-06-26 CAP 온보딩 신입 공유 (1).md",
     "OTT project/ott_분리_작업_계획서.md",
-    "OTT project/프론트엔드_오류_최종_수정_보고서_2026-06-25.md",
     "UI5",
     "새 폴더",
-    "OTT project/core_ott_E2E_테스트_결과보고서.md",
-    "OTT project/core_ott_approuter_ott_수정사항_보고서.md",
     "OTT project/sedFw0eHL",
     "OTT project/sedSjYBK6",
-    "OTT project/기능4_5_SAP_UI5_프론트엔드_가이드.md",
-    "OTT project/기능3_6_SAP_UI5_프론트엔드_개발_명세서.md",
     "01_계획단계",
     "대상 POC",
     "OTT",
