@@ -649,4 +649,210 @@ _loadDetail("C002") → C002 데이터 표시 ✅
 
 ---
 
-> **세션**: 2026-07-07 | **참고 문서**: `2026-07-07 OTT-approuter-메뉴경로정합-디버깅.md`, `2026-07-07 OTT-approuter-화면띄우기-전체과정.md`
+---
+
+## 13. 심화 이해 — 오늘의 Q&A로 보완된 개념들
+
+> 아래 내용은 2026-07-08에 진행된 복습 세션에서 명확해진 개념들이다.
+
+---
+
+### 13-1. Menu.csv의 4개 핵심 컬럼 — 각각의 역할
+
+Menu.csv 한 줄은 4개의 핵심 컬럼을 가진다:
+
+```
+OTT_DETAIL ; detailPage ; sysmgt_ott/webapp ; /sysmgt_ott/detailPage/webapp ; Detail/:content_id:
+             menu_app_id    menu_repo_path       menu_app_path                    menu_route_path
+```
+
+| 컬럼 | 값 | 진짜 역할 |
+|------|-----|------|
+| `menu_app_id` | `detailPage` | **컴포넌트 이름**. portal이 이 이름으로 `detailPage.Component`를 찾음 |
+| `menu_app_path` | `/sysmgt_ott/detailPage/webapp` | **URL 경로**. `sap.ui.loader.config`에 등록되어, `detailPage/어쩌고` → `/sysmgt_ott/detailPage/webapp/어쩌고` 로 변환 |
+| `menu_repo_path` | `sysmgt_ott/webapp` | **캐시 관리용 폴더 위치**. `AppCacheBuster.register()`에 등록되어 브라우저 캐시 무효화 담당 |
+| `menu_route_path` | `Detail/:content_id:` | **URL 패턴**. portal Router가 이 패턴에 매칭되는 해시를 감지 |
+
+### 13-2. `menu_app_path`는 파일 시스템 경로가 아니라 URL 경로다
+
+**오해하기 쉬운 포인트:**
+
+```
+파일 시스템 경로:  sysmgt_ott/webapp/detailPage/webapp/Component.js
+menu_app_path:    /sysmgt_ott/detailPage/webapp
+```
+
+`menu_app_path`에는 `webapp`이 하나 빠져 있는 것처럼 보이지만, 이건 **URL 경로**이기 때문이다. approuter가 중간에서 번역해준다:
+
+```
+브라우저 요청 URL:    /sysmgt_ott/detailPage/webapp/Component.js
+                            ↓
+approuter xs-app.json:  /sysmgt_ott/ → sysmgt_ott/webapp/ 로 번역
+                            ↓
+실제 파일 경로:        sysmgt_ott/webapp/detailPage/webapp/Component.js
+```
+
+### 13-3. `menu_app_id` + `menu_app_path` = 하나의 매핑, 하나의 메커니즘
+
+portal_ott는 Menu.csv를 읽고 UI5 모듈 로더에 이렇게 등록한다:
+
+```javascript
+sap.ui.loader.config({ 
+    paths: { 
+        "detailPage": "/sysmgt_ott/detailPage/webapp"
+    } 
+});
+```
+
+이 한 줄의 매핑이 **모든 요청에 일관되게 적용**된다:
+
+```
+최초 로드:    detailPage/Component.js           → /sysmgt_ott/detailPage/webapp/Component.js
+뷰 로드:     detailPage/view/App.view.xml       → /sysmgt_ott/detailPage/webapp/view/App.view.xml
+컨트롤러:    detailPage/controller/DetailMain.js → /sysmgt_ott/detailPage/webapp/controller/DetailMain.js
+i18n:        detailPage/i18n/i18n.properties    → /sysmgt_ott/detailPage/webapp/i18n/i18n.properties
+```
+
+**"최초 로드"와 "내부 파일 로드"는 서로 다른 메커니즘이 아니다. 하나의 매핑이 일관되게 적용될 뿐이다.**
+
+### 13-4. ⚠️ approuter ≠ SAPUI5 Router (완전히 다르다!)
+
+이 두 가지는 이름만 비슷할 뿐 전혀 다른 존재다. 혼동하면 모든 게 꼬인다.
+
+| | approuter | SAPUI5 Router |
+|------|------|------|
+| 정체 | Node.js HTTP 서버 프로세스 | 브라우저 안의 JavaScript 객체 |
+| 하는 일 | 정적 파일 서빙 + API 프록시 | URL 해시(#) 관리 + 화면 전환 |
+| 실행 위치 | **서버** (터미널에서 `npm run start:local`) | **브라우저** (사용자 PC 메모리) |
+| port | 5000 | 없음 (메모리 상의 객체) |
+| 언제 개입? | HTTP 요청이 들어올 때마다 | URL 해시가 변경될 때마다 |
+
+**approuter의 개입 시점:**
+
+```
+① 누군가 정적 파일을 달라고 HTTP 요청 → 파일 전달
+   "GET /sysmgt_ott/detailPage/webapp/Component.js" → 실제 파일 서빙
+
+② 누군가 API를 호출 → 백엔드로 프록시
+   "GET /srv-api/odata/v2/detail/..." → ott(8083)이나 core_ott(8084)로 전달
+```
+
+**approuter는 portal 진입이든 detailPage 진입이든 똑같이 동작한다. "따로 발동"하는 게 아니라, HTTP 요청이 있을 때마다 항상 같은 규칙으로 처리할 뿐이다.**
+
+### 13-5. `lazy: true` + `async: true`의 관계
+
+두 설정은 서로 다른 문제를 해결하지만, portal 중첩 구조에서는 둘 다 필수다.
+
+| 설정 | 없으면? | 역할 |
+|------|------|------|
+| `lazy: true` (portal 쪽) | portal 로딩 시 모든 컴포넌트를 한꺼번에 로드 → 느려지고 화면 엉망 | "지금 말고, 필요할 때만 만들어라" |
+| `async: true` (detailPage 쪽) | 두 SAPUI5 Router가 동시에 URL 해시를 초기화하려다 충돌 → `Router has not been initialized` 오류 | "portal Router가 먼저 초기화되고 끝나면 그때 초기화해라" |
+
+**`lazy: true`는 portal의 Component.js에서, `async: true`는 detailPage의 manifest.json에서 각각 설정된다.**
+
+### 13-6. `async: true` 충돌은 브라우저 안에서만 일어난다
+
+`async: true`의 충돌 주체는 **approuter가 아니라 브라우저 메모리 안의 두 SAPUI5 Router 객체**다:
+
+```
+브라우저 메모리 안:
+  ① portal의 Router 객체     ← portal_ott/Component.js가 만듦 (이미 실행 중)
+  ② detailPage의 Router 객체  ← detailPage/Component.js가 막 생성됨
+
+이 두 JavaScript 객체가 같은 URL 해시(#)를 동시에 관리하려고 하면서 충돌.
+async: true는 이 충돌을 "portal 먼저, detailPage 나중에"로 순서를 조율한다.
+```
+
+**approuter는 이 충돌과 아무 관련이 없다. approuter는 그냥 파일 요청을 처리하는 배달부일 뿐이다.**
+
+### 13-7. 왜 `window.location.hash`는 되고 `HashChanger.setHash()`는 안 됐나
+
+| 방법 | 특징 | 재진입 시 |
+|------|------|:--:|
+| `HashChanger.setHash()` | SAPUI5가 **알아서 판단**. "이미 같은 상태니까 스킵" 가능 | ❌ C001→C002 전환 놓침 |
+| `window.location.hash =` | 브라우저 **네이티브**. 무조건 변경, 무조건 이벤트 발생 | ✅ 확실하게 동작 |
+
+`HashChanger`는 SAPUI5가 내부 최적화로 "똑같은 패턴이네, 굳이 다시 라우팅할 필요 없겠다"라고 판단할 수 있다. 반면 `window.location.hash`는 브라우저 레벨에서 아무 생각 없이 무조건 변경하고 이벤트를 발생시킨다.
+
+**둘은 짝을 이뤄 동작한다:**
+
+```
+3단계: window.location.hash = "detailPage/Detail/C002"  → 해시 "쓰기" (MainPage)
+5단계: window.addEventListener("hashchange", ...)       → 해시 변경 "감지" (detailPage)
+```
+
+### 13-8. `portalRouter.navTo()`가 실패한 진짜 이유
+
+mainPage는 portal의 **rootView**로 로드된다. 즉, portal 안에 mainPage가 직접 렌더링되어 있을 뿐, portal과 mainPage는 컴포넌트 간 **부모-자식 관계가 아니다.**
+
+```
+portal Component
+  └── Layout (rootView)
+        └── <App id="app">
+              ├── mainPage Component   ← portal과 부모-자식 관계 ❌
+              ├── detailPage Component
+              └── myPage Component
+```
+
+SAPUI5에서 `getParentComponent()`는 직접적인 부모-자식 관계에서만 존재한다. portal은 Router가 target으로 컴포넌트들을 관리할 뿐(`type: "Component"`, `usage: "..."`), 부모-자식 참조를 만들지 않는다.
+
+```javascript
+// 이렇게 하면 안 됨 (부모-자식 관계가 아니므로)
+this.getOwnerComponent().getParentComponent().getRouter().navTo(...)
+//                                ↑ undefined! ❌
+```
+
+**Router는 컴포넌트를 통해서만 접근 가능하다. mainPage는 portal 컴포넌트에 닿을 방법이 없어서 portal Router 자체를 호출할 수 없었다. 그래서 우회로로 `window.location.hash`를 선택한 것이다.**
+
+### 13-9. 아키텍처적 고찰 — 더 나은 방법이 있었을까?
+
+portal이 sub-path(`Detail/C001`)를 detailPage Router에게 위임해주는 것이 가장 깔끔하다. 그러나 SAPUI5 Router는 "하나의 앱이 전체 해시를 소유한다"고 가정하고 설계되어 있어, 부모-자식 Router 간의 위임(delegation) 메커니즘이 내장되어 있지 않다.
+
+```
+고려 가능한 대안들:
+
+① portal 수정 → sub-path 위임 로직 추가
+   ❌ _ott 원칙: 템플릿 절대 수정 금지
+
+② componentData 활용 → detailPage Component.js init에서 직접 라우팅
+   이론상 가능하지만, Component.js에서 Router를 건드리는 건 관례가 아님
+
+③ bypassed 제거
+   ❌ 단독 실행이 깨짐
+
+④ onInit 수동 파싱 (우리가 한 방식)
+   ✅ SAP 커뮤니티에서도 흔히 쓰는 실무적 우회책
+```
+
+**결론: SAPUI5 Router의 근본적 한계로 인해 완벽한 해결책은 없다. 우리 방식이 현실적인 최선이다.**
+
+### 13-10. 데이터 요청은 원래부터 비동기 — `async: true`가 필요 없는 이유
+
+`manifest.json`의 `async: true`는 **SAPUI5 Router 초기화 순서** 문제고, 데이터 요청은 **JavaScript 자체의 비동기 메커니즘**(Promise, 콜백)으로 전혀 다른 세계다.
+
+```javascript
+// readOdata → Promise (이미 비동기)
+this.readOdata("/Contents('C001')")
+    .then(function(oData) { /* 응답 오면 실행, UI 안 멈춤 */ });
+
+// callFunction → 콜백 (이미 비동기)
+oModel.callFunction("/submitReview", {...}, {
+    success: function() { /* 응답 오면 실행, UI 안 멈춤 */ }
+});
+```
+
+**데이터 요청은 애초에 설계 단계부터 비동기로 되어 있어서, portal 중첩 구조에서도 추가 설정 없이 안전하게 동작한다.**
+
+### 13-11. `window.addEventListener("hashchange")`가 `HashChanger.attachHashChanged`보다 나은 이유
+
+| 방법 | SAPUI5 생명주기 의존? | 재진입 시 발동? |
+|------|:--:|:--:|
+| `HashChanger.attachHashChanged` | ✅ 의존 | ❌ onInit 등록 시 첫 로드 간섭 |
+| `view.onAfterRendering` | ✅ 의존 | ❌ 재진입 시 view 재렌더링 없음 |
+| `window.addEventListener("hashchange")` | ❌ 무관 | ✅ **무조건 발동** |
+
+portal이 컴포넌트를 숨겼다 보여주기만 할 때, SAPUI5 생명주기 이벤트(`onInit`, `onAfterRendering`, `patternMatched`)는 재발생하지 않는다. 하지만 **브라우저 네이티브 이벤트는 SAPUI5의 상태와 완전히 무관하게 항상 발동**한다. 그래서 `window.hashchange`만이 유일하게 신뢰할 수 있는 재진입 감지 수단이었다.
+
+---
+
+> **세션**: 2026-07-07 | **보완**: 2026-07-08 | **참고 문서**: `2026-07-07 OTT-approuter-메뉴경로정합-디버깅.md`, `2026-07-07 OTT-approuter-화면띄우기-전체과정.md`
