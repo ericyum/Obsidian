@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UI5/AuthCheck_핸들러와_approuter_index_의문_해소.md",
+                "file": "UI5/portal_ott_전체_실행_흐름_완전_분석.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AuthCheck_핸들러와_approuter_index_의문_해소"
+              "title": "portal_ott_전체_실행_흐름_완전_분석"
             }
           }
         ]
@@ -169,8 +169,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "631594445c641628",
+  "active": "4c30d6e97cc58ab6",
   "lastOpenFiles": [
+    "UI5/사용자_권한_기반_동적_메뉴_시스템_완전_분석.md",
+    "UI5/approuter_ott_완전_분석_최종.md",
     "UI5/approuter_ott_전체_실행_흐름_완전_분석.md",
     "UI5/AuthCheck_핸들러와_approuter_index_의문_해소.md",
     "UI5/portal_ott_전체_실행_흐름_완전_분석.md",
@@ -195,8 +197,6 @@
     "OTT project/2026-07-01 프론트엔드_런타임_감사_보고서.md",
     "OTT project/default-env.json_민감정보_커밋_해결_총정리.md",
     "UI5/2026-06-26 CAP 온보딩 신입 공유.md",
-    "UI5/3. index.html_완전_이해.md",
-    "UI5/2. Component.js_완전_이해.md",
     "UI5",
     "새 폴더",
     "OTT project/sedFw0eHL",
