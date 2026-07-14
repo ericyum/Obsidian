@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2ddd20335fbc7111",
+        "id": "3448b61689f11d15",
         "type": "tabs",
         "children": [
           {
-            "id": "25e18141fe1c0045",
+            "id": "dc0dc91523139c42",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "UI5/4. 배포/10. BTP Destination 설정.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "10. BTP Destination 설정"
+              "title": "새 탭"
             }
           }
         ]
@@ -169,10 +165,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "25e18141fe1c0045",
+  "active": "dc0dc91523139c42",
   "lastOpenFiles": [
-    "UI5/4. 배포/11. 배포 시 주의사항과 트러블슈팅.md",
-    "UI5/4. 배포/10. BTP Destination 설정.md",
+    "OTT project/2026-07-14 detailPage UI 전면 개선.md",
+    "UI5/4. 배포/1. 전체 배포 구조와 흐름.md",
     "UI5/4. 배포/9. approuter_ott — 배포 총괄 오케스트레이터.md",
     "UI5/4. 배포/8. trendAnalysis — 구독자 추세 분석 (기능3).md",
     "UI5/4. 배포/7. settlement — 정산 관리 (기능5).md",
@@ -181,10 +177,9 @@
     "UI5/4. 배포/4. portal_ott — 포털·셸 (메뉴·레이아웃).md",
     "UI5/4. 배포/3. library_ott — 공유 UI5 라이브러리.md",
     "UI5/4. 배포/2. ott — 비즈니스 백엔드 (콘텐츠·멤버십·정산).md",
+    "UI5/4. 배포/11. 배포 시 주의사항과 트러블슈팅.md",
+    "UI5/4. 배포/10. BTP Destination 설정.md",
     "UI5/4. 배포/1. core_ott — 공통 백엔드 (인증·메뉴·사용자).md",
-    "UI5/4. 배포/7. 배포 시 주의사항과 트러블슈팅.md",
-    "UI5/4. 배포/_temp_preserve.md",
-    "UI5/4. 배포/1. 전체 배포 구조와 흐름.md",
     "UI5/2026-06-26 CAP 온보딩 신입 공유.md",
     "UI5/2. portal/6. MenuLoader 싱글턴 — 4번 호출 1번 통신.md",
     "UI5/2. portal/5. Layout과 동적 라우트 (Router.initialize).md",
@@ -197,6 +192,7 @@
     "UI5/2. portal/6. DB와 CDS — 권한 필터링의 백엔드.md",
     "UI5/1. 프론트엔드(DetailPage를 중심으로)/1-1. V2_OData_핵심_버그와_해결_useBatch_router_getView.md",
     "UI5/3. approuter/4. 인증 아키텍처와 핵심 요약.md",
+    "UI5/3. approuter/3. 백엔드 구조와 FrameService (AuthCheck).md",
     "UI5/3. approuter",
     "UI5/새 폴더",
     "UI5/2. portal",
