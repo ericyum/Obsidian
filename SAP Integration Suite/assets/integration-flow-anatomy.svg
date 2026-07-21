@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Cloud Integration iFlow의 기본 구조</title><desc id="desc">송신 시스템에서 어댑터를 통해 Integration Suite iFlow로 들어온 메시지가 처리 단계를 거쳐 하나 이상의 수신 시스템으로 전달되는 구조</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#4b7188"/></marker><filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity=".13"/></filter></defs>
+  <rect width="1200" height="430" rx="22" fill="#f5f9fc"/>
+  <text x="55" y="62" fill="#102a43" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700">Cloud Integration iFlow: 메시지 처리를 정의하는 기본 단위</text>
+  <g font-family="Segoe UI,Arial,sans-serif" filter="url(#shadow)">
+    <rect x="60" y="156" width="180" height="112" rx="16" fill="#fff"/><text x="150" y="199" text-anchor="middle" fill="#102a43" font-size="20" font-weight="700">송신자</text><text x="150" y="229" text-anchor="middle" fill="#486581" font-size="15">SAP 또는 비SAP 시스템</text>
+    <rect x="930" y="92" width="190" height="94" rx="16" fill="#fff"/><text x="1025" y="130" text-anchor="middle" fill="#102a43" font-size="20" font-weight="700">수신자 A</text><text x="1025" y="157" text-anchor="middle" fill="#486581" font-size="15">업무 시스템</text>
+    <rect x="930" y="242" width="190" height="94" rx="16" fill="#fff"/><text x="1025" y="280" text-anchor="middle" fill="#102a43" font-size="20" font-weight="700">수신자 B</text><text x="1025" y="307" text-anchor="middle" fill="#486581" font-size="15">파트너 또는 SaaS</text>
+  </g>
+  <path d="M240 212H320" stroke="#4b7188" stroke-width="4" marker-end="url(#arrow)"/><text x="280" y="192" text-anchor="middle" fill="#486581" font-family="Segoe UI,Arial,sans-serif" font-size="14">어댑터 / 채널</text>
+  <rect x="330" y="105" width="540" height="230" rx="20" fill="#e7f4fb" stroke="#0b6e99" stroke-width="3"/><text x="365" y="145" fill="#0b6e99" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">Integration Flow (iFlow)</text>
+  <g font-family="Segoe UI,Arial,sans-serif" filter="url(#shadow)"><rect x="375" y="186" width="115" height="82" rx="12" fill="#fff"/><text x="432" y="220" text-anchor="middle" fill="#102a43" font-size="17" font-weight="700">변환</text><text x="432" y="244" text-anchor="middle" fill="#486581" font-size="13">매핑</text><rect x="545" y="186" width="115" height="82" rx="12" fill="#fff"/><text x="602" y="220" text-anchor="middle" fill="#102a43" font-size="17" font-weight="700">검증</text><text x="602" y="244" text-anchor="middle" fill="#486581" font-size="13">규칙·오류</text><rect x="715" y="186" width="115" height="82" rx="12" fill="#fff"/><text x="772" y="220" text-anchor="middle" fill="#102a43" font-size="17" font-weight="700">라우팅</text><text x="772" y="244" text-anchor="middle" fill="#486581" font-size="13">수신자 선택</text></g>
+  <g stroke="#4b7188" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M490 227H540"/><path d="M660 227H710"/><path d="M870 227H905V139H930"/><path d="M870 227H905V289H930"/></g>
+  <text x="600" y="385" text-anchor="middle" fill="#486581" font-family="Segoe UI,Arial,sans-serif" font-size="15">각 시스템에 맞는 통신 방식은 어댑터로, 메시지에 할 작업은 iFlow의 단계로 정의한다.</text>
+</svg>

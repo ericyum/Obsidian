@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2d4ccc1de1868aba",
+        "id": "e5161b1e11927132",
         "type": "tabs",
         "children": [
           {
-            "id": "dbecaf0e83fc4d3a",
+            "id": "0b68984160488e81",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "SAP Integration Suite/5. Integration Suite 가격과 플랜.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "5. Integration Suite 가격과 플랜"
             }
           }
         ]
@@ -167,6 +171,28 @@
   },
   "active": "4c30d6e97cc58ab6",
   "lastOpenFiles": [
+    "SAP Integration Suite/Integration Suite.zip",
+    "SAP Integration Suite/README.zip",
+    "SAP Integration Suite/4. Integration Suite 대체 가능성.md",
+    "SAP Integration Suite/2. Integration Suite 기능.md",
+    "SAP Integration Suite/1. Integration Suite 정의.md",
+    "SAP Integration Suite/6. 무료 체험과 도입 가이드.md",
+    "SAP Integration Suite/5. Integration Suite 가격과 플랜.md",
+    "SAP Integration Suite/3. Integration Suite 사용 이유.md",
+    "SAP Integration Suite/assets/integration-flow-anatomy.svg",
+    "SAP Integration Suite/assets/sap-edge-integration-cell-overview-2024.png",
+    "SAP Integration Suite/assets/sap-integration-suite-official-overview-2024.png",
+    "SAP Integration Suite/tmp/pdfs/integration-suite-review/edge-18.png",
+    "SAP Integration Suite/tmp/pdfs/integration-suite-review/page-08.png",
+    "SAP Integration Suite/tmp/pdfs/integration-suite-review",
+    "SAP Integration Suite/tmp/pdfs",
+    "SAP Integration Suite/tmp",
+    "SAP Integration Suite/README.md",
+    "SAP Integration Suite/assets/integration-suite-architecture.svg",
+    "SAP Integration Suite/7. 각 플랜별 과금 체계 상세.md",
+    "SAP Integration Suite/6. BTP 요금제별 사용 가능 여부.md",
+    "SAP Integration Suite/5. Integration Suite 가격 정책.md",
+    "SAP Integration Suite",
     "회의록 앱 (meeting-whisper)/SAP Integration Suite/README.md",
     "회의록 앱 (meeting-whisper)/SAP Integration Suite/7. 각 플랜별 과금 체계 상세.md",
     "회의록 앱 (meeting-whisper)/SAP Integration Suite/6. BTP 요금제별 사용 가능 여부.md",
@@ -183,35 +209,13 @@
     "회의록 앱 (meeting-whisper)/분석 내용/4. 배포 — MTA & Cloud Foundry 분석.md",
     "회의록 앱 (meeting-whisper)/분석 내용/3. STT Worker — Python FastAPI 분석.md",
     "회의록 앱 (meeting-whisper)/분석 내용/2. 프론트엔드 — Vanilla JS SPA 분석.md",
-    "회의록 앱 (meeting-whisper)/분석 내용/1. CAP 백엔드 — 데이터 모델 & API 분석.md",
     "회의록 앱 (meeting-whisper)/분석 내용",
     "회의록 앱 (meeting-whisper)/새 폴더",
-    "회의록 앱 (meeting-whisper)/회의록/README.md",
-    "회의록 앱 (meeting-whisper)/회의록/4. 배포 — MTA & Cloud Foundry 분석.md",
-    "회의록 앱 (meeting-whisper)/회의록/3. STT Worker — Python FastAPI 분석.md",
-    "회의록 앱 (meeting-whisper)/회의록/2. 프론트엔드 — Vanilla JS SPA 분석.md",
-    "회의록 앱 (meeting-whisper)/회의록/meeting-whisper_전체_코드_분석.md",
-    "OTT UI5 분석/컴포넌트_레퍼런스/VerticalLayout.md",
-    "OTT UI5 분석/컴포넌트_레퍼런스/TextControls.md",
-    "OTT UI5 분석/컴포넌트_레퍼런스/Table.md",
-    "OTT UI5 분석/컴포넌트_레퍼런스/SlideTile.md",
-    "OTT UI5 분석/컴포넌트_레퍼런스/SimpleForm.md",
     "OTT UI5 분석/컴포넌트_레퍼런스",
     "OTT UI5 분석/4. 배포",
-    "OTT UI5 분석/3. approuter",
-    "OTT UI5 분석/2. portal",
-    "OTT UI5 분석/1. 프론트엔드(DetailPage를 중심으로)",
-    "OTT UI5 분석",
-    "OTT 진행 상황",
     "멀티모달과정/첨부파일/Pasted image 20250806145331.png",
     "멀티모달과정/첨부파일/Pasted image 20250806144115.png",
     "멀티모달과정/첨부파일/Pasted image 20250806144103.png",
-    "멀티모달과정/첨부파일/Pasted image 20250806144029.png",
-    "멀티모달과정/첨부파일/Pasted image 20250806134948.png",
-    "멀티모달과정/첨부파일/Pasted image 20250806134506.png",
-    "멀티모달과정/첨부파일/Pasted image 20250806133249.png",
-    "멀티모달과정/첨부파일/Pasted image 20250806133237.png",
-    "멀티모달과정/첨부파일/Pasted image 20250806113619.png",
-    "멀티모달과정/첨부파일/Pasted image 20250806113510.png"
+    "멀티모달과정/첨부파일/Pasted image 20250806144029.png"
   ]
 }

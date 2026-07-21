@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc">
+  <title id="title">SAP Integration Suite의 통합 아키텍처</title><desc id="desc">SAP와 비SAP 시스템이 Integration Suite의 통합, API, 이벤트, B2B 기능을 통해 연결되는 구조</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#f5f9fc"/><stop offset="1" stop-color="#edf5f7"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-opacity=".12"/></filter></defs>
+  <rect width="1200" height="610" fill="url(#bg)" rx="24"/>
+  <text x="60" y="70" fill="#102a43" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700">SAP Integration Suite: 연결과 운영의 공통 계층</text>
+  <text x="60" y="105" fill="#486581" font-family="Segoe UI,Arial,sans-serif" font-size="17">SAP 시스템, 비SAP 서비스, 파트너를 통합하고 API · 이벤트 · B2B를 중앙에서 관리</text>
+  <g font-family="Segoe UI,Arial,sans-serif" filter="url(#s)">
+    <rect x="65" y="175" width="240" height="110" rx="16" fill="#fff"/><text x="185" y="218" text-anchor="middle" fill="#102a43" font-size="20" font-weight="700">SAP 환경</text><text x="185" y="250" text-anchor="middle" fill="#486581" font-size="16">S/4HANA · SuccessFactors</text>
+    <rect x="65" y="345" width="240" height="110" rx="16" fill="#fff"/><text x="185" y="388" text-anchor="middle" fill="#102a43" font-size="20" font-weight="700">비SAP 환경</text><text x="185" y="420" text-anchor="middle" fill="#486581" font-size="16">SaaS · DB · 파일 · 클라우드</text>
+    <rect x="895" y="175" width="240" height="110" rx="16" fill="#fff"/><text x="1015" y="218" text-anchor="middle" fill="#102a43" font-size="20" font-weight="700">API 소비자</text><text x="1015" y="250" text-anchor="middle" fill="#486581" font-size="16">앱 · 내부 개발팀 · 파트너</text>
+    <rect x="895" y="345" width="240" height="110" rx="16" fill="#fff"/><text x="1015" y="388" text-anchor="middle" fill="#102a43" font-size="20" font-weight="700">거래 파트너</text><text x="1015" y="420" text-anchor="middle" fill="#486581" font-size="16">B2B · EDI · 이벤트 구독자</text>
+  </g>
+  <g stroke="#7fb3c8" stroke-width="4" fill="none"><path d="M305 230H430"/><path d="M305 400H430"/><path d="M770 230H895"/><path d="M770 400H895"/></g>
+  <g filter="url(#s)"><rect x="430" y="145" width="340" height="340" rx="22" fill="#0b6e99"/><text x="600" y="195" text-anchor="middle" fill="white" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700">Integration Suite</text><line x1="465" y1="218" x2="735" y2="218" stroke="#71c5e8"/><g fill="#e9f7fc" font-family="Segoe UI,Arial,sans-serif" font-size="17"><text x="480" y="260">Cloud Integration</text><text x="480" y="305">API Management · Graph</text><text x="480" y="350">Event Mesh</text><text x="480" y="395">B2B/EDI · Integration Advisor</text><text x="480" y="440">보안 · 모니터링 · 거버넌스</text></g></g>
+  <text x="600" y="555" text-anchor="middle" fill="#486581" font-family="Segoe UI,Arial,sans-serif" font-size="16">하이브리드 환경에서는 Cloud Connector 또는 Edge Integration Cell을 함께 검토</text>
+</svg>
