@@ -1,53 +1,35 @@
-# Meeting Whisper — 코드 분석
+# Meeting Whisper 소스 코드 분석
 
-> **분석일**: 2026-07-20
-> **기준 소스**: `meeting_whisper` `0182231`
-> **목적**: 프로젝트 전체 코드 구조와 설계를 철저히 이해하기 위한 분석 문서
+> 실제 소스 구조를 기준으로 자동 색인하고, 핵심 아키텍처는 수동 해설한 Obsidian 문서 모음이다.
 
----
+## 가장 먼저 읽을 문서
 
-## 읽는 순서
+- [[00. 전체 구조와 책임 지도]]
+- [[01. 녹음부터 회의록까지 End-to-End]]
+- [[02. 데이터 모델과 상태 전이]]
+- [[03. 인증·권한·신뢰 경계]]
 
-1. **[전체 코드 분석](meeting-whisper_전체_코드_분석.md)** — 프로젝트 구조, 데이터 모델, End-to-End 흐름, 설계 결정
-2. **[CAP 백엔드](1. CAP 백엔드 — 데이터 모델 & API 분석.md)** — 데이터 모델, API, 라이브러리, Dispatcher
-3. **[프론트엔드](2. 프론트엔드 — Vanilla JS SPA 분석.md)** — View 구조, JS 모듈, 세션·녹음·편집
-4. **[STT Worker](3. STT Worker — Python FastAPI 분석.md)** — Job lifecycle, chunk·검증·재시도
-5. **[배포](4. 배포 — MTA & Cloud Foundry 분석.md)** — MTA 구조, 서비스, 인증 흐름, ZEN-OTT와 비교
+## 영역별 문서
 
----
+- [[1. app — 프론트엔드/00. 폴더 안내|1. app — 프론트엔드]]
+- [[2. approuter — 진입점과 인증/00. 폴더 안내|2. approuter — 진입점과 인증]]
+- [[3. cap — 데이터와 백엔드/00. 폴더 안내|3. cap — 데이터와 백엔드]]
+- [[4. workers — STT 처리/00. 폴더 안내|4. workers — STT 처리]]
+- [[5. deploy — 배포와 운영/00. 폴더 안내|5. deploy — 배포와 운영]]
+- [[6. scripts — 자동화와 운영 도구/00. 폴더 안내|6. scripts — 자동화와 운영 도구]]
+- [[7. tests — 검증 체계/00. 폴더 안내|7. tests — 검증 체계]]
+- [[8. legacy — 이전 FastAPI 구조/00. 폴더 안내|8. legacy — 이전 FastAPI 구조]]
+- [[9. docs와 루트 설정/00. 폴더 안내|9. docs와 루트 설정]]
 
-## 프로젝트 한눈에
+## 문서 범위
 
-| 항목 | 내용 |
-|------|------|
-| **목적** | 음성 파일 → AI Core 전사 → 요약 → 회의록 공유 |
-| **프론트엔드** | Vanilla JS SPA |
-| **백엔드** | SAP CAP (Node.js) + HANA Cloud |
-| **Worker** | Python FastAPI |
-| **전사** | SAP AI Core `gemini-2.5-flash` |
-| **요약** | SAP AI Core Orchestration (`claude-4.7-opus`) |
-| **저장소** | Object Store (오디오) + HANA (메타데이터) |
-| **인증** | XSUAA + Approuter |
-| **배포** | Cloud Foundry (단일 MTA, 4개 모듈) |
+- 텍스트 소스·설정·운영 문서를 파일 단위로 포함한다.
+- lock file, font, image 같은 생성/바이너리 자산은 별도 완전 분석 대상에서 제외한다.
+- `legacy`와 Kyma 자료는 현재 운영 경로가 아니라 역사·fallback 맥락으로 표시한다.
+- 실제 secret 값은 기록하지 않는다.
 
----
+## 코드 변경 후 갱신 원칙
 
-## ZEN-OTT와의 주요 차이점
-
-| 항목 | ZEN-OTT | Meeting Whisper |
-|------|---------|-----------------|
-| 프론트엔드 | UI5 (SAP 표준) | Vanilla JS |
-| html5-apps-repo | 사용 | 미사용 |
-| MTA 구조 | 여러 개의 분리된 MTA | 단일 MTA |
-| 백엔드 연결 | BTP Destination 수동 설정 | MTA provides/requires 자동 |
-| Worker | 없음 | Python 별도 앱 |
-| 배포 복잡도 | 높음 | 낮음 |
-
----
-
-## 관련 Vault
-
-- `meeting-whisper-vault/` — 공식 운영·설계 문서
-- [프로젝트 개요](../meeting-whisper-vault/00_시작하기/프로젝트_개요.md)
-- [사용자 가이드](../meeting-whisper-vault/00_시작하기/사용자_가이드.md)
-- [운영 README](../meeting-whisper-vault/01_운영/README.md)
+1. 변경한 소스 파일의 완전 분석 문서를 갱신한다.
+2. API·상태·환경 변수·배포 topology 변경이면 4개의 핵심 문서도 함께 갱신한다.
+3. 테스트가 추가되면 tests 색인과 변경 기능 문서를 연결한다.
