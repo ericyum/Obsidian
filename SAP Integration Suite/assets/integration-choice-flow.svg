@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Integration Suite 사용 여부 판단 흐름</title>
+  <desc id="desc">단일 소비자와 표준 API라면 직접 연동을 우선 검토하고, 그렇지 않을 때 공통 정책·변환·재처리·추적 필요성을 기준으로 Integration Suite 또는 기존 경량 플랫폼을 검토하는 흐름이다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#48677e"/>
+    </marker>
+    <style>
+      .bg { fill:#f7fafc; }
+      .title { font-family:Arial,'Malgun Gothic',sans-serif; font-size:29px; font-weight:700; fill:#16324a; }
+      .subtitle { font-family:Arial,'Malgun Gothic',sans-serif; font-size:16px; fill:#5b7080; }
+      .box { fill:#fff; stroke:#93b5ca; stroke-width:2; }
+      .decision { fill:#eef7ff; stroke:#0a6ed1; stroke-width:2.5; }
+      .suite { fill:#e9f8ef; stroke:#18864b; stroke-width:2.5; }
+      .direct { fill:#fff7e8; stroke:#c78000; stroke-width:2.5; }
+      .text { font-family:Arial,'Malgun Gothic',sans-serif; font-size:20px; font-weight:700; fill:#17324d; text-anchor:middle; }
+      .small { font-family:Arial,'Malgun Gothic',sans-serif; font-size:16px; fill:#476174; text-anchor:middle; }
+      .label { font-family:Arial,'Malgun Gothic',sans-serif; font-size:17px; font-weight:700; fill:#34566d; }
+      .line { fill:none; stroke:#48677e; stroke-width:3; marker-end:url(#arrow); }
+      .note { font-family:Arial,'Malgun Gothic',sans-serif; font-size:15px; fill:#5b7080; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="650" class="bg"/>
+  <text x="55" y="58" class="title">Integration Suite 사용 여부 판단</text>
+  <text x="55" y="88" class="subtitle">연동의 수와 복잡성, 공통 운영 요구를 함께 보고 판단한다.</text>
+
+  <rect x="55" y="160" width="210" height="100" rx="12" class="box"/>
+  <text x="160" y="198" class="text">연동 요구 정리</text>
+  <text x="160" y="228" class="small">대상 · 빈도 · 보안 · SLA</text>
+
+  <rect x="345" y="145" width="245" height="130" rx="12" class="decision"/>
+  <text x="468" y="190" class="text">단일 소비자와</text>
+  <text x="468" y="218" class="text">표준 API인가?</text>
+  <text x="468" y="248" class="small">변경과 예외가 적은가</text>
+
+  <rect x="735" y="145" width="355" height="130" rx="12" class="direct"/>
+  <text x="913" y="190" class="text">직접 연동 우선 검토</text>
+  <text x="913" y="220" class="small">S/4HANA OData · IDoc · RFC</text>
+  <text x="913" y="246" class="small">기존 표준 기능 · 단순 파일 교환</text>
+
+  <path d="M265 210 H345" class="line"/>
+  <path d="M590 210 H735" class="line"/>
+  <text x="646" y="194" class="label">예</text>
+
+  <path d="M468 275 V350" class="line"/>
+  <text x="487" y="321" class="label">아니오</text>
+
+  <rect x="345" y="365" width="245" height="145" rx="12" class="decision"/>
+  <text x="468" y="400" class="text">공통 정책·변환</text>
+  <text x="468" y="428" class="text">재처리·추적</text>
+  <text x="468" y="456" class="text">필요한가?</text>
+  <text x="468" y="483" class="small">여러 시스템·파트너·소비자</text>
+  <text x="468" y="504" class="small">또는 운영 표준화 요구</text>
+
+  <rect x="735" y="372" width="355" height="130" rx="12" class="suite"/>
+  <text x="913" y="416" class="text">Integration Suite 검토</text>
+  <text x="913" y="448" class="small">API Management · Cloud Integration</text>
+  <text x="913" y="474" class="small">Event Mesh · B2B Integration</text>
+
+  <path d="M590 438 H735" class="line"/>
+  <text x="646" y="421" class="label">예</text>
+
+  <path d="M468 510 V548" class="line"/>
+  <text x="487" y="538" class="label">아니오</text>
+
+  <rect x="300" y="555" width="335" height="68" rx="12" class="box"/>
+  <text x="468" y="584" class="text">기존 플랫폼 또는</text>
+  <text x="468" y="610" class="text">경량 연동 방식 검토</text>
+
+  <line x1="55" y1="640" x2="1090" y2="640" stroke="#d6e3eb"/>
+  <text x="55" y="627" class="note">※ 직접 연동을 선택하더라도 인증·권한·오류 처리·운영 책임은 별도로 설계해야 한다.</text>
+</svg>
