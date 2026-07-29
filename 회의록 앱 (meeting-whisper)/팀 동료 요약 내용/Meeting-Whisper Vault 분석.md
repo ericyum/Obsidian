@@ -1,0 +1,87 @@
+Meeting Whisper는 **브라우저 녹음이나 음성 파일을 받아 SAP AI Core로 전사·요약하고, 권한이 적용된 회의록을 편집·공유하는 SAP BTP 내부 서비스**입니다.
+
+Vault는 코드 자체가 아니라 **"왜 이렇게 만들어졌는지 / 어떻게 운영하는지 / 무엇이 폐기됐는지"** 를 담습니다. 문서 최상단이 명확히 밝히듯, 구현의 최종 기준은 항상 코드이고 Vault는 그 위에 얹는 맥락 문서입니다. 기준 소스는 커밋 `0182231` (main), 최종 정리일은 2026-07-20입니다.
+
+## 1. 현재 아키텍처 (핵심)
+
+모든 문서가 공유하는 현재 운영 구조입니다:
+
+```
+Browser
+  -> CF Approuter / XSUAA        (사용자 진입점, 인증)
+  -> CAP srv                     (공개 API, 권한, HANA, Object Store, queue, 요약)
+     -> HANA Cloud
+     -> Object Store             (오디오 임시 저장)
+     -> TranscriptionDispatches  (전사 작업 queue)
+  -> CF STT Worker               (오디오 다운로드·분할, AI Core STT 호출)
+     -> SAP AI Core, gemini-2.5-flash
+  -> CAP internal saveTranscript
+     -> background summary/review (AI Core Orchestration)
+```
+
+**Cloud Foundry 모듈 4개**: approuter(진입/인증) · srv(공개 API·권한·요약) · stt-worker(전사) · db-deployer(HANA 스키마 배포).
+
+기억할 3가지 분리:
+
+- **전사(Transcription/STT)** = CF Worker가 AI Core `gemini-2.5-flash` 호출
+- **요약** = CAP가 등록된 template(`meeting-whisper-summary-ko-v1`) 호출
+- **검토 후보** = CAP가 direct orchestration으로 `anthropic--claude-4.7-opus` 호출
+
+## 2. 가장 중요한 의사결정 — ADR-001 (Kyma → CF AI Core 전환)
+
+이 프로젝트를 이해하는 데 **가장 핵심**인 문서입니다. 원래는 Kyma에서 CPU Whisper로 전사했으나 폐기하고 CF Worker + AI Core STT로 전환했습니다.
+
+Kyma Worker는 CAP과 전사 실행 환경을 분리하는 구조를 검증하는 데는 성공했다. 그러나 운영 전사로는 다음 문제가 있었다.
+
+- GPU 없는 CPU Whisper의 긴 파일 처리 시간을 예측하기 어려움
+- WhisperX/torch image와 메모리·임시 디스크 부담
+- base64 또는 큰 HTTP payload의 CAP/Worker 메모리 부담
+- Kyma 임시/free plan의 지속성
+- 화자 분리·모델 선택 조합에 따른 성능 편차
+- 전사 저장과 요약 완료가 같은 처리 수명에 묶이는 문제
+
+**성능 근거:**
+
+|구조|파일|관측 결과|
+|---|---|---|
+|Kyma CPU Whisper|54분 27초|8분 경과 후에도 완료되지 않았고 안정적 완료 기준 확보 실패|
+|CF Worker + AI Core STT|11분 14초|전사 약 1분 10초, 요약 약 9.9초|
+
+**긍정적 결과:**
+
+- CAP, Worker와 AI model의 책임이 명확해짐
+- 무거운 Whisper runtime을 운영 Worker에서 제거
+- 전사 저장 후 background summary로 HTTP 수명 단축
+- Worker concurrency와 CAP queue를 독립 조정 가능
+- AI Core token/latency usage 기록 가능
+
+**감수한 제약:**
+
+- AI Core 서비스 상태와 quota에 의존
+- model 변경은 사용자 UI가 아니라 운영 env 변경 필요
+- 자동 화자분리는 기본 제공하지 않음
+- 긴 파일의 chunk 경계와 비용을 계속 관측해야 함
+
+> **주의**: `legacy/fastapi/`와 Kyma manifest는 레포에 참고용으로 남아 있지만 **현재 운영 경로가 아닙니다.** 문서 여러 곳이 "Kyma 문서를 운영 절차로 쓰지 말라"고 반복 강조합니다.
+
+## 3. 장시간 처리 설계 (실무에서 자주 부딪힐 부분)
+
+- 브라우저 녹음 중 보이는 **실시간 임시 전사는 참고용 미리보기일 뿐**, 서버·최종 전사·요약에 전달되지 않습니다. 최종 전사는 업로드된 원본 오디오를 AI Core로 다시 전사한 결과입니다.
+- **720초(12분) 초과 시 파일 크기와 무관하게 분할.** duration metadata가 없는 WebM 오판을 막으려 CAP의 표시 길이를 `expectedDurationSec`로 Worker에 전달.
+- STT 응답은 최대 2회 재시도, 계속 실패하면 ~6분 단위로 소분할.
+- **transcript는 저장 전 4단계(Worker 2곳 + CAP 2곳)에서 검증** — 잘못된 JSON을 raw text로 저장하지 않음.
+- 긴 transcript는 12,000자 chunk → 부분 요약 → 16,000자 단위로 반복 결합.
+- 사용자에게는 내부 chunk 수와 무관하게 **transcript 1개, summary 1개만** 노출.
+
+## 4. 운영 문서
+
+- **Runbook**: 배포(MTAR), role collection(`MeetingUser`/`MeetingAdmin`/`Worker`), secret rotation, 증상별 장애 판단표.
+- **세션과 운영도구**: Approuter 세션 180분/만료 10분 전 경고, AI usage 내보내기 스크립트, 운영자 강제 재전사 스크립트(`ops-retry-transcription.js`) — **원본 오디오가 있는 회의만** 가능.
+
+## 5. 권한 모델
+
+|사용자|열람|내용 편집|참여자 관리|삭제|
+|---|---|---|---|---|
+|생성자|✓|✓|✓|✓|
+|참여자|✓|✓|✗|✗|
+|공유자|✓|✗|✗|✗|

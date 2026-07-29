@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fa73e9b48e594e1b",
+        "id": "5f0f926372433f17",
         "type": "tabs",
         "children": [
           {
-            "id": "894ecfc190e20f88",
+            "id": "4472b5a85193ae38",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "회의록 앱 (meeting-whisper)/분석 내용/02. 다른 회의록 앱과 비교.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "02. 다른 회의록 앱과 비교"
+              "title": "새 탭"
             }
           }
         ]
@@ -169,20 +165,35 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "894ecfc190e20f88",
+  "active": "4472b5a85193ae38",
   "lastOpenFiles": [
+    "회의록 앱 (meeting-whisper)/분석 내용/02. 다른 회의록 앱과 비교.md",
+    "회의록 앱 (meeting-whisper)/meeting-whisper-vault/01_운영/세션과_운영도구.md",
+    "회의록 앱 (meeting-whisper)/meeting-whisper-vault/01_운영/배포와_장애대응_Runbook.md",
+    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/Meeting-Whisper 전사 과정 정리.md",
+    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/Meeting-Whisper 소스 분석.md",
+    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/Meeting-Whisper Vault 분석.md",
+    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/Meeting-Whisper 개선점 정리.md",
+    "회의록 앱 (meeting-whisper)/meeting-whisper-vault/00_시작하기/프로젝트_개요.md",
+    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용",
+    "회의록 앱 (meeting-whisper)/meeting-whisper-vault/00_시작하기/사용자_가이드.md",
+    "회의록 앱 (meeting-whisper)/meeting-whisper-vault/01_운영/README.md",
+    "회의록 앱 (meeting-whisper)/분석 내용/8. 루트 설정과 docs/00. 프로젝트 전체 설정 이해.md",
+    "회의록 앱 (meeting-whisper)/meeting-whisper-vault/02_기술_설계/장시간_전사와_요약.md",
+    "회의록 앱 (meeting-whisper)/분석 내용/7. legacy — 이전 구조/00. 이전 구조를 남겨 둔 이유.md",
+    "회의록 앱 (meeting-whisper)/분석 내용/6. scripts와 tests — 점검과 자동화/00. 점검과 자동화 전체 이해.md",
+    "회의록 앱 (meeting-whisper)/분석 내용/4. workers — STT 처리/00. STT 처리 전체 이해.md",
+    "회의록 앱 (meeting-whisper)/분석 내용/5. deploy — 배포와 운영/00. 배포와 운영 전체 이해.md",
+    "회의록 앱 (meeting-whisper)/분석 내용/3. cap — 데이터와 백엔드/00. CAP 백엔드 전체 이해.md",
+    "회의록 앱 (meeting-whisper)/분석 내용/2. approuter — 로그인과 출입구/00. 로그인과 출입구 전체 이해.md",
+    "회의록 앱 (meeting-whisper)/분석 내용/1. app — 사용자 화면/00. 사용자 화면 전체 이해.md",
     "회의록 앱 (meeting-whisper)/분석 내용/01. 녹음부터 회의록까지.md",
     "회의록 앱 (meeting-whisper)/분석 내용/00. 전체 구조 설명서.md",
-    "회의록 앱 (meeting-whisper)/분석 내용/8. 루트 설정과 docs/00. 프로젝트 전체 설정 이해.md",
     "회의록 앱 (meeting-whisper)/분석 내용/8. 루트 설정과 docs",
-    "회의록 앱 (meeting-whisper)/분석 내용/7. legacy — 이전 구조/00. 이전 구조를 남겨 둔 이유.md",
     "회의록 앱 (meeting-whisper)/분석 내용/7. legacy — 이전 구조",
-    "회의록 앱 (meeting-whisper)/분석 내용/6. scripts와 tests — 점검과 자동화/00. 점검과 자동화 전체 이해.md",
     "회의록 앱 (meeting-whisper)/분석 내용/6. scripts와 tests — 점검과 자동화",
-    "회의록 앱 (meeting-whisper)/분석 내용/5. deploy — 배포와 운영/00. 배포와 운영 전체 이해.md",
     "회의록 앱 (meeting-whisper)/분석 내용/4. workers — 음성 전사 작업장/00. 음성 전사 작업장 전체 이해.md",
     "회의록 앱 (meeting-whisper)/분석 내용/4. workers — 음성 전사 작업장",
-    "회의록 앱 (meeting-whisper)/분석 내용/02. 다른 회의록 앱과 비교.md",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/제품 비교/tiro-template.png",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/제품 비교/notion-team-meeting.png",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/제품 비교/daglo-workspace.png",
@@ -192,30 +203,15 @@
     "00. 숲을 보는 설명서 1 — 이 앱은 무엇이고 어떻게 구성되는가.md",
     "01. 숲을 보는 설명서 2 — 녹음부터 회의록까지 무슨 일이 일어나는가.md",
     "회의록 앱 (meeting-whisper)/분석 내용/README.md",
-    "회의록 앱 (meeting-whisper)/분석 내용/1. app — 사용자 화면/00. 사용자 화면 전체 이해.md",
     "회의록 앱 (meeting-whisper)/분석 내용/01. 녹음부터 회의록까지 End-to-End.md",
-    "회의록 앱 (meeting-whisper)/분석 내용/3. cap — 회의 관리 본부/02. AI와 전사 작업을 조정하는 방식.md",
-    "회의록 앱 (meeting-whisper)/분석 내용/3. cap — 회의 관리 본부/01. 회의 데이터가 구성되는 방식.md",
-    "회의록 앱 (meeting-whisper)/분석 내용/3. cap — 회의 관리 본부/00. 회의 관리 본부 전체 이해.md",
     "회의록 앱 (meeting-whisper)/분석 내용/3. cap — 회의 관리 본부",
-    "회의록 앱 (meeting-whisper)/분석 내용/2. approuter — 로그인과 출입구/00. 로그인과 출입구 전체 이해.md",
     "회의록 앱 (meeting-whisper)/분석 내용/2. approuter — 로그인과 출입구",
     "회의록 앱 (meeting-whisper)/분석 내용/1. app — 사용자 화면",
-    "회의록 앱 (meeting-whisper)/분석 내용/1. app — 프론트엔드/00. 폴더 안내.md",
-    "회의록 앱 (meeting-whisper)/분석 내용/04. 경쟁 제품 비교와 제품·UI 개선 제안.md",
-    "회의록 앱 (meeting-whisper)/분석 내용/03. 인증·권한·신뢰 경계.md",
-    "회의록 앱 (meeting-whisper)/분석 내용/02. 데이터 모델과 상태 전이.md",
-    "회의록 앱 (meeting-whisper)/분석 내용/00. 전체 구조와 책임 지도.md",
-    "SAP Integration Suite/2. Integration Suite 기능.md",
-    "SAP Integration Suite/1. Integration Suite 정의.md",
-    "SAP Integration Suite/README.md",
-    "SAP Integration Suite/8-2. API Management로 iFlow API 노출과 테스트.md",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/경쟁제품비교/tiro-template.png",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/경쟁제품비교/tiro-ask.png",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/경쟁제품비교/notion-meeting-team.png",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/경쟁제품비교/notion-meeting-1on1.png",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/경쟁제품비교/daglo-meeting-workflow.png",
-    "회의록 앱 (meeting-whisper)/분석 내용/assets/경쟁제품비교/clovanote-summary.png",
-    "회의록 앱 (meeting-whisper)/분석 내용/assets/경쟁제품비교"
+    "회의록 앱 (meeting-whisper)/분석 내용/assets/경쟁제품비교/clovanote-summary.png"
   ]
 }
