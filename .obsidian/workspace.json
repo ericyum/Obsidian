@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ad89813c9e7e6ad4",
+        "id": "86b852290687a82f",
         "type": "tabs",
         "children": [
           {
-            "id": "6c1a409789cb5d27",
+            "id": "0295b354606d3fe7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "회의록 앱 (meeting-whisper)/내가 느낀 문제점/09. 지금 고치지 않아도 되는 개선 후보.md",
+                "file": "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/03. Before — 업로드 실패 후 재시도 중복 회의 테스트.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09. 지금 고치지 않아도 되는 개선 후보"
+              "title": "03. Before — 업로드 실패 후 재시도 중복 회의 테스트"
             }
           }
         ]
@@ -171,34 +171,35 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "6c1a409789cb5d27",
+  "active": "0295b354606d3fe7",
   "lastOpenFiles": [
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/08. 화면 요청과 자동 저장 결과가 뒤바뀌는 문제.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/07. AI 작업 고착과 오래된 결과 덮어쓰기 문제.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/06. 회의 생성 업로드 enqueue 중간 실패와 중복 회의 문제.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/07. 검토 기록 — 업로드 재시도 수정 실험과 미적용 결정.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/05. After — 일시정지 중 RAF loop 중단 검증.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/02. Before — 일시정지 중 RAF loop 계측 테스트.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/03. Before — 업로드 실패 후 재시도 중복 회의 테스트.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/01. Before — accessTokens 전체 이메일 식별 테스트.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/07. After — 업로드 실패 후 기존 회의 단계 재개 검증.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/00. 코드 수정과 Before After 검증 작업 매뉴얼.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/00. 최종 개선 계획 전체 목차.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/05. 지금 당장 사용에 영향을 주는 개선 우선순위.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/04. 일시정지 음량 분석 loop 중단 최종안.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/03. 참여자 공유자 역할 중복 방지 최종안.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/02. Meetings 일반 UPDATE DELETE 차단 최종안.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/01. accessTokens 전체 이메일 기반 개편 최종안.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/06. After — accessTokens 전체 이메일 식별 검증.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/04. Before — 늦은 이전 회의 응답의 화면 덮어쓰기 테스트.md",
+    "회의록 앱 (meeting-whisper)/회의록/20260806 whisper 추가회의.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/08. 회의 전환 중 이전 응답이 현재 화면을 덮는 문제.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/06. 회의 생성 업로드 enqueue 중간 실패와 중복 회의 문제.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/07. AI 작업 고착 문제 — 팀 동료 개선안 합류 확인.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/09. 지금 고치지 않아도 되는 개선 후보.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 중요한 점/10. 회의 저장부터 Worker 전사 시작 직전까지.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 중요한 점/09. CAP 단독 실행과 Approuter 배포에서 정적 UI가 달라지는 이유.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 중요한 점/08. server.js로 raw binary 업로드 경로를 등록하는 이유.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 중요한 점/07. CAP와 Worker가 서로 다른 방식으로 인증하는 이유.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 중요한 점/06. Worker가 CAP에 작업 실행권을 확인하는 이유.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 중요한 점/05. 엔티티 AiCoreUsageLogs는 언제 기록되는가.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 중요한 점/04. TranscriptionDispatches와 Worker 하트비트.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 중요한 점/03. app.js에 섞여 있는 UI 코드와 개선 방향.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 중요한 점/02. 하나의 index.html 안에서 화면을 전환하는 구조.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 중요한 점/01. 프론트엔드를 Approuter 안에 포함해 배포하는 구조.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/회의 전/04. 참여자와 공유자 역할 중복 문제.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/05. 일시정지 음량 분석 loop 중단 최종안.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/01. 지금 당장 사용에 영향을 주는 개선 우선순위.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/02. accessTokens 전체 이메일 기반 개편 최종안.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/04. 참여자 공유자 역할 중복 방지 최종안.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/03. Meetings 일반 UPDATE DELETE 차단 최종안.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/07. AI 작업 고착과 오래된 결과 덮어쓰기 문제.md",
     "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/4. Meeting-Whisper 개선점 정리.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/회의 중/02. 일시정지 중에도 음량 분석 loop가 계속 실행되는 문제.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/회의 전/02. 회의 수정과 삭제를 커스텀 Action으로 만든 이유와 개선 방향.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/회의 전/03. 권한 토큰 함수 네 개의 역할과 분리 이유.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/회의 전/01. accessTokens를 문자열 신원으로 만드는 보안 위험.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/08. 화면 요청과 자동 저장 결과가 뒤바뀌는 문제.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정",
+    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/6. Whisper-STT디버그-업로드임계및전사역전-20260804.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/05. 지금 당장 사용에 영향을 주는 개선 우선순위.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/01. accessTokens 전체 이메일 기반 개편 최종안.md",
     "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/무제",
     "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/문제점/나영일",
     "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/문제점/안효서",
@@ -208,7 +209,6 @@
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점",
     "회의록 앱 (meeting-whisper)/새 폴더",
     "SAP Integration Suite.zip",
-    "회의록 앱 (meeting-whisper)/내가 느낀 핵심 로직/회의 중/99. 기존 통합 문서",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/제품 비교/tiro-template.png",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/제품 비교/notion-team-meeting.png",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/제품 비교/daglo-workspace.png",
