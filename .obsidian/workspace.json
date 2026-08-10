@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/03. Before — 업로드 실패 후 재시도 중복 회의 테스트.md",
+                "file": "회의록 앱 (meeting-whisper)/내가 느낀 문제점/05. 회의 전환 중 이전 응답이 현재 화면을 덮는 문제.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03. Before — 업로드 실패 후 재시도 중복 회의 테스트"
+              "title": "05. 회의 전환 중 이전 응답이 현재 화면을 덮는 문제"
             }
           }
         ]
@@ -173,10 +173,13 @@
   },
   "active": "0295b354606d3fe7",
   "lastOpenFiles": [
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/04. 회의 생성 업로드 enqueue 중간 실패와 중복 회의 문제.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/03. 일시정지 음량 분석 loop 중단 최종안.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/03. Before — 업로드 실패 후 재시도 중복 회의 테스트.md",
+    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/05. 회의 전환 중 이전 응답이 현재 화면을 덮는 문제.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/07. 검토 기록 — 업로드 재시도 수정 실험과 미적용 결정.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/05. After — 일시정지 중 RAF loop 중단 검증.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/02. Before — 일시정지 중 RAF loop 계측 테스트.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/03. Before — 업로드 실패 후 재시도 중복 회의 테스트.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/01. Before — accessTokens 전체 이메일 식별 테스트.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/07. After — 업로드 실패 후 기존 회의 단계 재개 검증.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/00. 코드 수정과 Before After 검증 작업 매뉴얼.md",
@@ -184,11 +187,8 @@
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/06. After — accessTokens 전체 이메일 식별 검증.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/04. Before — 늦은 이전 회의 응답의 화면 덮어쓰기 테스트.md",
     "회의록 앱 (meeting-whisper)/회의록/20260806 whisper 추가회의.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/08. 회의 전환 중 이전 응답이 현재 화면을 덮는 문제.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/06. 회의 생성 업로드 enqueue 중간 실패와 중복 회의 문제.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/07. AI 작업 고착 문제 — 팀 동료 개선안 합류 확인.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/09. 지금 고치지 않아도 되는 개선 후보.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/05. 일시정지 음량 분석 loop 중단 최종안.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/01. 지금 당장 사용에 영향을 주는 개선 우선순위.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/02. accessTokens 전체 이메일 기반 개편 최종안.md",
     "회의록 앱 (meeting-whisper)/내가 느낀 문제점/04. 참여자 공유자 역할 중복 방지 최종안.md",
