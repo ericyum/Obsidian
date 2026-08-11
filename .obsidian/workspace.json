@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "86b852290687a82f",
+        "id": "932b2492e34b4778",
         "type": "tabs",
         "children": [
           {
-            "id": "0295b354606d3fe7",
+            "id": "685edcc8c078a14d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "회의록 앱 (meeting-whisper)/내가 느낀 문제점/05. 회의 전환 중 이전 응답이 현재 화면을 덮는 문제.md",
+                "file": "ZENAI/회의록/2026-08-11 회의록 및 에이전트 설계 회의.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05. 회의 전환 중 이전 응답이 현재 화면을 덮는 문제"
+              "title": "2026-08-11 회의록 및 에이전트 설계 회의"
+            }
+          },
+          {
+            "id": "c0a8d0b40d01433d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ZENAI/개선 내역/UIUX/ZEN-AI-회의록-UIUX-개선안.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ZEN-AI-회의록-UIUX-개선안"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,48 +186,47 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "0295b354606d3fe7",
+  "active": "c0a8d0b40d01433d",
   "lastOpenFiles": [
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/04. 회의 생성 업로드 enqueue 중간 실패와 중복 회의 문제.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/03. 일시정지 음량 분석 loop 중단 최종안.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/03. Before — 업로드 실패 후 재시도 중복 회의 테스트.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/05. 회의 전환 중 이전 응답이 현재 화면을 덮는 문제.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/07. 검토 기록 — 업로드 재시도 수정 실험과 미적용 결정.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/05. After — 일시정지 중 RAF loop 중단 검증.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/02. Before — 일시정지 중 RAF loop 계측 테스트.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/01. Before — accessTokens 전체 이메일 식별 테스트.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/07. After — 업로드 실패 후 기존 회의 단계 재개 검증.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/00. 코드 수정과 Before After 검증 작업 매뉴얼.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/00. 최종 개선 계획 전체 목차.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/06. After — accessTokens 전체 이메일 식별 검증.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정/04. Before — 늦은 이전 회의 응답의 화면 덮어쓰기 테스트.md",
-    "회의록 앱 (meeting-whisper)/회의록/20260806 whisper 추가회의.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/07. AI 작업 고착 문제 — 팀 동료 개선안 합류 확인.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/09. 지금 고치지 않아도 되는 개선 후보.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/01. 지금 당장 사용에 영향을 주는 개선 우선순위.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/02. accessTokens 전체 이메일 기반 개편 최종안.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/04. 참여자 공유자 역할 중복 방지 최종안.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/03. Meetings 일반 UPDATE DELETE 차단 최종안.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/07. AI 작업 고착과 오래된 결과 덮어쓰기 문제.md",
-    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/4. Meeting-Whisper 개선점 정리.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/08. 화면 요청과 자동 저장 결과가 뒤바뀌는 문제.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/해결 과정",
-    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/6. Whisper-STT디버그-업로드임계및전사역전-20260804.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/05. 지금 당장 사용에 영향을 주는 개선 우선순위.md",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/01. accessTokens 전체 이메일 기반 개편 최종안.md",
-    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/무제",
-    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/문제점/나영일",
-    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/문제점/안효서",
-    "회의록 앱 (meeting-whisper)/팀 동료 요약 내용/문제점",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/회의 중",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점/회의 전",
-    "회의록 앱 (meeting-whisper)/내가 느낀 문제점",
-    "회의록 앱 (meeting-whisper)/새 폴더",
-    "SAP Integration Suite.zip",
-    "회의록 앱 (meeting-whisper)/분석 내용/assets/제품 비교/tiro-template.png",
-    "회의록 앱 (meeting-whisper)/분석 내용/assets/제품 비교/notion-team-meeting.png",
-    "회의록 앱 (meeting-whisper)/분석 내용/assets/제품 비교/daglo-workspace.png",
-    "회의록 앱 (meeting-whisper)/분석 내용/assets/제품 비교/clovanote-recording.png",
+    "ZENAI/회의록/2026-08-11 회의록 및 에이전트 설계 회의.md",
+    "ZENAI/회의록/팀원이 제시한 UI UX.md",
+    "ZENAI/개선 내역/UIUX/회의록 UIUX 구상안 (v2 — 전사 기반).md",
+    "ZENAI/개선 내역/UIUX/팀원 회의록-UI목업.html",
+    "ZENAI/개선 내역/UIUX/회의록-UI목업.html",
+    "SAP Integration Suite/1. Integration Suite 정의.md",
+    "ZENAI/개선 내역/UIUX",
+    "ZENAI/개선 내역",
+    "회의록 앱 (meeting-whisper)/문제점 및 해결/팀 동료 요약 내용/8. Whisper-STT모델비교-비용성능-보고서.md",
+    "SAP Integration Suite/2. Integration Suite 기능.md",
+    "ZENAI/구조/13-코드와-자료-지도.md",
+    "ZENAI/구조/12-현행-갭과-로드맵.md",
+    "ZENAI/구조/11-회의록-에이전트-목표설계.md",
+    "ZENAI/구조/10-배포-운영-관측성.md",
+    "ZENAI/구조/09-모델-라우팅과-비용관리.md",
+    "ZENAI/구조/08-인증-인가-보안.md",
+    "ZENAI/구조/07-데이터와-저장소.md",
+    "ZENAI/구조/06-MCP와-외부시스템-연동.md",
+    "ZENAI/구조/05-에이전트-도메인과-확장모델.md",
+    "ZENAI/구조/04-백엔드와-API.md",
+    "ZENAI/구조/03-프론트엔드와-사용자경험.md",
+    "ZENAI/구조/02-전체-시스템-아키텍처.md",
+    "ZENAI/구조/01-제품-비전과-경계.md",
+    "ZENAI/구조/00-구조-문서-인덱스.md",
+    "SAP Integration Suite/8-2. API Management로 iFlow API 노출과 테스트.md",
+    "SAP Integration Suite/8-1. iFlow 설계와 배포.md",
+    "ZENAI/zen-bot-vault/99. 용어집/온톨로지/ontology-sap-대응.md",
+    "ZENAI/zen-bot-vault/_템플릿",
+    "ZENAI/zen-bot-vault/99. 용어집/온톨로지/ontology.md",
+    "ZENAI/zen-bot-vault/99. 용어집/온톨로지",
+    "ZENAI/zen-bot-vault/99. 용어집/용어집 개요.md",
+    "ZENAI/zen-bot-vault/99. 용어집",
+    "ZENAI/zen-bot-vault/90_회의록",
+    "ZENAI/zen-bot-vault/80_산출물/홍종화/poc-architecture-overview.html",
+    "ZENAI/zen-bot-vault/80_산출물/홍종화/2026-06-18-SAP 챗봇 아키텍처 v2.pdf",
+    "회의록 앱 (meeting-whisper)/구조 및 로직/분석 내용/assets/제품 비교/tiro-template.png",
+    "회의록 앱 (meeting-whisper)/구조 및 로직/분석 내용/assets/제품 비교/notion-team-meeting.png",
+    "회의록 앱 (meeting-whisper)/구조 및 로직/분석 내용/assets/제품 비교/daglo-workspace.png",
+    "회의록 앱 (meeting-whisper)/구조 및 로직/분석 내용/assets/제품 비교/clovanote-recording.png",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/경쟁제품비교/tiro-template.png",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/경쟁제품비교/tiro-ask.png",
     "회의록 앱 (meeting-whisper)/분석 내용/assets/경쟁제품비교/notion-meeting-team.png",
