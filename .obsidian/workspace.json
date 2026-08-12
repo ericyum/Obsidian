@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1e13441f1db4c021",
+        "id": "4323c9f2a748ecbd",
         "type": "tabs",
         "children": [
           {
-            "id": "2bd151c3fa8f3183",
+            "id": "64651005b8d48aca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "ZENAI/에이전트에 대한 이해/03. Transformer와 Graph 기반 에이전트 설계.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "03. Transformer와 Graph 기반 에이전트 설계"
             }
           }
         ]
@@ -167,8 +171,25 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2bd151c3fa8f3183",
+  "active": "64651005b8d48aca",
   "lastOpenFiles": [
+    "ZENAI/에이전트에 대한 이해/발표 자료/~$AI 에이전트 Tool 설계 발표.pptx",
+    "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표 대사.md",
+    "ZENAI/에이전트에 대한 이해/발표 자료/00. 13장 발표 구성 요약.md",
+    "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표.pptx.inspect.ndjson",
+    "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표.pptx",
+    "ZENAI/에이전트에 대한 이해/발표 자료/05. 좋은 Tool 설계와 연결 발표 요약.md",
+    "ZENAI/에이전트에 대한 이해/발표 자료/04. Tool과 선택 과정 발표 요약.md",
+    "ZENAI/에이전트에 대한 이해/발표 자료/02. 에이전트 핵심 요소 발표 요약.md",
+    "ZENAI/에이전트에 대한 이해/발표 자료/01. AI 에이전트 정의 발표 요약.md",
+    "ZENAI/에이전트에 대한 이해/발표 자료",
+    "ZENAI/에이전트에 대한 이해/01. AI 에이전트란 무엇인가.md",
+    "ZENAI/에이전트에 대한 이해/02. AI 에이전트를 구성하는 핵심 요소.md",
+    "ZENAI/에이전트에 대한 이해/03. Transformer와 Graph 기반 에이전트 설계.md",
+    "ZENAI/에이전트에 대한 이해/04. 에이전트의 Tool과 선택 과정.md",
+    "ZENAI/에이전트에 대한 이해/05. 좋은 Tool을 설계하고 연결하는 방법.md",
+    "ZENAI/에이전트에 대한 이해/04. 좋은 Tool을 설계하고 연결하는 방법.md",
+    "ZENAI/에이전트에 대한 이해/03. 에이전트의 Tool과 선택 과정.md",
     "ZENAI/에이전트에 대한 이해/에이전트 설계 조사.txt",
     "ZENAI/개선 내역/UIUX/ZEN-AI-회의록-UIUX-개선안.md",
     "ZENAI/에이전트에 대한 이해",
@@ -183,11 +204,7 @@
     "ZENAI/회의록/2026-08-11 회의록 및 에이전트 설계 회의.md",
     "ZENAI/회의록/팀원이 제시한 UI UX.md",
     "ZENAI/개선 내역/UIUX/회의록 UIUX 구상안 (v2 — 전사 기반).md",
-    "ZENAI/개선 내역/UIUX/팀원 회의록-UI목업.html",
-    "ZENAI/개선 내역/UIUX/회의록-UI목업.html",
     "SAP Integration Suite/1. Integration Suite 정의.md",
-    "ZENAI/개선 내역/UIUX",
-    "ZENAI/개선 내역",
     "회의록 앱 (meeting-whisper)/문제점 및 해결/팀 동료 요약 내용/8. Whisper-STT모델비교-비용성능-보고서.md",
     "SAP Integration Suite/2. Integration Suite 기능.md",
     "ZENAI/구조/13-코드와-자료-지도.md",
@@ -195,19 +212,6 @@
     "ZENAI/구조/11-회의록-에이전트-목표설계.md",
     "ZENAI/구조/10-배포-운영-관측성.md",
     "ZENAI/구조/09-모델-라우팅과-비용관리.md",
-    "ZENAI/구조/08-인증-인가-보안.md",
-    "ZENAI/구조/07-데이터와-저장소.md",
-    "ZENAI/구조/06-MCP와-외부시스템-연동.md",
-    "ZENAI/구조/05-에이전트-도메인과-확장모델.md",
-    "ZENAI/구조/04-백엔드와-API.md",
-    "ZENAI/구조/03-프론트엔드와-사용자경험.md",
-    "ZENAI/구조/02-전체-시스템-아키텍처.md",
-    "ZENAI/구조/01-제품-비전과-경계.md",
-    "ZENAI/구조/00-구조-문서-인덱스.md",
-    "SAP Integration Suite/8-2. API Management로 iFlow API 노출과 테스트.md",
-    "SAP Integration Suite/8-1. iFlow 설계와 배포.md",
-    "ZENAI/zen-bot-vault/99. 용어집/온톨로지/ontology-sap-대응.md",
-    "ZENAI/zen-bot-vault/99. 용어집/온톨로지/ontology.md",
     "회의록 앱 (meeting-whisper)/구조 및 로직/분석 내용/assets/제품 비교/tiro-template.png",
     "회의록 앱 (meeting-whisper)/구조 및 로직/분석 내용/assets/제품 비교/notion-team-meeting.png",
     "회의록 앱 (meeting-whisper)/구조 및 로직/분석 내용/assets/제품 비교/daglo-workspace.png",
