@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2e7dc35a50a12e8b",
+        "id": "fbcf3a9bdfa542c5",
         "type": "tabs",
         "children": [
           {
-            "id": "c299f9ba826ca0f0",
+            "id": "af5f4547c21b24fa",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -167,8 +167,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "c299f9ba826ca0f0",
+  "active": "af5f4547c21b24fa",
   "lastOpenFiles": [
+    "ZENAI/에이전트 학습/LangGraph를 이용한 에이전트 구축/가드레일 구축 및 비교.md",
     "ZENAI/에이전트 학습/에이전트에 대한 이해/개인적인 정리.md",
     "ZENAI/에이전트 학습/LangGraph를 이용한 에이전트 구축/주제 선정 및 초기 구축.md",
     "ZENAI/개선 내역/Agent/에이전트에 대한 이해/04. 좋은 Tool 설계와 연결.md",
@@ -204,7 +205,6 @@
     "ZENAI/개선 내역/Agent/test.md",
     "ZENAI/개선 내역/UIUX/20260813 추가 확정안.md",
     "ZENAI/개선 내역/Agent/에이전트에 대한 이해/02. 에이전트 핵심 요소.md",
-    "ZENAI/개선 내역/Agent/에이전트에 대한 이해/01. AI 에이전트 정의.md",
     "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-4.png",
     "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-2.png",
     "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-13.png",
