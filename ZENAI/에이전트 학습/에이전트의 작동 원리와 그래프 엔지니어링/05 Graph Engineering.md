@@ -64,14 +64,137 @@ Workflow가 미리 지정되어 있고 각 에이전트가 담당하는 일이 �
 
 ## Graph Engineering이란?
 
-작은 에이전트들을 만들고, 그림판에서 선을 이어 Graph를 그리는 것처럼 서로 연결하여 하나의 Workflow를 구현하는 방법론이 Graph Engineering이다.
+Graph Engineering은 업무를 여러 실행 단계로 나누고, 각 단계가 어떤 정보를 받아 무엇을 수행하며 다음 어느 단계로 이동할지를 Graph로 설계하는 방법이다.
 
-이 Graph에서는 다음과 같은 개념을 사용한다.
+작은 에이전트 여러 개를 연결하는 것도 Graph Engineering의 한 가지 형태지만, **Node가 항상 하나의 에이전트인 것은 아니다.** 하나의 에이전트 안에서 LLM 실행, Tool 실행, 권한 검사와 결과 저장을 각각 Node로 나누어 연결할 수도 있다.
 
-- **Node**: 각각의 작은 에이전트
-- **Edge**: Tool 실행 결과가 다음 에이전트의 LLM으로 들어가도록 연결하는 부분
+Graph에서는 다음 개념을 사용한다.
 
-Graph Engineering을 통해 필요한 업무에 맞는 작은 에이전트들을 설계하고 연결하면, 범용 에이전트보다 적은 토큰과 비용으로 업무를 처리할 수 있다.
+- **Node**: 실제 작업을 수행하는 실행 단계
+- **Edge**: 한 Node가 끝난 뒤 다음 Node로 이동하는 연결
+- **Condition**: 현재 State를 확인하여 어느 Edge로 이동할지 결정하는 분기 규칙
+- **State**: Node 사이에서 전달되는 현재 작업 정보
+
+```text
+Node = 무엇을 실행할 것인가
+Edge = 다음 어디로 이동할 것인가
+Condition = 어느 경로로 이동할 것인가
+State = 판단과 실행에 필요한 현재 정보
+```
+
+### Node
+
+Node 안에는 다음과 같은 다양한 작업이 들어갈 수 있다.
+
+- 프롬프트와 현재 State를 LLM에 전달하여 다음 행동을 판단
+- LLM이 선택한 Tool 실행
+- 일반 Python 로직 실행
+- DB 조회 또는 결과 저장
+- 권한 검사
+- 사람의 승인 대기
+
+따라서 `LLM`과 `Tool`은 Node가 수행할 수 있는 작업의 종류이지, Graph의 고정 구성요소 자체를 뜻하지 않는다.
+
+### State
+
+State는 Node 사이에서 공유되는 **현재 작업 상태의 전체 묶음**이다. 대화 기록뿐만 아니라 Tool 결과, 처리 상태, 오류, 권한 검사 결과와 재시도 횟수처럼 다음 실행에 필요한 정보를 구조화하여 보관할 수 있다.
+
+```python
+State = {
+    "messages": [...],       # 사용자·LLM·Tool 메시지
+    "file_exists": False,   # 오늘자 파일 존재 여부
+    "retry_count": 1,       # 현재 재시도 횟수
+    "authorized": True,     # 권한 검사 결과
+}
+```
+
+State의 모든 값이 실행할 때마다 계속 쌓이는 것은 아니다. 필드의 성격과 갱신 규칙에 따라 누적하거나 최신 값으로 덮어쓴다.
+
+| State 필드 예시   | 갱신 방법                |
+| ------------- | -------------------- |
+| `messages`    | 새 메시지를 기존 목록에 계속 추가  |
+| `file_exists` | 가장 최근 확인 결과로 덮어쓰기    |
+| `retry_count` | 재시도할 때 계산한 값으로 갱신    |
+| `authorized`  | 가장 최근 권한 검사 결과로 덮어쓰기 |
+
+현재 경제 뉴스 Agent는 LangGraph의 `MessagesState`를 사용한다. 따라서 사용자 요청, LLM의 Tool-call, Tool 실행 결과와 LLM의 최종 답변이 `messages`에 순서대로 누적된다.
+
+```text
+초기 State
+→ [사용자 요청]
+
+Agent Node 실행 후
+→ [사용자 요청, LLM의 check_today_news 호출]
+
+Tool Node 실행 후
+→ [사용자 요청, LLM의 Tool 호출, Tool 실행 결과]
+
+Agent Node 재실행 후
+→ [사용자 요청, LLM의 Tool 호출, Tool 실행 결과, 다음 LLM 응답]
+```
+
+State와 LLM의 컨텍스트가 항상 같은 것은 아니다. **State는 애플리케이션이 보관하는 전체 작업 정보**이고, 그중 Agent Node가 골라 LLM에 전달한 정보만 실제 LLM 컨텍스트가 된다.
+
+```text
+Graph State 전체
+→ Agent Node가 필요한 항목 선택
+→ 시스템 프롬프트와 함께 LLM에 전달
+→ 이 부분만 LLM의 현재 컨텍스트가 됨
+```
+
+### Edge
+
+Edge는 Tool이 아니라 한 Node가 끝난 뒤 다음 Node로 이동하는 경로다.
+
+- `START → Agent`: Graph가 시작되면 Agent Node 실행
+- `Tools → Agent`: Tool 결과를 관찰하고 다시 판단하도록 Agent Node로 복귀
+- `Agent → END`: 더 실행할 Tool이 없으면 Graph 종료
+
+`Tools → Agent`처럼 항상 같은 곳으로 이동하는 연결은 고정 Edge다. 반면 실행 결과에 따라 목적지가 달라지는 연결에는 Condition이 사용된다.
+
+### Condition
+
+Condition은 별도의 저장 공간이 아니라, **현재 State를 읽고 다음 어느 Edge로 이동할지 반환하는 분기 함수**다.
+
+Condition은 State 전체를 읽을 수 있다. 반드시 최신 메시지만 확인해야 하는 것은 아니지만, 현재 경제 뉴스 Agent에서는 State의 마지막 LLM 응답만 확인하면 다음 경로를 결정할 수 있다.
+
+```python
+def route(state):
+    latest_message = state["messages"][-1]
+
+    if latest_message.tool_calls:
+        return "tools"
+
+    return "end"
+```
+
+경제 뉴스 단일 에이전트의 실제 분기는 다음과 같다.
+
+```mermaid
+flowchart LR
+    START --> Agent["Agent Node<br/>LLM이 다음 행동 판단"]
+    Agent --> Condition{"Condition<br/>현재 State의 최신 LLM 응답 확인"}
+    Condition -->|"Tool 호출 있음"| Tools["Tool Node<br/>선택된 Tool 실행"]
+    Tools -->|"Tool 결과를 State에 추가"| Agent
+    Condition -->|"Tool 호출 없음"| END
+```
+
+실행 순서는 다음과 같다.
+
+```text
+1. Agent Node가 현재 State를 바탕으로 LLM을 실행한다.
+2. LLM 응답을 State의 messages에 추가한다.
+3. Condition이 갱신된 State의 최신 LLM 응답을 읽는다.
+4. tool_calls가 있으면 Tools Node로 가는 Edge를 선택한다.
+5. tool_calls가 없으면 END로 가는 Edge를 선택한다.
+6. Tool Node가 실행된 경우 결과를 State에 추가하고 Agent Node로 돌아간다.
+```
+
+따라서 State가 스스로 다음 경로를 결정하는 것이 아니다. Node가 State를 갱신하고, Condition이 그 State를 읽어 이동할 Edge를 선택한다.
+
+이 예시에서는 하나의 Agent Loop를 `Agent Node`와 `Tool Node`로 나누었다. 반대로 복잡한 업무에서는 하나의 Node가 독립된 작은 에이전트 전체를 실행하도록 설계할 수도 있다. 즉 Node의 크기와 책임은 해결하려는 업무에 맞게 정한다.
+
+Graph Engineering을 통해 실행 단계, 정보의 흐름과 분기 조건을 명확하게 설계하면 범용 에이전트의 불필요한 Loop와 컨텍스트를 줄이고, 중요한 업무 규칙을 확정적인 코드 경로에 배치할 수 있다.
 
 ## 우리 AI Lab 팀의 핵심 비즈니스
 
@@ -92,4 +215,4 @@ Graph Engineering을 통해 필요한 업무에 맞는 작은 에이전트들을
 
 ## 핵심 정리
 
-> Graph Engineering은 특정한 작은 일만 수행하는 에이전트들을 만들고 연결하여, 하나의 큰 비즈니스 Workflow를 더 적은 Loop와 컨텍스트로 수행하도록 설계하는 방법론이다.
+> Graph Engineering은 업무를 실행 단계인 Node로 나누고, State를 바탕으로 Edge와 Condition을 통해 실행 순서와 분기를 연결하여 하나의 Workflow를 만드는 설계 방법이다. 각 Node는 LLM, Tool, 일반 로직 또는 작은 에이전트 전체가 될 수 있다.
