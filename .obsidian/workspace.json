@@ -4,35 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e0df3a5c8e609c0c",
+        "id": "f65903aeedfcd1fd",
         "type": "tabs",
         "children": [
           {
-            "id": "c6732e52b1996dae",
+            "id": "5189e4da89450415",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ZENAI/에이전트 설계/회의록 에이전트 설계/1. 회의록 에이전트 워크플로우 graph 정의.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "1. 회의록 에이전트 워크플로우 graph 정의"
-            }
-          },
-          {
-            "id": "285bbe75e5f321a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ZENAI/에이전트 설계/회의록 에이전트 설계/2. 회의록 에이전트 설계.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2. 회의록 에이전트 설계"
+              "title": "새 탭"
             }
           }
         ]
@@ -94,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 356.5,
-    "collapsed": true
+    "width": 356.5
   },
   "right": {
     "id": "661c5c59975abbd3",
@@ -186,43 +167,43 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "c6732e52b1996dae",
+  "active": "4c30d6e97cc58ab6",
   "lastOpenFiles": [
+    "ZENAI/에이전트 학습/5. LLM/1. LLM은 stateless이다.md",
+    "ZENAI/에이전트 학습/6. 상태머신(state, checkpoint 이해용)",
+    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/향후 설계 방향.md",
+    "ZENAI/에이전트 학습/5. LLM",
+    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/설계 문서 작성 방법.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/2. 회의록 에이전트 설계.md",
+    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법",
+    "ZENAI/에이전트 설계/새 폴더",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/1. 회의록 에이전트 워크플로우 graph 정의.md",
-    "ZENAI/에이전트 학습/4. 컨텍스트 엔지니어링/컨텍스트 조립 — 회의록 에이전트로 보는 컨텍스트 설계.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/개인적인 정리.md",
     "ZENAI/에이전트 학습/자료/그래프-엔지니어링-온보딩.pdf",
     "ZENAI/에이전트 학습/자료",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/3. 회의록 에이전트의 컨텍스트 구조.md",
-    "ZENAI/에이전트 학습/4. 컨텍스트 엔지니어링/2. Tool 결과와 Model Context 조립 방법론 조사.md",
-    "ZENAI/에이전트 학습/4. 컨텍스트 엔지니어링/1. 대화 컨텍스트 Compact 방법론 조사.md",
-    "ZENAI/에이전트 학습/4. 컨텍스트 엔지니어링",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/4. 대화 컨텍스트 정리 방법론 조사.md",
-    "무제 1.base",
-    "무제.base",
-    "ZENAI/개선 내역/Bug Report",
-    "ZENAI/개선 내역/Bug Report/Jira-Issue 에이전트 중복 트러블 슈팅 현상.md",
-    "ZENAI/에이전트 학습/2. 에이전트의 작동 원리와 그래프 엔지니어링/05 Graph Engineering.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계",
-    "ZENAI/에이전트 설계",
     "ZENAI/에이전트 학습/3. LangGraph를 이용한 에이전트 구축/4. 가드레일 실제 테스트 결과.md",
-    "ZENAI/에이전트 학습/3. LangGraph를 이용한 에이전트 구축/3. 초기 구축 이후 테스트 결과.md",
     "ZENAI/에이전트 학습/3. LangGraph를 이용한 에이전트 구축/2. 주제 선정 및 초기 구축.md",
+    "ZENAI/에이전트 학습/3. LangGraph를 이용한 에이전트 구축/3. 초기 구축 이후 테스트 결과.md",
     "ZENAI/에이전트 학습/3. LangGraph를 이용한 에이전트 구축/1. 가드레일 테스트 설계.md",
-    "ZENAI/에이전트 학습/2. 에이전트의 작동 원리와 그래프 엔지니어링/04 Codex와 Claude Code 같은 범용 에이전트의 한계.md",
-    "ZENAI/에이전트 학습/2. 에이전트의 작동 원리와 그래프 엔지니어링/03 그렇다면 왜 Tool인가.md",
-    "ZENAI/에이전트 학습/2. 에이전트의 작동 원리와 그래프 엔지니어링/02 AI 에이전트에서 LLM과 Tool이 동작하는 과정.md",
-    "ZENAI/에이전트 학습/2. 에이전트의 작동 원리와 그래프 엔지니어링/01 에이전트의 진짜 원리 - 개요.md",
-    "ZENAI/에이전트 학습/LangGraph를 이용한 에이전트 구축/가드레일 구축 및 비교.md",
-    "ZENAI/에이전트 학습/1. 에이전트에 대한 이해/개인적인 정리.md",
-    "ZENAI/개선 내역/Agent/에이전트에 대한 이해/04. 좋은 Tool 설계와 연결.md",
     "ZENAI/에이전트 학습/3. LangGraph를 이용한 에이전트 구축",
-    "ZENAI/에이전트 학습/새 폴더",
+    "ZENAI/에이전트 학습/1. 에이전트에 대한 이해/01. AI 에이전트 정의.md",
+    "ZENAI/에이전트 학습/1. 에이전트에 대한 이해/개인적인 정리.md",
     "ZENAI/에이전트 학습/1. 에이전트에 대한 이해/04. 좋은 Tool 설계와 연결.md",
     "ZENAI/에이전트 학습/1. 에이전트에 대한 이해/02. 에이전트 핵심 요소.md",
     "ZENAI/에이전트 학습/1. 에이전트에 대한 이해/03. Toolkit과 에이전트에서 Tool이 선택 되는 과정.md",
-    "ZENAI/에이전트 학습/1. 에이전트에 대한 이해/01. AI 에이전트 정의.md",
+    "ZENAI/에이전트 학습/1. 에이전트에 대한 이해",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/3. 회의록 에이전트의 컨텍스트 구조.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/1. 회의록 에이전트 워크플로우.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/4. 대화 컨텍스트 정리 방법론 조사.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/3. 컨텍스트 엔지니어링 구조.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/무제.md",
+    "무제 1.base",
+    "무제.base",
+    "ZENAI/개선 내역/Bug Report/Jira-Issue 에이전트 중복 트러블 슈팅 현상.md",
+    "ZENAI/에이전트 학습/에이전트의 작동 원리와 그래프 엔지니어링/05 Graph Engineering.md",
+    "ZENAI/에이전트 학습/LangGraph를 이용한 에이전트 구축/4. 가드레일 실제 테스트 결과.md",
+    "ZENAI/에이전트 학습/LangGraph를 이용한 에이전트 구축/3. 초기 구축 이후 테스트 결과.md",
+    "ZENAI/에이전트 학습/LangGraph를 이용한 에이전트 구축/2. 주제 선정 및 초기 구축.md",
     "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-4.png",
     "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-2.png",
     "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-13.png",
