@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+  <title id="title">회의 녹화 과정 Graph Engineering Agent Graph</title>
+  <desc id="desc">회의 시작, 회의 진행, 회의록 확정 공유의 정상 흐름과 재시도 메모 및 일시정지 재개 반복을 직교선으로 표현한 그래프</desc>
+  <defs>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d93025"/>
+    </marker>
+    <style>
+      text { font-family: Pretendard, "Noto Sans KR", "Malgun Gothic", Arial, sans-serif; fill: #111827; }
+      .node { stroke-width: 2; }
+      .internal { fill: #dbeafe; stroke: #2563eb; }
+      .llm { fill: #fee2e2; stroke: #dc2626; }
+      .terminal { fill: #eff6ff; stroke: #2563eb; }
+      .note { fill: #fff7ed; stroke: #f97316; stroke-width: 1.8; stroke-dasharray: 7 5; }
+      .edge { fill: none; stroke: #6b7280; stroke-width: 2; marker-end: url(#arrowGray); }
+      .return-edge { fill: none; stroke: #6b7280; stroke-width: 2; marker-end: url(#arrowGray); }
+      .note-edge { fill: none; stroke: #f97316; stroke-width: 1.8; stroke-dasharray: 7 5; }
+      .label-bg { fill: #ffffff; opacity: 0.94; }
+      .node-title { font-size: 18px; font-weight: 600; text-anchor: middle; }
+      .node-text { font-size: 16px; text-anchor: middle; }
+      .edge-text { font-size: 14px; text-anchor: middle; }
+      .outcome { font-size: 13px; font-weight: 600; text-anchor: middle; }
+      .note-text { font-size: 15px; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Nodes -->
+  <rect class="node terminal" x="520" y="25" width="160" height="56" rx="28"/>
+  <text class="node-title" x="600" y="59">START</text>
+
+  <rect class="node internal" x="430" y="140" width="340" height="112" rx="4"/>
+  <text class="node-title" x="600" y="172">1. 회의 시작 실행 Node</text>
+  <text class="node-text" x="600" y="201">/meeting-start Skill</text>
+  <text class="node-text" x="600" y="228">기존 시작 백엔드</text>
+
+  <rect class="node internal" x="430" y="350" width="340" height="112" rx="4"/>
+  <text class="node-title" x="600" y="382">2. 회의 진행 Node</text>
+  <text class="node-text" x="600" y="411">일시정지·재개·종료 Skill</text>
+  <text class="node-text" x="600" y="438">공통 백엔드 Handler</text>
+
+  <rect class="node llm" x="430" y="560" width="340" height="112" rx="4"/>
+  <text class="node-title" x="600" y="592">3. 회의록 확정·공유 Node</text>
+  <text class="node-text" x="600" y="621">LLM Agent + Tool 1</text>
+  <text class="node-text" x="600" y="648">확정·공유 백엔드</text>
+
+  <rect class="node terminal" x="520" y="770" width="160" height="56" rx="28"/>
+  <text class="node-title" x="600" y="804">END</text>
+
+  <!-- Retry notes -->
+  <rect class="note" x="40" y="155" width="300" height="82" rx="8"/>
+  <text class="note-text" x="190" y="187">💬 회의 시작 실패 후 재시도</text>
+  <text class="outcome" x="190" y="216">RETRYABLE_FAILED</text>
+
+  <rect class="note" x="40" y="365" width="300" height="82" rx="8"/>
+  <text class="note-text" x="190" y="397">💬 회의 제어 실패 후 재시도</text>
+  <text class="outcome" x="190" y="426">RETRYABLE_FAILED</text>
+
+  <rect class="note" x="40" y="575" width="300" height="82" rx="8"/>
+  <text class="note-text" x="190" y="607">💬 확정·공유 실패 후 재시도</text>
+  <text class="outcome" x="190" y="636">RETRYABLE_FAILED</text>
+
+  <!-- Main orthogonal edges -->
+  <path class="edge" d="M600 81 V140"/>
+  <path class="edge" d="M600 252 V350"/>
+  <path class="edge" d="M600 462 V560"/>
+  <path class="edge" d="M600 672 V770"/>
+
+  <!-- Retry note connectors: horizontal and perpendicular to node sides -->
+  <path class="note-edge" d="M340 196 H430"/>
+  <path class="note-edge" d="M340 406 H430"/>
+  <path class="note-edge" d="M340 616 H430"/>
+
+  <!-- Meeting pause/resume loop: orthogonal and outside the node -->
+  <path class="return-edge" d="M770 382 H930 V430 H770"/>
+
+  <!-- Edge labels -->
+  <g>
+    <rect class="label-bg" x="625" y="278" width="230" height="54" rx="4"/>
+    <text class="edge-text" x="740" y="300">시작 성공</text>
+    <text class="outcome" x="740" y="322">MEETING_STARTED</text>
+  </g>
+  <g>
+    <rect class="label-bg" x="625" y="488" width="230" height="54" rx="4"/>
+    <text class="edge-text" x="740" y="510">회의 종료</text>
+    <text class="outcome" x="740" y="532">MEETING_STOPPED</text>
+  </g>
+  <g>
+    <rect class="label-bg" x="625" y="698" width="250" height="54" rx="4"/>
+    <text class="edge-text" x="750" y="720">확정·공유 성공</text>
+    <text class="outcome" x="750" y="742">MINUTES_PUBLISHED</text>
+  </g>
+  <g>
+    <rect class="label-bg" x="805" y="344" width="330" height="72" rx="4"/>
+    <text class="edge-text" x="970" y="366">일시정지·재개</text>
+    <text class="outcome" x="970" y="391">MEETING_PAUSED · MEETING_RESUMED</text>
+  </g>
+</svg>
