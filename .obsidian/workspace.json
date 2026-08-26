@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
+                "file": "ZENAI/에이전트 설계/회의록 에이전트 설계/1-1. 회의록 에이전트 업무 개요.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1-2. 회의록 에이전트 워크플로우 Graph 상세"
+              "title": "1-1. 회의록 에이전트 업무 개요"
+            }
+          },
+          {
+            "id": "8b95fa51b75d38c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ZENAI/에이전트 설계/회의록 에이전트 설계/3. 회의록 에이전트의 컨텍스트 구조.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. 회의록 에이전트의 컨텍스트 구조"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,22 +186,43 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ca074119a9069286",
+  "active": "8b95fa51b75d38c1",
   "lastOpenFiles": [
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/4. 회의 녹화와 회의록 질의의 병렬 State 설계 조사.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/3. 회의록 에이전트의 컨텍스트 구조.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
+    "_label_layer_qa/profile11/ShaderCache/data_3",
+    "_label_layer_qa/profile11/ShaderCache/index",
+    "_label_layer_qa/profile11/ShaderCache/data_2",
+    "_label_layer_qa/profile11/ShaderCache/data_1",
+    "_label_layer_qa/profile11/ShaderCache/data_0",
+    "_label_layer_qa/profile11/ShaderCache",
+    "_label_layer_qa/profile11/GrShaderCache/index",
+    "_label_layer_qa/profile11/GrShaderCache/data_1",
+    "_label_layer_qa/profile11/GrShaderCache/data_3",
+    "_label_layer_qa/profile11/GrShaderCache/data_2",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/1-1. 회의록 에이전트 업무 개요.md",
+    "ZENAI/에이전트 학습/6. 상태머신(state, checkpoint 이해용)/1. 상태 머신 방법론 조사.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/Excalidraw/09_Graph_Engineering_Agent_Graph_개선.svg",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/Excalidraw/06_recording_state_전이도_개선.svg",
+    "_label_qa/12_회의록_원문_조회_컨텍스트_답변_순서도.png",
+    "_label_qa/10_Agent_오케스트레이터_State_갱신_흐름.png",
+    "_label_qa/09_Graph_Engineering_Agent_Graph.png",
+    "_label_qa/05_회의_녹화_Workflow_Graph.png",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/Excalidraw/10_Agent_오케스트레이터_State_갱신_흐름_좌표검수.png",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/Excalidraw/08_회의_제어_순서도_좌표검수.png",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/Excalidraw/07_회의_시작_순서도_좌표검수.png",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/Excalidraw/01_전체_업무_흐름_좌표검수.png",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/2-2. Tool 계층 확장 및 State 관리 검토안.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/2-1. 회의록 에이전트 현재 구현 상세 설계.md",
     "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/1. 설계 문서 작성 방법.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/2. 회의록 에이전트 상세 설계.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/1-1. 회의록 에이전트 업무 개요.md",
     "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/2. 향후 설계 방향.md",
     "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/3. Graph Engineering Graph와 State 전이도 작성 원칙.md",
     "ZENAI/에이전트 학습/2. 에이전트의 작동 원리와 그래프 엔지니어링/05 Graph Engineering.md",
     "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/4. 워크플로우 특성에 따른 State 설계 방법론.md",
     "ZENAI/에이전트 학습/2. 에이전트의 작동 원리와 그래프 엔지니어링/04 Codex와 Claude Code 같은 범용 에이전트의 한계.md",
-    "ZENAI/에이전트 학습/6. 상태머신(state, checkpoint 이해용)/1. 상태 머신 방법론 조사.md",
     "ZENAI/에이전트 학습/4. 컨텍스트 엔지니어링/3. (효서) 컨텍스트 조립 — 회의록 에이전트로 보는 컨텍스트 설계.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/4. 회의 녹화와 회의록 질의의 병렬 State 설계 조사.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/1. 회의록 에이전트 워크플로우 graph 정의.md",
     "ZENAI/에이전트 학습/4. 컨텍스트 엔지니어링/2. Tool 결과와 Model Context 조립 방법론 조사.md",
     "ZENAI/에이전트 학습/4. 컨텍스트 엔지니어링/1. 대화 컨텍스트 Compact 방법론 조사.md",
@@ -196,28 +232,6 @@
     "ZENAI/에이전트 학습/1. 에이전트에 대한 이해/01. AI 에이전트 정의.md",
     "ZENAI/에이전트 학습/2. 에이전트의 작동 원리와 그래프 엔지니어링/03 그렇다면 왜 Tool인가.md",
     "ZENAI/에이전트 학습/2. 에이전트의 작동 원리와 그래프 엔지니어링/02 AI 에이전트에서 LLM과 Tool이 동작하는 과정.md",
-    "ZENAI/에이전트 학습/2. 에이전트의 작동 원리와 그래프 엔지니어링/01 에이전트의 진짜 원리 - 개요.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/3. 회의록 에이전트의 컨텍스트 구조.md",
-    "ZENAI/에이전트 학습/1. 에이전트에 대한 이해/개인적인 정리.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/assets/회의록-검색-Agent-Graph-v2.svg",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/assets/회의-녹화-Agent-Graph.svg",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/assets",
-    "ZENAI/에이전트 학습/6. 상태머신(state, checkpoint 이해용)",
-    "ZENAI/에이전트 학습/5. LLM",
-    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법",
-    "ZENAI/에이전트 학습/자료/그래프-엔지니어링-온보딩.pdf",
-    "ZENAI/에이전트 학습/자료",
-    "ZENAI/에이전트 학습/4. 컨텍스트 엔지니어링",
-    "무제 1.base",
-    "무제.base",
-    "ZENAI/개선 내역/Bug Report",
-    "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-4.png",
-    "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-2.png",
-    "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-13.png",
-    "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-12.png",
-    "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-11.png",
-    "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-10.png",
-    "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-9.png",
-    "ZENAI/에이전트에 대한 이해/발표 자료/AI 에이전트 Tool 설계 발표/slide-8.png"
+    "ZENAI/에이전트 학습/2. 에이전트의 작동 원리와 그래프 엔지니어링/01 에이전트의 진짜 원리 - 개요.md"
   ]
 }
