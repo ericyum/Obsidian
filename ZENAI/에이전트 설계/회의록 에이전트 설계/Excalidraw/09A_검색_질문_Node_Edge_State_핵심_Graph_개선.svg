@@ -6,8 +6,8 @@
   <rect width="100%" height="100%" fill="#fff"/>
 
   <rect class="node" x="410" y="90" width="380" height="110" rx="14"/><text class="t" x="600" y="135" font-size="21">사용자 의도 판단 Node</text><rect class="state" x="480" y="155" width="240" height="42" rx="10"/><text class="s" x="600" y="182" font-size="16">State: none</text>
-  <rect class="node" x="80" y="470" width="380" height="110" rx="14"/><text class="t" x="270" y="515" font-size="21">회의록 검색·선택 Node</text><rect class="state" x="150" y="535" width="240" height="42" rx="10"/><text class="s" x="270" y="562" font-size="16">State: search</text>
-  <rect class="node" x="740" y="470" width="380" height="110" rx="14"/><text class="t" x="930" y="515" font-size="21">회의록 질의 Node</text><rect class="state" x="810" y="535" width="240" height="42" rx="10"/><text class="s" x="930" y="562" font-size="16">State: question</text>
+  <rect class="node" x="80" y="470" width="380" height="110" rx="14"/><text class="t" x="270" y="515" font-size="21">회의록 검색·선택 Subgraph Node</text><rect class="state" x="150" y="535" width="240" height="42" rx="10"/><text class="s" x="270" y="562" font-size="16">State: search</text>
+  <rect class="node" x="740" y="470" width="380" height="110" rx="14"/><text class="t" x="930" y="515" font-size="21">회의록 질의 Subgraph Node</text><rect class="state" x="810" y="535" width="240" height="42" rx="10"/><text class="s" x="930" y="562" font-size="16">State: question</text>
   <path class="edge" d="M500 200 L270 470"/><rect class="label" x="210" y="300" width="220" height="48" rx="10"/><text class="e" x="320" y="320" font-size="15"><tspan x="320">검색으로 판단</tspan><tspan x="320" dy="19">none → search</tspan></text>
   <path class="edge" d="M700 200 L930 470"/><rect class="label" x="770" y="300" width="220" height="48" rx="10"/><text class="e" x="880" y="320" font-size="15"><tspan x="880">질문으로 판단</tspan><tspan x="880" dy="19">none → question</tspan></text>
   <path class="edge" d="M80 525 H30 V145 H410"/><rect class="label" x="45" y="250" width="220" height="48" rx="10"/><text class="e" x="155" y="270" font-size="15"><tspan x="155">검색 답변 완료</tspan><tspan x="155" dy="19">search → none</tspan></text>
