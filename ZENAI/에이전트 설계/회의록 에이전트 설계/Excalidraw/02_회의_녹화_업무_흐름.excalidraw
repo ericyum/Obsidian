@@ -403,10 +403,10 @@
     {
       "id": "a_50",
       "type": "arrow",
-      "x": 25,
-      "y": 45,
-      "width": 795,
-      "height": 85,
+      "x": 180,
+      "y": 40,
+      "width": 750,
+      "height": 50,
       "angle": 0,
       "strokeColor": "#0f766e",
       "backgroundColor": "transparent",
@@ -428,11 +428,11 @@
       "locked": false,
       "points": [
         [
-          795,
-          85
+          750,
+          50
         ],
         [
-          795,
+          750,
           0
         ],
         [
@@ -441,7 +441,7 @@
         ],
         [
           0,
-          85
+          50
         ]
       ],
       "lastCommittedPoint": null,
@@ -454,8 +454,8 @@
     {
       "id": "t_51",
       "type": "text",
-      "x": 33,
-      "y": 80.4,
+      "x": 480,
+      "y": 10,
       "width": 150,
       "height": 19.2,
       "angle": 0,

@@ -408,8 +408,8 @@
       "width": 220,
       "height": 80,
       "angle": 0,
-      "strokeColor": "#dc2626",
-      "backgroundColor": "#fee2e2",
+      "strokeColor": "#2563eb",
+      "backgroundColor": "#dbeafe",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
@@ -513,10 +513,10 @@
     {
       "id": "a_92",
       "type": "arrow",
-      "x": 25,
-      "y": 45,
-      "width": 1045,
-      "height": 85,
+      "x": 180,
+      "y": 40,
+      "width": 1000,
+      "height": 50,
       "angle": 0,
       "strokeColor": "#0f766e",
       "backgroundColor": "transparent",
@@ -538,11 +538,11 @@
       "locked": false,
       "points": [
         [
-          1045,
-          85
+          1000,
+          50
         ],
         [
-          1045,
+          1000,
           0
         ],
         [
@@ -551,7 +551,7 @@
         ],
         [
           0,
-          85
+          50
         ]
       ],
       "lastCommittedPoint": null,
@@ -564,8 +564,8 @@
     {
       "id": "t_93",
       "type": "text",
-      "x": 33,
-      "y": 80.4,
+      "x": 605,
+      "y": 10,
       "width": 150,
       "height": 19.2,
       "angle": 0,
