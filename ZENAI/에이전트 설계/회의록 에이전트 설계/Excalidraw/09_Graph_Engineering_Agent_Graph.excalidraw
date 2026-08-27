@@ -7,9 +7,9 @@
       "id": "s_328",
       "type": "ellipse",
       "x": 540,
-      "y": 30,
+      "y": 30.0,
       "width": 320,
-      "height": 65,
+      "height": 65.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -74,9 +74,9 @@
       "id": "s_331",
       "type": "rectangle",
       "x": 570,
-      "y": 140,
+      "y": 140.0,
       "width": 260,
-      "height": 70,
+      "height": 70.0,
       "angle": 0,
       "strokeColor": "#16a34a",
       "backgroundColor": "#dcfce7",
@@ -141,9 +141,9 @@
       "id": "s_334",
       "type": "rectangle",
       "x": 510,
-      "y": 260,
+      "y": 260.0,
       "width": 380,
-      "height": 90,
+      "height": 90.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fee2e2",
@@ -208,9 +208,9 @@
       "id": "s_337",
       "type": "rectangle",
       "x": 170,
-      "y": 450,
+      "y": 550.0,
       "width": 380,
-      "height": 100,
+      "height": 100.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -239,7 +239,7 @@
       "id": "t_338",
       "type": "text",
       "x": 178,
-      "y": 478.24,
+      "y": 578.24,
       "width": 364,
       "height": 43.52,
       "angle": 0,
@@ -275,9 +275,9 @@
       "id": "s_340",
       "type": "rectangle",
       "x": 850,
-      "y": 450,
+      "y": 550.0,
       "width": 380,
-      "height": 100,
+      "height": 100.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fee2e2",
@@ -306,7 +306,7 @@
       "id": "t_341",
       "type": "text",
       "x": 858,
-      "y": 467.36,
+      "y": 567.36,
       "width": 364,
       "height": 65.28,
       "angle": 0,
@@ -342,9 +342,9 @@
       "id": "s_343",
       "type": "ellipse",
       "x": 190,
-      "y": 680,
+      "y": 880.0,
       "width": 340,
-      "height": 75,
+      "height": 75.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -373,7 +373,7 @@
       "id": "t_344",
       "type": "text",
       "x": 198,
-      "y": 695.74,
+      "y": 895.74,
       "width": 324,
       "height": 43.52,
       "angle": 0,
@@ -409,9 +409,9 @@
       "id": "s_346",
       "type": "ellipse",
       "x": 870,
-      "y": 680,
+      "y": 880.0,
       "width": 340,
-      "height": 75,
+      "height": 75.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -440,7 +440,7 @@
       "id": "t_347",
       "type": "text",
       "x": 878,
-      "y": 695.74,
+      "y": 895.74,
       "width": 324,
       "height": 43.52,
       "angle": 0,
@@ -476,9 +476,9 @@
       "id": "a_348",
       "type": "arrow",
       "x": 700,
-      "y": 95,
+      "y": 95.0,
       "width": 0,
-      "height": 45,
+      "height": 45.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -501,11 +501,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          45
+          45.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -519,9 +519,9 @@
       "id": "a_349",
       "type": "arrow",
       "x": 700,
-      "y": 210,
+      "y": 210.0,
       "width": 0,
-      "height": 50,
+      "height": 50.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -544,11 +544,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          50
+          50.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -562,9 +562,9 @@
       "id": "edge_label_bg_t_350",
       "type": "rectangle",
       "x": 645,
-      "y": 221,
+      "y": 221.0,
       "width": 110,
-      "height": 27.92,
+      "height": 27.920000000000016,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -591,7 +591,7 @@
       "id": "t_350",
       "type": "text",
       "x": 655,
-      "y": 226,
+      "y": 226.0,
       "width": 90,
       "height": 17.92,
       "angle": 0,
@@ -627,9 +627,9 @@
       "id": "a_351",
       "type": "arrow",
       "x": 360,
-      "y": 350,
+      "y": 350.0,
       "width": 320,
-      "height": 100,
+      "height": 200.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "transparent",
@@ -652,19 +652,19 @@
       "points": [
         [
           320,
-          0
+          0.0
         ],
         [
           320,
-          50
+          150.0
         ],
         [
           0,
-          50
+          150.0
         ],
         [
           0,
-          100
+          200.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -678,9 +678,9 @@
       "id": "edge_label_bg_t_352",
       "type": "rectangle",
       "x": 465,
-      "y": 386,
+      "y": 486.0,
       "width": 110,
-      "height": 27.92,
+      "height": 27.920000000000073,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -707,7 +707,7 @@
       "id": "t_352",
       "type": "text",
       "x": 475,
-      "y": 391,
+      "y": 491.0,
       "width": 90,
       "height": 17.92,
       "angle": 0,
@@ -743,9 +743,9 @@
       "id": "a_353",
       "type": "arrow",
       "x": 720,
-      "y": 350,
+      "y": 350.0,
       "width": 320,
-      "height": 100,
+      "height": 200.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "transparent",
@@ -768,19 +768,19 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          50
+          150.0
         ],
         [
           320,
-          50
+          150.0
         ],
         [
           320,
-          100
+          200.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -794,9 +794,9 @@
       "id": "edge_label_bg_t_354",
       "type": "rectangle",
       "x": 825,
-      "y": 386,
+      "y": 486.0,
       "width": 110,
-      "height": 27.92,
+      "height": 27.920000000000073,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -823,7 +823,7 @@
       "id": "t_354",
       "type": "text",
       "x": 835,
-      "y": 391,
+      "y": 491.0,
       "width": 90,
       "height": 17.92,
       "angle": 0,
@@ -859,9 +859,9 @@
       "id": "a_355",
       "type": "arrow",
       "x": 360,
-      "y": 550,
+      "y": 650.0,
       "width": 0,
-      "height": 130,
+      "height": 230.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -884,11 +884,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          130
+          230.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -902,9 +902,9 @@
       "id": "a_356",
       "type": "arrow",
       "x": 1040,
-      "y": 550,
+      "y": 650.0,
       "width": 0,
-      "height": 130,
+      "height": 230.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -927,11 +927,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          130
+          230.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -945,9 +945,9 @@
       "id": "a_357",
       "type": "arrow",
       "x": 128,
-      "y": 426,
+      "y": 526.0,
       "width": 175,
-      "height": 89,
+      "height": 89.0,
       "angle": 0,
       "strokeColor": "#f97316",
       "backgroundColor": "transparent",
@@ -970,23 +970,23 @@
       "points": [
         [
           42,
-          89
+          89.0
         ],
         [
           0,
-          89
+          89.0
         ],
         [
           0,
-          0
+          0.0
         ],
         [
           175,
-          0
+          0.0
         ],
         [
           175,
-          24
+          24.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1000,9 +1000,9 @@
       "id": "edge_label_bg_t_358",
       "type": "rectangle",
       "x": 52,
-      "y": 412,
+      "y": 430,
       "width": 220,
-      "height": 27.92,
+      "height": 27.920000000000073,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -1029,7 +1029,7 @@
       "id": "t_358",
       "type": "text",
       "x": 62,
-      "y": 417,
+      "y": 435,
       "width": 200,
       "height": 17.92,
       "angle": 0,
@@ -1065,9 +1065,9 @@
       "id": "a_359",
       "type": "arrow",
       "x": 1097,
-      "y": 426,
+      "y": 526.0,
       "width": 175,
-      "height": 59,
+      "height": 59.0,
       "angle": 0,
       "strokeColor": "#f97316",
       "backgroundColor": "transparent",
@@ -1090,23 +1090,23 @@
       "points": [
         [
           133,
-          59
+          59.0
         ],
         [
           175,
-          59
+          59.0
         ],
         [
           175,
-          0
+          0.0
         ],
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          24
+          24.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1120,9 +1120,9 @@
       "id": "edge_label_bg_t_360",
       "type": "rectangle",
       "x": 1113,
-      "y": 403,
+      "y": 420,
       "width": 220,
-      "height": 45.84,
+      "height": 45.84000000000003,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -1149,7 +1149,7 @@
       "id": "t_360",
       "type": "text",
       "x": 1123,
-      "y": 408,
+      "y": 425,
       "width": 200,
       "height": 35.84,
       "angle": 0,
@@ -1187,7 +1187,7 @@
       "x": 25,
       "y": 62.5,
       "width": 515,
-      "height": 655,
+      "height": 855.0,
       "angle": 0,
       "strokeColor": "#0f766e",
       "backgroundColor": "transparent",
@@ -1210,19 +1210,19 @@
       "points": [
         [
           165,
-          655
+          855.0
         ],
         [
           0,
-          655
+          855.0
         ],
         [
           0,
-          0
+          0.0
         ],
         [
           515,
-          0
+          0.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1236,9 +1236,9 @@
       "id": "edge_label_bg_t_362",
       "type": "rectangle",
       "x": 2,
-      "y": 200,
+      "y": 200.0,
       "width": 170,
-      "height": 29.2,
+      "height": 29.19999999999999,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -1265,7 +1265,7 @@
       "id": "t_362",
       "type": "text",
       "x": 12,
-      "y": 205,
+      "y": 205.0,
       "width": 150,
       "height": 19.2,
       "angle": 0,
@@ -1301,9 +1301,9 @@
       "id": "a_363",
       "type": "arrow",
       "x": 860,
-      "y": 62,
+      "y": 62.0,
       "width": 460,
-      "height": 656,
+      "height": 856.0,
       "angle": 0,
       "strokeColor": "#0f766e",
       "backgroundColor": "transparent",
@@ -1326,19 +1326,19 @@
       "points": [
         [
           350,
-          656
+          856.0
         ],
         [
           460,
-          656
+          856.0
         ],
         [
           460,
-          0
+          0.0
         ],
         [
           0,
-          0
+          0.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1352,9 +1352,9 @@
       "id": "edge_label_bg_t_364",
       "type": "rectangle",
       "x": 1230,
-      "y": 200,
+      "y": 200.0,
       "width": 180,
-      "height": 29.2,
+      "height": 29.19999999999999,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -1381,7 +1381,7 @@
       "id": "t_364",
       "type": "text",
       "x": 1240,
-      "y": 205,
+      "y": 205.0,
       "width": 160,
       "height": 19.2,
       "angle": 0,
@@ -1412,11 +1412,726 @@
       "originalText": "↻ 다음 사용자 요청",
       "autoResize": false,
       "lineHeight": 1.28
+    },
+    {
+      "id": "ge_annot_badge_rect_09_Graph_Engineering_Agent_Graph",
+      "type": "rectangle",
+      "x": 18,
+      "y": 18,
+      "width": 280,
+      "height": 34,
+      "angle": 0,
+      "strokeColor": "#475569",
+      "backgroundColor": "#f8fafc",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_badge_group_09_Graph_Engineering_Agent_Graph"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 19810371,
+      "version": 1,
+      "versionNonce": 4614970,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_badge_text_09_Graph_Engineering_Agent_Graph",
+      "type": "text",
+      "x": 26,
+      "y": 25,
+      "width": 264,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_badge_group_09_Graph_Engineering_Agent_Graph"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 87508319,
+      "version": 1,
+      "versionNonce": 647033,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "그림 유형 · 최상위 Agent Graph",
+      "fontSize": 14,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "그림 유형 · 최상위 Agent Graph",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_frame_09_Graph_Engineering_Agent_Graph_1",
+      "type": "rectangle",
+      "x": 490,
+      "y": 20,
+      "width": 420,
+      "height": 450,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_frame_group_09_Graph_Engineering_Agent_Graph_1"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 90272158,
+      "version": 1,
+      "versionNonce": 2927380,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_label_bg_09_Graph_Engineering_Agent_Graph_1",
+      "type": "rectangle",
+      "x": 930,
+      "y": 30,
+      "width": 360,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_frame_group_09_Graph_Engineering_Agent_Graph_1"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 53141962,
+      "version": 1,
+      "versionNonce": 3723451,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_label_text_09_Graph_Engineering_Agent_Graph_1",
+      "type": "text",
+      "x": 936,
+      "y": 36,
+      "width": 348,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_frame_group_09_Graph_Engineering_Agent_Graph_1"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 60545947,
+      "version": 1,
+      "versionNonce": 3304388,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "Node · 사용자 요청 판단 / State = none",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "Node · 사용자 요청 판단 / State = none",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_frame_09_Graph_Engineering_Agent_Graph_2",
+      "type": "rectangle",
+      "x": 158,
+      "y": 538,
+      "width": 404,
+      "height": 430,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_frame_group_09_Graph_Engineering_Agent_Graph_2"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 83059706,
+      "version": 1,
+      "versionNonce": 8085710,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_label_bg_09_Graph_Engineering_Agent_Graph_2",
+      "type": "rectangle",
+      "x": 170,
+      "y": 540,
+      "width": 360,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_frame_group_09_Graph_Engineering_Agent_Graph_2"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 28397049,
+      "version": 1,
+      "versionNonce": 2630055,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_label_text_09_Graph_Engineering_Agent_Graph_2",
+      "type": "text",
+      "x": 176,
+      "y": 546,
+      "width": 348,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_frame_group_09_Graph_Engineering_Agent_Graph_2"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 43468645,
+      "version": 1,
+      "versionNonce": 370578,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "Node · 회의록 검색·선택 / State = search",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "Node · 회의록 검색·선택 / State = search",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_frame_09_Graph_Engineering_Agent_Graph_3",
+      "type": "rectangle",
+      "x": 838,
+      "y": 538,
+      "width": 404,
+      "height": 430,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_frame_group_09_Graph_Engineering_Agent_Graph_3"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1251419,
+      "version": 1,
+      "versionNonce": 1521317,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_label_bg_09_Graph_Engineering_Agent_Graph_3",
+      "type": "rectangle",
+      "x": 850,
+      "y": 540,
+      "width": 360,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_frame_group_09_Graph_Engineering_Agent_Graph_3"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1261374,
+      "version": 1,
+      "versionNonce": 6186485,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_label_text_09_Graph_Engineering_Agent_Graph_3",
+      "type": "text",
+      "x": 856,
+      "y": 546,
+      "width": 348,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_frame_group_09_Graph_Engineering_Agent_Graph_3"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 55064334,
+      "version": 1,
+      "versionNonce": 7505002,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "Node · 회의록 질의 / State = question",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "Node · 회의록 질의 / State = question",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_legend_rect_09_Graph_Engineering_Agent_Graph",
+      "type": "rectangle",
+      "x": 18,
+      "y": 100,
+      "width": 350,
+      "height": 90,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_legend_group_09_Graph_Engineering_Agent_Graph"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 81359099,
+      "version": 1,
+      "versionNonce": 8446075,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_legend_text_09_Graph_Engineering_Agent_Graph",
+      "type": "text",
+      "x": 28,
+      "y": 108,
+      "width": 330,
+      "height": 74,
+      "angle": 0,
+      "strokeColor": "#1f2937",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_legend_group_09_Graph_Engineering_Agent_Graph"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 11283903,
+      "version": 1,
+      "versionNonce": 3010131,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "State\nnone: 초기·입력 대기\nsearch: 회의록 검색\nquestion: 회의록 질문",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "State\nnone: 초기·입력 대기\nsearch: 회의록 검색\nquestion: 회의록 질문",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_label_rect_09_Graph_Engineering_Agent_Graph_1",
+      "type": "rectangle",
+      "x": 230,
+      "y": 490,
+      "width": 270,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_09_Graph_Engineering_Agent_Graph_1"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 14920572,
+      "version": 1,
+      "versionNonce": 7752228,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_label_text_09_Graph_Engineering_Agent_Graph_1",
+      "type": "text",
+      "x": 236,
+      "y": 496,
+      "width": 258,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_09_Graph_Engineering_Agent_Graph_1"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 6259614,
+      "version": 1,
+      "versionNonce": 1757383,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "State 변경 · none → search",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "State 변경 · none → search",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_label_rect_09_Graph_Engineering_Agent_Graph_2",
+      "type": "rectangle",
+      "x": 900,
+      "y": 490,
+      "width": 290,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_09_Graph_Engineering_Agent_Graph_2"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 42907313,
+      "version": 1,
+      "versionNonce": 5573504,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_label_text_09_Graph_Engineering_Agent_Graph_2",
+      "type": "text",
+      "x": 906,
+      "y": 496,
+      "width": 278,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_09_Graph_Engineering_Agent_Graph_2"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 91633357,
+      "version": 1,
+      "versionNonce": 6679663,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "State 변경 · none → question",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "State 변경 · none → question",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_label_rect_09_Graph_Engineering_Agent_Graph_3",
+      "type": "rectangle",
+      "x": 25,
+      "y": 890,
+      "width": 165,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_09_Graph_Engineering_Agent_Graph_3"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 97111263,
+      "version": 1,
+      "versionNonce": 6811660,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_label_text_09_Graph_Engineering_Agent_Graph_3",
+      "type": "text",
+      "x": 31,
+      "y": 896,
+      "width": 153,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_09_Graph_Engineering_Agent_Graph_3"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 1261244,
+      "version": 1,
+      "versionNonce": 3488931,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "search → none",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "search → none",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_label_rect_09_Graph_Engineering_Agent_Graph_4",
+      "type": "rectangle",
+      "x": 1210,
+      "y": 890,
+      "width": 180,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_09_Graph_Engineering_Agent_Graph_4"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 88474458,
+      "version": 1,
+      "versionNonce": 5992127,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_label_text_09_Graph_Engineering_Agent_Graph_4",
+      "type": "text",
+      "x": 1216,
+      "y": 896,
+      "width": 168,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_09_Graph_Engineering_Agent_Graph_4"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 20284911,
+      "version": 1,
+      "versionNonce": 4189524,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "question → none",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "question → none",
+      "autoResize": false,
+      "lineHeight": 1.25
     }
   ],
   "appState": {
     "gridSize": 20,
-    "viewBackgroundColor": "#ffffff"
+    "viewBackgroundColor": "#ffffff",
+    "geLayoutVersion": "spacious-layout-v1:09_Graph_Engineering_Agent_Graph"
   },
   "files": {}
 }

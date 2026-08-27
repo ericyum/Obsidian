@@ -20,4 +20,4 @@
   <text x="930" y="125.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937"><tspan x="930">질문에 필요한</tspan><tspan x="930" dy="21.76">내용 조립</tspan></text>
   <text x="1180" y="136.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">AI 답변 생성</text>
   <text x="680" y="25.4" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="15" fill="#0f766e">↻ 다음 질문</text>
-</svg>
+<g id="ge-annotations"><rect x="12" y="10" width="250" height="34" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/><text x="137.00" y="32.25" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#475569"><tspan x="137.00" dy="0">그림 유형 · 하위 업무 개요도</tspan></text></g></svg>

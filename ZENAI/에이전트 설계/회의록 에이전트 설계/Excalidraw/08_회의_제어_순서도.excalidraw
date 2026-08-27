@@ -7,9 +7,9 @@
       "id": "s_237",
       "type": "ellipse",
       "x": 610,
-      "y": 30,
+      "y": 90.0,
       "width": 280,
-      "height": 60,
+      "height": 60.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -38,7 +38,7 @@
       "id": "t_238",
       "type": "text",
       "x": 618,
-      "y": 49.12,
+      "y": 109.12,
       "width": 264,
       "height": 21.76,
       "angle": 0,
@@ -74,9 +74,9 @@
       "id": "s_240",
       "type": "rectangle",
       "x": 310,
-      "y": 140,
+      "y": 200.0,
       "width": 280,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#16a34a",
       "backgroundColor": "#dcfce7",
@@ -105,7 +105,7 @@
       "id": "t_241",
       "type": "text",
       "x": 318,
-      "y": 159.24,
+      "y": 219.24,
       "width": 264,
       "height": 43.52,
       "angle": 0,
@@ -141,9 +141,9 @@
       "id": "s_243",
       "type": "rectangle",
       "x": 910,
-      "y": 140,
+      "y": 200.0,
       "width": 280,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#16a34a",
       "backgroundColor": "#dcfce7",
@@ -172,7 +172,7 @@
       "id": "t_244",
       "type": "text",
       "x": 918,
-      "y": 159.24,
+      "y": 219.24,
       "width": 264,
       "height": 43.52,
       "angle": 0,
@@ -208,9 +208,9 @@
       "id": "s_246",
       "type": "rectangle",
       "x": 310,
-      "y": 280,
+      "y": 340.0,
       "width": 280,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -239,7 +239,7 @@
       "id": "t_247",
       "type": "text",
       "x": 318,
-      "y": 288.36,
+      "y": 348.36,
       "width": 264,
       "height": 65.28,
       "angle": 0,
@@ -275,9 +275,9 @@
       "id": "s_249",
       "type": "rectangle",
       "x": 310,
-      "y": 410,
+      "y": 470.0,
       "width": 280,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -306,7 +306,7 @@
       "id": "t_250",
       "type": "text",
       "x": 318,
-      "y": 429.24,
+      "y": 489.24,
       "width": 264,
       "height": 43.52,
       "angle": 0,
@@ -342,9 +342,9 @@
       "id": "s_252",
       "type": "rectangle",
       "x": 610,
-      "y": 540,
+      "y": 600.0,
       "width": 280,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -373,7 +373,7 @@
       "id": "t_253",
       "type": "text",
       "x": 618,
-      "y": 559.24,
+      "y": 619.24,
       "width": 264,
       "height": 43.52,
       "angle": 0,
@@ -409,9 +409,9 @@
       "id": "s_255",
       "type": "rectangle",
       "x": 610,
-      "y": 670,
+      "y": 730.0,
       "width": 280,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -440,7 +440,7 @@
       "id": "t_256",
       "type": "text",
       "x": 618,
-      "y": 689.24,
+      "y": 749.24,
       "width": 264,
       "height": 43.52,
       "angle": 0,
@@ -476,9 +476,9 @@
       "id": "s_258",
       "type": "rectangle",
       "x": 570,
-      "y": 800,
+      "y": 860.0,
       "width": 360,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -507,7 +507,7 @@
       "id": "t_259",
       "type": "text",
       "x": 578,
-      "y": 819.24,
+      "y": 879.24,
       "width": 344,
       "height": 43.52,
       "angle": 0,
@@ -543,9 +543,9 @@
       "id": "s_261",
       "type": "diamond",
       "x": 640,
-      "y": 950,
+      "y": 1010.0,
       "width": 220,
-      "height": 110,
+      "height": 110.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -572,7 +572,7 @@
       "id": "t_262",
       "type": "text",
       "x": 648,
-      "y": 994.12,
+      "y": 1054.12,
       "width": 204,
       "height": 21.76,
       "angle": 0,
@@ -608,9 +608,9 @@
       "id": "s_264",
       "type": "rectangle",
       "x": 80,
-      "y": 1130,
+      "y": 1370.0,
       "width": 230,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -639,7 +639,7 @@
       "id": "t_265",
       "type": "text",
       "x": 88,
-      "y": 1149.24,
+      "y": 1389.24,
       "width": 214,
       "height": 43.52,
       "angle": 0,
@@ -675,9 +675,9 @@
       "id": "s_267",
       "type": "rectangle",
       "x": 370,
-      "y": 1130,
+      "y": 1370.0,
       "width": 230,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -706,7 +706,7 @@
       "id": "t_268",
       "type": "text",
       "x": 378,
-      "y": 1149.24,
+      "y": 1389.24,
       "width": 214,
       "height": 43.52,
       "angle": 0,
@@ -742,9 +742,9 @@
       "id": "s_270",
       "type": "rectangle",
       "x": 660,
-      "y": 1130,
+      "y": 1370.0,
       "width": 230,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -773,7 +773,7 @@
       "id": "t_271",
       "type": "text",
       "x": 668,
-      "y": 1149.24,
+      "y": 1389.24,
       "width": 214,
       "height": 43.52,
       "angle": 0,
@@ -809,9 +809,9 @@
       "id": "s_273",
       "type": "rectangle",
       "x": 950,
-      "y": 1130,
+      "y": 1370.0,
       "width": 230,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -840,7 +840,7 @@
       "id": "t_274",
       "type": "text",
       "x": 958,
-      "y": 1149.24,
+      "y": 1389.24,
       "width": 214,
       "height": 43.52,
       "angle": 0,
@@ -876,9 +876,9 @@
       "id": "s_276",
       "type": "rectangle",
       "x": 1240,
-      "y": 1130,
+      "y": 1370.0,
       "width": 220,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -907,7 +907,7 @@
       "id": "t_277",
       "type": "text",
       "x": 1248,
-      "y": 1149.24,
+      "y": 1389.24,
       "width": 204,
       "height": 43.52,
       "angle": 0,
@@ -943,9 +943,9 @@
       "id": "a_278",
       "type": "arrow",
       "x": 195,
-      "y": 1005,
+      "y": 1065.0,
       "width": 445,
-      "height": 125,
+      "height": 305.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "transparent",
@@ -968,19 +968,19 @@
       "points": [
         [
           445,
-          0
+          0.0
         ],
         [
           445,
-          105
+          225.0
         ],
         [
           0,
-          105
+          225.0
         ],
         [
           0,
-          125
+          305.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -994,7 +994,7 @@
       "id": "edge_label_bg_t_279",
       "type": "rectangle",
       "x": 140,
-      "y": 1096,
+      "y": 1250,
       "width": 110,
       "height": 27.92,
       "angle": 0,
@@ -1023,7 +1023,7 @@
       "id": "t_279",
       "type": "text",
       "x": 150,
-      "y": 1101,
+      "y": 1255,
       "width": 90,
       "height": 17.92,
       "angle": 0,
@@ -1059,9 +1059,9 @@
       "id": "a_280",
       "type": "arrow",
       "x": 485,
-      "y": 1032.5,
+      "y": 1092.5,
       "width": 210,
-      "height": 97.5,
+      "height": 277.5,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "transparent",
@@ -1084,19 +1084,19 @@
       "points": [
         [
           210,
-          0
+          0.0
         ],
         [
           210,
-          67.5
+          187.5
         ],
         [
           0,
-          67.5
+          187.5
         ],
         [
           0,
-          97.5
+          277.5
         ]
       ],
       "lastCommittedPoint": null,
@@ -1110,7 +1110,7 @@
       "id": "edge_label_bg_t_281",
       "type": "rectangle",
       "x": 430,
-      "y": 1096,
+      "y": 1250,
       "width": 110,
       "height": 27.92,
       "angle": 0,
@@ -1139,7 +1139,7 @@
       "id": "t_281",
       "type": "text",
       "x": 440,
-      "y": 1101,
+      "y": 1255,
       "width": 90,
       "height": 17.92,
       "angle": 0,
@@ -1175,9 +1175,9 @@
       "id": "a_282",
       "type": "arrow",
       "x": 750,
-      "y": 1060,
+      "y": 1120.0,
       "width": 25,
-      "height": 70,
+      "height": 250.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "transparent",
@@ -1200,19 +1200,19 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          30
+          30.0
         ],
         [
           25,
-          30
+          30.0
         ],
         [
           25,
-          70
+          250.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1226,7 +1226,7 @@
       "id": "edge_label_bg_t_283",
       "type": "rectangle",
       "x": 720,
-      "y": 1096,
+      "y": 1250,
       "width": 110,
       "height": 27.92,
       "angle": 0,
@@ -1255,7 +1255,7 @@
       "id": "t_283",
       "type": "text",
       "x": 730,
-      "y": 1101,
+      "y": 1255,
       "width": 90,
       "height": 17.92,
       "angle": 0,
@@ -1291,9 +1291,9 @@
       "id": "a_284",
       "type": "arrow",
       "x": 805,
-      "y": 1032.5,
+      "y": 1092.5,
       "width": 260,
-      "height": 97.5,
+      "height": 277.5,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "transparent",
@@ -1316,7 +1316,7 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
@@ -1328,7 +1328,7 @@
         ],
         [
           260,
-          97.5
+          277.5
         ]
       ],
       "lastCommittedPoint": null,
@@ -1342,7 +1342,7 @@
       "id": "edge_label_bg_t_285",
       "type": "rectangle",
       "x": 1010,
-      "y": 1096,
+      "y": 1250,
       "width": 110,
       "height": 27.92,
       "angle": 0,
@@ -1371,7 +1371,7 @@
       "id": "t_285",
       "type": "text",
       "x": 1020,
-      "y": 1101,
+      "y": 1255,
       "width": 90,
       "height": 17.92,
       "angle": 0,
@@ -1407,9 +1407,9 @@
       "id": "a_286",
       "type": "arrow",
       "x": 860,
-      "y": 1005,
+      "y": 1065.0,
       "width": 490,
-      "height": 125,
+      "height": 305.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "transparent",
@@ -1432,19 +1432,19 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          65
+          65.0
         ],
         [
           490,
-          65
+          65.0
         ],
         [
           490,
-          125
+          305.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1458,7 +1458,7 @@
       "id": "edge_label_bg_t_287",
       "type": "rectangle",
       "x": 1295,
-      "y": 1096,
+      "y": 1250,
       "width": 110,
       "height": 27.92,
       "angle": 0,
@@ -1487,7 +1487,7 @@
       "id": "t_287",
       "type": "text",
       "x": 1305,
-      "y": 1101,
+      "y": 1255,
       "width": 90,
       "height": 17.92,
       "angle": 0,
@@ -1523,9 +1523,9 @@
       "id": "s_289",
       "type": "rectangle",
       "x": 660,
-      "y": 1270,
+      "y": 1510.0,
       "width": 230,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -1554,7 +1554,7 @@
       "id": "t_290",
       "type": "text",
       "x": 668,
-      "y": 1289.24,
+      "y": 1529.24,
       "width": 214,
       "height": 43.52,
       "angle": 0,
@@ -1590,9 +1590,9 @@
       "id": "a_291",
       "type": "arrow",
       "x": 775,
-      "y": 1212,
+      "y": 1452.0,
       "width": 0,
-      "height": 58,
+      "height": 58.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1615,11 +1615,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          58
+          58.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1633,9 +1633,9 @@
       "id": "s_293",
       "type": "rectangle",
       "x": 430,
-      "y": 1430,
+      "y": 1770.0,
       "width": 330,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -1664,7 +1664,7 @@
       "id": "t_294",
       "type": "text",
       "x": 438,
-      "y": 1438.36,
+      "y": 1778.36,
       "width": 314,
       "height": 65.28,
       "angle": 0,
@@ -1700,9 +1700,9 @@
       "id": "s_296",
       "type": "rectangle",
       "x": 980,
-      "y": 1430,
+      "y": 1770.0,
       "width": 330,
-      "height": 82,
+      "height": 82.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -1731,7 +1731,7 @@
       "id": "t_297",
       "type": "text",
       "x": 988,
-      "y": 1438.36,
+      "y": 1778.36,
       "width": 314,
       "height": 65.28,
       "angle": 0,
@@ -1767,9 +1767,9 @@
       "id": "a_298",
       "type": "arrow",
       "x": 195,
-      "y": 1212,
+      "y": 1452.0,
       "width": 0,
-      "height": 168,
+      "height": 168.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1792,11 +1792,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          168
+          168.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1810,9 +1810,9 @@
       "id": "a_299",
       "type": "arrow",
       "x": 485,
-      "y": 1212,
+      "y": 1452.0,
       "width": 0,
-      "height": 168,
+      "height": 168.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1835,11 +1835,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          168
+          168.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1853,9 +1853,9 @@
       "id": "a_300",
       "type": "arrow",
       "x": 775,
-      "y": 1352,
+      "y": 1592.0,
       "width": 0,
-      "height": 28,
+      "height": 28.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1878,11 +1878,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          28
+          28.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1896,9 +1896,9 @@
       "id": "a_301",
       "type": "arrow",
       "x": 1065,
-      "y": 1212,
+      "y": 1452.0,
       "width": 0,
-      "height": 168,
+      "height": 168.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1921,11 +1921,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          168
+          168.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1939,9 +1939,9 @@
       "id": "a_302",
       "type": "arrow",
       "x": 1145,
-      "y": 1212,
+      "y": 1452.0,
       "width": 205,
-      "height": 218,
+      "height": 318.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1964,19 +1964,19 @@
       "points": [
         [
           205,
-          0
+          0.0
         ],
         [
           205,
-          170
+          170.0
         ],
         [
           0,
-          170
+          170.0
         ],
         [
           0,
-          218
+          318.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1990,9 +1990,9 @@
       "id": "s_304",
       "type": "rectangle",
       "x": 585,
-      "y": 1598,
+      "y": 1938.0,
       "width": 330,
-      "height": 66,
+      "height": 66.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -2019,9 +2019,9 @@
       "id": "s_305",
       "type": "ellipse",
       "x": 585,
-      "y": 1590,
+      "y": 1930.0,
       "width": 330,
-      "height": 18,
+      "height": 18.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -2050,9 +2050,9 @@
       "id": "s_306",
       "type": "ellipse",
       "x": 585,
-      "y": 1654,
+      "y": 1994.0,
       "width": 330,
-      "height": 18,
+      "height": 18.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -2081,7 +2081,7 @@
       "id": "t_307",
       "type": "text",
       "x": 593,
-      "y": 1620.12,
+      "y": 1960.12,
       "width": 314,
       "height": 21.76,
       "angle": 0,
@@ -2117,9 +2117,9 @@
       "id": "s_309",
       "type": "rectangle",
       "x": 585,
-      "y": 1730,
+      "y": 2070.0,
       "width": 330,
-      "height": 82,
+      "height": 162.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -2148,7 +2148,7 @@
       "id": "t_310",
       "type": "text",
       "x": 593,
-      "y": 1760.12,
+      "y": 2100.12,
       "width": 314,
       "height": 21.76,
       "angle": 0,
@@ -2184,9 +2184,9 @@
       "id": "s_312",
       "type": "ellipse",
       "x": 600,
-      "y": 1870,
+      "y": 2290.0,
       "width": 300,
-      "height": 65,
+      "height": 65.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -2215,7 +2215,7 @@
       "id": "t_313",
       "type": "text",
       "x": 608,
-      "y": 1880.74,
+      "y": 2300.74,
       "width": 284,
       "height": 43.52,
       "angle": 0,
@@ -2251,9 +2251,9 @@
       "id": "a_314",
       "type": "arrow",
       "x": 595,
-      "y": 1512,
+      "y": 1852.0,
       "width": 155,
-      "height": 58,
+      "height": 58.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2276,19 +2276,19 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          40
+          40.0
         ],
         [
           155,
-          40
+          40.0
         ],
         [
           155,
-          58
+          58.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2302,9 +2302,9 @@
       "id": "a_315",
       "type": "arrow",
       "x": 750,
-      "y": 1512,
+      "y": 1852.0,
       "width": 395,
-      "height": 58,
+      "height": 58.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2327,19 +2327,19 @@
       "points": [
         [
           395,
-          0
+          0.0
         ],
         [
           395,
-          40
+          40.0
         ],
         [
           0,
-          40
+          40.0
         ],
         [
           0,
-          58
+          58.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2353,9 +2353,9 @@
       "id": "a_316",
       "type": "arrow",
       "x": 750,
-      "y": 1672,
+      "y": 2012.0,
       "width": 0,
-      "height": 58,
+      "height": 58.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2378,11 +2378,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          58
+          58.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2396,9 +2396,9 @@
       "id": "a_317",
       "type": "arrow",
       "x": 750,
-      "y": 1812,
+      "y": 2232.0,
       "width": 0,
-      "height": 58,
+      "height": 58.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2421,11 +2421,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          58
+          58.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2439,7 +2439,7 @@
       "id": "a_318",
       "type": "arrow",
       "x": 450,
-      "y": 88.5,
+      "y": 148.5,
       "width": 258,
       "height": 51.5,
       "angle": 0,
@@ -2464,7 +2464,7 @@
       "points": [
         [
           258,
-          0
+          0.0
         ],
         [
           258,
@@ -2490,7 +2490,7 @@
       "id": "a_319",
       "type": "arrow",
       "x": 792,
-      "y": 88.5,
+      "y": 148.5,
       "width": 258,
       "height": 51.5,
       "angle": 0,
@@ -2515,7 +2515,7 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
@@ -2541,9 +2541,9 @@
       "id": "a_320",
       "type": "arrow",
       "x": 450,
-      "y": 222,
+      "y": 282.0,
       "width": 0,
-      "height": 58,
+      "height": 58.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2566,11 +2566,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          58
+          58.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2584,9 +2584,9 @@
       "id": "a_321",
       "type": "arrow",
       "x": 450,
-      "y": 362,
+      "y": 422.0,
       "width": 0,
-      "height": 48,
+      "height": 48.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2609,11 +2609,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          48
+          48.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2627,9 +2627,9 @@
       "id": "a_322",
       "type": "arrow",
       "x": 450,
-      "y": 492,
+      "y": 552.0,
       "width": 300,
-      "height": 18,
+      "height": 18.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2652,15 +2652,15 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          18
+          18.0
         ],
         [
           300,
-          18
+          18.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2674,9 +2674,9 @@
       "id": "a_323",
       "type": "arrow",
       "x": 750,
-      "y": 222,
+      "y": 282.0,
       "width": 300,
-      "height": 288,
+      "height": 288.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2699,15 +2699,15 @@
       "points": [
         [
           300,
-          0
+          0.0
         ],
         [
           300,
-          288
+          288.0
         ],
         [
           0,
-          288
+          288.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2721,9 +2721,9 @@
       "id": "a_324",
       "type": "arrow",
       "x": 750,
-      "y": 622,
+      "y": 682.0,
       "width": 0,
-      "height": 48,
+      "height": 48.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2746,11 +2746,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          48
+          48.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2764,9 +2764,9 @@
       "id": "a_325",
       "type": "arrow",
       "x": 750,
-      "y": 752,
+      "y": 812.0,
       "width": 0,
-      "height": 48,
+      "height": 48.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2789,11 +2789,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          48
+          48.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2807,9 +2807,9 @@
       "id": "a_326",
       "type": "arrow",
       "x": 750,
-      "y": 882,
+      "y": 942.0,
       "width": 0,
-      "height": 68,
+      "height": 68.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2832,11 +2832,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          68
+          68.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2850,9 +2850,9 @@
       "id": "a_327",
       "type": "arrow",
       "x": 750,
-      "y": 0,
+      "y": 60.0,
       "width": 0,
-      "height": 30,
+      "height": 30.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2875,11 +2875,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          30
+          30.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2893,9 +2893,9 @@
       "id": "a_328",
       "type": "arrow",
       "x": 750,
-      "y": 510,
+      "y": 570.0,
       "width": 0,
-      "height": 30,
+      "height": 30.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2918,11 +2918,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          30
+          30.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2936,9 +2936,9 @@
       "id": "a_329",
       "type": "arrow",
       "x": 595,
-      "y": 1380,
+      "y": 1620.0,
       "width": 0,
-      "height": 50,
+      "height": 150.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -2961,11 +2961,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          50
+          150.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -2979,9 +2979,9 @@
       "id": "a_330",
       "type": "arrow",
       "x": 750,
-      "y": 1570,
+      "y": 1910.0,
       "width": 0,
-      "height": 28,
+      "height": 28.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -3004,11 +3004,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          28
+          28.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -3022,9 +3022,9 @@
       "id": "a_331",
       "type": "arrow",
       "x": 195,
-      "y": 1380,
+      "y": 1620.0,
       "width": 870,
-      "height": 0,
+      "height": 0.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -3047,11 +3047,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           870,
-          0
+          0.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -3060,11 +3060,684 @@
       "startArrowhead": null,
       "endArrowhead": null,
       "elbowed": false
+    },
+    {
+      "id": "ge_annot_badge_rect_08_회의_제어_순서도",
+      "type": "rectangle",
+      "x": 18,
+      "y": 18,
+      "width": 430,
+      "height": 34,
+      "angle": 0,
+      "strokeColor": "#475569",
+      "backgroundColor": "#f8fafc",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_badge_group_08_회의_제어_순서도"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 50956495,
+      "version": 1,
+      "versionNonce": 5536640,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_badge_text_08_회의_제어_순서도",
+      "type": "text",
+      "x": 26,
+      "y": 25,
+      "width": 414,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_badge_group_08_회의_제어_순서도"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 9087460,
+      "version": 1,
+      "versionNonce": 7955554,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "그림 유형 · 녹화 Workflow 여러 Node 공통 순서도",
+      "fontSize": 14,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "그림 유형 · 녹화 Workflow 여러 Node 공통 순서도",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_frame_08_회의_제어_순서도_1",
+      "type": "rectangle",
+      "x": 275,
+      "y": 85,
+      "width": 950,
+      "height": 1155,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_1"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 62403861,
+      "version": 1,
+      "versionNonce": 3431162,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_bg_08_회의_제어_순서도_1",
+      "type": "rectangle",
+      "x": 1180,
+      "y": 115,
+      "width": 300,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "#ecfeff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_1"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 52378477,
+      "version": 1,
+      "versionNonce": 4766052,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_text_08_회의_제어_순서도_1",
+      "type": "text",
+      "x": 1186,
+      "y": 121,
+      "width": 288,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_1"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 44549709,
+      "version": 1,
+      "versionNonce": 4511373,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "진입 recording_state · recording | pause",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "진입 recording_state · recording | pause",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_frame_08_회의_제어_순서도_2",
+      "type": "rectangle",
+      "x": 65,
+      "y": 1365,
+      "width": 250,
+      "height": 145,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_2"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 75306384,
+      "version": 1,
+      "versionNonce": 2719233,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_bg_08_회의_제어_순서도_2",
+      "type": "rectangle",
+      "x": 60,
+      "y": 1325,
+      "width": 260,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "#ecfeff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_2"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 24527747,
+      "version": 1,
+      "versionNonce": 4355576,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_text_08_회의_제어_순서도_2",
+      "type": "text",
+      "x": 66,
+      "y": 1331,
+      "width": 248,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_2"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 68473568,
+      "version": 1,
+      "versionNonce": 5164650,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "일시정지 · recording → pause",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "일시정지 · recording → pause",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_frame_08_회의_제어_순서도_3",
+      "type": "rectangle",
+      "x": 355,
+      "y": 1365,
+      "width": 250,
+      "height": 145,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_3"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 27620696,
+      "version": 1,
+      "versionNonce": 3672234,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_bg_08_회의_제어_순서도_3",
+      "type": "rectangle",
+      "x": 350,
+      "y": 1325,
+      "width": 260,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "#ecfeff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_3"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1663250,
+      "version": 1,
+      "versionNonce": 2037017,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_text_08_회의_제어_순서도_3",
+      "type": "text",
+      "x": 356,
+      "y": 1331,
+      "width": 248,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_3"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 26830116,
+      "version": 1,
+      "versionNonce": 477762,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "재개 · pause → recording",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "재개 · pause → recording",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_frame_08_회의_제어_순서도_4",
+      "type": "rectangle",
+      "x": 645,
+      "y": 1365,
+      "width": 250,
+      "height": 380,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_4"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 28688069,
+      "version": 1,
+      "versionNonce": 9999200,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_bg_08_회의_제어_순서도_4",
+      "type": "rectangle",
+      "x": 640,
+      "y": 1325,
+      "width": 260,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "#ecfeff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_4"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 94330990,
+      "version": 1,
+      "versionNonce": 6912287,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_text_08_회의_제어_순서도_4",
+      "type": "text",
+      "x": 646,
+      "y": 1331,
+      "width": 248,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_4"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 99923477,
+      "version": 1,
+      "versionNonce": 8531171,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "종료 · recording | pause → stop → none",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "종료 · recording | pause → stop → none",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_frame_08_회의_제어_순서도_5",
+      "type": "rectangle",
+      "x": 935,
+      "y": 1365,
+      "width": 250,
+      "height": 145,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_5"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 88197581,
+      "version": 1,
+      "versionNonce": 2103441,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_bg_08_회의_제어_순서도_5",
+      "type": "rectangle",
+      "x": 930,
+      "y": 1325,
+      "width": 260,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "#ecfeff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_5"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1543884,
+      "version": 1,
+      "versionNonce": 658943,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_text_08_회의_제어_순서도_5",
+      "type": "text",
+      "x": 936,
+      "y": 1331,
+      "width": 248,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_5"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 14526450,
+      "version": 1,
+      "versionNonce": 6760353,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "정상 거부 · State 유지",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "정상 거부 · State 유지",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_frame_08_회의_제어_순서도_6",
+      "type": "rectangle",
+      "x": 1225,
+      "y": 1365,
+      "width": 250,
+      "height": 145,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_6"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 55388150,
+      "version": 1,
+      "versionNonce": 8975820,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_bg_08_회의_제어_순서도_6",
+      "type": "rectangle",
+      "x": 1220,
+      "y": 1325,
+      "width": 260,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "#ecfeff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_6"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 3066260,
+      "version": 1,
+      "versionNonce": 6180370,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_text_08_회의_제어_순서도_6",
+      "type": "text",
+      "x": 1226,
+      "y": 1331,
+      "width": 248,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#0891b2",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_08_회의_제어_순서도_6"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 24223597,
+      "version": 1,
+      "versionNonce": 8677822,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "text": "오류 · State 유지",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "오류 · State 유지",
+      "autoResize": false,
+      "lineHeight": 1.25
     }
   ],
   "appState": {
     "gridSize": 20,
-    "viewBackgroundColor": "#ffffff"
+    "viewBackgroundColor": "#ffffff",
+    "geLayoutVersion": "spacious-layout-v1:08_회의_제어_순서도",
+    "geBandCorrection": "band-correction-v1:08_회의_제어_순서도",
+    "geExtraLayoutVersion": "spacious-layout-v1:08_회의_제어_순서도-extra",
+    "geEdgeLabelRepair": "edge-label-repair-v1:08_회의_제어_순서도"
   },
   "files": {}
 }

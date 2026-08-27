@@ -53,4 +53,4 @@
   <text x="865" y="310" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937"><tspan x="865" dy="0">시작 완료</tspan></text>
   <text x="865" y="470" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937"><tspan x="865" dy="0">종료 요청</tspan></text>
   <text x="1020" y="100" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937"><tspan x="1020" dy="0">종료 완료</tspan></text>
-</svg>
+<g id="ge-annotations"><rect x="14" y="14" width="230" height="34" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/><text x="129.00" y="36.25" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#475569"><tspan x="129.00" dy="0">그림 유형 · 업무 개요도</tspan></text></g></svg>

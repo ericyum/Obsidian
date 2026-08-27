@@ -7,9 +7,9 @@
       "id": "group_9",
       "type": "rectangle",
       "x": 120,
-      "y": 315,
+      "y": 375.0,
       "width": 960,
-      "height": 190,
+      "height": 310.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fff1f2",
@@ -36,9 +36,9 @@
       "id": "group_16",
       "type": "rectangle",
       "x": 120,
-      "y": 545,
+      "y": 725.0,
       "width": 960,
-      "height": 200,
+      "height": 200.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -65,9 +65,9 @@
       "id": "group_26",
       "type": "rectangle",
       "x": 120,
-      "y": 785,
+      "y": 965.0,
       "width": 960,
-      "height": 300,
+      "height": 300.0,
       "angle": 0,
       "strokeColor": "#475569",
       "backgroundColor": "#f8fafc",
@@ -94,9 +94,9 @@
       "id": "group_34",
       "type": "rectangle",
       "x": 120,
-      "y": 1125,
+      "y": 1385.0,
       "width": 960,
-      "height": 215,
+      "height": 315.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fff1f2",
@@ -123,9 +123,9 @@
       "id": "group_41",
       "type": "rectangle",
       "x": 70,
-      "y": 1355,
+      "y": 1715.0,
       "width": 1060,
-      "height": 985,
+      "height": 1085.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -152,9 +152,9 @@
       "id": "group_102",
       "type": "rectangle",
       "x": 120,
-      "y": 2360,
+      "y": 2820.0,
       "width": 960,
-      "height": 190,
+      "height": 190.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fff1f2",
@@ -181,9 +181,9 @@
       "id": "group_109",
       "type": "rectangle",
       "x": 120,
-      "y": 2590,
+      "y": 3050.0,
       "width": 960,
-      "height": 300,
+      "height": 380.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -210,9 +210,9 @@
       "id": "a_7",
       "type": "arrow",
       "x": 600,
-      "y": 80,
+      "y": 140.0,
       "width": 0,
-      "height": 30,
+      "height": 30.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -235,11 +235,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          30
+          30.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -253,9 +253,9 @@
       "id": "a_8",
       "type": "arrow",
       "x": 600,
-      "y": 175,
+      "y": 235.0,
       "width": 0,
-      "height": 30,
+      "height": 30.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -278,11 +278,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          30
+          30.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -296,9 +296,9 @@
       "id": "a_13",
       "type": "arrow",
       "x": 600,
-      "y": 275,
+      "y": 335.0,
       "width": 0,
-      "height": 95,
+      "height": 95.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -321,11 +321,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          95
+          95.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -339,9 +339,9 @@
       "id": "a_22",
       "type": "arrow",
       "x": 600,
-      "y": 460,
+      "y": 520.0,
       "width": 0,
-      "height": 145,
+      "height": 265.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -364,11 +364,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          145
+          265.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -382,9 +382,9 @@
       "id": "a_25",
       "type": "arrow",
       "x": 770,
-      "y": 645,
+      "y": 825.0,
       "width": 40,
-      "height": 0,
+      "height": 0.0,
       "angle": 0,
       "strokeColor": "#7c3aed",
       "backgroundColor": "transparent",
@@ -407,11 +407,11 @@
       "points": [
         [
           40,
-          0
+          0.0
         ],
         [
           0,
-          0
+          0.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -425,9 +425,9 @@
       "id": "a_32",
       "type": "arrow",
       "x": 600,
-      "y": 685,
+      "y": 865.0,
       "width": 0,
-      "height": 160,
+      "height": 160.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -450,11 +450,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          160
+          160.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -468,9 +468,9 @@
       "id": "a_33",
       "type": "arrow",
       "x": 600,
-      "y": 925,
+      "y": 1105.0,
       "width": 0,
-      "height": 35,
+      "height": 35.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -493,11 +493,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          35
+          35.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -511,9 +511,9 @@
       "id": "a_38",
       "type": "arrow",
       "x": 600,
-      "y": 1070,
+      "y": 1250.0,
       "width": 0,
-      "height": 110,
+      "height": 190.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -536,11 +536,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          110
+          190.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -554,9 +554,9 @@
       "id": "a_49",
       "type": "arrow",
       "x": 250,
-      "y": 1270,
+      "y": 1530.0,
       "width": 350,
-      "height": 150,
+      "height": 250.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -579,19 +579,19 @@
       "points": [
         [
           350,
-          0
+          0.0
         ],
         [
           350,
-          50
+          50.0
         ],
         [
           0,
-          50
+          50.0
         ],
         [
           0,
-          150
+          250.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -605,9 +605,9 @@
       "id": "a_52",
       "type": "arrow",
       "x": 600,
-      "y": 1270,
+      "y": 1530.0,
       "width": 0,
-      "height": 150,
+      "height": 250.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -630,11 +630,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          150
+          250.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -648,9 +648,9 @@
       "id": "a_55",
       "type": "arrow",
       "x": 600,
-      "y": 1270,
+      "y": 1530.0,
       "width": 350,
-      "height": 150,
+      "height": 250.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -673,19 +673,19 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          50
+          50.0
         ],
         [
           350,
-          50
+          50.0
         ],
         [
           350,
-          150
+          250.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -699,9 +699,9 @@
       "id": "a_60",
       "type": "arrow",
       "x": 600,
-      "y": 1510,
+      "y": 1870.0,
       "width": 0,
-      "height": 60,
+      "height": 60.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -724,11 +724,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          60
+          60.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -742,9 +742,9 @@
       "id": "a_61",
       "type": "arrow",
       "x": 600,
-      "y": 1510,
+      "y": 1870.0,
       "width": 350,
-      "height": 60,
+      "height": 60.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -767,19 +767,19 @@
       "points": [
         [
           350,
-          0
+          0.0
         ],
         [
           350,
-          30
+          30.0
         ],
         [
           0,
-          30
+          30.0
         ],
         [
           0,
-          60
+          60.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -793,9 +793,9 @@
       "id": "a_68",
       "type": "arrow",
       "x": 390,
-      "y": 1680,
+      "y": 2040.0,
       "width": 150,
-      "height": 60,
+      "height": 60.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -818,19 +818,19 @@
       "points": [
         [
           150,
-          0
+          0.0
         ],
         [
           150,
-          30
+          30.0
         ],
         [
           0,
-          30
+          30.0
         ],
         [
           0,
-          60
+          60.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -844,9 +844,9 @@
       "id": "a_71",
       "type": "arrow",
       "x": 660,
-      "y": 1680,
+      "y": 2040.0,
       "width": 150,
-      "height": 60,
+      "height": 60.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -869,19 +869,19 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          30
+          30.0
         ],
         [
           150,
-          30
+          30.0
         ],
         [
           150,
-          60
+          60.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -895,9 +895,9 @@
       "id": "a_78",
       "type": "arrow",
       "x": 680,
-      "y": 1820,
+      "y": 2180.0,
       "width": 130,
-      "height": 60,
+      "height": 60.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -920,19 +920,19 @@
       "points": [
         [
           130,
-          0
+          0.0
         ],
         [
           130,
-          30
+          30.0
         ],
         [
           0,
-          30
+          30.0
         ],
         [
           0,
-          60
+          60.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -946,9 +946,9 @@
       "id": "a_81",
       "type": "arrow",
       "x": 810,
-      "y": 1820,
+      "y": 2180.0,
       "width": 130,
-      "height": 60,
+      "height": 60.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -971,19 +971,19 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          30
+          30.0
         ],
         [
           130,
-          30
+          30.0
         ],
         [
           130,
-          60
+          60.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -997,9 +997,9 @@
       "id": "a_86",
       "type": "arrow",
       "x": 390,
-      "y": 1820,
+      "y": 2180.0,
       "width": 0,
-      "height": 165,
+      "height": 165.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1022,11 +1022,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          165
+          165.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1040,9 +1040,9 @@
       "id": "a_87",
       "type": "arrow",
       "x": 680,
-      "y": 1955,
+      "y": 2315.0,
       "width": 0,
-      "height": 30,
+      "height": 30.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1065,11 +1065,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          30
+          30.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1083,9 +1083,9 @@
       "id": "a_88",
       "type": "arrow",
       "x": 940,
-      "y": 1955,
+      "y": 2315.0,
       "width": 0,
-      "height": 30,
+      "height": 30.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1108,11 +1108,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          30
+          30.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1126,9 +1126,9 @@
       "id": "a_89",
       "type": "arrow",
       "x": 390,
-      "y": 1985,
+      "y": 2345.0,
       "width": 550,
-      "height": 0,
+      "height": 0.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1151,11 +1151,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           550,
-          0
+          0.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1169,9 +1169,9 @@
       "id": "a_90",
       "type": "arrow",
       "x": 630,
-      "y": 1985,
+      "y": 2345.0,
       "width": 0,
-      "height": 35,
+      "height": 35.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1194,11 +1194,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          35
+          35.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1212,9 +1212,9 @@
       "id": "a_97",
       "type": "arrow",
       "x": 730,
-      "y": 1015,
+      "y": 1195.0,
       "width": 380,
-      "height": 1145,
+      "height": 1325.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1237,23 +1237,23 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           380,
-          0
+          0.0
         ],
         [
           380,
-          1105
+          1285.0
         ],
         [
           220,
-          1105
+          1285.0
         ],
         [
           220,
-          1145
+          1325.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1267,9 +1267,9 @@
       "id": "a_100",
       "type": "arrow",
       "x": 250,
-      "y": 1510,
+      "y": 1870.0,
       "width": 0,
-      "height": 650,
+      "height": 650.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1292,11 +1292,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          650
+          650.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1310,9 +1310,9 @@
       "id": "a_101",
       "type": "arrow",
       "x": 600,
-      "y": 2100,
+      "y": 2460.0,
       "width": 30,
-      "height": 60,
+      "height": 60.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1335,19 +1335,19 @@
       "points": [
         [
           30,
-          0
+          0.0
         ],
         [
           30,
-          20
+          20.0
         ],
         [
           0,
-          20
+          20.0
         ],
         [
           0,
-          60
+          60.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1361,9 +1361,9 @@
       "id": "a_106",
       "type": "arrow",
       "x": 250,
-      "y": 2250,
+      "y": 2610.0,
       "width": 350,
-      "height": 165,
+      "height": 265.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1386,19 +1386,19 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          70
+          70.0
         ],
         [
           350,
-          70
+          70.0
         ],
         [
           350,
-          165
+          265.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1412,9 +1412,9 @@
       "id": "a_107",
       "type": "arrow",
       "x": 600,
-      "y": 2250,
+      "y": 2610.0,
       "width": 0,
-      "height": 165,
+      "height": 265.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1437,11 +1437,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          165
+          265.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1455,9 +1455,9 @@
       "id": "a_108",
       "type": "arrow",
       "x": 600,
-      "y": 2250,
+      "y": 2610.0,
       "width": 350,
-      "height": 165,
+      "height": 265.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1480,19 +1480,19 @@
       "points": [
         [
           350,
-          0
+          0.0
         ],
         [
           350,
-          70
+          70.0
         ],
         [
           0,
-          70
+          70.0
         ],
         [
           0,
-          165
+          265.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1506,9 +1506,9 @@
       "id": "a_117",
       "type": "arrow",
       "x": 600,
-      "y": 2505,
+      "y": 2965.0,
       "width": 0,
-      "height": 145,
+      "height": 145.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1531,11 +1531,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          145
+          145.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1549,9 +1549,9 @@
       "id": "a_118",
       "type": "arrow",
       "x": 600,
-      "y": 2725,
+      "y": 3185.0,
       "width": 0,
-      "height": 45,
+      "height": 45.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1574,11 +1574,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          45
+          45.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1592,9 +1592,9 @@
       "id": "a_125",
       "type": "arrow",
       "x": 600,
-      "y": 2840,
+      "y": 3300.0,
       "width": 0,
-      "height": 100,
+      "height": 180.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1617,11 +1617,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          100
+          180.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1635,9 +1635,9 @@
       "id": "a_126",
       "type": "arrow",
       "x": 600,
-      "y": 3005,
+      "y": 3545.0,
       "width": 0,
-      "height": 30,
+      "height": 30.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1660,11 +1660,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          30
+          30.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1678,9 +1678,9 @@
       "id": "a_127",
       "type": "arrow",
       "x": 600,
-      "y": 3100,
+      "y": 3640.0,
       "width": 0,
-      "height": 35,
+      "height": 35.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -1703,11 +1703,11 @@
       "points": [
         [
           0,
-          0
+          0.0
         ],
         [
           0,
-          35
+          35.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1721,9 +1721,9 @@
       "id": "a_128",
       "type": "arrow",
       "x": 35,
-      "y": 142,
+      "y": 202.0,
       "width": 415,
-      "height": 3023,
+      "height": 3503.0,
       "angle": 0,
       "strokeColor": "#0f766e",
       "backgroundColor": "transparent",
@@ -1746,19 +1746,19 @@
       "points": [
         [
           415,
-          3023
+          3503.0
         ],
         [
           0,
-          3023
+          3503.0
         ],
         [
           0,
-          0
+          0.0
         ],
         [
           415,
-          0
+          0.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -1772,9 +1772,9 @@
       "id": "s_1",
       "type": "ellipse",
       "x": 450,
-      "y": 20,
+      "y": 80.0,
       "width": 300,
-      "height": 60,
+      "height": 60.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -1799,9 +1799,9 @@
       "id": "s_3",
       "type": "rectangle",
       "x": 450,
-      "y": 110,
+      "y": 170.0,
       "width": 300,
-      "height": 65,
+      "height": 65.0,
       "angle": 0,
       "strokeColor": "#16a34a",
       "backgroundColor": "#dcfce7",
@@ -1828,9 +1828,9 @@
       "id": "s_5",
       "type": "rectangle",
       "x": 430,
-      "y": 205,
+      "y": 265.0,
       "width": 340,
-      "height": 70,
+      "height": 70.0,
       "angle": 0,
       "strokeColor": "#16a34a",
       "backgroundColor": "#dcfce7",
@@ -1857,9 +1857,9 @@
       "id": "s_11",
       "type": "rectangle",
       "x": 390,
-      "y": 370,
+      "y": 430.0,
       "width": 420,
-      "height": 90,
+      "height": 90.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fff1f2",
@@ -1886,9 +1886,9 @@
       "id": "edge_label_bg_14",
       "type": "rectangle",
       "x": 540,
-      "y": 304,
+      "y": 364.0,
       "width": 120,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -1915,9 +1915,9 @@
       "id": "s_18",
       "type": "rectangle",
       "x": 350,
-      "y": 605,
+      "y": 785.0,
       "width": 420,
-      "height": 80,
+      "height": 80.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -1944,9 +1944,9 @@
       "id": "s_20",
       "type": "rectangle",
       "x": 810,
-      "y": 585,
+      "y": 765.0,
       "width": 230,
-      "height": 120,
+      "height": 120.0,
       "angle": 0,
       "strokeColor": "#7c3aed",
       "backgroundColor": "#f3e8ff",
@@ -1973,9 +1973,9 @@
       "id": "edge_label_bg_23",
       "type": "rectangle",
       "x": 532,
-      "y": 519,
+      "y": 699.0,
       "width": 136,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2002,9 +2002,9 @@
       "id": "s_28",
       "type": "rectangle",
       "x": 390,
-      "y": 845,
+      "y": 1025.0,
       "width": 420,
-      "height": 80,
+      "height": 80.0,
       "angle": 0,
       "strokeColor": "#475569",
       "backgroundColor": "#f8fafc",
@@ -2031,9 +2031,9 @@
       "id": "s_30",
       "type": "diamond",
       "x": 470,
-      "y": 960,
+      "y": 1140.0,
       "width": 260,
-      "height": 110,
+      "height": 110.0,
       "angle": 0,
       "strokeColor": "#475569",
       "backgroundColor": "#f8fafc",
@@ -2058,9 +2058,9 @@
       "id": "s_36",
       "type": "rectangle",
       "x": 390,
-      "y": 1180,
+      "y": 1440.0,
       "width": 420,
-      "height": 90,
+      "height": 90.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fff1f2",
@@ -2087,9 +2087,9 @@
       "id": "edge_label_bg_39",
       "type": "rectangle",
       "x": 540,
-      "y": 1104,
+      "y": 1364.0,
       "width": 120,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2116,9 +2116,9 @@
       "id": "s_43",
       "type": "rectangle",
       "x": 130,
-      "y": 1420,
+      "y": 1780.0,
       "width": 240,
-      "height": 90,
+      "height": 90.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2145,9 +2145,9 @@
       "id": "s_45",
       "type": "rectangle",
       "x": 480,
-      "y": 1420,
+      "y": 1780.0,
       "width": 240,
-      "height": 90,
+      "height": 90.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2174,9 +2174,9 @@
       "id": "s_47",
       "type": "rectangle",
       "x": 830,
-      "y": 1420,
+      "y": 1780.0,
       "width": 240,
-      "height": 90,
+      "height": 90.0,
       "angle": 0,
       "strokeColor": "#d97706",
       "backgroundColor": "#fef3c7",
@@ -2203,9 +2203,9 @@
       "id": "edge_label_bg_50",
       "type": "rectangle",
       "x": 210,
-      "y": 1304,
+      "y": 1564.0,
       "width": 120,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2232,9 +2232,9 @@
       "id": "edge_label_bg_53",
       "type": "rectangle",
       "x": 580,
-      "y": 1304,
+      "y": 1564.0,
       "width": 120,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2261,9 +2261,9 @@
       "id": "edge_label_bg_56",
       "type": "rectangle",
       "x": 870,
-      "y": 1304,
+      "y": 1564.0,
       "width": 120,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2290,9 +2290,9 @@
       "id": "s_58",
       "type": "diamond",
       "x": 480,
-      "y": 1570,
+      "y": 1930.0,
       "width": 240,
-      "height": 110,
+      "height": 110.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2317,9 +2317,9 @@
       "id": "edge_label_bg_62",
       "type": "rectangle",
       "x": 750,
-      "y": 1512,
+      "y": 1872.0,
       "width": 120,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2346,9 +2346,9 @@
       "id": "s_64",
       "type": "rectangle",
       "x": 270,
-      "y": 1740,
+      "y": 2100.0,
       "width": 240,
-      "height": 80,
+      "height": 80.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2375,9 +2375,9 @@
       "id": "s_66",
       "type": "rectangle",
       "x": 690,
-      "y": 1740,
+      "y": 2100.0,
       "width": 240,
-      "height": 80,
+      "height": 80.0,
       "angle": 0,
       "strokeColor": "#d97706",
       "backgroundColor": "#fef3c7",
@@ -2404,9 +2404,9 @@
       "id": "edge_label_bg_69",
       "type": "rectangle",
       "x": 370,
-      "y": 1682,
+      "y": 2042.0,
       "width": 120,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2433,9 +2433,9 @@
       "id": "edge_label_bg_72",
       "type": "rectangle",
       "x": 710,
-      "y": 1682,
+      "y": 2042.0,
       "width": 120,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2462,9 +2462,9 @@
       "id": "s_74",
       "type": "rectangle",
       "x": 570,
-      "y": 1880,
+      "y": 2240.0,
       "width": 220,
-      "height": 75,
+      "height": 75.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2491,9 +2491,9 @@
       "id": "s_76",
       "type": "rectangle",
       "x": 830,
-      "y": 1880,
+      "y": 2240.0,
       "width": 220,
-      "height": 75,
+      "height": 75.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2520,9 +2520,9 @@
       "id": "edge_label_bg_79",
       "type": "rectangle",
       "x": 660,
-      "y": 1822,
+      "y": 2182.0,
       "width": 120,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2549,9 +2549,9 @@
       "id": "edge_label_bg_82",
       "type": "rectangle",
       "x": 840,
-      "y": 1822,
+      "y": 2182.0,
       "width": 120,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2578,9 +2578,9 @@
       "id": "s_84",
       "type": "rectangle",
       "x": 480,
-      "y": 2020,
+      "y": 2380.0,
       "width": 300,
-      "height": 80,
+      "height": 80.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2607,9 +2607,9 @@
       "id": "s_91",
       "type": "rectangle",
       "x": 100,
-      "y": 2160,
+      "y": 2520.0,
       "width": 300,
-      "height": 90,
+      "height": 90.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2636,9 +2636,9 @@
       "id": "s_93",
       "type": "rectangle",
       "x": 450,
-      "y": 2160,
+      "y": 2520.0,
       "width": 300,
-      "height": 90,
+      "height": 90.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2665,9 +2665,9 @@
       "id": "s_95",
       "type": "rectangle",
       "x": 800,
-      "y": 2160,
+      "y": 2520.0,
       "width": 300,
-      "height": 90,
+      "height": 90.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2694,9 +2694,9 @@
       "id": "edge_label_bg_98",
       "type": "rectangle",
       "x": 960,
-      "y": 1024,
+      "y": 1204.0,
       "width": 120,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2723,9 +2723,9 @@
       "id": "s_104",
       "type": "rectangle",
       "x": 390,
-      "y": 2415,
+      "y": 2875.0,
       "width": 420,
-      "height": 90,
+      "height": 90.0,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fff1f2",
@@ -2752,9 +2752,9 @@
       "id": "s_111",
       "type": "rectangle",
       "x": 390,
-      "y": 2650,
+      "y": 3110.0,
       "width": 420,
-      "height": 75,
+      "height": 75.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2781,9 +2781,9 @@
       "id": "s_113",
       "type": "rectangle",
       "x": 440,
-      "y": 2778,
+      "y": 3238.0,
       "width": 320,
-      "height": 54,
+      "height": 54.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2810,9 +2810,9 @@
       "id": "s_115",
       "type": "ellipse",
       "x": 440,
-      "y": 2770,
+      "y": 3230.0,
       "width": 320,
-      "height": 18,
+      "height": 18.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2837,9 +2837,9 @@
       "id": "s_116",
       "type": "ellipse",
       "x": 440,
-      "y": 2822,
+      "y": 3282.0,
       "width": 320,
-      "height": 18,
+      "height": 18.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2864,9 +2864,9 @@
       "id": "s_119",
       "type": "rectangle",
       "x": 450,
-      "y": 2940,
+      "y": 3480.0,
       "width": 300,
-      "height": 65,
+      "height": 65.0,
       "angle": 0,
       "strokeColor": "#16a34a",
       "backgroundColor": "#dcfce7",
@@ -2893,9 +2893,9 @@
       "id": "s_121",
       "type": "rectangle",
       "x": 450,
-      "y": 3035,
+      "y": 3575.0,
       "width": 300,
-      "height": 65,
+      "height": 65.0,
       "angle": 0,
       "strokeColor": "#16a34a",
       "backgroundColor": "#dcfce7",
@@ -2922,9 +2922,9 @@
       "id": "s_123",
       "type": "ellipse",
       "x": 450,
-      "y": 3135,
+      "y": 3675.0,
       "width": 300,
-      "height": 60,
+      "height": 60.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -2949,9 +2949,9 @@
       "id": "edge_label_bg_129",
       "type": "rectangle",
       "x": 26,
-      "y": 1614,
+      "y": 1974.0,
       "width": 148,
-      "height": 32,
+      "height": 32.0,
       "angle": 0,
       "strokeColor": "transparent",
       "backgroundColor": "#f1f5f9",
@@ -2978,7 +2978,7 @@
       "id": "t_2",
       "type": "text",
       "x": 458,
-      "y": 28,
+      "y": 88.0,
       "width": 284,
       "height": 44,
       "angle": 0,
@@ -3014,7 +3014,7 @@
       "id": "t_4",
       "type": "text",
       "x": 458,
-      "y": 118,
+      "y": 178.0,
       "width": 284,
       "height": 49,
       "angle": 0,
@@ -3050,7 +3050,7 @@
       "id": "t_6",
       "type": "text",
       "x": 438,
-      "y": 213,
+      "y": 273.0,
       "width": 324,
       "height": 54,
       "angle": 0,
@@ -3086,7 +3086,7 @@
       "id": "t_10",
       "type": "text",
       "x": 136,
-      "y": 325,
+      "y": 385.0,
       "width": 928,
       "height": 28,
       "angle": 0,
@@ -3122,7 +3122,7 @@
       "id": "t_12",
       "type": "text",
       "x": 398,
-      "y": 378,
+      "y": 438.0,
       "width": 404,
       "height": 74,
       "angle": 0,
@@ -3158,7 +3158,7 @@
       "id": "t_15",
       "type": "text",
       "x": 548,
-      "y": 308,
+      "y": 368.0,
       "width": 104,
       "height": 24,
       "angle": 0,
@@ -3194,7 +3194,7 @@
       "id": "t_17",
       "type": "text",
       "x": 136,
-      "y": 555,
+      "y": 735.0,
       "width": 928,
       "height": 28,
       "angle": 0,
@@ -3230,7 +3230,7 @@
       "id": "t_19",
       "type": "text",
       "x": 358,
-      "y": 613,
+      "y": 793.0,
       "width": 404,
       "height": 64,
       "angle": 0,
@@ -3266,7 +3266,7 @@
       "id": "t_21",
       "type": "text",
       "x": 818,
-      "y": 593,
+      "y": 773.0,
       "width": 214,
       "height": 104,
       "angle": 0,
@@ -3302,7 +3302,7 @@
       "id": "t_24",
       "type": "text",
       "x": 540,
-      "y": 523,
+      "y": 703.0,
       "width": 120,
       "height": 24,
       "angle": 0,
@@ -3338,7 +3338,7 @@
       "id": "t_27",
       "type": "text",
       "x": 136,
-      "y": 795,
+      "y": 975.0,
       "width": 928,
       "height": 28,
       "angle": 0,
@@ -3374,7 +3374,7 @@
       "id": "t_29",
       "type": "text",
       "x": 398,
-      "y": 853,
+      "y": 1033.0,
       "width": 404,
       "height": 64,
       "angle": 0,
@@ -3410,7 +3410,7 @@
       "id": "t_31",
       "type": "text",
       "x": 482,
-      "y": 972,
+      "y": 1152.0,
       "width": 236,
       "height": 86,
       "angle": 0,
@@ -3446,7 +3446,7 @@
       "id": "t_35",
       "type": "text",
       "x": 136,
-      "y": 1135,
+      "y": 1395.0,
       "width": 928,
       "height": 28,
       "angle": 0,
@@ -3482,7 +3482,7 @@
       "id": "t_37",
       "type": "text",
       "x": 398,
-      "y": 1188,
+      "y": 1448.0,
       "width": 404,
       "height": 74,
       "angle": 0,
@@ -3518,7 +3518,7 @@
       "id": "t_40",
       "type": "text",
       "x": 548,
-      "y": 1108,
+      "y": 1368.0,
       "width": 104,
       "height": 24,
       "angle": 0,
@@ -3554,7 +3554,7 @@
       "id": "t_42",
       "type": "text",
       "x": 86,
-      "y": 1365,
+      "y": 1725.0,
       "width": 1028,
       "height": 28,
       "angle": 0,
@@ -3590,7 +3590,7 @@
       "id": "t_44",
       "type": "text",
       "x": 138,
-      "y": 1428,
+      "y": 1788.0,
       "width": 224,
       "height": 74,
       "angle": 0,
@@ -3626,7 +3626,7 @@
       "id": "t_46",
       "type": "text",
       "x": 488,
-      "y": 1428,
+      "y": 1788.0,
       "width": 224,
       "height": 74,
       "angle": 0,
@@ -3662,7 +3662,7 @@
       "id": "t_48",
       "type": "text",
       "x": 838,
-      "y": 1428,
+      "y": 1788.0,
       "width": 224,
       "height": 74,
       "angle": 0,
@@ -3698,7 +3698,7 @@
       "id": "t_51",
       "type": "text",
       "x": 218,
-      "y": 1308,
+      "y": 1568.0,
       "width": 104,
       "height": 24,
       "angle": 0,
@@ -3734,7 +3734,7 @@
       "id": "t_54",
       "type": "text",
       "x": 588,
-      "y": 1308,
+      "y": 1568.0,
       "width": 104,
       "height": 24,
       "angle": 0,
@@ -3770,7 +3770,7 @@
       "id": "t_57",
       "type": "text",
       "x": 878,
-      "y": 1308,
+      "y": 1568.0,
       "width": 104,
       "height": 24,
       "angle": 0,
@@ -3806,7 +3806,7 @@
       "id": "t_59",
       "type": "text",
       "x": 492,
-      "y": 1582,
+      "y": 1942.0,
       "width": 216,
       "height": 86,
       "angle": 0,
@@ -3842,7 +3842,7 @@
       "id": "t_63",
       "type": "text",
       "x": 758,
-      "y": 1516,
+      "y": 1876.0,
       "width": 104,
       "height": 24,
       "angle": 0,
@@ -3878,7 +3878,7 @@
       "id": "t_65",
       "type": "text",
       "x": 278,
-      "y": 1748,
+      "y": 2108.0,
       "width": 224,
       "height": 64,
       "angle": 0,
@@ -3914,7 +3914,7 @@
       "id": "t_67",
       "type": "text",
       "x": 698,
-      "y": 1748,
+      "y": 2108.0,
       "width": 224,
       "height": 64,
       "angle": 0,
@@ -3950,7 +3950,7 @@
       "id": "t_70",
       "type": "text",
       "x": 378,
-      "y": 1686,
+      "y": 2046.0,
       "width": 104,
       "height": 24,
       "angle": 0,
@@ -3986,7 +3986,7 @@
       "id": "t_73",
       "type": "text",
       "x": 718,
-      "y": 1686,
+      "y": 2046.0,
       "width": 104,
       "height": 24,
       "angle": 0,
@@ -4022,7 +4022,7 @@
       "id": "t_75",
       "type": "text",
       "x": 578,
-      "y": 1888,
+      "y": 2248.0,
       "width": 204,
       "height": 59,
       "angle": 0,
@@ -4058,7 +4058,7 @@
       "id": "t_77",
       "type": "text",
       "x": 838,
-      "y": 1888,
+      "y": 2248.0,
       "width": 204,
       "height": 59,
       "angle": 0,
@@ -4094,7 +4094,7 @@
       "id": "t_80",
       "type": "text",
       "x": 668,
-      "y": 1826,
+      "y": 2186.0,
       "width": 104,
       "height": 24,
       "angle": 0,
@@ -4130,7 +4130,7 @@
       "id": "t_83",
       "type": "text",
       "x": 848,
-      "y": 1826,
+      "y": 2186.0,
       "width": 104,
       "height": 24,
       "angle": 0,
@@ -4166,7 +4166,7 @@
       "id": "t_85",
       "type": "text",
       "x": 488,
-      "y": 2028,
+      "y": 2388.0,
       "width": 284,
       "height": 64,
       "angle": 0,
@@ -4202,7 +4202,7 @@
       "id": "t_92",
       "type": "text",
       "x": 108,
-      "y": 2168,
+      "y": 2528.0,
       "width": 284,
       "height": 74,
       "angle": 0,
@@ -4238,7 +4238,7 @@
       "id": "t_94",
       "type": "text",
       "x": 458,
-      "y": 2168,
+      "y": 2528.0,
       "width": 284,
       "height": 74,
       "angle": 0,
@@ -4274,7 +4274,7 @@
       "id": "t_96",
       "type": "text",
       "x": 808,
-      "y": 2168,
+      "y": 2528.0,
       "width": 284,
       "height": 74,
       "angle": 0,
@@ -4310,7 +4310,7 @@
       "id": "t_99",
       "type": "text",
       "x": 968,
-      "y": 1028,
+      "y": 1208.0,
       "width": 104,
       "height": 24,
       "angle": 0,
@@ -4346,7 +4346,7 @@
       "id": "t_103",
       "type": "text",
       "x": 136,
-      "y": 2370,
+      "y": 2830.0,
       "width": 928,
       "height": 28,
       "angle": 0,
@@ -4382,7 +4382,7 @@
       "id": "t_105",
       "type": "text",
       "x": 398,
-      "y": 2423,
+      "y": 2883.0,
       "width": 404,
       "height": 74,
       "angle": 0,
@@ -4418,7 +4418,7 @@
       "id": "t_110",
       "type": "text",
       "x": 136,
-      "y": 2600,
+      "y": 3060.0,
       "width": 928,
       "height": 28,
       "angle": 0,
@@ -4454,7 +4454,7 @@
       "id": "t_112",
       "type": "text",
       "x": 398,
-      "y": 2658,
+      "y": 3118.0,
       "width": 404,
       "height": 59,
       "angle": 0,
@@ -4490,7 +4490,7 @@
       "id": "t_114",
       "type": "text",
       "x": 448,
-      "y": 2786,
+      "y": 3246.0,
       "width": 304,
       "height": 38,
       "angle": 0,
@@ -4526,7 +4526,7 @@
       "id": "t_120",
       "type": "text",
       "x": 458,
-      "y": 2948,
+      "y": 3488.0,
       "width": 284,
       "height": 49,
       "angle": 0,
@@ -4562,7 +4562,7 @@
       "id": "t_122",
       "type": "text",
       "x": 458,
-      "y": 3043,
+      "y": 3583.0,
       "width": 284,
       "height": 49,
       "angle": 0,
@@ -4598,7 +4598,7 @@
       "id": "t_124",
       "type": "text",
       "x": 458,
-      "y": 3143,
+      "y": 3683.0,
       "width": 284,
       "height": 44,
       "angle": 0,
@@ -4634,7 +4634,7 @@
       "id": "t_130",
       "type": "text",
       "x": 34,
-      "y": 1618,
+      "y": 1978.0,
       "width": 132,
       "height": 24,
       "angle": 0,
@@ -4665,11 +4665,419 @@
       "originalText": "↻ 다음 검색 요청",
       "autoResize": false,
       "lineHeight": 1.28
+    },
+    {
+      "id": "ge_annot_badge_rect_11_관련_회의록_검색_선택_순서도",
+      "type": "rectangle",
+      "x": 18,
+      "y": 18,
+      "width": 350,
+      "height": 34,
+      "angle": 0,
+      "strokeColor": "#475569",
+      "backgroundColor": "#f8fafc",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_badge_group_11_관련_회의록_검색_선택_순서도"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 61309829,
+      "version": 1,
+      "versionNonce": 9809031,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_badge_text_11_관련_회의록_검색_선택_순서도",
+      "type": "text",
+      "x": 26,
+      "y": 25,
+      "width": 334,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_badge_group_11_관련_회의록_검색_선택_순서도"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 51233426,
+      "version": 1,
+      "versionNonce": 4873552,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "fontSize": 14,
+      "fontFamily": 3,
+      "text": "그림 유형 · 검색·선택 상세 순서도",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "그림 유형 · 검색·선택 상세 순서도",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_frame_11_관련_회의록_검색_선택_순서도_1",
+      "type": "rectangle",
+      "x": 20,
+      "y": 15,
+      "width": 1160,
+      "height": 640,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_11_관련_회의록_검색_선택_순서도_1"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 46838606,
+      "version": 1,
+      "versionNonce": 1308649,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_bg_11_관련_회의록_검색_선택_순서도_1",
+      "type": "rectangle",
+      "x": 800,
+      "y": 55,
+      "width": 340,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_11_관련_회의록_검색_선택_순서도_1"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 91462881,
+      "version": 1,
+      "versionNonce": 4764673,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_text_11_관련_회의록_검색_선택_순서도_1",
+      "type": "text",
+      "x": 806,
+      "y": 61,
+      "width": 328,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_11_관련_회의록_검색_선택_순서도_1"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 23028026,
+      "version": 1,
+      "versionNonce": 2162447,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "fontSize": 13,
+      "fontFamily": 3,
+      "text": "상위 State 범위 · none",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "상위 State 범위 · none",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_frame_11_관련_회의록_검색_선택_순서도_2",
+      "type": "rectangle",
+      "x": 35,
+      "y": 735,
+      "width": 1130,
+      "height": 3000,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_11_관련_회의록_검색_선택_순서도_2"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 42025189,
+      "version": 1,
+      "versionNonce": 4211281,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_bg_11_관련_회의록_검색_선택_순서도_2",
+      "type": "rectangle",
+      "x": 50,
+      "y": 760,
+      "width": 340,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_11_관련_회의록_검색_선택_순서도_2"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 56123346,
+      "version": 1,
+      "versionNonce": 7675709,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_frame_label_text_11_관련_회의록_검색_선택_순서도_2",
+      "type": "text",
+      "x": 56,
+      "y": 766,
+      "width": 328,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_frame_group_11_관련_회의록_검색_선택_순서도_2"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 64921413,
+      "version": 1,
+      "versionNonce": 6759832,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "fontSize": 13,
+      "fontFamily": 3,
+      "text": "상위 State 범위 · search (END까지 유지)",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "상위 State 범위 · search (END까지 유지)",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_label_rect_11_관련_회의록_검색_선택_순서도_1",
+      "type": "rectangle",
+      "x": 700,
+      "y": 680,
+      "width": 460,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_11_관련_회의록_검색_선택_순서도_1"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 48180936,
+      "version": 1,
+      "versionNonce": 9896027,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_label_text_11_관련_회의록_검색_선택_순서도_1",
+      "type": "text",
+      "x": 706,
+      "y": 686,
+      "width": 448,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_11_관련_회의록_검색_선택_순서도_1"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 51616083,
+      "version": 1,
+      "versionNonce": 6452668,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "fontSize": 13,
+      "fontFamily": 3,
+      "text": "State 변경 · none → search",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "State 변경 · none → search",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ge_annot_state_label_rect_11_관련_회의록_검색_선택_순서도_2",
+      "type": "rectangle",
+      "x": 25,
+      "y": 3680,
+      "width": 350,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "#fff7ed",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_11_관련_회의록_검색_선택_순서도_2"
+      ],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 48636529,
+      "version": 1,
+      "versionNonce": 6049615,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true
+    },
+    {
+      "id": "ge_annot_state_label_text_11_관련_회의록_검색_선택_순서도_2",
+      "type": "text",
+      "x": 31,
+      "y": 3686,
+      "width": 338,
+      "height": 18,
+      "angle": 0,
+      "strokeColor": "#f97316",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [
+        "ge_annot_state_label_group_11_관련_회의록_검색_선택_순서도_2"
+      ],
+      "frameId": null,
+      "roundness": false,
+      "seed": 88288888,
+      "version": 1,
+      "versionNonce": 5764569,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787820000000,
+      "link": null,
+      "locked": true,
+      "fontSize": 13,
+      "fontFamily": 3,
+      "text": "END 후 · search → none",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "END 후 · search → none",
+      "autoResize": false,
+      "lineHeight": 1.25
     }
   ],
   "appState": {
     "gridSize": 20,
-    "viewBackgroundColor": "#ffffff"
+    "viewBackgroundColor": "#ffffff",
+    "geLayoutVersion": "spacious-layout-v1:11_관련_회의록_검색_선택_순서도"
   },
   "files": {}
 }

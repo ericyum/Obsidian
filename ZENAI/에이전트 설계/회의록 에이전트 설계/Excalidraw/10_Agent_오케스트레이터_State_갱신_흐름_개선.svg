@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="2680" viewBox="0 0 1900 2680">
+<?xml version="1.0" encoding="utf-8"?><!-- spacious-layout-v1:10_Agent_오케스트레이터_State_갱신_흐름_개선 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="3040" viewBox="0 0 1900 3040">
   <defs>
     <marker id="a6b7280" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
       <path d="M0 0L0 6L9 3z" fill="#6b7280" />
@@ -30,282 +30,282 @@
     </marker>
   </defs>
   <rect width="100%" height="100%" fill="white" />
-  <rect x="40" y="500" width="960" height="1480" rx="0" fill="#eff6ff" fill-opacity="0.45" stroke="#2563eb" stroke-width="2" />
-  <rect x="1020" y="500" width="850" height="1480" rx="0" fill="#eff6ff" fill-opacity="0.45" stroke="#2563eb" stroke-width="2" />
-  <polyline points="910,80 910,110" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="910,180 910,220" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="910,290 910,340" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="700,385 450,385 450,580" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
-  <polyline points="450,656 450,710" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="300,618 220,618 220,840" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="405,786 405,815 500,815 500,840" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="510,786 510,825 745,825 745,840" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="745,916 745,950 720,950 720,980" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="580,1030 500,1030 500,1130" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="720,1080 720,1130 760,1130" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="760,1206 760,1250" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="630,1250 870,1250" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="630,1250 630,1330" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="870,1250 870,1330" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <rect x="40" y="660.00" width="960" height="1600.00" rx="0" fill="#eff6ff" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="1020" y="660.00" width="850" height="1600.00" rx="0" fill="#eff6ff" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <polyline points="910,140.00 910,170.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="910,240.00 910,280.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="910,350.00 910,400.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="700,445.00 450,445.00 450,740.00" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
+  <polyline points="450,816.00 450,870.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="300,778.00 220,778.00 220,1000.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="405,946.00 405,975.00 500,975.00 500,1000.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="510,946.00 510,985.00 745,985.00 745,1000.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="745,1076.00 745,1110.00 720,1110.00 720,1140.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="580,1190.00 500,1190.00 500,1290.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="720,1240.00 720,1290.00 760,1290.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="760,1366.00 760,1410.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="630,1410.00 870,1410.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="630,1410.00 630,1490.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="870,1410.00 870,1490.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
   
-  <polyline points="500,1206 500,1440" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="630,1406 630,1440" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="870,1406 870,1440" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="500,1440 870,1440" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="740,1440 740,1470" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="220,916 220,1630" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="500,916 500,960 300,960 300,1605 500,1605 500,1630" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="740,1546 740,1590 780,1590 780,1630" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="220,1706 220,1760" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="500,1706 500,1760" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="780,1706 780,1760" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="220,1760 780,1760" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="500,1760 500,1800" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="1120,385 1440,385 1440,580" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
-  <polyline points="1290,635 1220,635 1220,760" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="1500,668 1500,720 1580,720 1580,760" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="1500,836 1500,1040" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="1700,836 1700,900" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="1220,836 1220,1180" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="1700,976 1700,1180" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="1500,1116 1500,1365" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="1220,1256 1220,1365" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="1700,1256 1700,1365" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="1220,1365 1700,1365" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="1430,1365 1430,1800" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="910,430 910,460 1010,460 1010,2020" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
-  <polyline points="1010,2096 1010,2130" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="500,1876 500,2130" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="1430,1876 1430,2130" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="500,2130 1430,2130" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="950,2130 950,2200" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="950,2276 950,2330" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="950,2406 950,2450" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="950,2526 950,2560" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="800,2590 25,2590 25,145 760,145" fill="none" stroke="#0f766e" stroke-width="3" marker-end="url(#a0f766e)" />
-  <rect x="855" y="301" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="423" y="371" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="380" y="669" width="140" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="165" y="675" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="396" y="801" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="561" y="811" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="445" y="1026" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="665" y="1102" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="575" y="1270" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="815" y="1270" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="1323" y="371" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="1165" y="649" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="1525" y="694" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="1445" y="854" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="1645" y="854" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="905" y="444" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="2" y="1283" width="170" height="29.2" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <ellipse cx="910" cy="50" rx="150" ry="30" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <rect x="760" y="110" width="300" height="70" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
-  <rect x="760" y="220" width="300" height="70" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
-  <rect x="700" y="340" width="420" height="90" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
-  <rect x="300" y="580" width="300" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="300" y="710" width="300" height="76" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
-  <rect x="90" y="840" width="260" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="370" y="840" width="260" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="650" y="840" width="190" height="76" rx="8" fill="#fef3c7" fill-opacity="1" stroke="#d97706" stroke-width="2" />
-  <polygon points="720,980 860,1030 720,1080 580,1030" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <rect x="390" y="1130" width="220" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="650" y="1130" width="220" height="76" rx="8" fill="#fef3c7" fill-opacity="1" stroke="#d97706" stroke-width="2" />
-  <rect x="520" y="1330" width="220" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="760" y="1330" width="220" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="600" y="1470" width="280" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="90" y="1630" width="260" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="370" y="1630" width="260" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="650" y="1630" width="260" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="330" y="1800" width="340" height="76" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
-  <polygon points="1440,580 1590,635 1440,690 1290,635" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <rect x="1090" y="760" width="260" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="1450" y="760" width="260" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="1570" y="900" width="260" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="1350" y="1040" width="300" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="1090" y="1180" width="260" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="1570" y="1180" width="260" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="1260" y="1800" width="340" height="76" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
-  <rect x="860" y="2020" width="300" height="76" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
-  <rect x="760" y="2200" width="380" height="76" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="790" y="2338" width="320" height="60" rx="0" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <ellipse cx="950" cy="2339" rx="160" ry="9" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <ellipse cx="950" cy="2397" rx="160" ry="9" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <rect x="800" y="2450" width="300" height="76" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
-  <ellipse cx="950" cy="2590" rx="150" ry="30" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <text x="910" y="56.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <polyline points="500,1366.00 500,1600.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="630,1566.00 630,1600.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="870,1566.00 870,1600.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="500,1600.00 870,1600.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="740,1600.00 740,1630.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="220,1076.00 220,1790.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="500,1076.00 500,1120.00 300,1120.00 300,1765.00 500,1765.00 500,1790.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="740,1706.00 740,1750.00 780,1750.00 780,1790.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="220,1866.00 220,1920.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="500,1866.00 500,1920.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="780,1866.00 780,1920.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="220,1920.00 780,1920.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="500,1920.00 500,1960.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="1120,445.00 1440,445.00 1440,740.00" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
+  <polyline points="1290,795.00 1220,795.00 1220,920.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="1500,828.00 1500,880.00 1580,880.00 1580,920.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="1500,996.00 1500,1200.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="1700,996.00 1700,1060.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="1220,996.00 1220,1340.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="1700,1136.00 1700,1340.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="1500,1276.00 1500,1525.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="1220,1416.00 1220,1525.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="1700,1416.00 1700,1525.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="1220,1525.00 1700,1525.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="1430,1525.00 1430,1960.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="910,490.00 910,620.00 1010,620.00 1010,2300.00" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
+  <polyline points="1010,2376.00 1010,2410.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="500,2036.00 500,2410.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="1430,2036.00 1430,2410.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="500,2410.00 1430,2410.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="950,2410.00 950,2480.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="950,2556.00 950,2610.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="950,2686.00 950,2730.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="950,2806.00 950,2840.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="800,2870.00 25,2870.00 25,205.00 760,205.00" fill="none" stroke="#0f766e" stroke-width="3" marker-end="url(#a0f766e)" />
+  <rect x="855" y="361.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="423" y="431.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="380" y="829.00" width="140" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="165" y="835.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="396" y="961.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="561" y="971.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="445" y="1186.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="665" y="1262.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="575" y="1430.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="815" y="1430.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="1323" y="431.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="1165" y="809.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="1525" y="854.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="1445" y="1014.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="1645" y="1014.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="905" y="570.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="2" y="1443.00" width="170" height="29.20" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <ellipse cx="910" cy="110.00" rx="150" ry="30.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <rect x="760" y="170.00" width="300" height="70.00" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
+  <rect x="760" y="280.00" width="300" height="70.00" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
+  <rect x="700" y="400.00" width="420" height="90.00" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
+  <rect x="300" y="740.00" width="300" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="300" y="870.00" width="300" height="76.00" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
+  <rect x="90" y="1000.00" width="260" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="370" y="1000.00" width="260" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="650" y="1000.00" width="190" height="76.00" rx="8" fill="#fef3c7" fill-opacity="1" stroke="#d97706" stroke-width="2" />
+  <polygon points="720,1140.00 860,1190.00 720,1240.00 580,1190.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <rect x="390" y="1290.00" width="220" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="650" y="1290.00" width="220" height="76.00" rx="8" fill="#fef3c7" fill-opacity="1" stroke="#d97706" stroke-width="2" />
+  <rect x="520" y="1490.00" width="220" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="760" y="1490.00" width="220" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="600" y="1630.00" width="280" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="90" y="1790.00" width="260" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="370" y="1790.00" width="260" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="650" y="1790.00" width="260" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="330" y="1960.00" width="340" height="76.00" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
+  <polygon points="1440,740.00 1590,795.00 1440,850.00 1290,795.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <rect x="1090" y="920.00" width="260" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="1450" y="920.00" width="260" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="1570" y="1060.00" width="260" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="1350" y="1200.00" width="300" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="1090" y="1340.00" width="260" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="1570" y="1340.00" width="260" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="1260" y="1960.00" width="340" height="76.00" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
+  <rect x="860" y="2300.00" width="300" height="76.00" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
+  <rect x="760" y="2480.00" width="380" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="790" y="2618.00" width="320" height="60.00" rx="0" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <ellipse cx="950" cy="2619.00" rx="160" ry="9.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <ellipse cx="950" cy="2677.00" rx="160" ry="9.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <rect x="800" y="2730.00" width="300" height="76.00" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
+  <ellipse cx="950" cy="2910.00" rx="150" ry="70.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <text x="910" y="116.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="910" dy="0">START</tspan>
   </text>
-  <text x="910" y="151.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="910" y="211.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="910" dy="0">Agent 요청 대기</tspan>
   </text>
-  <text x="910" y="261.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="910" y="321.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="910" dy="0">사용자 입력</tspan>
   </text>
-  <text x="910" y="380.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="910" y="440.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="910" dy="0">LLM Agent</tspan>
     <tspan x="910" dy="21.76">사용자 의도·Tool 필요 판단</tspan>
   </text>
-  <text x="910" y="320" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="910" y="380.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="910" dy="0">에이전트 호출</tspan>
   </text>
-  <text x="470" y="530.8399999999999" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" fill="#2563eb">
+  <text x="470" y="690.84" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" fill="#2563eb">
     <tspan x="470" dy="0">회의록 검색·선택 과정</tspan>
   </text>
-  <text x="1430" y="530.8399999999999" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" fill="#2563eb">
+  <text x="1430" y="690.84" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="19" fill="#2563eb">
     <tspan x="1430" dy="0">회의록 원문 조회·답변 과정</tspan>
   </text>
-  <text x="450" y="613.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="450" y="773.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="450" dy="0">Tool 1</tspan>
     <tspan x="450" dy="21.76">접근 가능한 회의록 후보 검색</tspan>
   </text>
-  <text x="450" y="743.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="450" y="903.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="450" dy="0">LLM</tspan>
     <tspan x="450" dy="21.76">접근 가능한 후보 수 해석</tspan>
   </text>
-  <text x="220" y="884.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="220" y="1044.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="220" dy="0">구조화된 Tool 오류 결과</tspan>
   </text>
-  <text x="500" y="873.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="500" y="1033.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="500" dy="0">검색 결과 없음</tspan>
     <tspan x="500" dy="21.76">기존 ID 유지</tspan>
   </text>
-  <text x="745" y="873.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="745" y="1033.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="745" dy="0">후보 선택</tspan>
     <tspan x="745" dy="21.76">다수이면 HITL</tspan>
   </text>
-  <text x="720" y="1036.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="720" y="1196.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="720" dy="0">기존 ID가 있는가?</tspan>
   </text>
-  <text x="500" y="1174.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="500" y="1334.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="500" dy="0">새 ID 집합 설정</tspan>
   </text>
-  <text x="760" y="1163.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="760" y="1323.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="760" dy="0">Human in the Loop</tspan>
     <tspan x="760" dy="21.76">추가 또는 대체 선택</tspan>
   </text>
-  <text x="630" y="1363.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="630" y="1523.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="630" dy="0">기존 ID와 새 ID</tspan>
     <tspan x="630" dy="21.76">중복 없이 병합</tspan>
   </text>
-  <text x="870" y="1363.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="870" y="1523.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="870" dy="0">기존 ID를 버리고</tspan>
     <tspan x="870" dy="21.76">새 ID로 교체</tspan>
   </text>
-  <text x="740" y="1503.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="740" y="1663.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="740" dy="0">authorized_meeting_ids</tspan>
     <tspan x="740" dy="21.76">갱신</tspan>
   </text>
-  <text x="220" y="1663.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="220" y="1823.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="220" dy="0">Tool 오류 결과를 정형화한</tspan>
     <tspan x="220" dy="21.76">컨텍스트 조립</tspan>
   </text>
-  <text x="500" y="1663.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="500" y="1823.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="500" dy="0">검색 결과 없음·기존 ID 유지</tspan>
     <tspan x="500" dy="21.76">정형화된 컨텍스트 조립</tspan>
   </text>
-  <text x="780" y="1663.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="780" y="1823.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="780" dy="0">추가·대체·새 집합 반영 결과</tspan>
     <tspan x="780" dy="21.76">정형화된 컨텍스트 조립</tspan>
   </text>
-  <text x="500" y="1833.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="500" y="1993.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="500" dy="0">LLM</tspan>
     <tspan x="500" dy="21.76">검색·선택 최종 답변 생성</tspan>
   </text>
-  <text x="478" y="390" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="478" y="450.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="478" dy="0">Tool 1 필요</tspan>
   </text>
-  <text x="450" y="688" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="450" y="848.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="450" dy="0">정형화된 Tool 결과</tspan>
   </text>
-  <text x="220" y="694" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="220" y="854.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="220" dy="0">거부·실패</tspan>
   </text>
-  <text x="451" y="820" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="451" y="980.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="451" dy="0">없음</tspan>
   </text>
-  <text x="616" y="830" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="616" y="990.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="616" dy="0">있음</tspan>
   </text>
-  <text x="500" y="1045" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="500" y="1205.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="500" dy="0">없음</tspan>
   </text>
-  <text x="720" y="1121" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="720" y="1281.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="720" dy="0">있음</tspan>
   </text>
-  <text x="630" y="1289" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="630" y="1449.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="630" dy="0">추가</tspan>
   </text>
-  <text x="870" y="1289" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="870" y="1449.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="870" dy="0">대체</tspan>
   </text>
-  <text x="1440" y="641.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="1440" y="801.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="1440" dy="0">허용된 회의록 ID가 있는가?</tspan>
   </text>
-  <text x="1220" y="793.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="1220" y="953.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="1220" dy="0">질의 대상 회의록</tspan>
     <tspan x="1220" dy="21.76">선택 필요 결과</tspan>
   </text>
-  <text x="1580" y="793.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="1580" y="953.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="1580" dy="0">Tool 2</tspan>
     <tspan x="1580" dy="21.76">회의록 원문 조회</tspan>
   </text>
-  <text x="1700" y="944.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="1700" y="1104.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="1700" dy="0">구조화된 Tool 오류 결과</tspan>
   </text>
-  <text x="1500" y="1073.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="1500" y="1233.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="1500" dy="0">시스템 지시 + 원문 + messages</tspan>
     <tspan x="1500" dy="21.76">최종 컨텍스트 조립</tspan>
   </text>
-  <text x="1220" y="1213.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="1220" y="1373.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="1220" dy="0">선택 필요 결과를 정형화한</tspan>
     <tspan x="1220" dy="21.76">컨텍스트 조립</tspan>
   </text>
-  <text x="1700" y="1213.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="1700" y="1373.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="1700" dy="0">Tool 오류 결과를 정형화한</tspan>
     <tspan x="1700" dy="21.76">컨텍스트 조립</tspan>
   </text>
-  <text x="1430" y="1833.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="1430" y="1993.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="1430" dy="0">LLM</tspan>
     <tspan x="1430" dy="21.76">질문 최종 답변 생성</tspan>
   </text>
-  <text x="1378" y="390" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="1378" y="450.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="1378" dy="0">Tool 2 필요</tspan>
   </text>
-  <text x="1220" y="668" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="1220" y="828.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="1220" dy="0">없음</tspan>
   </text>
-  <text x="1580" y="713" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="1580" y="873.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="1580" dy="0">있음</tspan>
   </text>
-  <text x="1500" y="873" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="1500" y="1033.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="1500" dy="0">조회 성공</tspan>
   </text>
-  <text x="1700" y="873" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="1700" y="1033.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="1700" dy="0">거부·실패</tspan>
   </text>
-  <text x="1010" y="2053.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="1010" y="2333.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="1010" dy="0">LLM</tspan>
     <tspan x="1010" dy="21.76">직접 답변 생성</tspan>
   </text>
-  <text x="960" y="463" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="960" y="589.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="960" dy="0">Tool 불필요</tspan>
   </text>
-  <text x="950" y="2233.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="950" y="2513.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="950" dy="0">오케스트레이터</tspan>
     <tspan x="950" dy="21.76">최종 답변을 messages에 반영</tspan>
   </text>
-  <text x="950" y="2374.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="950" y="2654.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="950" dy="0">Agent 업무 경계 Checkpoint</tspan>
   </text>
-  <text x="950" y="2494.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="950" y="2774.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="950" dy="0">Agent 요청 대기</tspan>
   </text>
-  <text x="950" y="2596.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="950" y="2876.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="950" dy="0">END · 다음 입력까지 대기</tspan>
   </text>
-  <text x="12" y="1303" text-anchor="start" font-family="Arial,'Noto Sans KR',sans-serif" font-size="15" fill="#0f766e">
+  <text x="12" y="1463.00" text-anchor="start" font-family="Arial,'Noto Sans KR',sans-serif" font-size="15" fill="#0f766e">
     <tspan x="12" dy="0">↻ 다음 사용자 입력</tspan>
   </text>
-</svg>
+<g id="ge-annotations"><rect x="20" y="18" width="340" height="34" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/><text x="190.00" y="40.25" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#475569"><tspan x="190.00" dy="0">그림 유형 · Agent State·업무 연결도</tspan></text><rect x="650" y="75" width="530" height="475" rx="10" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="9 6"/><rect x="1230" y="90" width="420" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="1440.00" y="109.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="1440.00" dy="0">Node · 사용자 요청 판단 / State = none</tspan></text><rect x="28" y="648" width="984" height="1624" rx="10" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="9 6"/><rect x="45" y="610" width="430" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="260.00" y="629.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="260.00" dy="0">Node · 검색 업무 / State = search</tspan></text><rect x="1008" y="648" width="874" height="1624" rx="10" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="9 6"/><rect x="1025" y="610" width="440" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="1245.00" y="629.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="1245.00" dy="0">Node · 질의 업무 / State = question</tspan></text><rect x="500" y="2390" width="900" height="625" rx="10" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="9 6"/><rect x="740" y="2350" width="520" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="1000.00" y="2369.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="1000.00" dy="0">Node · 공통 요청 마무리 / 진입 State 유지</tspan></text><rect x="20" y="70" width="590" height="120" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="1.8"/><text x="315.00" y="110.50" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#1f2937"><tspan x="315.00" dy="0">상위 Graph State</tspan><tspan x="315.00" dy="16.25">none: 초기·입력 대기</tspan><tspan x="315.00" dy="16.25">search: 검색 업무 실행</tspan><tspan x="315.00" dy="16.25">question: 질의 업무 실행</tspan></text><rect x="320" y="590" width="310" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="475.00" y="609.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="475.00" dy="0">State 변경 · none → search</tspan></text><rect x="1260" y="590" width="330" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="1425.00" y="609.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="1425.00" dy="0">State 변경 · none → question</tspan></text><rect x="20" y="2945" width="620" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="330.00" y="2964.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="330.00" dy="0">END 직후 State 정리 · search/question → none · none 유지</tspan></text><rect x="704" y="404" width="412" height="82" rx="6" fill="#fee2e2"/><text x="910.00" y="440.50" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="18" fill="#1f2937"><tspan x="910.00" dy="0">LLM Agent</tspan><tspan x="910.00" dy="22.50">Tool 필요 판단·직접 답변 생성</tspan></text><rect x="835" y="2278" width="350" height="70" fill="white"/><path d="M1010 2278 L1010 2410" stroke="#6b7280" stroke-width="2" fill="none"/><path d="M1004 2398 L1016 2398 L1010 2410 Z" fill="#6b7280"/></g></svg>

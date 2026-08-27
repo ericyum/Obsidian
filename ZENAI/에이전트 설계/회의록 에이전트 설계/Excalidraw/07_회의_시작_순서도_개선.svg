@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1700" viewBox="0 0 1500 1700">
+<?xml version="1.0" encoding="utf-8"?><!-- spacious-layout-v1:07_회의_시작_순서도_개선-extra --><!-- band-correction-v1:07_회의_시작_순서도_개선 --><!-- spacious-layout-v1:07_회의_시작_순서도_개선 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="2260" viewBox="0 0 1500 2260">
   <defs>
     <marker id="a6b7280" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
       <path d="M0 0L0 6L9 3z" fill="#6b7280" />
@@ -30,116 +30,116 @@
     </marker>
   </defs>
   <rect width="100%" height="100%" fill="white" />
-  <polyline points="640,1005 595,1005 595,1095 400,1095 400,1130" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
-  <polyline points="750,1060 750,1110 750,1130" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
-  <polyline points="860,1005 905,1005 905,1095 1100,1095 1100,1130" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
-  <polyline points="400,1212 400,1252 575,1252 575,1270" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="750,1212 750,1252 575,1252 575,1270" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="575,1270 575,1300" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="1100,1212 1100,1272 1065,1272 1065,1300" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="575,1382 575,1432 750,1432 750,1450" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="1065,1382 1065,1432 750,1432 750,1450" fill="none" stroke="#6b7280" stroke-width="2" />
-  <polyline points="750,1450 750,1478" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="750,1552 750,1610" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="750,1692 750,1750" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="750,90 750,140" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="750,222 750,280" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="750,362 750,410" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="750,492 750,540" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="750,622 750,670" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="750,752 750,800" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="750,882 750,950" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <rect x="493" y="1081" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="695" y="1081" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <rect x="898" y="1081" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
-  <ellipse cx="750" cy="60" rx="140" ry="30" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <rect x="580" y="140" width="340" height="82" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
-  <rect x="610" y="280" width="280" height="82" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="610" y="410" width="280" height="82" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="610" y="540" width="280" height="82" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="610" y="670" width="280" height="82" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="570" y="800" width="360" height="82" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <polygon points="750,950 860,1005 750,1060 640,1005" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <rect x="250" y="1130" width="300" height="82" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="600" y="1130" width="300" height="82" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="950" y="1130" width="300" height="82" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="410" y="1300" width="330" height="82" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="900" y="1300" width="330" height="82" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <rect x="585" y="1478" width="330" height="66" rx="0" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <ellipse cx="750" cy="1479" rx="165" ry="9" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <ellipse cx="750" cy="1543" rx="165" ry="9" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <rect x="585" y="1610" width="330" height="82" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <ellipse cx="750" cy="1782.5" rx="150" ry="32.5" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <text x="750" y="66.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <polyline points="640,1055.00 595,1055.00 595,1145.00 400,1145.00 400,1360.00" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
+  <polyline points="750,1110.00 750,1280.00 750,1360.00" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
+  <polyline points="860,1055.00 905,1055.00 905,1145.00 1100,1145.00 1100,1360.00" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#adc2626)" />
+  <polyline points="400,1442.00 400,1482.00 575,1482.00 575,1500.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="750,1442.00 750,1482.00 575,1482.00 575,1500.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="575,1500.00 575,1630.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="1100,1442.00 1100,1502.00 1065,1502.00 1065,1630.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="575,1712.00 575,1762.00 750,1762.00 750,1780.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="1065,1712.00 1065,1762.00 750,1762.00 750,1780.00" fill="none" stroke="#6b7280" stroke-width="2" />
+  <polyline points="750,1780.00 750,1808.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="750,1882.00 750,1940.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="750,2102.00 750,2160.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="750,140.00 750,190.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="750,272.00 750,330.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="750,412.00 750,460.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="750,542.00 750,590.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="750,672.00 750,720.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="750,802.00 750,850.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="750,932.00 750,1000.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <rect x="493" y="1240.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="695" y="1240.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <rect x="898" y="1240.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
+  <ellipse cx="750" cy="110.00" rx="140" ry="30.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <rect x="580" y="190.00" width="340" height="82.00" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
+  <rect x="610" y="330.00" width="280" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="610" y="460.00" width="280" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="610" y="590.00" width="280" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="610" y="720.00" width="280" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="570" y="850.00" width="360" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <polygon points="750,1000.00 860,1055.00 750,1110.00 640,1055.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <rect x="250" y="1360.00" width="300" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="600" y="1360.00" width="300" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="950" y="1360.00" width="300" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="410" y="1630.00" width="330" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="900" y="1630.00" width="330" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="585" y="1808.00" width="330" height="66.00" rx="0" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <ellipse cx="750" cy="1809.00" rx="165" ry="9.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <ellipse cx="750" cy="1873.00" rx="165" ry="9.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <rect x="585" y="1940.00" width="330" height="162.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <ellipse cx="750" cy="2192.50" rx="150" ry="32.50" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <text x="750" y="116.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">START</tspan>
   </text>
-  <text x="750" y="176.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="750" y="226.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">사용자 스레드 Trigger</tspan>
     <tspan x="750" dy="21.76">회의 시작 또는 /meeting-start</tspan>
   </text>
-  <text x="750" y="305.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="750" y="355.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">[Agent 오케스트레이터 State]</tspan>
     <tspan x="750" dy="21.76">recording_modal_status =</tspan>
     <tspan x="750" dy="21.76">healthy</tspan>
   </text>
-  <text x="750" y="446.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="750" y="496.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">오케스트레이터 고정 Trigger 코드</tspan>
     <tspan x="750" dy="21.76">회의 시작 동작 연결</tspan>
   </text>
-  <text x="750" y="576.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="750" y="626.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">[상단바 모달]</tspan>
     <tspan x="750" dy="21.76">버튼과 동일한 로직 실행</tspan>
   </text>
-  <text x="750" y="706.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="750" y="756.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">[상단바 모달]</tspan>
     <tspan x="750" dy="21.76">recording_state = none 검사</tspan>
   </text>
-  <text x="750" y="836.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="750" y="886.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">기존 회의 시작 백엔드</tspan>
     <tspan x="750" dy="21.76">인증·권한·실제 회의 상태 검사·실행</tspan>
   </text>
-  <text x="750" y="1011.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="750" y="1061.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">실행 결과</tspan>
   </text>
-  <text x="400" y="1166.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="400" y="1396.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="400" dy="0">recording_state: none →</tspan>
     <tspan x="400" dy="21.76">recording</tspan>
   </text>
-  <text x="750" y="1166.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="750" y="1396.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">recording_state 유지</tspan>
     <tspan x="750" dy="21.76">정상 거부 결과 신호</tspan>
   </text>
-  <text x="1100" y="1166.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="1100" y="1396.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="1100" dy="0">recording_state 유지</tspan>
     <tspan x="1100" dy="21.76">오류 신호</tspan>
   </text>
-  <text x="548" y="1100" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="548" y="1260.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="548" dy="0">성공</tspan>
   </text>
-  <text x="750" y="1100" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="750" y="1260.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="750" dy="0">정상 거부</tspan>
   </text>
-  <text x="953" y="1100" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
+  <text x="953" y="1260.00" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#1f2937">
     <tspan x="953" dy="0">모달·실행 오류</tspan>
   </text>
-  <text x="575" y="1325.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="575" y="1655.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="575" dy="0">[Agent 오케스트레이터 State]</tspan>
     <tspan x="575" dy="21.76">recording_modal_status =</tspan>
     <tspan x="575" dy="21.76">healthy</tspan>
   </text>
-  <text x="1065" y="1325.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="1065" y="1655.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="1065" dy="0">[Agent 오케스트레이터 State]</tspan>
     <tspan x="1065" dy="21.76">recording_modal_status =</tspan>
     <tspan x="1065" dy="21.76">error</tspan>
   </text>
-  <text x="750" y="1517.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="750" y="1847.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">Agent 업무 경계 Checkpoint</tspan>
   </text>
-  <text x="750" y="1657.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="750" y="2067.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">사용자에게 실행 결과 반환</tspan>
   </text>
-  <text x="750" y="1777.74" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+  <text x="750" y="2187.74" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">END</tspan>
     <tspan x="750" dy="21.76">요청 대기 상태</tspan>
   </text>
-</svg>
+<g id="ge-annotations"><rect x="18" y="18" width="390" height="34" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/><text x="213.00" y="40.25" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#475569"><tspan x="213.00" dy="0">그림 유형 · 녹화 Workflow Node 내부 순서도</tspan></text><rect x="500" y="75" width="500" height="1155" rx="12" fill="none" stroke="#0891b2" stroke-width="3"/><rect x="1010" y="105" width="260" height="30" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/><text x="1140.00" y="124.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#0891b2"><tspan x="1140.00" dy="0">State 범위 · none</tspan></text><rect x="235" y="1350" width="320" height="150" rx="12" fill="none" stroke="#0891b2" stroke-width="3"/><rect x="220" y="1310" width="350" height="30" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/><text x="395.00" y="1329.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#0891b2"><tspan x="395.00" dy="0">성공 · none → recording</tspan></text><rect x="585" y="1350" width="320" height="150" rx="12" fill="none" stroke="#0891b2" stroke-width="3"/><rect x="570" y="1310" width="350" height="30" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/><text x="745.00" y="1329.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#0891b2"><tspan x="745.00" dy="0">정상 거부 · none 유지</tspan></text><rect x="935" y="1350" width="320" height="150" rx="12" fill="none" stroke="#0891b2" stroke-width="3"/><rect x="920" y="1310" width="350" height="30" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/><text x="1095.00" y="1329.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#0891b2"><tspan x="1095.00" dy="0">오류 · none 유지</tspan></text><rect x="220" y="180" width="1060" height="1960" rx="10" fill="none" stroke="#0891b2" stroke-width="2" stroke-dasharray="9 6"/><rect x="24" y="160" width="560" height="30" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/><text x="304.00" y="179.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#0891b2"><tspan x="304.00" dy="0">Node · 요청 대기·회의 시작 / 진입 recording_state = none</tspan></text></g></svg>
