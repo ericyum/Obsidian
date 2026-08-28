@@ -72,7 +72,7 @@
     },
     {
       "id": "s_369",
-      "type": "rectangle",
+      "type": "diamond",
       "x": 760,
       "y": 170.0,
       "width": 300,
@@ -3384,13 +3384,13 @@
       "updated": 1787744911555,
       "link": null,
       "locked": false,
-      "text": "시스템 지시 + 원문 + messages\n최종 컨텍스트 조립",
+      "text": "시스템 지시 + 원문 + ScratchPad\n최종 컨텍스트 조립",
       "fontSize": 17,
       "fontFamily": 3,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "시스템 지시 + 원문 + messages\n최종 컨텍스트 조립",
+      "originalText": "시스템 지시 + 원문 + ScratchPad\n최종 컨텍스트 조립",
       "autoResize": false,
       "lineHeight": 1.28
     },
@@ -4539,13 +4539,13 @@
       "updated": 1787744911555,
       "link": null,
       "locked": false,
-      "text": "오케스트레이터\n최종 답변을 messages에 반영",
+      "text": "하네스\n최종 답변을 ScratchPad에 반영",
       "fontSize": 17,
       "fontFamily": 3,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "오케스트레이터\n최종 답변을 messages에 반영",
+      "originalText": "하네스\n최종 답변을 ScratchPad에 반영",
       "autoResize": false,
       "lineHeight": 1.28
     },
@@ -4678,7 +4678,7 @@
     },
     {
       "id": "s_511",
-      "type": "rectangle",
+      "type": "diamond",
       "x": 800,
       "y": 2730.0,
       "width": 300,
@@ -4733,13 +4733,13 @@
       "updated": 1787744911555,
       "link": null,
       "locked": false,
-      "text": "Agent 요청 대기",
+      "text": "후속 작업이 있는가?",
       "fontSize": 17,
       "fontFamily": 3,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Agent 요청 대기",
+      "originalText": "후속 작업이 있는가?",
       "autoResize": false,
       "lineHeight": 1.28
     },
@@ -4747,9 +4747,9 @@
       "id": "s_514",
       "type": "ellipse",
       "x": 800,
-      "y": 2840.0,
+      "y": 2860.0,
       "width": 300,
-      "height": 140.0,
+      "height": 70.0,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#dbeafe",
@@ -4778,7 +4778,7 @@
       "id": "t_515",
       "type": "text",
       "x": 808,
-      "y": 2859.12,
+      "y": 2884.12,
       "width": 284,
       "height": 21.76,
       "angle": 0,
@@ -4800,13 +4800,13 @@
       "updated": 1787744911555,
       "link": null,
       "locked": false,
-      "text": "END · 다음 입력까지 대기",
+      "text": "END",
       "fontSize": 17,
       "fontFamily": 3,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "END · 다음 입력까지 대기",
+      "originalText": "END",
       "autoResize": false,
       "lineHeight": 1.28
     },
@@ -5031,7 +5031,7 @@
       "x": 950,
       "y": 2806.0,
       "width": 0,
-      "height": 34.0,
+      "height": 54.0,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -5058,7 +5058,7 @@
         ],
         [
           0,
-          34.0
+          54.0
         ]
       ],
       "lastCommittedPoint": null,
@@ -5074,12 +5074,12 @@
       "x": 25,
       "y": 205.0,
       "width": 775,
-      "height": 2665.0,
+      "height": 2690.0,
       "angle": 0,
       "strokeColor": "#0f766e",
       "backgroundColor": "transparent",
       "fillStyle": "solid",
-      "strokeWidth": 3,
+      "strokeWidth": 5,
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
@@ -5097,11 +5097,11 @@
       "points": [
         [
           775,
-          2665.0
+          2690.0
         ],
         [
           0,
-          2665.0
+          2690.0
         ],
         [
           0,
@@ -5118,6 +5118,118 @@
       "startArrowhead": null,
       "endArrowhead": "arrow",
       "elbowed": false
+    },
+    {
+      "id": "a_loop_followup_to_llm",
+      "type": "arrow",
+      "x": 1100,
+      "y": 2768.0,
+      "width": 1000,
+      "height": 2408.0,
+      "angle": 0,
+      "strokeColor": "#0f766e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 77700101,
+      "version": 1,
+      "versionNonce": 77700102,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787754365682,
+      "link": null,
+      "locked": false,
+      "points": [
+        [0, 0],
+        [900, 0],
+        [900, -2408],
+        [-100, -2408],
+        [-100, -2368]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "t_loop_followup_to_llm",
+      "type": "text",
+      "x": 1660,
+      "y": 1530,
+      "width": 210,
+      "height": 19.2,
+      "angle": 0,
+      "strokeColor": "#0f766e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": false,
+      "seed": 77700103,
+      "version": 1,
+      "versionNonce": 77700104,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787754365682,
+      "link": null,
+      "locked": false,
+      "text": "↻ 후속 작업 재판단",
+      "fontSize": 15,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "↻ 후속 작업 재판단",
+      "autoResize": false,
+      "lineHeight": 1.28
+    },
+    {
+      "id": "t_loop_request_complete",
+      "type": "text",
+      "x": 970,
+      "y": 2820,
+      "width": 110,
+      "height": 19.2,
+      "angle": 0,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": false,
+      "seed": 77700105,
+      "version": 1,
+      "versionNonce": 77700106,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787754365682,
+      "link": null,
+      "locked": false,
+      "text": "요청 완료",
+      "fontSize": 14,
+      "fontFamily": 3,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "요청 완료",
+      "autoResize": false,
+      "lineHeight": 1.28
     },
     {
       "id": "edge_label_bg_t_523",
@@ -5159,7 +5271,7 @@
       "strokeColor": "#0f766e",
       "backgroundColor": "transparent",
       "fillStyle": "solid",
-      "strokeWidth": 1,
+      "strokeWidth": 5,
       "strokeStyle": "solid",
       "roughness": 0,
       "opacity": 100,
@@ -5572,7 +5684,7 @@
       "elbowed": false
     },
     {
-      "id": "ge_annot_badge_rect_10_Agent_오케스트레이터_State_갱신_흐름",
+      "id": "ge_annot_badge_rect_10_Agent_하네스_State_갱신_흐름",
       "type": "rectangle",
       "x": 20,
       "y": 18,
@@ -5587,7 +5699,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_badge_group_10_Agent_오케스트레이터_State_갱신_흐름"
+        "ge_annot_badge_group_10_Agent_하네스_State_갱신_흐름"
       ],
       "frameId": null,
       "roundness": {
@@ -5603,7 +5715,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_badge_text_10_Agent_오케스트레이터_State_갱신_흐름",
+      "id": "ge_annot_badge_text_10_Agent_하네스_State_갱신_흐름",
       "type": "text",
       "x": 28,
       "y": 25,
@@ -5618,7 +5730,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_badge_group_10_Agent_오케스트레이터_State_갱신_흐름"
+        "ge_annot_badge_group_10_Agent_하네스_State_갱신_흐름"
       ],
       "frameId": null,
       "roundness": false,
@@ -5641,7 +5753,7 @@
       "lineHeight": 1.25
     },
     {
-      "id": "ge_annot_frame_10_Agent_오케스트레이터_State_갱신_흐름_1",
+      "id": "ge_annot_frame_10_Agent_하네스_State_갱신_흐름_1",
       "type": "rectangle",
       "x": 650,
       "y": 75,
@@ -5656,7 +5768,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_1"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_1"
       ],
       "frameId": null,
       "roundness": {
@@ -5672,7 +5784,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_label_bg_10_Agent_오케스트레이터_State_갱신_흐름_1",
+      "id": "ge_annot_label_bg_10_Agent_하네스_State_갱신_흐름_1",
       "type": "rectangle",
       "x": 1230,
       "y": 90,
@@ -5687,7 +5799,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_1"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_1"
       ],
       "frameId": null,
       "roundness": {
@@ -5703,7 +5815,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_label_text_10_Agent_오케스트레이터_State_갱신_흐름_1",
+      "id": "ge_annot_label_text_10_Agent_하네스_State_갱신_흐름_1",
       "type": "text",
       "x": 1236,
       "y": 96,
@@ -5718,7 +5830,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_1"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_1"
       ],
       "frameId": null,
       "roundness": false,
@@ -5741,7 +5853,7 @@
       "lineHeight": 1.25
     },
     {
-      "id": "ge_annot_frame_10_Agent_오케스트레이터_State_갱신_흐름_2",
+      "id": "ge_annot_frame_10_Agent_하네스_State_갱신_흐름_2",
       "type": "rectangle",
       "x": 28,
       "y": 648,
@@ -5756,7 +5868,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_2"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_2"
       ],
       "frameId": null,
       "roundness": {
@@ -5772,7 +5884,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_label_bg_10_Agent_오케스트레이터_State_갱신_흐름_2",
+      "id": "ge_annot_label_bg_10_Agent_하네스_State_갱신_흐름_2",
       "type": "rectangle",
       "x": 45,
       "y": 610,
@@ -5787,7 +5899,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_2"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_2"
       ],
       "frameId": null,
       "roundness": {
@@ -5803,7 +5915,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_label_text_10_Agent_오케스트레이터_State_갱신_흐름_2",
+      "id": "ge_annot_label_text_10_Agent_하네스_State_갱신_흐름_2",
       "type": "text",
       "x": 51,
       "y": 616,
@@ -5818,7 +5930,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_2"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_2"
       ],
       "frameId": null,
       "roundness": false,
@@ -5841,7 +5953,7 @@
       "lineHeight": 1.25
     },
     {
-      "id": "ge_annot_frame_10_Agent_오케스트레이터_State_갱신_흐름_3",
+      "id": "ge_annot_frame_10_Agent_하네스_State_갱신_흐름_3",
       "type": "rectangle",
       "x": 1008,
       "y": 648,
@@ -5856,7 +5968,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_3"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_3"
       ],
       "frameId": null,
       "roundness": {
@@ -5872,7 +5984,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_label_bg_10_Agent_오케스트레이터_State_갱신_흐름_3",
+      "id": "ge_annot_label_bg_10_Agent_하네스_State_갱신_흐름_3",
       "type": "rectangle",
       "x": 1025,
       "y": 610,
@@ -5887,7 +5999,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_3"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_3"
       ],
       "frameId": null,
       "roundness": {
@@ -5903,7 +6015,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_label_text_10_Agent_오케스트레이터_State_갱신_흐름_3",
+      "id": "ge_annot_label_text_10_Agent_하네스_State_갱신_흐름_3",
       "type": "text",
       "x": 1031,
       "y": 616,
@@ -5918,7 +6030,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_3"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_3"
       ],
       "frameId": null,
       "roundness": false,
@@ -5941,7 +6053,7 @@
       "lineHeight": 1.25
     },
     {
-      "id": "ge_annot_frame_10_Agent_오케스트레이터_State_갱신_흐름_4",
+      "id": "ge_annot_frame_10_Agent_하네스_State_갱신_흐름_4",
       "type": "rectangle",
       "x": 500,
       "y": 2390,
@@ -5956,7 +6068,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_4"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_4"
       ],
       "frameId": null,
       "roundness": {
@@ -5972,7 +6084,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_label_bg_10_Agent_오케스트레이터_State_갱신_흐름_4",
+      "id": "ge_annot_label_bg_10_Agent_하네스_State_갱신_흐름_4",
       "type": "rectangle",
       "x": 740,
       "y": 2350,
@@ -5987,7 +6099,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_4"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_4"
       ],
       "frameId": null,
       "roundness": {
@@ -6003,7 +6115,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_label_text_10_Agent_오케스트레이터_State_갱신_흐름_4",
+      "id": "ge_annot_label_text_10_Agent_하네스_State_갱신_흐름_4",
       "type": "text",
       "x": 746,
       "y": 2356,
@@ -6018,7 +6130,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_frame_group_10_Agent_오케스트레이터_State_갱신_흐름_4"
+        "ge_annot_frame_group_10_Agent_하네스_State_갱신_흐름_4"
       ],
       "frameId": null,
       "roundness": false,
@@ -6030,18 +6142,18 @@
       "updated": 1787820000000,
       "link": null,
       "locked": true,
-      "text": "Graph Runtime · 공통 종료 처리 / 진입 State 유지",
+      "text": "Graph Runtime · 공통 결과 처리 / 후속 작업 분기",
       "fontSize": 13,
       "fontFamily": 3,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "Graph Runtime · 공통 종료 처리 / 진입 State 유지",
+      "originalText": "Graph Runtime · 공통 결과 처리 / 후속 작업 분기",
       "autoResize": false,
       "lineHeight": 1.25
     },
     {
-      "id": "ge_annot_legend_rect_10_Agent_오케스트레이터_State_갱신_흐름",
+      "id": "ge_annot_legend_rect_10_Agent_하네스_State_갱신_흐름",
       "type": "rectangle",
       "x": 20,
       "y": 70,
@@ -6056,7 +6168,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_legend_group_10_Agent_오케스트레이터_State_갱신_흐름"
+        "ge_annot_legend_group_10_Agent_하네스_State_갱신_흐름"
       ],
       "frameId": null,
       "roundness": {
@@ -6072,7 +6184,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_legend_text_10_Agent_오케스트레이터_State_갱신_흐름",
+      "id": "ge_annot_legend_text_10_Agent_하네스_State_갱신_흐름",
       "type": "text",
       "x": 30,
       "y": 78,
@@ -6087,7 +6199,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_legend_group_10_Agent_오케스트레이터_State_갱신_흐름"
+        "ge_annot_legend_group_10_Agent_하네스_State_갱신_흐름"
       ],
       "frameId": null,
       "roundness": false,
@@ -6110,7 +6222,7 @@
       "lineHeight": 1.25
     },
     {
-      "id": "ge_annot_state_label_rect_10_Agent_오케스트레이터_State_갱신_흐름_1",
+      "id": "ge_annot_state_label_rect_10_Agent_하네스_State_갱신_흐름_1",
       "type": "rectangle",
       "x": 320,
       "y": 590,
@@ -6125,7 +6237,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_state_label_group_10_Agent_오케스트레이터_State_갱신_흐름_1"
+        "ge_annot_state_label_group_10_Agent_하네스_State_갱신_흐름_1"
       ],
       "frameId": null,
       "roundness": {
@@ -6141,7 +6253,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_state_label_text_10_Agent_오케스트레이터_State_갱신_흐름_1",
+      "id": "ge_annot_state_label_text_10_Agent_하네스_State_갱신_흐름_1",
       "type": "text",
       "x": 326,
       "y": 596,
@@ -6156,7 +6268,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_state_label_group_10_Agent_오케스트레이터_State_갱신_흐름_1"
+        "ge_annot_state_label_group_10_Agent_하네스_State_갱신_흐름_1"
       ],
       "frameId": null,
       "roundness": false,
@@ -6179,7 +6291,7 @@
       "lineHeight": 1.25
     },
     {
-      "id": "ge_annot_state_label_rect_10_Agent_오케스트레이터_State_갱신_흐름_2",
+      "id": "ge_annot_state_label_rect_10_Agent_하네스_State_갱신_흐름_2",
       "type": "rectangle",
       "x": 1260,
       "y": 590,
@@ -6194,7 +6306,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_state_label_group_10_Agent_오케스트레이터_State_갱신_흐름_2"
+        "ge_annot_state_label_group_10_Agent_하네스_State_갱신_흐름_2"
       ],
       "frameId": null,
       "roundness": {
@@ -6210,7 +6322,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_state_label_text_10_Agent_오케스트레이터_State_갱신_흐름_2",
+      "id": "ge_annot_state_label_text_10_Agent_하네스_State_갱신_흐름_2",
       "type": "text",
       "x": 1266,
       "y": 596,
@@ -6225,7 +6337,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_state_label_group_10_Agent_오케스트레이터_State_갱신_흐름_2"
+        "ge_annot_state_label_group_10_Agent_하네스_State_갱신_흐름_2"
       ],
       "frameId": null,
       "roundness": false,
@@ -6248,7 +6360,7 @@
       "lineHeight": 1.25
     },
     {
-      "id": "ge_annot_state_label_rect_10_Agent_오케스트레이터_State_갱신_흐름_3",
+      "id": "ge_annot_state_label_rect_10_Agent_하네스_State_갱신_흐름_3",
       "type": "rectangle",
       "x": 20,
       "y": 2945,
@@ -6263,7 +6375,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_state_label_group_10_Agent_오케스트레이터_State_갱신_흐름_3"
+        "ge_annot_state_label_group_10_Agent_하네스_State_갱신_흐름_3"
       ],
       "frameId": null,
       "roundness": {
@@ -6279,7 +6391,7 @@
       "locked": true
     },
     {
-      "id": "ge_annot_state_label_text_10_Agent_오케스트레이터_State_갱신_흐름_3",
+      "id": "ge_annot_state_label_text_10_Agent_하네스_State_갱신_흐름_3",
       "type": "text",
       "x": 26,
       "y": 2951,
@@ -6294,7 +6406,7 @@
       "roughness": 0,
       "opacity": 100,
       "groupIds": [
-        "ge_annot_state_label_group_10_Agent_오케스트레이터_State_갱신_흐름_3"
+        "ge_annot_state_label_group_10_Agent_하네스_State_갱신_흐름_3"
       ],
       "frameId": null,
       "roundness": false,
@@ -6320,7 +6432,7 @@
   "appState": {
     "gridSize": 20,
     "viewBackgroundColor": "#ffffff",
-    "geLayoutVersion": "spacious-layout-v1:10_Agent_오케스트레이터_State_갱신_흐름"
+    "geLayoutVersion": "spacious-layout-v1:10_Agent_하네스_State_갱신_흐름"
   },
   "files": {}
 }

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!-- spacious-layout-v1:10_Agent_오케스트레이터_State_갱신_흐름_개선 -->
-<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="3040" viewBox="0 0 1900 3040">
+<?xml version="1.0" encoding="utf-8"?><!-- spacious-layout-v1:10_Agent_하네스_State_갱신_흐름_개선 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="2050" height="3040" viewBox="0 0 2050 3040">
   <defs>
     <marker id="a6b7280" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
       <path d="M0 0L0 6L9 3z" fill="#6b7280" />
@@ -81,8 +81,9 @@
   <polyline points="950,2410.00 950,2480.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
   <polyline points="950,2556.00 950,2610.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
   <polyline points="950,2686.00 950,2730.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="950,2806.00 950,2840.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
-  <polyline points="800,2870.00 25,2870.00 25,205.00 760,205.00" fill="none" stroke="#0f766e" stroke-width="3" marker-end="url(#a0f766e)" />
+  <polyline points="950,2806.00 950,2860.00" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#a6b7280)" />
+  <polyline points="800,2895.00 25,2895.00 25,205.00 760,205.00" fill="none" stroke="#0f766e" stroke-width="5" marker-end="url(#a0f766e)" />
+  <polyline points="1100,2768.00 2000,2768.00 2000,360.00 1000,360.00 1000,400.00" fill="none" stroke="#0f766e" stroke-width="5" marker-end="url(#a0f766e)" />
   <rect x="855" y="361.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
   <rect x="423" y="431.00" width="110" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
   <rect x="380" y="829.00" width="140" height="27.92" rx="8" fill="#f1f5f9" fill-opacity="0.92" stroke="transparent" stroke-width="1" />
@@ -132,8 +133,8 @@
   <rect x="790" y="2618.00" width="320" height="60.00" rx="0" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
   <ellipse cx="950" cy="2619.00" rx="160" ry="9.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
   <ellipse cx="950" cy="2677.00" rx="160" ry="9.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
-  <rect x="800" y="2730.00" width="300" height="76.00" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
-  <ellipse cx="950" cy="2910.00" rx="150" ry="70.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
+  <polygon points="950,2730.00 1100,2768.00 950,2806.00 800,2768.00" fill="#dcfce7" stroke="#16a34a" stroke-width="2" />
+  <ellipse cx="950" cy="2895.00" rx="150" ry="35.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
   <text x="910" y="116.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="910" dy="0">START</tspan>
   </text>
@@ -255,7 +256,7 @@
     <tspan x="1700" dy="0">구조화된 Tool 오류 결과</tspan>
   </text>
   <text x="1500" y="1233.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="1500" dy="0">시스템 지시 + 원문 + messages</tspan>
+    <tspan x="1500" dy="0">시스템 지시 + 원문 + ScratchPad</tspan>
     <tspan x="1500" dy="21.76">최종 컨텍스트 조립</tspan>
   </text>
   <text x="1220" y="1373.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
@@ -293,19 +294,25 @@
     <tspan x="960" dy="0">Tool 불필요</tspan>
   </text>
   <text x="950" y="2513.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="950" dy="0">오케스트레이터</tspan>
-    <tspan x="950" dy="21.76">최종 답변을 messages에 반영</tspan>
+    <tspan x="950" dy="0">하네스</tspan>
+    <tspan x="950" dy="21.76">최종 답변을 ScratchPad에 반영</tspan>
   </text>
   <text x="950" y="2654.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="950" dy="0">Agent 업무 경계 Checkpoint</tspan>
   </text>
   <text x="950" y="2774.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="950" dy="0">Agent 요청 대기</tspan>
+    <tspan x="950" dy="0">후속 작업이 있는가?</tspan>
   </text>
-  <text x="950" y="2876.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="950" dy="0">END · 다음 입력까지 대기</tspan>
+  <text x="950" y="2901.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
+    <tspan x="950" dy="0">END</tspan>
+  </text>
+  <text x="1765" y="1549.20" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="15" fill="#0f766e">
+    <tspan x="1765" dy="0">↻ 후속 작업 재판단</tspan>
+  </text>
+  <text x="1025" y="2839.20" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#475569">
+    <tspan x="1025" dy="0">요청 완료</tspan>
   </text>
   <text x="12" y="1463.00" text-anchor="start" font-family="Arial,'Noto Sans KR',sans-serif" font-size="15" fill="#0f766e">
     <tspan x="12" dy="0">↻ 다음 사용자 입력</tspan>
   </text>
-<g id="ge-annotations"><rect x="20" y="18" width="340" height="34" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/><text x="190.00" y="40.25" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#475569"><tspan x="190.00" dy="0">그림 유형 · Agent State·업무 연결도</tspan></text><rect x="650" y="75" width="530" height="475" rx="10" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="9 6"/><rect x="1230" y="90" width="420" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="1440.00" y="109.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="1440.00" dy="0">Node · 사용자 요청 판단 / State = none</tspan></text><rect x="28" y="648" width="984" height="1624" rx="10" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="9 6"/><rect x="45" y="610" width="430" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="260.00" y="629.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="260.00" dy="0">Subgraph Node · 검색 업무 / State = search</tspan></text><rect x="1008" y="648" width="874" height="1624" rx="10" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="9 6"/><rect x="1025" y="610" width="440" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="1245.00" y="629.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="1245.00" dy="0">Subgraph Node · 질의 업무 / State = question</tspan></text><rect x="500" y="2390" width="900" height="625" rx="10" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="9 6"/><rect x="740" y="2350" width="520" height="30" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/><text x="1000.00" y="2369.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#475569"><tspan x="1000.00" dy="0">Graph Runtime · 공통 종료 처리 / 진입 State 유지</tspan></text><rect x="20" y="70" width="590" height="120" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="1.8"/><text x="315.00" y="110.50" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#1f2937"><tspan x="315.00" dy="0">상위 Graph State</tspan><tspan x="315.00" dy="16.25">none: 초기·입력 대기</tspan><tspan x="315.00" dy="16.25">search: 검색 업무 실행</tspan><tspan x="315.00" dy="16.25">question: 질의 업무 실행</tspan></text><rect x="320" y="590" width="310" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="475.00" y="609.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="475.00" dy="0">State 변경 · none → search</tspan></text><rect x="1260" y="590" width="330" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="1425.00" y="609.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="1425.00" dy="0">State 변경 · none → question</tspan></text><rect x="20" y="2945" width="620" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="330.00" y="2964.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="330.00" dy="0">END 직후 State 정리 · search/question → none · none 유지</tspan></text><rect x="704" y="404" width="412" height="82" rx="6" fill="#fee2e2"/><text x="910.00" y="440.50" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="18" fill="#1f2937"><tspan x="910.00" dy="0">LLM Agent</tspan><tspan x="910.00" dy="22.50">Tool 필요 판단·직접 답변 생성</tspan></text><rect x="835" y="2278" width="350" height="70" fill="white"/><path d="M1010 2278 L1010 2410" stroke="#6b7280" stroke-width="2" fill="none"/><path d="M1004 2398 L1016 2398 L1010 2410 Z" fill="#6b7280"/></g></svg>
+<g id="ge-annotations"><rect x="20" y="18" width="340" height="34" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/><text x="190.00" y="40.25" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#475569"><tspan x="190.00" dy="0">그림 유형 · Agent State·업무 연결도</tspan></text><rect x="650" y="75" width="530" height="475" rx="10" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="9 6"/><rect x="1230" y="90" width="420" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="1440.00" y="109.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="1440.00" dy="0">Node · 사용자 요청 판단 / State = none</tspan></text><rect x="28" y="648" width="984" height="1624" rx="10" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="9 6"/><rect x="45" y="610" width="430" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="260.00" y="629.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="260.00" dy="0">Subgraph Node · 검색 업무 / State = search</tspan></text><rect x="1008" y="648" width="874" height="1624" rx="10" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="9 6"/><rect x="1025" y="610" width="440" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="1245.00" y="629.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="1245.00" dy="0">Subgraph Node · 질의 업무 / State = question</tspan></text><rect x="500" y="2390" width="900" height="625" rx="10" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="9 6"/><rect x="740" y="2350" width="520" height="30" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/><text x="1000.00" y="2369.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#475569"><tspan x="1000.00" dy="0">Graph Runtime · 공통 결과 처리 / 후속 작업 분기</tspan></text><rect x="20" y="70" width="590" height="120" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="1.8"/><text x="315.00" y="110.50" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#1f2937"><tspan x="315.00" dy="0">상위 Graph State</tspan><tspan x="315.00" dy="16.25">none: 초기·입력 대기</tspan><tspan x="315.00" dy="16.25">search: 검색 업무 실행</tspan><tspan x="315.00" dy="16.25">question: 질의 업무 실행</tspan></text><rect x="320" y="590" width="310" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="475.00" y="609.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="475.00" dy="0">State 변경 · none → search</tspan></text><rect x="1260" y="590" width="330" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="1425.00" y="609.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="1425.00" dy="0">State 변경 · none → question</tspan></text><rect x="20" y="2945" width="620" height="30" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="1.5"/><text x="330.00" y="2964.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#f97316"><tspan x="330.00" dy="0">END 직후 State 정리 · search/question → none · none 유지</tspan></text><rect x="704" y="404" width="412" height="82" rx="6" fill="#fee2e2"/><text x="910.00" y="440.50" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="18" fill="#1f2937"><tspan x="910.00" dy="0">LLM Agent</tspan><tspan x="910.00" dy="22.50">Tool 필요 판단·직접 답변 생성</tspan></text><rect x="835" y="2278" width="350" height="70" fill="white"/><path d="M1010 2278 L1010 2410" stroke="#6b7280" stroke-width="2" fill="none"/><path d="M1004 2398 L1016 2398 L1010 2410 Z" fill="#6b7280"/></g></svg>

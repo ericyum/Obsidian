@@ -98,12 +98,12 @@
     <tspan x="1050" dy="21.76">일시정지·재개·종료</tspan>
   </text>
   <text x="450" y="365.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="450" dy="0">[Agent 오케스트레이터 State]</tspan>
+    <tspan x="450" dy="0">[Agent 하네스 State]</tspan>
     <tspan x="450" dy="21.76">recording_modal_status =</tspan>
     <tspan x="450" dy="21.76">healthy</tspan>
   </text>
   <text x="450" y="506.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="450" dy="0">오케스트레이터 고정 Trigger 코드</tspan>
+    <tspan x="450" dy="0">하네스 고정 Trigger 코드</tspan>
     <tspan x="450" dy="21.76">요청 동작 연결</tspan>
   </text>
   <text x="750" y="636.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
@@ -161,12 +161,12 @@
     <tspan x="775" dy="21.76">stop → none</tspan>
   </text>
   <text x="595" y="1795.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="595" dy="0">[Agent 오케스트레이터 State]</tspan>
+    <tspan x="595" dy="0">[Agent 하네스 State]</tspan>
     <tspan x="595" dy="21.76">recording_modal_status =</tspan>
     <tspan x="595" dy="21.76">healthy</tspan>
   </text>
   <text x="1145" y="1795.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="1145" dy="0">[Agent 오케스트레이터 State]</tspan>
+    <tspan x="1145" dy="0">[Agent 하네스 State]</tspan>
     <tspan x="1145" dy="21.76">recording_modal_status =</tspan>
     <tspan x="1145" dy="21.76">error</tspan>
   </text>
