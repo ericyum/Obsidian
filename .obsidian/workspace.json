@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
+                "file": "ZENAI/에이전트 설계/회의록 에이전트 설계/2-2. Tool 계층 확장 및 State 관리 검토안.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1-2. 회의록 에이전트 워크플로우 Graph 상세"
+              "title": "2-2. Tool 계층 확장 및 State 관리 검토안"
             }
           }
         ]
@@ -171,19 +171,23 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "a25277cb5f7ecfbf",
+  "active": "4c30d6e97cc58ab6",
   "lastOpenFiles": [
+    "_context_diagram_qa/profile/Nurturing/campaign_history-journal",
+    "_context_diagram_qa/profile/Nurturing/campaign_history",
+    "_context_diagram_qa/profile/Nurturing",
+    "_context_diagram_qa/profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index-dir/the-real-index",
+    "_context_diagram_qa/profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/index-dir/the-real-index",
+    "_context_diagram_qa/profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index-dir/the-real-index",
+    "_context_diagram_qa/profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index-dir",
+    "_context_diagram_qa/profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Shared Dictionary/cache/index",
+    "_context_diagram_qa/profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index",
+    "_context_diagram_qa/profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/wasm/index-dir",
+    "_context_diagram_qa/profile/Default/Storage/ext/ihmafllikibpmigkcoadcmckbfhibefp/def/Code Cache/js/index-dir",
+    "_context_diagram_qa/13.svg",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/3. 회의록 에이전트의 컨텍스트 구조.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/2-1. 회의록 에이전트 현재 구현 상세 설계.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
-    "_question_gap_qa/profile/Nurturing/campaign_history-journal",
-    "_question_gap_qa/profile/Nurturing/campaign_history",
-    "_question_gap_qa/profile/Nurturing",
-    "_question_gap_qa/profile/ShaderCache/index",
-    "_question_gap_qa/profile/ShaderCache/data_3",
-    "_question_gap_qa/profile/ShaderCache/data_2",
-    "_question_gap_qa/profile/ShaderCache/data_1",
-    "_question_gap_qa/profile/ShaderCache/data_0",
-    "_question_gap_qa/profile/ShaderCache",
-    "_question_gap_qa/profile/GrShaderCache/data_3",
     "_question_gap_qa/17.svg",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/1-1. 회의록 에이전트 업무 개요.md",
     "_s1_llm_qa/16.svg",
@@ -194,16 +198,13 @@
     "_detail_spacing_qa/11.svg",
     "_state_boundary_gap_qa/17.svg",
     "_state_boundary_gap_qa/16.svg",
-    "_state_boundary_gap_qa/12.svg",
     "ZENAI/에이전트 학습/6. Graph Engineering과 구상 순서/2. Graph를 구상하는 순서.md",
     "ZENAI/에이전트 학습/6. Graph Engineering과 구상 순서/1. Graph Engineering.md",
     "ZENAI/에이전트 학습/6. Graph Engineering과 상태 머신/2. 상태 머신과 State.md",
     "ZENAI/에이전트 학습/6. Graph Engineering과 상태 머신/1. Graph Engineering.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/3. 회의록 에이전트의 컨텍스트 구조.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/4. 회의 녹화와 회의록 질의의 병렬 State 설계 조사.md",
     "ZENAI/에이전트 학습/6. 상태머신(state, checkpoint 이해용)/1. 상태 머신 방법론 조사.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/2-2. Tool 계층 확장 및 State 관리 검토안.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/2-1. 회의록 에이전트 현재 구현 상세 설계.md",
     "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/1. 설계 문서 작성 방법.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/2. 회의록 에이전트 상세 설계.md",
     "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/2. 향후 설계 방향.md",
