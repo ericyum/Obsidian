@@ -39,7 +39,7 @@
       "x": 120,
       "y": 580,
       "width": 960,
-      "height": 310,
+      "height": 220,
       "angle": 0,
       "strokeColor": "#dc2626",
       "backgroundColor": "#fff1f2",
@@ -69,7 +69,7 @@
       "x": 90,
       "y": 950,
       "width": 1020,
-      "height": 330,
+      "height": 900,
       "angle": 0,
       "strokeColor": "#2563eb",
       "backgroundColor": "#eff6ff",
@@ -116,7 +116,7 @@
       "seed": 100039,
       "version": 1,
       "versionNonce": 900039,
-      "isDeleted": false,
+      "isDeleted": true,
       "boundElements": [],
       "updated": 1787751008039,
       "link": null,
@@ -490,8 +490,8 @@
       "type": "arrow",
       "x": 665,
       "y": 1120,
-      "width": 205,
-      "height": 40,
+      "width": 265,
+      "height": 830,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -521,12 +521,12 @@
           20
         ],
         [
-          205,
+          265,
           20
         ],
         [
-          205,
-          40
+          265,
+          830
         ]
       ],
       "lastCommittedPoint": null,
@@ -872,10 +872,10 @@
     {
       "id": "a_65",
       "type": "arrow",
-      "x": 870,
-      "y": 1240,
+      "x": 930,
+      "y": 2030,
       "width": 0,
-      "height": 850,
+      "height": 60,
       "angle": 0,
       "strokeColor": "#6b7280",
       "backgroundColor": "transparent",
@@ -902,7 +902,7 @@
         ],
         [
           0,
-          850
+          60
         ]
       ],
       "lastCommittedPoint": null,
@@ -918,7 +918,7 @@
       "type": "arrow",
       "x": 280,
       "y": 2090,
-      "width": 590,
+      "width": 650,
       "height": 0,
       "angle": 0,
       "strokeColor": "#6b7280",
@@ -945,7 +945,7 @@
           0
         ],
         [
-          590,
+          650,
           0
         ]
       ],
@@ -1372,8 +1372,8 @@
     {
       "id": "s_27",
       "type": "rectangle",
-      "x": 720,
-      "y": 1160,
+      "x": 780,
+      "y": 1950,
       "width": 300,
       "height": 80,
       "angle": 0,
@@ -2227,11 +2227,11 @@
       "locked": false,
       "fontSize": 16,
       "fontFamily": 1,
-      "text": "하네스 담당 · 허용 ID 확인과 Tool 인터페이스 호출",
+      "text": "하네스 담당 · 허용 ID 확인·Tool 인터페이스 호출·허용 목록 검사·원문 조회",
       "textAlign": "left",
       "verticalAlign": "middle",
       "containerId": null,
-      "originalText": "하네스 담당 · 허용 ID 확인과 Tool 인터페이스 호출",
+      "originalText": "하네스 담당 · 허용 ID 확인·Tool 인터페이스 호출·허용 목록 검사·원문 조회",
       "autoResize": false,
       "lineHeight": 1.28,
       "index": "00001p"
@@ -2240,9 +2240,9 @@
       "id": "t_24",
       "type": "text",
       "x": 482,
-      "y": 1022,
+      "y": 1053,
       "width": 236,
-      "height": 86,
+      "height": 24,
       "angle": 0,
       "strokeColor": "#1f2937",
       "backgroundColor": "transparent",
@@ -2313,8 +2313,8 @@
     {
       "id": "t_28",
       "type": "text",
-      "x": 728,
-      "y": 1168,
+      "x": 788,
+      "y": 1958,
       "width": 284,
       "height": 64,
       "angle": 0,
@@ -2479,7 +2479,7 @@
       "seed": 100040,
       "version": 1,
       "versionNonce": 900040,
-      "isDeleted": false,
+      "isDeleted": true,
       "boundElements": [],
       "updated": 1787751008040,
       "link": null,
@@ -2536,9 +2536,9 @@
       "id": "t_43",
       "type": "text",
       "x": 482,
-      "y": 1602,
+      "y": 1633,
       "width": 236,
-      "height": 86,
+      "height": 24,
       "angle": 0,
       "strokeColor": "#1f2937",
       "backgroundColor": "transparent",
