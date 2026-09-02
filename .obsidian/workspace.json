@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3da0ac6acc3b2780",
+        "id": "86daffc9928203b5",
         "type": "tabs",
         "children": [
           {
-            "id": "2820e82c5e70f142",
+            "id": "ba318da153313cf8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/에이전트 설계/회의록 에이전트 POC/8. zen-ai 기존 Agent Framework 기반 회의록 Agent 구현 전략.md",
+                "file": "ZENAI/에이전트 설계/회의록 에이전트 이식/5. POC 업무 로직의 내장 회의록 Agent 대응 방식.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8. zen-ai 기존 Agent Framework 기반 회의록 Agent 구현 전략"
+              "title": "5. POC 업무 로직의 내장 회의록 Agent 대응 방식"
             }
           }
         ]
@@ -42,7 +42,7 @@
               "state": {
                 "sortOrder": "alphabetical",
                 "autoReveal": false,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 454.8333435058594
+    "width": 308.8333435058594
   },
   "right": {
     "id": "661c5c59975abbd3",
@@ -171,46 +171,46 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2820e82c5e70f142",
+  "active": "ba318da153313cf8",
   "lastOpenFiles": [
-    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/5. 설계서를 바탕으로 POC와 기능을 구현할 때의 주의점.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/5. 발표용 로컬 Trace 시연 가이드.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/6. LangGraph 로컬 Trace 기능과 LangSmith 비교.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/7. POC 설계 정합성 문제와 복구 과정.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/8. zen-ai 기존 Agent Framework 기반 회의록 Agent 구현 전략.md",
-    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/1. 설계 문서 작성 방법.md",
-    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/4. 워크플로우 특성에 따른 State 설계 방법론.md",
-    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/3. Graph Engineering Graph와 State 전이도 작성 원칙.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/1. POC 설계 기준.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/6. 내장 회의록 시스템 Agent 구현 및 검증 계획.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/4. zen-ai 내장 시스템 Agent 실행 기반 파악.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/5. POC 업무 로직의 내장 회의록 Agent 대응 방식.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/3. 회의록 Agent 이식 대상 업무 로직.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/2. 회의록 Agent 이식을 위한 행동 플랜.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/5. POC 업무 로직의 zen-ai 대응 방식.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/4. zen-ai Agent 생성 기능 파악.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/1. zen-ai 기존 Agent Framework 기반 회의록 Agent 구현 계획서.md",
+    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/1. 목표·상태·상황 기반 행동 플랜 수립 방법.md",
+    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/6. Graph Engineering Graph와 State 전이도 작성 원칙.md",
+    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/3. 향후 설계 방향.md",
+    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/2. 설계 문서 작성 방법.md",
+    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/5. 설계서를 바탕으로 POC와 기능을 구현할 때의 주의점.md",
+    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/4. 워크플로우 특성에 따른 State 설계 방법론.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 POC/7. POC 설계 정합성 문제와 복구 과정.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/2-1. 회의록 에이전트 현재 구현 상세 설계.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 POC/6. LangGraph 로컬 Trace 기능과 LangSmith 비교.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식",
+    "ZENAI/에이전트 설계/회의록 에이전트 POC/1. POC 설계 기준.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 POC/5. 발표용 로컬 Trace 시연 가이드.md",
     "ZENAI/에이전트 설계/회의록 에이전트 POC/2. POC 구조와 설계 대응.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/1-1. 회의록 에이전트 업무 개요.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/2-1. 회의록 에이전트 현재 구현 상세 설계.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/2-2. Tool 계층 확장 및 State 관리 검토안.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/3. 회의록 에이전트의 컨텍스트 구조.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/4. 회의 녹화와 회의록 질의의 병렬 State 설계 조사.md",
     "ZENAI/에이전트 설계/회의록 에이전트 POC/5. zen-ai 현행 구조와 향후 이식 전략.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/3. POC 실행 및 테스트 방법.md",
-    "Codex 필수 플러그인 소개 및 사용 방법/2. Ponytail.md",
-    "Codex 필수 플러그인 소개 및 사용 방법/1. Superpowers.md",
     "Codex 필수 플러그인 소개 및 사용 방법",
     "새 폴더",
     "ZENAI/에이전트 학습/7. Codex 플러그인 사용 방법",
     "ZENAI/에이전트 학습/새 폴더",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/4. POC 전체 구조와 코드 해설.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/6. 발표용 로컬 Trace 서버 실행 가이드.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/2-2. 현재 POC 구조와 설계 대응.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/2-1. zen-ai 구조 조사와 POC 개발 방향 변경.md",
     "ZENAI/에이전트 학습/자료/그래프-엔지니어링-온보딩.pdf",
-    "ZENAI/에이전트 학습/6. Graph Engineering과 구상 순서/2. Graph를 구상하는 순서.md",
-    "ZENAI/에이전트 학습/6. Graph Engineering과 구상 순서/1. Graph Engineering.md",
     "_diagram_label_qa",
     "_fix_detail_diagram_labels.py",
     "ZENAI/에이전트 설계/회의록 에이전트 POC",
     "_remove_orange_node_guides.py",
     "_q2a_move_qa/17.png",
     "_q2a_move_qa/12.png",
-    "_q2a_move_qa",
     "_node_boundary_qa/16.png",
     "_node_boundary_qa/17.png",
     "_meeting_diagram_qa/16.png",
