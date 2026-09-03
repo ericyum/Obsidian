@@ -67,7 +67,7 @@
   <ellipse cx="750" cy="120.00" rx="140" ry="30.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
   <rect x="310" y="200.00" width="280" height="82.00" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
   <rect x="910" y="200.00" width="280" height="82.00" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
-  <rect x="310" y="340.00" width="280" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
+  <rect x="310" y="340.00" width="280" height="82.00" rx="8" fill="#fff1f2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
   <rect x="310" y="470.00" width="280" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
   <rect x="610" y="600.00" width="280" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
   <rect x="610" y="730.00" width="280" height="82.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
@@ -90,7 +90,7 @@
     <tspan x="750" dy="0">START</tspan>
   </text>
   <text x="450" y="236.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="450" dy="0">스레드 Trigger</tspan>
+    <tspan x="450" dy="0">스레드 녹화 명령</tspan>
     <tspan x="450" dy="21.76">일시정지·재개·종료</tspan>
   </text>
   <text x="1050" y="236.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
@@ -98,17 +98,16 @@
     <tspan x="1050" dy="21.76">일시정지·재개·종료</tspan>
   </text>
   <text x="450" y="365.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="450" dy="0">[Agent 하네스 State]</tspan>
-    <tspan x="450" dy="21.76">recording_modal_status =</tspan>
-    <tspan x="450" dy="21.76">healthy</tspan>
+    <tspan x="450" dy="0">Agent LLM</tspan>
+    <tspan x="450" dy="21.76">녹화 Tool 호출 판단</tspan>
   </text>
   <text x="450" y="506.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="450" dy="0">하네스 고정 Trigger 코드</tspan>
-    <tspan x="450" dy="21.76">요청 동작 연결</tspan>
+    <tspan x="450" dy="0">하나의 녹화 Tool 호출</tspan>
+    <tspan x="450" dy="21.76">명령별 Skill 선택·실행</tspan>
   </text>
   <text x="750" y="636.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="750" dy="0">[상단바 모달]</tspan>
-    <tspan x="750" dy="21.76">버튼과 동일한 로직 실행</tspan>
+    <tspan x="750" dy="0">[상단바 녹화 모달]</tspan>
+    <tspan x="750" dy="21.76">공통 제어 메서드 실행</tspan>
   </text>
   <text x="750" y="766.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">[상단바 모달]</tspan>
@@ -119,7 +118,7 @@
     <tspan x="750" dy="21.76">인증·권한·실제 회의 상태 검사·실행</tspan>
   </text>
   <text x="750" y="1071.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="750" dy="0">실행 결과</tspan>
+    <tspan x="750" dy="0">모달·백엔드 실행 결과</tspan>
   </text>
   <text x="195" y="1406.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="195" dy="0">recording_state</tspan>
@@ -161,23 +160,23 @@
     <tspan x="775" dy="21.76">stop → none</tspan>
   </text>
   <text x="595" y="1795.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="595" dy="0">[Agent 하네스 State]</tspan>
-    <tspan x="595" dy="21.76">recording_modal_status =</tspan>
-    <tspan x="595" dy="21.76">healthy</tspan>
+    <tspan x="595" dy="0">[커스텀 하네스]</tspan>
+    <tspan x="595" dy="21.76">녹화 Tool·모달 결과 수신</tspan>
+    <tspan x="595" dy="21.76">recording_modal_status = healthy</tspan>
   </text>
   <text x="1145" y="1795.36" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="1145" dy="0">[Agent 하네스 State]</tspan>
-    <tspan x="1145" dy="21.76">recording_modal_status =</tspan>
-    <tspan x="1145" dy="21.76">error</tspan>
+    <tspan x="1145" dy="0">[커스텀 하네스]</tspan>
+    <tspan x="1145" dy="21.76">녹화 Tool·모달 결과 수신</tspan>
+    <tspan x="1145" dy="21.76">recording_modal_status = error</tspan>
   </text>
   <text x="750" y="1977.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">Agent 업무 경계 Checkpoint</tspan>
   </text>
   <text x="750" y="2117.12" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <tspan x="750" dy="0">사용자 또는 UI에 결과 반환</tspan>
+    <tspan x="750" dy="0">사용자·UI에 녹화 실행 결과 반환</tspan>
   </text>
   <text x="750" y="2317.74" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <tspan x="750" dy="0">END</tspan>
-    <tspan x="750" dy="21.76">요청 대기 상태</tspan>
+    <tspan x="750" dy="21.76">사용자 입력 대기</tspan>
   </text>
 <g id="ge-annotations"><rect x="18" y="18" width="430" height="34" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/><text x="233.00" y="40.25" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="14" fill="#475569"><tspan x="233.00" dy="0">그림 유형 · 녹화 Workflow 여러 Node 공통 순서도</tspan></text><rect x="275" y="85" width="950" height="1155" rx="12" fill="none" stroke="#0891b2" stroke-width="3"/><rect x="1180" y="115" width="300" height="30" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/><text x="1330.00" y="134.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#0891b2"><tspan x="1330.00" dy="0">진입 recording_state · recording | pause</tspan></text><rect x="65" y="1365" width="250" height="145" rx="12" fill="none" stroke="#0891b2" stroke-width="3"/><rect x="60" y="1325" width="260" height="30" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/><text x="190.00" y="1344.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#0891b2"><tspan x="190.00" dy="0">일시정지 · recording → pause</tspan></text><rect x="355" y="1365" width="250" height="145" rx="12" fill="none" stroke="#0891b2" stroke-width="3"/><rect x="350" y="1325" width="260" height="30" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/><text x="480.00" y="1344.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#0891b2"><tspan x="480.00" dy="0">재개 · pause → recording</tspan></text><rect x="645" y="1365" width="250" height="380" rx="12" fill="none" stroke="#0891b2" stroke-width="3"/><rect x="640" y="1325" width="260" height="30" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/><text x="770.00" y="1344.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#0891b2"><tspan x="770.00" dy="0">종료 · recording | pause → stop → none</tspan></text><rect x="935" y="1365" width="250" height="145" rx="12" fill="none" stroke="#0891b2" stroke-width="3"/><rect x="930" y="1325" width="260" height="30" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/><text x="1060.00" y="1344.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#0891b2"><tspan x="1060.00" dy="0">정상 거부 · State 유지</tspan></text><rect x="1225" y="1365" width="250" height="145" rx="12" fill="none" stroke="#0891b2" stroke-width="3"/><rect x="1220" y="1325" width="260" height="30" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/><text x="1350.00" y="1344.88" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="13" fill="#0891b2"><tspan x="1350.00" dy="0">오류 · State 유지</tspan></text></g></svg>
