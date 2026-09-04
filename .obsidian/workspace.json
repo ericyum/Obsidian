@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a84a19487380904e",
+        "id": "d6aa92da16367d44",
         "type": "tabs",
         "children": [
           {
-            "id": "3858c0823a430343",
+            "id": "f0561ea68f50bf5a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
+                "file": "ZENAI/에이전트 설계/회의록 에이전트 이식/5. 공통 Agent 호출 기반과 AI SDK 조립 템플릿 경계 조사.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1-2. 회의록 에이전트 워크플로우 Graph 상세"
+              "title": "5. 공통 Agent 호출 기반과 AI SDK 조립 템플릿 경계 조사"
             }
           }
         ]
@@ -171,10 +171,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "3858c0823a430343",
+  "active": "f0561ea68f50bf5a",
   "lastOpenFiles": [
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/3. 상태·목표·상황 기반 회의록 Agent 이식 행동 플랜.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/5. 공통 Agent 호출 기반과 AI SDK 조립 템플릿 경계 조사.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/4. 캡슐화의 목적과 적용 방향.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/2. 회의록 Agent 이식 방향 재정립.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Codex-LB.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/4. 캡슐화 요구 배경에 대한 현재 해석.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/1. 회의록 Agent 이식 방향 계획서.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/6-1. 회의록 Agent 이식 방향 계획서.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/6. 내장 회의록 시스템 Agent 구현 및 검증 계획.md",
@@ -195,11 +200,6 @@
     "ZENAI/에이전트 설계/회의록 에이전트 설계/2-1. 회의록 에이전트 현재 구현 상세 설계.md",
     "ZENAI/에이전트 설계/회의록 에이전트 POC/6. LangGraph 로컬 Trace 기능과 LangSmith 비교.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/1. POC 설계 기준.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/5. 발표용 로컬 Trace 시연 가이드.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/2. POC 구조와 설계 대응.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/1-1. 회의록 에이전트 업무 개요.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/2-2. Tool 계층 확장 및 State 관리 검토안.md",
     "Codex 필수 플러그인 소개 및 사용 방법",
     "새 폴더",
     "ZENAI/에이전트 학습/7. Codex 플러그인 사용 방법",
