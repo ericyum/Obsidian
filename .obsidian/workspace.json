@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4c6b3f4799e20a60",
+        "id": "33904166c016b917",
         "type": "tabs",
         "children": [
           {
-            "id": "5821890b478947c6",
+            "id": "4c564c7626303e37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
+                "file": "ZENAI/에이전트 설계/회의록 에이전트 이식/5. 공통 Agent 호출 기반과 AI SDK 조립 템플릿 경계 조사.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1-2. 회의록 에이전트 워크플로우 Graph 상세"
+              "title": "5. 공통 Agent 호출 기반과 AI SDK 조립 템플릿 경계 조사"
             }
           }
         ]
@@ -171,13 +171,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "5821890b478947c6",
+  "active": "4c564c7626303e37",
   "lastOpenFiles": [
-    "ZENAI/에이전트 설계/회의록 에이전트 이식/5. 공통 Agent 호출 기반과 AI SDK 조립 템플릿 경계 조사.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/3. 상태·목표·상황 기반 회의록 Agent 이식 행동 플랜.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/5. 공통 Agent 호출 기반과 AI SDK 조립 템플릿 경계 조사.md",
     "ZENAI/에이전트 학습/6. Graph Engineering과 구상 순서/3. Agent 실행 문맥·상태·복구 개념 정리.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/4. 캡슐화의 목적과 적용 방향.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/2. 회의록 Agent 이식 방향 재정립.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/Codex-LB.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/4. 캡슐화 요구 배경에 대한 현재 해석.md",
