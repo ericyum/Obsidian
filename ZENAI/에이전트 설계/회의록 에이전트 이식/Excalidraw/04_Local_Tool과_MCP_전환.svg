@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="647" viewBox="0 0 1440 647">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="25" font-weight="400" text-anchor="middle" fill="#111827"><tspan x="600" y="54.375">현재 로컬 Tool과 향후 MCP Tool 전환</tspan></text>
+  <rect x="60" y="105" width="300" height="110" rx="12" fill="#e5e7eb" stroke="#4b5563" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="210" y="155.5">Agent DB</tspan><tspan x="210" y="178">Tool 이름·연결 정보</tspan></text>
+  <rect x="450" y="105" width="300" height="110" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="600" y="155.5">custom/runner.ts</tspan><tspan x="600" y="178">시작 시 Tool 등록</tspan></text>
+  <rect x="840" y="90" width="300" height="140" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="990" y="155.5">Tool Map</tspan><tspan x="990" y="178">이름 → 실행 구현</tspan></text>
+  <rect x="160" y="350" width="330" height="120" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="325" y="405.5">현재 임시 경로</tspan><tspan x="325" y="428">tools/*.ts의 로컬 execute</tspan></text>
+  <rect x="710" y="350" width="330" height="120" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="875" y="405.5">향후 고객사 경로</tspan><tspan x="875" y="428">온프레미스 MCP Tool</tspan></text>
+  <polyline points="360,160 450,160" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="405" y="149.25">Tool 조회</tspan></text>
+  <polyline points="750,160 840,160" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="795" y="149.25">등록</tspan></text>
+  <polyline points="900,230 400,350" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#2563eb"><tspan x="650" y="279.25">현재 매핑</tspan></text>
+  <polyline points="1080,230 875,350" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#16a34a"><tspan x="977.5" y="279.25">향후 교체</tspan></text>
+  <rect x="120" y="535" width="960" height="72" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" stroke-dasharray="9 7"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#5b21b6"><tspan x="600" y="577">효과: Harness를 바꾸지 않고 Tool 등록 경로만 로컬에서 MCP로 교체한다.</tspan></text>
+</svg>

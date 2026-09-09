@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="640" viewBox="0 0 1240 640">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="25" font-weight="400" text-anchor="middle" fill="#111827"><tspan x="600" y="54.375">Trace와 감사의 서로 다른 처리 시점</tspan></text>
+  <rect x="70" y="120" width="280" height="120" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="210" y="175.5">Harness·Tool 실행</tspan><tspan x="210" y="198">Graph·LLM·Tool·HITL Event</tspan></text>
+  <rect x="455" y="90" width="290" height="120" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="600" y="145.5">trace.ts</tspan><tspan x="600" y="168">실행 중 즉시 안전한 Trace 출력</tspan></text>
+  <rect x="455" y="300" width="290" height="120" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="600" y="355.5">runner.ts</tspan><tspan x="600" y="378">Tool 감사 항목을 Run 메모리에 수집</tspan></text>
+  <rect x="850" y="300" width="280" height="120" rx="12" fill="#e5e7eb" stroke="#4b5563" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="990" y="355.5">감사 저장소</tspan><tspan x="990" y="378">Run 종료 직전 일괄 기록</tspan></text>
+  <polyline points="350,155 455,150" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="402.5" y="141.75">실시간</tspan></text>
+  <polyline points="350,205 455,350" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="402.5" y="266.75">Tool 결과</tspan></text>
+  <polyline points="745,360 850,360" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="797.5" y="349.25">Run 종료</tspan></text>
+  <rect x="850" y="90" width="280" height="120" rx="12" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="9 7"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#6b7280"><tspan x="990" y="146">향후 공용 Audit Adapter</tspan><tspan x="990" y="166">재사용 근거가 생길 때만 분리</tspan></text>
+  <polyline points="990,300 990,210" fill="none" stroke="#9ca3af" stroke-width="2" stroke-dasharray="9 7" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#9ca3af"><tspan x="990" y="244.25">향후 분리</tspan></text>
+  <rect x="120" y="500" width="960" height="72" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" stroke-dasharray="9 7"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#5b21b6"><tspan x="600" y="542">효과: 실시간 관찰과 영속 감사를 섞지 않고, 현재 필요한 최소 구조만 유지한다.</tspan></text>
+</svg>

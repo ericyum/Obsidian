@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="640" viewBox="0 0 1240 640">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="25" font-weight="400" text-anchor="middle" fill="#111827"><tspan x="600" y="54.375">Worker와 Runner의 공통 계약</tspan></text>
+  <rect x="70" y="170" width="210" height="90" rx="12" fill="#e5e7eb" stroke="#4b5563" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="175" y="210.5">Worker</tspan><tspan x="175" y="233">공통 호출·결과 처리</tspan></text>
+  <rect x="405" y="105" width="260" height="220" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="535" y="176.75">runner-contract.ts</tspan><tspan x="535" y="199.25"></tspan><tspan x="535" y="221.75">입력 규격</tspan><tspan x="535" y="244.25">Realtime Event 규격</tspan><tspan x="535" y="266.75">최종 결과 규격</tspan></text>
+  <rect x="800" y="90" width="300" height="90" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="950" y="130.5">standard/standard-runner.ts</tspan><tspan x="950" y="153">기존 AI SDK·MCP 실행</tspan></text>
+  <rect x="800" y="250" width="300" height="90" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="950" y="290.5">custom/runner.ts</tspan><tspan x="950" y="313">선택된 Custom Harness 실행</tspan></text>
+  <polyline points="280,215 405,215" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="342.5" y="204.25">공통 입력</tspan></text>
+  <polyline points="665,160 800,135" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="732.5" y="136.75">같은 규격</tspan></text>
+  <polyline points="665,270 800,295" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="732.5" y="271.75">같은 규격</tspan></text>
+  <polyline points="800,180 665,200" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="732.5" y="179.25">표준 결과</tspan></text>
+  <polyline points="800,250 665,230" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="732.5" y="229.25">표준 결과</tspan></text>
+  <rect x="120" y="390" width="960" height="72" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" stroke-dasharray="9 7"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#5b21b6"><tspan x="600" y="432">효과: Runner가 늘어나도 Worker의 호출·결과 처리 방식을 다시 만들지 않는다.</tspan></text>
+</svg>

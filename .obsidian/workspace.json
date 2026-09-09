@@ -4,35 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "fadcfd65323baa70",
+        "id": "c78bcf7542271bc0",
         "type": "tabs",
         "children": [
           {
-            "id": "1960772f91e56e74",
+            "id": "383c7536deeb774a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/에이전트 설계/회의록 에이전트 이식/6. 독립 회의록 Agent 구조 설계.md",
+                "file": "ZENAI/에이전트 설계/회의록 에이전트 이식/7. 독립 회의록 Agent 1차 파일 구조와 내부 로직.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6. 독립 회의록 Agent 구조 설계"
+              "title": "7. 독립 회의록 Agent 1차 파일 구조와 내부 로직"
             }
           },
           {
-            "id": "e54a9bfe5603187d",
+            "id": "2b85aa83f47e6077",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/에이전트 설계/회의록 에이전트 이식/3. 상태·목표·상황 기반 회의록 Agent 이식 행동 플랜.md",
+                "file": "ZENAI/에이전트 설계/회의록 에이전트 이식/7. 독립 회의록 Agent 1차 파일 구조와 내부 로직.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. 상태·목표·상황 기반 회의록 Agent 이식 행동 플랜"
+              "title": "7. 독립 회의록 Agent 1차 파일 구조와 내부 로직"
             }
           }
         ]
@@ -185,10 +185,23 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "1960772f91e56e74",
+  "active": "4c30d6e97cc58ab6",
   "lastOpenFiles": [
-    "ZENAI/에이전트 설계/회의록 에이전트 이식/3. 상태·목표·상황 기반 회의록 Agent 이식 행동 플랜.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/6. 독립 회의록 Agent 구조 설계.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/7. 독립 회의록 Agent 1차 파일 구조와 내부 로직.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Excalidraw/05_Trace와_감사_경계.svg",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Excalidraw/04_Tool_Skill_Backend_경계.svg",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Excalidraw/03_State와_저장소_경계.svg",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Excalidraw/02_Harness_내부_책임_분리.svg",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Excalidraw/01_Runner_공통_계약.svg",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/1. 회의록 Agent 이식 방향 계획서.md",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Excalidraw/03_State와_저장소_경계.excalidraw",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Excalidraw/05_Trace와_감사_경계.excalidraw",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Excalidraw/04_Tool_Skill_Backend_경계.excalidraw",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Excalidraw/02_Harness_내부_책임_분리.excalidraw",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Excalidraw/01_Runner_공통_계약.excalidraw",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/Excalidraw",
+    "ZENAI/에이전트 설계/회의록 에이전트 이식/3. 상태·목표·상황 기반 회의록 Agent 이식 행동 플랜.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/5. 공통 Agent 호출 기반과 AI SDK 조립 템플릿 경계 조사.md",
     "ZENAI/에이전트 학습/6. Graph Engineering과 구상 순서/3. Agent 실행 문맥·상태·복구 개념 정리.md",
     "ZENAI/에이전트 설계/회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
@@ -196,7 +209,6 @@
     "ZENAI/에이전트 설계/회의록 에이전트 이식/2. 회의록 Agent 이식 방향 재정립.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/Codex-LB.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/4. 캡슐화 요구 배경에 대한 현재 해석.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 이식/1. 회의록 Agent 이식 방향 계획서.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/6-1. 회의록 Agent 이식 방향 계획서.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/6. 내장 회의록 시스템 Agent 구현 및 검증 계획.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식/5. POC 업무 로직의 내장 회의록 Agent 대응 방식.md",
@@ -211,27 +223,14 @@
     "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/3. 향후 설계 방향.md",
     "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/2. 설계 문서 작성 방법.md",
     "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/5. 설계서를 바탕으로 POC와 기능을 구현할 때의 주의점.md",
-    "ZENAI/에이전트 설계/향후 설계 방향 및 설계 문서 작성 방법/4. 워크플로우 특성에 따른 State 설계 방법론.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC/7. POC 설계 정합성 문제와 복구 과정.md",
     "ZENAI/에이전트 설계/회의록 에이전트 이식",
     "Codex 필수 플러그인 소개 및 사용 방법",
     "새 폴더",
     "ZENAI/에이전트 학습/7. Codex 플러그인 사용 방법",
-    "ZENAI/에이전트 학습/새 폴더",
-    "ZENAI/에이전트 학습/자료/그래프-엔지니어링-온보딩.pdf",
-    "_diagram_label_qa",
-    "_fix_detail_diagram_labels.py",
-    "ZENAI/에이전트 설계/회의록 에이전트 POC",
-    "_remove_orange_node_guides.py",
     "_q2a_move_qa/17.png",
     "_q2a_move_qa/12.png",
     "_node_boundary_qa/16.png",
     "_node_boundary_qa/17.png",
-    "_meeting_diagram_qa/16.png",
-    "_meeting_diagram_qa/12.png",
-    "_meeting_diagram_qa/11.png",
-    "_meeting_diagram_qa/17.png",
-    "_context_diagram_qa/13.svg",
-    "_question_gap_qa/17.svg"
+    "_meeting_diagram_qa/16.png"
   ]
 }

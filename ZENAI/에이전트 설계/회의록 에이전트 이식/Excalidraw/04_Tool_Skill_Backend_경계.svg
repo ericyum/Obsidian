@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="772" viewBox="0 0 1300 772">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="25" font-weight="400" text-anchor="middle" fill="#111827"><tspan x="650" y="54.375">Tool·Skill과 Backend Adapter 경계</tspan></text>
+  <rect x="80" y="125" width="300" height="110" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="230" y="164.25">Search·Question Tool</tspan><tspan x="230" y="186.75">검색·권한 조건 판단</tspan><tspan x="230" y="209.25">결과 정형화</tspan></text>
+  <rect x="80" y="355" width="300" height="110" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="230" y="405.5">Recording Tool</tspan><tspan x="230" y="428">명령 검증·Skill 선택</tspan></text>
+  <rect x="480" y="355" width="300" height="110" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="630" y="394.25">Recording Skills</tspan><tspan x="630" y="416.75">Start·Pause·Resume·Stop</tspan><tspan x="630" y="439.25">선택된 업무 수행</tspan></text>
+  <rect x="480" y="125" width="300" height="110" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="630" y="164.25">Meeting Backend Adapter</tspan><tspan x="630" y="186.75">요청·응답 변환</tspan><tspan x="630" y="209.25">권한·오류 경계</tspan></text>
+  <rect x="880" y="355" width="300" height="110" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="1030" y="394.25">Recording Backend Adapter</tspan><tspan x="1030" y="416.75">요청·응답 변환</tspan><tspan x="1030" y="439.25">인증·오류 경계</tspan></text>
+  <rect x="880" y="125" width="300" height="110" rx="12" fill="#e5e7eb" stroke="#4b5563" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="1030" y="175.5">회의 Backend</tspan><tspan x="1030" y="198">검색·권한·원문 조회</tspan></text>
+  <rect x="880" y="520" width="300" height="90" rx="12" fill="#e5e7eb" stroke="#4b5563" stroke-width="2"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="1030" y="571.75">녹화 Backend·Modal</tspan></text>
+  <polyline points="380,180 480,180" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="430" y="169.25">업무 요청</tspan></text>
+  <polyline points="780,180 880,180" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="830" y="169.25">보호된 호출</tspan></text>
+  <polyline points="380,410 480,410" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="430" y="399.25">Skill 선택</tspan></text>
+  <polyline points="780,410 880,410" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="830" y="399.25">업무 요청</tspan></text>
+  <polyline points="1030,465 1030,520" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#4b5563"><tspan x="1030" y="481.75">보호된 호출</tspan></text>
+  <rect x="120" y="660" width="1060" height="72" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" stroke-dasharray="9 7"/>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="middle" fill="#5b21b6"><tspan x="650" y="702">효과: 업무 로직을 Backend 변경에서 보호하고 UI·LLM의 직접 접근과 민감정보 노출을 차단한다.</tspan></text>
+</svg>
