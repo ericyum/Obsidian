@@ -7,7 +7,7 @@
   <rect width="100%" height="100%" fill="#ffffff"/>
   <text font-family="Malgun Gothic, Arial, sans-serif" font-size="25" font-weight="400" text-anchor="middle" fill="#111827"><tspan x="600" y="54.375">Custom Harness 내부 책임 분리</tspan></text>
   <rect x="420" y="110" width="360" height="140" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
-  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="600" y="164.25">custom/harness.ts</tspan><tspan x="600" y="186.75">LLM·Tool 실행 순서</tspan><tspan x="600" y="209.25">반복·종료·HITL 시점 결정</tspan></text>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="600" y="164.25">custom/harness.ts</tspan><tspan x="600" y="186.75">LLM·Tool 실행 순서</tspan><tspan x="600" y="209.25">HITL·afterExecution 분기</tspan></text>
   <rect x="90" y="330" width="310" height="130" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
   <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="245" y="379.25">custom/context.ts</tspan><tspan x="245" y="401.75">LLM에 넣을 정보 선택</tspan><tspan x="245" y="424.25">필터링·정렬·축약</tspan></text>
   <rect x="445" y="330" width="310" height="130" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>

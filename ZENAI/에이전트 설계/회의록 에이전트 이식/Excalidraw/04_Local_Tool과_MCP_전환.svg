@@ -11,7 +11,7 @@
   <rect x="450" y="105" width="300" height="110" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
   <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="600" y="155.5">custom/runner.ts</tspan><tspan x="600" y="178">시작 시 Tool 등록</tspan></text>
   <rect x="840" y="90" width="300" height="140" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
-  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="990" y="155.5">Tool Map</tspan><tspan x="990" y="178">이름 → 실행 구현</tspan></text>
+  <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="990" y="144.25">Tool Map</tspan><tspan x="990" y="166.75">이름 → execute/Proxy</tspan><tspan x="990" y="189.25">afterExecution</tspan></text>
   <rect x="160" y="350" width="330" height="120" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
   <text font-family="Malgun Gothic, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1f2937"><tspan x="325" y="405.5">현재 임시 경로</tspan><tspan x="325" y="428">tools/*.ts의 로컬 execute</tspan></text>
   <rect x="710" y="350" width="330" height="120" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
