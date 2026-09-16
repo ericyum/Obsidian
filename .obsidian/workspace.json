@@ -4,30 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4d8869fcc2056892",
+        "id": "5b3c222e6a91000f",
         "type": "tabs",
         "children": [
           {
-            "id": "6637745545f5bb0b",
+            "id": "466cddcda2b0b2bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/6. 독립 회의록 Agent 구조 설계.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6. 독립 회의록 Agent 구조 설계"
-            }
-          },
-          {
-            "id": "06bf23c234abf2fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ZENAI/02. 에이전트 설계/01. 회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
+                "file": "ZENAI/02. 회의 에이전트/01. 회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
                 "mode": "source",
                 "source": false
               },
@@ -35,8 +21,7 @@
               "title": "1-2. 회의록 에이전트 워크플로우 Graph 상세"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,22 +173,34 @@
   },
   "active": "4c30d6e97cc58ab6",
   "lastOpenFiles": [
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/6. 독립 회의록 Agent 구조 설계.md",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/1. 회의록 Agent 이식 방향 계획서.md",
-    "ZENAI/02. 에이전트 설계/01. 회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/7. 독립 회의록 Agent 파일 구조와 내부 로직.md",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/Excalidraw/01_Runner_공통_계약.svg",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/Excalidraw/06_Trace와_감사_경계.svg",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/Excalidraw/04_Tool_Skill_Backend_경계.svg",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/Excalidraw/03_State와_저장소_경계.svg",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/Excalidraw/02_Harness_내부_책임_분리.svg",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/8. Agent State 저장 위치 비교와 권장 방향.md",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/6. 독립 회의록 Agent 구조 설계.md",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/5. 공통 Agent 호출 기반과 AI SDK 조립 템플릿 경계 조사.md",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/4. 캡슐화의 목적과 적용 방향.md",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/3. 상태·목표·상황 기반 회의록 Agent 이식 행동 플랜.md",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/2. 회의록 Agent 이식 방향 재정립.md",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/1. 회의록 Agent 이식 방향 계획서.md",
+    "ZENAI/02. 회의 에이전트",
+    "ZENAI/02. 회의 에이전트/01. 회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
     "ZENAI/에이전트 설계/회의록 에이전트 POC/무제",
-    "ZENAI/04. 에이전트 이식",
-    "ZENAI/03. 에이전트 POC",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/11. LLM·E2E 테스트 과정과 최종 결과.md",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/12. Codex-LB 로컬 테스트 임시 설정 매뉴얼.md",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/13. 장기적으로 별도의 저장소로 분리하기 위한 계획.md",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식",
+    "ZENAI/02. 회의 에이전트/02. 에이전트 POC",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/11. LLM·E2E 테스트 과정과 최종 결과.md",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/12. Codex-LB 로컬 테스트 임시 설정 매뉴얼.md",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/13. 장기적으로 별도의 저장소로 분리하기 위한 계획.md",
     "ZENAI/00. ZEN AI 프로젝트의 방향성/1. 2026년 8월 설계 방향.md",
     "ZENAI/00. ZEN AI 프로젝트의 방향성",
-    "ZENAI/02. 에이전트 설계/00. 설계 문서 작성 방법/6. Graph Engineering Graph와 State 전이도 작성 원칙.md",
-    "ZENAI/02. 에이전트 설계/00. 설계 문서 작성 방법/5. 설계서를 바탕으로 POC와 기능을 구현할 때의 주의점.md",
-    "ZENAI/02. 에이전트 설계/00. 설계 문서 작성 방법/4. 워크플로우 특성에 따른 State 설계 방법론.md",
-    "ZENAI/02. 에이전트 설계/00. 설계 문서 작성 방법/2. 설계 문서 작성 방법.md",
-    "ZENAI/02. 에이전트 설계/00. 설계 문서 작성 방법/1. 목표·상태·상황 기반 행동 플랜 수립 방법.md",
+    "ZENAI/98. 설계 문서 작성 방법/6. Graph Engineering Graph와 State 전이도 작성 원칙.md",
+    "ZENAI/98. 설계 문서 작성 방법/5. 설계서를 바탕으로 POC와 기능을 구현할 때의 주의점.md",
+    "ZENAI/98. 설계 문서 작성 방법/4. 워크플로우 특성에 따른 State 설계 방법론.md",
+    "ZENAI/98. 설계 문서 작성 방법/2. 설계 문서 작성 방법.md",
+    "ZENAI/98. 설계 문서 작성 방법/1. 목표·상태·상황 기반 행동 플랜 수립 방법.md",
     "ZENAI/99. 개선 내역/00. Bug Report/Jira-Issue 에이전트 중복 트러블 슈팅 현상.md",
     "ZENAI/99. 개선 내역/01. UIUX/20260813 추가 확정안.md",
     "ZENAI/99. 개선 내역/01. UIUX/ZEN-AI-회의록-UIUX-개선안.md",
@@ -212,26 +209,14 @@
     "OTT 구독 추세 분석 앱 프로젝트/01. 사용된 SAP UI5의 실행 메커니즘 분석/5. 기타 분석 및 조사 사항",
     "OTT 구독 추세 분석 앱 프로젝트/01. 사용된 SAP UI5의 실행 메커니즘 분석/5. 기타 분석 및 조사 사항/callFunction 완전 분석.md",
     "OTT 구독 추세 분석 앱 프로젝트/01. 사용된 SAP UI5의 실행 메커니즘 분석/5. 기타 분석 및 조사 사항/Odata 통신 방식 정리.md",
-    "OTT 구독 추세 분석 앱 프로젝트/01. 사용된 SAP UI5의 실행 메커니즘 분석/4. 배포 관련 파일들/2. ott — 비즈니스 백엔드 (콘텐츠·멤버십·정산).md",
-    "OTT 구독 추세 분석 앱 프로젝트/01. 사용된 SAP UI5의 실행 메커니즘 분석/4. 배포 관련 파일들/6. board — 자유 게시판 (기능6).md",
     "ZENAI/에이전트 설계/2. 회의록 에이전트",
     "Codex 관련 활용 툴",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/10. 이식 추가·수정 파일과 근거.md",
-    "ZENAI/02. 에이전트 설계/01. 회의록 에이전트 설계/2-1. 회의록 에이전트 현재 구현 상세 설계.md",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/9. 이식 테스트 과정과 결과.md",
-    "ZENAI/에이전트 설계/회의록 에이전트 이식/LLM 테스트 시도와 미완료 사유.md",
     "Codex 관련 활용 툴/02. Codex-LB",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/Excalidraw/05_Trace와_감사_경계.svg",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/Excalidraw/04_Tool_Skill_Backend_경계.svg",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/Excalidraw/03_State와_저장소_경계.svg",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/Excalidraw/02_Harness_내부_책임_분리.svg",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/Excalidraw/01_Runner_공통_계약.svg",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/Excalidraw/03_State와_저장소_경계.excalidraw",
-    "ZENAI/04. 에이전트 이식/01. 회의록 에이전트 이식/Excalidraw/05_Trace와_감사_경계.excalidraw",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/Excalidraw/05_Trace와_감사_경계.svg",
+    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/Excalidraw/03_State와_저장소_경계.excalidraw",
     "_q2a_move_qa/17.png",
     "_q2a_move_qa/12.png",
     "_node_boundary_qa/16.png",
-    "_node_boundary_qa/17.png",
-    "_meeting_diagram_qa/16.png"
+    "_node_boundary_qa/17.png"
   ]
 }
