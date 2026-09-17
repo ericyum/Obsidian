@@ -92,7 +92,7 @@
   <ns0:rect x="760" y="280.00" width="300" height="70.00" rx="8" fill="#dcfce7" fill-opacity="1" stroke="#16a34a" stroke-width="2" />
   <ns0:rect x="700" y="400.00" width="420" height="90.00" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
   <ns0:rect x="300" y="740.00" width="300" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
-  <ns0:rect x="300" y="870.00" width="300" height="76.00" rx="8" fill="#fee2e2" fill-opacity="1" stroke="#dc2626" stroke-width="2" />
+  <ns0:rect x="300" y="870.00" width="300" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
   <ns0:rect x="370" y="1000.00" width="260" height="76.00" rx="8" fill="#dbeafe" fill-opacity="1" stroke="#2563eb" stroke-width="2" />
   <ns0:rect x="650" y="1000.00" width="190" height="76.00" rx="8" fill="#fef3c7" fill-opacity="1" stroke="#d97706" stroke-width="2" />
   <ns0:polygon points="720,1140.00 860,1190.00 720,1240.00 580,1190.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2" />
@@ -138,8 +138,8 @@
     <ns0:tspan x="450" dy="21.76">접근 가능한 회의록 후보 검색</ns0:tspan>
   </ns0:text>
   <ns0:text x="450" y="903.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
-    <ns0:tspan x="450" dy="0">LLM</ns0:tspan>
-    <ns0:tspan x="450" dy="21.76">접근 가능한 후보 수 해석</ns0:tspan>
+    <ns0:tspan x="450" dy="0">Tool 1</ns0:tspan>
+    <ns0:tspan x="450" dy="21.76">접근 가능한 후보 수 판별</ns0:tspan>
   </ns0:text>
   <ns0:text x="500" y="1033.24" text-anchor="middle" font-family="Arial,'Noto Sans KR',sans-serif" font-size="17" fill="#1f2937">
     <ns0:tspan x="500" dy="0">검색 결과 없음</ns0:tspan>
