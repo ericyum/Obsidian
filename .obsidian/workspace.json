@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "77a377b7b68fddee",
+        "id": "9ba93678442dec7f",
         "type": "tabs",
         "children": [
           {
-            "id": "13ebb82b293674d4",
+            "id": "13e901b94274e598",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/98. 설계 문서 작성 방법/1. 목표·상태·상황 기반 행동 플랜 수립 방법.md",
+                "file": "ZENAI/02. 회의 에이전트/Trace 구조와 테스트 결과.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. 목표·상태·상황 기반 행동 플랜 수립 방법"
+              "title": "Trace 구조와 테스트 결과"
             }
           }
         ]
@@ -171,13 +171,20 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "13ebb82b293674d4",
+  "active": "13e901b94274e598",
   "lastOpenFiles": [
+    "ZENAI/98. 설계 문서 작성 방법/1. 목표·상태·상황 기반 행동 플랜 수립 방법.md",
+    "ZENAI/02. 회의 에이전트/실시간 Trace 출력 구조와 정보 보호 및 범용 적용 범위.md",
+    "ZENAI/02. 회의 에이전트/Trace 구조와 테스트 결과.md",
+    "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/목표 상태 상황.md",
+    "ZENAI/03. 에이전트 템플릿/03. 에이전트 템플릿 이식",
+    "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 POC",
+    "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계",
+    "ZENAI/03. 에이전트 템플릿",
     "ZENAI/98. 설계 문서 작성 방법/2. 설계 문서 작성 방법.md",
     "ZENAI/98. 설계 문서 작성 방법/4. 워크플로우 특성에 따른 State 설계 방법론.md",
     "ZENAI/98. 설계 문서 작성 방법/5. 설계서를 바탕으로 POC와 기능을 구현할 때의 주의점.md",
     "ZENAI/98. 설계 문서 작성 방법/6. Graph Engineering Graph와 State 전이도 작성 원칙.md",
-    "ZENAI/98. 설계 문서 작성 방법/1. 목표·상태·상황 기반 행동 플랜 수립 방법.md",
     "ZENAI/02. 회의 에이전트/03. 에이전트 이식/13. 장기적으로 별도의 저장소로 분리하기 위한 계획.md",
     "ZENAI/02. 회의 에이전트/01. 회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
     "ZENAI/02. 회의 에이전트/03. 에이전트 이식/7. 독립 회의록 Agent 파일 구조와 내부 로직.md",
@@ -207,13 +214,7 @@
     "ZENAI/99. 개선 내역/01. UIUX/회의록 UIUX 구상안 (v2 — 전사 기반).md",
     "OTT 구독 추세 분석 앱 프로젝트/01. 사용된 SAP UI5의 실행 메커니즘 분석/5. 기타 분석 및 조사 사항/2026-06-26 CAP 온보딩 신입 공유.md",
     "OTT 구독 추세 분석 앱 프로젝트/01. 사용된 SAP UI5의 실행 메커니즘 분석/5. 기타 분석 및 조사 사항",
-    "OTT 구독 추세 분석 앱 프로젝트/01. 사용된 SAP UI5의 실행 메커니즘 분석/5. 기타 분석 및 조사 사항/callFunction 완전 분석.md",
-    "OTT 구독 추세 분석 앱 프로젝트/01. 사용된 SAP UI5의 실행 메커니즘 분석/5. 기타 분석 및 조사 사항/Odata 통신 방식 정리.md",
-    "ZENAI/에이전트 설계/2. 회의록 에이전트",
-    "Codex 관련 활용 툴",
-    "Codex 관련 활용 툴/02. Codex-LB",
     "ZENAI/02. 회의 에이전트/03. 에이전트 이식/Excalidraw/05_Trace와_감사_경계.svg",
-    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/Excalidraw/03_State와_저장소_경계.excalidraw",
     "_q2a_move_qa/17.png",
     "_q2a_move_qa/12.png",
     "_node_boundary_qa/16.png",
