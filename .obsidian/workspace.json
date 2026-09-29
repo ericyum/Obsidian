@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9ba93678442dec7f",
+        "id": "61b19859d07b198f",
         "type": "tabs",
         "children": [
           {
-            "id": "13e901b94274e598",
+            "id": "42914c38b1a92874",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ZENAI/02. 회의 에이전트/Trace 구조와 테스트 결과.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Trace 구조와 테스트 결과"
+              "title": "새 탭"
             }
           }
         ]
@@ -171,13 +167,22 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "13e901b94274e598",
+  "active": "4c30d6e97cc58ab6",
   "lastOpenFiles": [
+    "ZENAI/02. 회의 에이전트/04. 에이전트 trace/5. LLM 추론 미표시 원인과 LiteLLM 호환성 개선.md",
+    "ZENAI/02. 회의 에이전트/04. 에이전트 trace/0. s.md",
+    "ZENAI/02. 회의 에이전트/04. 에이전트 trace/4. Trace 구현 방식과 주요 개선 사항.md",
+    "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/목표·상태·상황 기반 행동 플랜.md",
+    "ZENAI/02. 회의 에이전트/04. 에이전트 trace/1. Trace 구조와 테스트 결과.md",
+    "ZENAI/02. 회의 에이전트/04. 에이전트 trace/3. Trace 보관 위치와 운영 방식 비교.md",
+    "ZENAI/02. 회의 에이전트/04. 에이전트 trace/2. Builtin과 일반 에이전트의 버전 관리 차이.md",
+    "ZENAI/02. 회의 에이전트/04. 에이전트 trace/2. d.md",
+    "ZENAI/02. 회의 에이전트/04. 에이전트 trace",
+    "six-person-teams-uat.md",
     "ZENAI/98. 설계 문서 작성 방법/1. 목표·상태·상황 기반 행동 플랜 수립 방법.md",
     "ZENAI/02. 회의 에이전트/실시간 Trace 출력 구조와 정보 보호 및 범용 적용 범위.md",
-    "ZENAI/02. 회의 에이전트/Trace 구조와 테스트 결과.md",
     "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/목표 상태 상황.md",
-    "ZENAI/03. 에이전트 템플릿/03. 에이전트 템플릿 이식",
+    "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 POC",
     "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계",
     "ZENAI/03. 에이전트 템플릿",
@@ -204,16 +209,7 @@
     "ZENAI/에이전트 설계/회의록 에이전트 POC/무제",
     "ZENAI/02. 회의 에이전트/03. 에이전트 이식",
     "ZENAI/02. 회의 에이전트/02. 에이전트 POC",
-    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/11. LLM·E2E 테스트 과정과 최종 결과.md",
-    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/12. Codex-LB 로컬 테스트 임시 설정 매뉴얼.md",
-    "ZENAI/00. ZEN AI 프로젝트의 방향성/1. 2026년 8월 설계 방향.md",
     "ZENAI/00. ZEN AI 프로젝트의 방향성",
-    "ZENAI/99. 개선 내역/00. Bug Report/Jira-Issue 에이전트 중복 트러블 슈팅 현상.md",
-    "ZENAI/99. 개선 내역/01. UIUX/20260813 추가 확정안.md",
-    "ZENAI/99. 개선 내역/01. UIUX/ZEN-AI-회의록-UIUX-개선안.md",
-    "ZENAI/99. 개선 내역/01. UIUX/회의록 UIUX 구상안 (v2 — 전사 기반).md",
-    "OTT 구독 추세 분석 앱 프로젝트/01. 사용된 SAP UI5의 실행 메커니즘 분석/5. 기타 분석 및 조사 사항/2026-06-26 CAP 온보딩 신입 공유.md",
-    "OTT 구독 추세 분석 앱 프로젝트/01. 사용된 SAP UI5의 실행 메커니즘 분석/5. 기타 분석 및 조사 사항",
     "ZENAI/02. 회의 에이전트/03. 에이전트 이식/Excalidraw/05_Trace와_감사_경계.svg",
     "_q2a_move_qa/17.png",
     "_q2a_move_qa/12.png",
