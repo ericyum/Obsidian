@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img"><title>Trace가 있는 장애 조사</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#526477"/></marker></defs><rect width="1000" height="600" fill="#ffffff"/><text x="32" y="52" font-size="30" fill="#243247" font-family="Malgun Gothic, sans-serif"><tspan x="32" dy="0">Trace 있음 · 지연 구간을 좁혀 확인</tspan></text>
+<text x="32" y="94" font-size="20" fill="#526477" font-family="Malgun Gothic, sans-serif"><tspan x="32" dy="0">가상 상황: 회의록 검색 후 답변 생성 중 시간 초과</tspan></text>
+<rect x="32" y="132" width="220" height="115" rx="8" fill="#eaf5ef" stroke="#206044" stroke-width="2"/>
+<text x="50" y="172" font-size="20" fill="#206044" font-family="Malgun Gothic, sans-serif"><tspan x="50" dy="0">1 요청 접수</tspan><tspan x="50" dy="28">완료</tspan></text>
+<path d="M260 185h22" fill="none" stroke="#526477" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="292" y="132" width="270" height="115" rx="8" fill="#eaf5ef" stroke="#206044" stroke-width="2"/>
+<text x="310" y="172" font-size="20" fill="#206044" font-family="Malgun Gothic, sans-serif"><tspan x="310" dy="0">2 회의록 검색</tspan><tspan x="310" dy="28">완료 · 결과 3건</tspan></text>
+<path d="M570 185h22" fill="none" stroke="#526477" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="602" y="132" width="365" height="115" rx="8" fill="#fff0e3" stroke="#994317" stroke-width="2"/>
+<text x="620" y="172" font-size="20" fill="#994317" font-family="Malgun Gothic, sans-serif"><tspan x="620" dy="0">3 답변 생성</tspan><tspan x="620" dy="28">시작 → 시간 초과</tspan></text>
+<rect x="32" y="282" width="935" height="85" rx="8" fill="#f1f3f5" stroke="#526477" stroke-width="2"/>
+<text x="50" y="322" font-size="20" fill="#526477" font-family="Malgun Gothic, sans-serif"><tspan x="50" dy="0">4 답변 게시 · 미실행</tspan></text>
+<text x="48" y="423" font-size="23" fill="#243247" font-family="Malgun Gothic, sans-serif"><tspan x="48" dy="0">개발자가 확인한 흐름</tspan></text>
+<text x="48" y="463" font-size="21" fill="#243247" font-family="Malgun Gothic, sans-serif"><tspan x="48" dy="0">검색은 완료됨 → 답변 생성에서 지연됨 → 게시 단계에는 도달하지 못함</tspan></text>
+<text x="48" y="511" font-size="21" fill="#243247" font-family="Malgun Gothic, sans-serif"><tspan x="48" dy="0">다음 조사: 모델 응답 지연 · 입력 크기 · 호출 제한 및 오류</tspan></text>
+<text x="48" y="563" font-size="19" fill="#994317" font-family="Malgun Gothic, sans-serif"><tspan x="48" dy="0">주의: 지연 위치를 찾은 것이며, 근본 원인은 추가 확인이 필요함</tspan></text></svg>

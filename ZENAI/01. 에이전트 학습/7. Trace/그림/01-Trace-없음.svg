@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img"><title>Trace가 없는 장애 조사</title><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#526477"/></marker></defs><rect width="1000" height="600" fill="#ffffff"/><text x="32" y="52" font-size="30" fill="#243247" font-family="Malgun Gothic, sans-serif"><tspan x="32" dy="0">Trace 없음 · 실패 위치부터 찾아야 함</tspan></text>
+<text x="32" y="94" font-size="20" fill="#526477" font-family="Malgun Gothic, sans-serif"><tspan x="32" dy="0">가상 상황: 회의록 검색 후 답변 생성 중 시간 초과</tspan></text>
+<rect x="32" y="155" width="180" height="110" rx="8" fill="#edf3fc" stroke="#526477" stroke-width="2"/>
+<text x="50" y="195" font-size="20" fill="#526477" font-family="Malgun Gothic, sans-serif"><tspan x="50" dy="0">사용자 요청</tspan><tspan x="50" dy="28">회의록 요약</tspan></text>
+<path d="M220 210h32" fill="none" stroke="#526477" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="262" y="155" width="430" height="110" rx="8" fill="#f1f3f5" stroke="#526477" stroke-width="2"/>
+<text x="280" y="195" font-size="20" fill="#526477" font-family="Malgun Gothic, sans-serif"><tspan x="280" dy="0">에이전트 내부 처리</tspan><tspan x="280" dy="28">어디까지 진행했는지 보이지 않음</tspan></text>
+<path d="M700 210h32" fill="none" stroke="#526477" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="742" y="155" width="225" height="110" rx="8" fill="#fff0e3" stroke="#994317" stroke-width="2"/>
+<text x="760" y="195" font-size="20" fill="#994317" font-family="Malgun Gothic, sans-serif"><tspan x="760" dy="0">최종 결과</tspan><tspan x="760" dy="28">처리 시간 초과</tspan></text>
+<text x="48" y="343" font-size="23" fill="#243247" font-family="Malgun Gothic, sans-serif"><tspan x="48" dy="0">개발자에게 남는 질문</tspan></text>
+<text x="48" y="389" font-size="21" fill="#243247" font-family="Malgun Gothic, sans-serif"><tspan x="48" dy="0">검색에서 멈췄나?  모델 응답이 늦었나?  답변 게시가 실패했나?</tspan></text>
+<text x="48" y="456" font-size="21" fill="#243247" font-family="Malgun Gothic, sans-serif"><tspan x="48" dy="0">다음 조사: 재현하거나 별도 로그를 모아 실행 경로부터 확인</tspan></text>
+<text x="48" y="523" font-size="20" fill="#994317" font-family="Malgun Gothic, sans-serif"><tspan x="48" dy="0">최종 오류만으로는 실패 위치와 마지막 성공 단계를 구분하기 어려움</tspan></text></svg>
