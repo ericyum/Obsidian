@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="740" viewBox="0 0 1100 740"><rect width="1100" height="740" fill="white"/><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#63778c" stroke-width="1.5"/></marker></defs><text x="40" y="53" font-family="Malgun Gothic, sans-serif" font-size="29" fill="#20324a"><tspan x="40" dy="0">현재 Agent 저장 구조</tspan></text>
+<text x="40" y="89" font-family="Malgun Gothic, sans-serif" font-size="17" fill="#54657c"><tspan x="40" dy="0">소스 기준 조사 · 운영 DB 실조회 아님 · 양쪽 경로의 의미를 보존</tspan></text>
+<path d="M280 245 l0 40" fill="none" stroke="#63778c" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M280 430 l0 40" fill="none" stroke="#63778c" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M820 245 l0 40" fill="none" stroke="#63778c" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M820 430 l0 40" fill="none" stroke="#63778c" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="130" width="480" height="115" rx="12" fill="#e9f2ff" stroke="#20324a" stroke-width="2"/>
+<text x="58" y="166" font-family="Malgun Gothic, sans-serif" font-size="21" fill="#20324a"><tspan x="58" dy="0">일반 Agent 생성</tspan></text>
+<text x="58" y="199" font-family="Malgun Gothic, sans-serif" font-size="17" fill="#334860"><tspan x="58" dy="0">기존 생성 API → registry 트랜잭션</tspan></text>
+<rect x="40" y="285" width="480" height="145" rx="12" fill="#e9f2ff" stroke="#20324a" stroke-width="2"/>
+<text x="58" y="321" font-family="Malgun Gothic, sans-serif" font-size="21" fill="#20324a"><tspan x="58" dy="0">agents + agent_versions</tspan></text>
+<text x="58" y="354" font-family="Malgun Gothic, sans-serif" font-size="17" fill="#334860"><tspan x="58" dy="0">현재 정의 + 불변 실행 버전</tspan><tspan x="58" dy="24.65">허용 모델·권한·MCP Tool 연결</tspan></text>
+<rect x="40" y="470" width="480" height="125" rx="12" fill="#e9f2ff" stroke="#20324a" stroke-width="2"/>
+<text x="58" y="506" font-family="Malgun Gothic, sans-serif" font-size="21" fill="#20324a"><tspan x="58" dy="0">custom 실행 조립</tspan></text>
+<text x="58" y="539" font-family="Malgun Gothic, sans-serif" font-size="17" fill="#334860"><tspan x="58" dy="0">run.agent_version → 정의 조회</tspan><tspan x="58" dy="24.65">현재 Tool 권한 + 선택적 workspace</tspan></text>
+<rect x="580" y="130" width="480" height="115" rx="12" fill="#e9f2ff" stroke="#20324a" stroke-width="2"/>
+<text x="598" y="166" font-family="Malgun Gothic, sans-serif" font-size="21" fill="#20324a"><tspan x="598" dy="0">회의 Builtin 정의</tspan></text>
+<text x="598" y="199" font-family="Malgun Gothic, sans-serif" font-size="17" fill="#334860"><tspan x="598" dy="0">manifest + SKILL.md → 서버 생성물</tspan></text>
+<rect x="580" y="285" width="480" height="145" rx="12" fill="#e9f2ff" stroke="#20324a" stroke-width="2"/>
+<text x="598" y="321" font-family="Malgun Gothic, sans-serif" font-size="21" fill="#20324a"><tspan x="598" dy="0">Builtin 전용 테이블</tspan></text>
+<text x="598" y="354" font-family="Malgun Gothic, sans-serif" font-size="17" fill="#334860"><tspan x="598" dy="0">definition_releases / agent_instances</tspan><tspan x="598" dy="24.65">instance_config_versions</tspan></text>
+<rect x="580" y="470" width="480" height="125" rx="12" fill="#e9f2ff" stroke="#20324a" stroke-width="2"/>
+<text x="598" y="506" font-family="Malgun Gothic, sans-serif" font-size="21" fill="#20324a"><tspan x="598" dy="0">builtin 실행 조립</tspan></text>
+<text x="598" y="539" font-family="Malgun Gothic, sans-serif" font-size="17" fill="#334860"><tspan x="598" dy="0">고정 release·설정 → 전용 adapter</tspan><tspan x="598" dy="24.65">run별 스킬 세션 + engine</tspan></text>
+<text x="40" y="653" font-family="Malgun Gothic, sans-serif" font-size="18" fill="#54657c"><tspan x="40" dy="0">공통 신원: agent_principals(kind: custom / builtin)</tspan></text>
+<text x="40" y="689" font-family="Malgun Gothic, sans-serif" font-size="18" fill="#54657c"><tspan x="40" dy="0">일반 Agent 연결: custom_agents · 기존 호환 트리거 유지 · agents.execution_mode는 없음</tspan></text></svg>

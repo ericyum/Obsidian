@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1250" viewBox="0 0 1000 1250"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#263449"/></marker></defs><rect width="1000" height="1250" fill="white"/><g font-family="Malgun Gothic, Arial, sans-serif"><text x="40" y="50" font-size="30" fill="#263449"><tspan x="40" dy="0">회의 Builtin × SKILL.md | 제안 실행 순서</tspan></text>
+<text x="40" y="88" font-size="19" fill="#263449"><tspan x="40" dy="0">설계안 · 아직 미구현 | 매뉴얼을 읽는 것과 업무를 실행하는 것은 다르다</tspan></text>
+<rect x="40" y="115" width="920" height="105" rx="12" fill="#e7f5ff" stroke="#263449" stroke-width="2"/>
+<text x="65" y="150" font-size="23" fill="#263449"><tspan x="65" dy="0">① 빌드 · SKILL.md → 서버 생성물</tspan></text>
+<text x="65" y="182" font-size="19" fill="#263449"><tspan x="65" dy="0">허용된 MD 검사 → 이름·설명·본문 포함 → content digest / release 반영</tspan></text>
+<path d="M500 225v25" stroke="#263449" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<rect x="40" y="255" width="920" height="105" rx="12" fill="#e7f5ff" stroke="#263449" stroke-width="2"/>
+<text x="65" y="290" font-size="23" fill="#263449"><tspan x="65" dy="0">② 실행 준비 · worker / adapter</tspan></text>
+<text x="65" y="322" font-size="19" fill="#263449"><tspan x="65" dy="0">권한·설정 확인 → 해당 실행 버전의 스킬 목록과 기존 Tool 준비</tspan></text>
+<path d="M500 365v25" stroke="#263449" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<rect x="40" y="395" width="920" height="105" rx="12" fill="#fff3bf" stroke="#263449" stroke-width="2"/>
+<text x="65" y="430" font-size="23" fill="#263449"><tspan x="65" dy="0">③ LLM 선택 · 필요한 매뉴얼인가?</tspan></text>
+<text x="65" y="462" font-size="19" fill="#263449"><tspan x="65" dy="0">이름·설명을 보고 read_skill({name}) 요청 | 불필요하면 ⑥으로</tspan></text>
+<path d="M500 505v25" stroke="#263449" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<rect x="40" y="535" width="920" height="105" rx="12" fill="#fff3bf" stroke="#263449" stroke-width="2"/>
+<text x="65" y="570" font-size="23" fill="#263449"><tspan x="65" dy="0">④ 본문 반환 · 제한된 읽기 루프</tspan></text>
+<text x="65" y="602" font-size="19" fill="#263449"><tspan x="65" dy="0">허용 ID만 조회 → 본문을 Tool 결과로 제공 | 경로 입력·무한 반복 금지</tspan></text>
+<path d="M500 645v25" stroke="#263449" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<rect x="40" y="675" width="920" height="105" rx="12" fill="#fff3bf" stroke="#263449" stroke-width="2"/>
+<text x="65" y="710" font-size="23" fill="#263449"><tspan x="65" dy="0">⑤ 같은 LLM이 계속 판단</tspan></text>
+<text x="65" y="742" font-size="19" fill="#263449"><tspan x="65" dy="0">본문을 현재 run의 공통 컨텍스트에 유지 → 최종 답변 호출에도 전달</tspan></text>
+<path d="M500 785v25" stroke="#263449" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<rect x="40" y="815" width="920" height="105" rx="12" fill="#d3f9d8" stroke="#263449" stroke-width="2"/>
+<text x="65" y="850" font-size="23" fill="#263449"><tspan x="65" dy="0">⑥ 기존 업무 실행 · engine / Tool / DB</tspan></text>
+<text x="65" y="882" font-size="19" fill="#263449"><tspan x="65" dy="0">검색·질의 등 수행 | Tool이 필요에 따라 HITL / background 기능 사용</tspan></text>
+<path d="M500 925v25" stroke="#263449" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<rect x="40" y="955" width="920" height="105" rx="12" fill="#d3f9d8" stroke="#263449" stroke-width="2"/>
+<text x="65" y="990" font-size="23" fill="#263449"><tspan x="65" dy="0">⑦ 답변과 상태 확정</tspan></text>
+<text x="65" y="1022" font-size="19" fill="#263449"><tspan x="65" dy="0">기존 transaction으로 게시·저장 | 실패·취소 시 마지막 정상 상태 보존</tspan></text>
+<text x="40" y="1131" font-size="21" fill="#263449"><tspan x="40" dy="0">HITL 재개: 사용자 응답 → 새 run → ②부터 권한·스킬 재확인</tspan></text>
+<text x="40" y="1169" font-size="19" fill="#263449"><tspan x="40" dy="0">Background 완료: 별도 result-only 경로 유지 · 새 업무 시작 / Tool 권한 추가 금지</tspan></text>
+<text x="40" y="1210" font-size="20" fill="#263449"><tspan x="40" dy="0">Skill = 지침    /    Tool = 작업 수단    /    코드·DB = 권한·잠금·원자적 저장</tspan></text></g></svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="740"><rect width="1100" height="740" fill="white"/><defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#64748b"/></marker></defs><text x="40" y="53" font-family="Malgun Gothic,sans-serif" font-size="28" fill="#24374d"><tspan x="40" dy="0">스킬 선택은 개발자, 조회는 모델, 실행은 코드</tspan></text>
+<path d="M520 170 l60 0" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M820 230 l-540 80" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M520 370 l60 0" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<rect x="40" y="110" width="480" height="120" rx="12" fill="#e8f1ff" stroke="#24374d" stroke-width="2"/>
+<text x="58" y="145" font-family="Malgun Gothic,sans-serif" font-size="21" fill="#24374d"><tspan x="58" dy="0">① 생성 화면에서 설정</tspan></text>
+<text x="58" y="180" font-family="Malgun Gothic,sans-serif" font-size="18" fill="#24374d"><tspan x="58" dy="0">☑ 문서 작성 묶음 1개</tspan><tspan x="58" dy="25.2">+ Agent 전용 매뉴얼 한 개 작성</tspan></text>
+<rect x="580" y="110" width="480" height="120" rx="12" fill="#e8f1ff" stroke="#24374d" stroke-width="2"/>
+<text x="598" y="145" font-family="Malgun Gothic,sans-serif" font-size="21" fill="#24374d"><tspan x="598" dy="0">② 선택 설정과 버전 저장</tspan></text>
+<text x="598" y="180" font-family="Malgun Gothic,sans-serif" font-size="18" fill="#24374d"><tspan x="598" dy="0">스킬 ID·버전 연결 → DB</tspan><tspan x="598" dy="25.2">사용자 MD 본문 → 영속 저장소</tspan></text>
+<rect x="40" y="310" width="480" height="120" rx="12" fill="#e8f5ed" stroke="#24374d" stroke-width="2"/>
+<text x="58" y="345" font-family="Malgun Gothic,sans-serif" font-size="21" fill="#24374d"><tspan x="58" dy="0">③ 실행 시 지침 자동 조립</tspan></text>
+<text x="58" y="380" font-family="Malgun Gothic,sans-serif" font-size="18" fill="#24374d"><tspan x="58" dy="0">허용 스킬 이름·요약·조회 방법 제공</tspan><tspan x="58" dy="25.2">항목별 매뉴얼이면 항목 목록도 제공</tspan></text>
+<rect x="580" y="310" width="480" height="120" rx="12" fill="#e8f5ed" stroke="#24374d" stroke-width="2"/>
+<text x="598" y="345" font-family="Malgun Gothic,sans-serif" font-size="21" fill="#24374d"><tspan x="598" dy="0">④ 모델이 필요한 지침 조회</tspan></text>
+<text x="598" y="380" font-family="Malgun Gothic,sans-serif" font-size="18" fill="#24374d"><tspan x="598" dy="0">PPT 요청 → /skills/pptx/SKILL.md</tspan><tspan x="598" dy="25.2">본문 반환 → 지침에 따라 후속 작업</tspan></text>
+<rect x="40" y="510" width="1020" height="95" rx="12" fill="#fff3db" stroke="#24374d" stroke-width="2"/>
+<text x="58" y="545" font-family="Malgun Gothic,sans-serif" font-size="21" fill="#24374d"><tspan x="58" dy="0">검증은 두 가지</tspan></text>
+<text x="58" y="580" font-family="Malgun Gothic,sans-serif" font-size="18" fill="#24374d"><tspan x="58" dy="0">체크박스 저장·재표시와, 실제 조회·작업·Trace를 각각 검증한다.</tspan></text>
+<text x="40" y="668" font-family="Malgun Gothic,sans-serif" font-size="18" fill="#24374d"><tspan x="40" dy="0">기존 일반 Agent의 skills.ts와 조립 경로는 보존한다.</tspan><tspan x="40" dy="25.2">Trace는 실제 읽기·동작 연결 기록이며 모델의 내부 추론이 아니다.</tspan></text></svg>
