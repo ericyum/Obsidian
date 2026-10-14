@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/3. 하네스 에이전트 설정·저장·실행 명세.md",
+                "file": "ZENAI/04. UI UX 개선/02. 튜토리얼 UI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. 하네스 에이전트 설정·저장·실행 명세"
+              "title": "02. 튜토리얼 UI"
             }
           }
         ]
@@ -171,8 +171,22 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4c30d6e97cc58ab6",
+  "active": "19cc2bf4143f862f",
   "lastOpenFiles": [
+    "ZENAI/04. UI UX 개선/03. 에이전트 현황 대시보드 UI.md",
+    "이미지 (7).png",
+    "이미지 (6).png",
+    "이미지 (5).png",
+    "이미지 (4).png",
+    "이미지 (3).png",
+    "이미지 (8).png",
+    "ZENAI/04. UI UX 개선/02. 튜토리얼 UI.md",
+    "스크린샷 2026-10-14 174143.png",
+    "스크린샷 2026-10-14 163537.png",
+    "스크린샷 2026-10-14 174810.png",
+    "ZENAI/04. UI UX 개선/01. 공지 사항 페이지 조사.md",
+    "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/3. 하네스 에이전트 설정·저장·실행 명세.md",
+    "ZENAI/04. UI UX 개선",
     "ZENAI/97. codex 세션에게 이해를 위한 문서/06. 현재 상태·미완료 작업·문제 해결.md",
     "ZENAI/97. codex 세션에게 이해를 위한 문서/05. 설계 의도와 변경 시 지켜야 할 경계.md",
     "ZENAI/97. codex 세션에게 이해를 위한 문서/04. 테스트와 브라우저 E2E 방법.md",
@@ -182,19 +196,9 @@
     "ZENAI/97. codex 세션에게 이해를 위한 문서/00. 처음 읽기와 문서 안내.md",
     "ZENAI/97. codex 세션에게 이해를 위한 문서",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/2. 회의 Builtin 스킬과 Trace 구현 및 검증.md",
-    "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/3. 하네스 에이전트 설정·저장·실행 명세.md",
     "ZENAI/02. 회의 에이전트/01. 회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
     "AI-outlook-reminder/2.Microsoft Graph PoC 연동 조사.md",
     "outlook-payment-mail-sent.png",
-    "azure-personal-signup.png",
-    "outlook-web-mock.jpg",
-    "outlook-prompt-e2e.png",
-    "outlook-korean-mail-received.png",
-    "outlook-login-verification.png",
-    "outlook-test-mail-sent.png",
-    "outlook-provider-settings.png",
-    "outlook-graph-connected.png",
-    "outlook-graph-consent.png",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/Excalidraw/harness-spec-storage.excalidraw",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/Excalidraw/harness-spec-settings.excalidraw",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/Excalidraw/harness-spec-routing.excalidraw",
@@ -209,15 +213,10 @@
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/Excalidraw/meeting-skill-trace-implemented.excalidraw",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/Excalidraw",
     "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/1. 목표·상태·상황 기반 행동 플랜.md",
-    "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/Excalidraw/builtin-meeting-skill-flow.excalidraw",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/1. 회의 Builtin 업무 정책 분리와 테스트 결과.md",
     "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/4. 회의 Builtin의 DB 업무 로직과 개선 범위.md",
     "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/3. 스킬의 개념과 실행 흐름 학습.md",
     "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/2. 완성 후 템플릿 실행 흐름과 생성 화면.md",
-    "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/2. 에이전트 템플릿 방식 선택과 화면 시안.md",
-    "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/4. DB 함수의 코드 이전 경계.md",
-    "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/3. 현재 책임 조사 - DB 함수와 Agent 실행 및 팀 구조.md",
-    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/11. LLM·E2E 테스트 과정과 최종 결과.md",
-    "ZENAI/02. 회의 에이전트/03. 에이전트 이식/8. Agent State 저장 위치 비교와 권장 방향.md"
+    "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/2. 에이전트 템플릿 방식 선택과 화면 시안.md"
   ]
 }
