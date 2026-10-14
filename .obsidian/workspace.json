@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/04. UI UX 개선/02. 튜토리얼 UI.md",
+                "file": "ZENAI/04. UI UX 개선/03. 에이전트 현황 대시보드 UI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02. 튜토리얼 UI"
+              "title": "03. 에이전트 현황 대시보드 UI"
             }
           }
         ]
@@ -173,17 +173,22 @@
   },
   "active": "19cc2bf4143f862f",
   "lastOpenFiles": [
-    "ZENAI/04. UI UX 개선/03. 에이전트 현황 대시보드 UI.md",
-    "이미지 (7).png",
-    "이미지 (6).png",
-    "이미지 (5).png",
-    "이미지 (4).png",
-    "이미지 (3).png",
-    "이미지 (8).png",
     "ZENAI/04. UI UX 개선/02. 튜토리얼 UI.md",
-    "스크린샷 2026-10-14 174143.png",
-    "스크린샷 2026-10-14 163537.png",
-    "스크린샷 2026-10-14 174810.png",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/screenshot-manifest.csv",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/06-intercom-tour-callout.png",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/05-arcade-demo-03.png",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/05-arcade-demo-02.png",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/08-appcues-completion-criteria.png",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/14-notion-basics.png",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/15-duolingo-next.png",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/02-driver-progress.png",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/03-shepherd-mobile.png",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/08-appcues-checklist-example.png",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/08-appcues-checklist-docs.png",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14/사용자 제공 예시",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료/2026-10-14",
+    "ZENAI/04. UI UX 개선/튜토리얼 조사 자료",
+    "ZENAI/04. UI UX 개선/03. 에이전트 현황 대시보드 UI.md",
     "ZENAI/04. UI UX 개선/01. 공지 사항 페이지 조사.md",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/3. 하네스 에이전트 설정·저장·실행 명세.md",
     "ZENAI/04. UI UX 개선",
@@ -198,7 +203,6 @@
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/2. 회의 Builtin 스킬과 Trace 구현 및 검증.md",
     "ZENAI/02. 회의 에이전트/01. 회의록 에이전트 설계/1-2. 회의록 에이전트 워크플로우 Graph 상세.md",
     "AI-outlook-reminder/2.Microsoft Graph PoC 연동 조사.md",
-    "outlook-payment-mail-sent.png",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/Excalidraw/harness-spec-storage.excalidraw",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/Excalidraw/harness-spec-settings.excalidraw",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/Excalidraw/harness-spec-routing.excalidraw",
@@ -208,10 +212,6 @@
     "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/7. 템플릿 스킬 구성과 조립 방식.md",
     "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/8. 템플릿 DB 구조와 실행 구분.md",
     "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/7. 기존 운영 에이전트를 보호하는 템플릿 추가 방안.md",
-    "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/Excalidraw/template-safe-extension.excalidraw",
-    "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/Excalidraw/existing-agent-storage.excalidraw",
-    "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/Excalidraw/meeting-skill-trace-implemented.excalidraw",
-    "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/Excalidraw",
     "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/1. 목표·상태·상황 기반 행동 플랜.md",
     "ZENAI/03. 에이전트 템플릿/02. 에이전트 템플릿 작성/1. 회의 Builtin 업무 정책 분리와 테스트 결과.md",
     "ZENAI/03. 에이전트 템플릿/01. 에이전트 템플릿 설계/4. 회의 Builtin의 DB 업무 로직과 개선 범위.md",
