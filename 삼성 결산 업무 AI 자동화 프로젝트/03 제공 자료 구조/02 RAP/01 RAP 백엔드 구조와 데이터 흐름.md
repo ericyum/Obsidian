@@ -71,6 +71,28 @@ ZIP은 보관 자료이고, 본 문서의 파일 분석 기준은 **이미 풀�
 이 인계본은 `managed implementation`을 사용하므로 저장 처리의 기본 골격은 RAP 프레임워크가 제공한다.
 업무 규칙은 behavior handler에서 보완한다.
 
+### 3.1 RAP의 배포 대상과 ADT 및 SAP GUI
+
+> [!question] `02_RAP`는 ADT나 SAP GUI에서 MCP 서버를 바로 배포하기 위한 파일인가?
+> **S/4HANA 안의 데이터·업무 규칙·OData 서비스를 만드는 ABAP 백엔드 인계본**이다. MCP 서버는 `04_MCP_on_Kyma`의 Kyma 또는 `05_Integration_Suite`의 IS에 따로 배포된다.
+
+| 도구 | 주된 용도 | 영상에서 보인 예 |
+|---|---|---|
+| **SAP ADT** | Eclipse 기반 ABAP 개발 도구. CDS·RAP·클래스·서비스 개발 및 활성화 | ABAP 객체·CDS·Service Binding 트리를 보던 화면 |
+| **SAP GUI** | 전통적인 업무·개발·설정·관리 트랜잭션 사용 | AO90 계정 설정, SM37 Job/Spool 확인, PFCG 권한 관리 |
+
+ADT와 SAP GUI는 개발자·사용자가 SAP에 접근하는 도구다. **백엔드 코드가 실행되는 장소는 S/4HANA ABAP 시스템**이다. 로컬 폴더를 ADT에 넣어 MCP 서버를 실행하는 구조로 이해하면 안 된다.
+
+예를 들어 Fiori의 결산 Task 목록과 Kyma의 결산 현황 조회는 SAP OData를 호출하며, 이 폴더의 테이블·CDS·서비스가 그 데이터와 상태의 근거를 제공한다. `RequestAgentExecution` 같은 RAP Action도 업무 상태 변경 규칙이며 MCP 서버 자체가 아니다.
+
+실제 반영에서는 **대상 SAP의 패키지·개발 객체로 소스를 반영 → 의존 객체 활성화 → 서비스 바인딩/게시·권한 확인 → Fiori/MCP 연결**을 확인해야 한다. 현재 파일 형식과 지원 제한에 맞는 반영 방법이 필요하므로 ZIP을 한 번 import하면 전체가 자동 설치된다고 가정하지 않는다.
+
+또한 `Others/ZAFAB_JOB`는 프로젝트 메타데이터만 제공한다. 감가상각·외화평가 실행 API 전체가 이 RAP 폴더에 완전하게 들어 있다고 해석하지 않는다. IS의 실행 연계에는 기존 SAP 서비스·실환경 설정이 함께 필요하다.
+
+관련 비교: [[삼성 결산 업무 AI 자동화 프로젝트/03 제공 자료 구조/00 제공 자료 전체 지도#3.1 폴더별 배포 대상과 작업 방식|폴더별 배포 대상]] · [[삼성 결산 업무 AI 자동화 프로젝트/03 제공 자료 구조/05 Integration Suite/01 Integration Suite 실행 구조#7.1 개발과 검증 순서|IS의 실제 작업물과 개발 순서]]
+
+### 3.2 RAP 객체와 파일 확장자
+
 | 객체 | 여기서의 의미 | 주로 읽을 확장자 |
 |---|---|---|
 | Database Table | 실제 영속 저장 스키마 | `.tabl.ddic` |

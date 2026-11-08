@@ -11,6 +11,10 @@ tags: [삼성물산, IntegrationSuite, MCP, OpenAPI, CSRF]
 
 ## 1. 실제 자료 형태
 
+> [!question] 이 폴더는 SAP IS를 어떻게 사용할지 정리한 스펙 문서인가?
+> **설계 명세와 실제 실행 구성이 함께 들어 있는 IS 내보내기 패키지**다. OpenAPI는 호출 계약이고, iFlow XML·Groovy·MCP 매핑은 실제 IS 작업물이다. 대상 IS에 import한 뒤 환경별 연결·인증·파라미터를 맞춰 배포하는 인계 자료로 읽는다.
+
+
 ```text
 05_Integration_Suite/
 ├─ APL15 Business Actions.zip       패키지 원본 ZIP
@@ -28,20 +32,57 @@ tags: [삼성물산, IntegrationSuite, MCP, OpenAPI, CSRF]
 
 ## 2. OpenAPI, MCP, iFlow의 관계
 
+> [!question] API를 만들고 MCP Server로 묶은 뒤, iFlow에서 MCP를 사용하고 JWD에 iFlow URL을 연결하는가?
+> 제공본에서 **iFlow는 SAP 연계를 구현하는 계층**, **API는 그 연계 기능을 REST로 제공하는 창구**, **MCP Server는 API 기능을 AI 도구로 공개하는 계층**이다. JWD는 MCP Server에 연결하고, Tool 호출이 API와 iFlow를 거쳐 SAP로 내려간다.
+
 ![[삼성 결산 업무 AI 자동화 프로젝트/다이어그램/04 IS 실행 경로.png|950]]
 
 편집: [[삼성 결산 업무 AI 자동화 프로젝트/다이어그램/04 IS 실행 경로.excalidraw|04 IS 실행 경로.excalidraw]]
 
-| 구성 | 역할 | 대표 파일 |
-|---|---|---|
-| **OpenAPI** | HTTP 경로·operationId·입력·출력·실행 제한 정의 | `apidefinition/apidefinition.json` |
-| **API 아티팩트** | API를 IS의 호출·인증·연계 흐름에 연결 | `apiartifact_default_a1.iflw` |
-| **MCP Server 아티팩트** | AI가 볼 Tool 이름·schema와 실제 소스 API를 연결 | `mcpspecification.json`, `mcpsourcemapping.json`, `mcpartifact_default_a1.iflw` |
-| **CSRF Gateway iFlow** | token·cookie를 얻고 SAP POST를 수행 | `scenarioflows/integrationflow/*.iflw` |
-| **Groovy 스크립트** | 은행 계좌/지급 요청 입력 검증·조회 결과 해석·draft·응답 정규화 | Bank Transfer iFlow 내부 `script/` |
-| **플랫폼 설정** | 실제 대상·인증·Credential·배포 | iFlow 파라미터, IS Security Material 등 |
+### 2.1 실제 호출 방향과 JWD 연결
 
-MCP Server를 생성했다고 SAP 업무 API가 새로 생기는 것은 아니다. SAP 측 서비스와 권한이 있어야 하며, IS에서는 해당 API를 호출할 대상·인증·흐름을 맞춰야 한다.
+**요청 방향은 `JWD → MCP Server → API → Integration Flow → SAP 업무 API`다.** 응답은 반대 방향으로 돌아온다. 이 흐름과 뒤의 개발·검증 순서를 구별해야 한다.
+
+| 외화평가 예 | 담당 작업 |
+|---|---|
+| ① JWD | `post_foreign_currency_valuation_run` Tool을 선택하고 회사·기간·실행 모드 등의 인수를 구성 |
+| ② MCP Server | Tool 호출을 `Finance_Simulation_Actions_API`의 `POST /foreign-currency-valuation/run`에 매핑 |
+| ③ API | 설정된 대상인 FCV iFlow 경로로 요청 전달 |
+| ④ FCV iFlow | 요청 보관 → SAP CSRF token·cookie 취득 → body 복원 → SAP 실행 API에 POST |
+| ⑤ SAP | 실행 요청 처리 후 RequestID·상태·오류 등의 응답 반환. 접수와 최종 완료는 구별 |
+
+제공본 `mcpsourcemapping.json`은 세 도구의 source를 모두 `Finance_Simulation_Actions_API`로 지정한다. API의 대상은 iFlow 경로로 설정되어 있다. **iFlow가 MCP를 호출해 완성하는 연결로 해석하면 호출 방향이 뒤바뀐다.**
+
+| 연결하는 위치 | 설정할 대상 |
+|---|---|
+| **JWD의 MCP 연결** | 배포된 **MCP Server endpoint**와 인증. 제공본 수신 경로는 `/mcp` |
+| MCP Tool의 source | API 아티팩트와 해당 HTTP operation |
+| API의 호출 대상 | 연계 처리를 수행하는 iFlow endpoint |
+| iFlow의 SAP 연결 | S/4 업무 API와 실제 접속·인증·세션 설정 |
+
+JWD는 MCP 방식으로 도구 목록을 얻고 도구를 호출한다. iFlow의 일반 HTTP URL을 등록하는 것만으로 MCP 연결이 완성되지는 않는다. Skill은 언제 어떤 Tool을 쓰고 결과를 어떻게 해석할지 안내하는 지침이며, 실제 연결·업무 권한 설정은 별도로 필요하다.
+
+### 2.2 세 아티팩트와 OpenAPI의 차이
+
+| 구성 | 개발자가 만드는 것 | 대표 파일 |
+|---|---|---|
+| **Integration Flow** | HTTP 수신 경로, SAP 호출, token·cookie, 변환·오류 처리. 은행 요청에서는 Groovy 검증·draft 처리도 구성 | `scenarioflows/integrationflow/*.iflw`, `script/*.groovy` |
+| **API 아티팩트** | 외부 REST 경로·입출력 계약과 실제 호출 대상의 연결 | `apidefinition/apidefinition.json`, `apiartifact_default_a1.iflw` |
+| **MCP Server 아티팩트** | 공개할 Tool·설명·입력 schema와 원본 API 매핑 | `mcpspecification.json`, `mcpsourcemapping.json`, `mcpartifact_default_a1.iflw` |
+| **OpenAPI 명세** | API의 경로·operationId·입력·출력·실행 제한을 기술하는 계약 | `apidefinition.json` |
+| **플랫폼 설정** | 실제 대상·인증·Credential·환경 파라미터·배포 | IS Security Material, iFlow 파라미터 등 |
+
+**SAP 자체의 업무 API와 화면에 보이는 IS의 API 아티팩트는 다른 계층**이다. SAP API가 실제 작업을 수행하고, IS API는 iFlow로 이어지는 REST 창구를 제공한다. MCP Server 생성만으로 SAP 업무 API가 새로 생기지는 않는다.
+
+### 2.3 API 하나와 여러 iFlow가 연결되는 방식
+
+아래 화면에는 iFlow 4개, API 1개, MCP Server 1개가 보인다. 현재 MCP는 API 한 개의 **세 operation을 세 Tool로 노출**하며, 각각 AFAB·FCV·은행 요청 iFlow로 이어진다. 세 도구의 정확한 이름과 경로는 다음 절에 정리했다.
+
+![[삼성 결산 업무 AI 자동화 프로젝트/첨부/V2-6526-IS-아티팩트.png|1000]]
+
+*질문에서 제공된 영상 약 **01:05:26** 화면. `APL15 Business Actions` 패키지의 아티팩트 목록.*
+
+나머지 공통명 `APL15 Business Actions CSRF Gateway`는 실제 노드에 Planned Order 예제가 보인다. 화면의 iFlow 네 개를 현재 MCP 도구 네 개로 대응시키지 않는다.
 
 ## 3. 현재 제공 계약의 세 도구
 
@@ -114,7 +155,21 @@ AFAB/FCV 등은 내부 `.iflw` 파일명이 똑같이 `APL15 Business Actions CS
 
 IS에서 응답을 받았다고 대시보드 상태가 저절로 바뀌는 것은 아니다. PPTX의 **JWD 결과 → S/4 CBO 자동 업데이트** 과제와 RAP의 **외부 완료 콜백 pending**을 함께 봐야 한다.
 
-## 7. 변경 위치를 찾는 순서
+## 7. 개발 순서와 변경 위치
+
+### 7.1 개발과 검증 순서
+
+제공본과 같은 구조를 만든다면 **SAP 기능 → iFlow → API → MCP Server → JWD 순서로 안쪽부터 동작을 확인하며 연결**할 수 있다. 입력·출력 계약인 OpenAPI 설계는 먼저 해도 된다. 아래는 의존 관계를 따라 검증하기 위한 순서이며 유일한 제작 순서를 뜻하지 않는다.
+
+1. **SAP 실행 기능과 업무 API를 확보한다.** 기존 API를 사용할지 ABAP 구현을 추가할지 정한다. 회사·기간·TEST/실제 모드, RequestID, 접수·최종 상태, 로그·스풀·결과 조회 계약도 정한다.
+2. **iFlow에서 SAP 연계를 구현한다.** HTTPS 수신 경로, 입력 보관·검증, CSRF token·cookie 취득, SAP POST, 응답·오류 처리를 연결한다. 실제 대상과 Security Material을 설정하고 HTTP 클라이언트로 이 구간부터 확인한다.
+3. **IS API를 구성한다.** OpenAPI에 경로·입력·출력을 정의하고 실제 대상이 해당 iFlow로 연결되도록 설정한다. API를 통한 HTTP 요청이 같은 결과를 주는지 확인한다.
+4. **API를 소스로 MCP Server를 구성한다.** 공개할 operation을 선택하고 Tool 이름·설명·입력 schema·source 매핑을 점검한다. Tool 목록과 호출을 확인한다. 외화평가 T/U처럼 실행에 영향을 주는 조건은 설명과 서버 계약을 함께 검증한다.
+5. **JWD에 MCP endpoint와 인증을 등록한다.** 도구 목록을 가져오는지 확인하고 TEST 시나리오부터 호출한다. Skill에 도구 사용 조건과 결과 해석 규칙을 반영한다. 요청 접수 이후 최종 결과와 RAP 상태 반영도 별도로 확인한다.
+
+MCP 도구 공개, iFlow의 SAP 연결, 최종 사용자의 업무 권한은 서로 다른 확인 지점이다. **설정 파일 import만으로 전체 연결·사용자 전파·실행 성공이 보장되지는 않는다.**
+
+### 7.2 변경할 파일과 함께 확인할 곳
 
 | 바꾸려는 것 | 먼저 볼 파일/구성 | 함께 확인 |
 |---|---|---|

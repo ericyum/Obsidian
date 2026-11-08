@@ -69,6 +69,28 @@ tags: [삼성물산, 인수인계, SAP, BTP, RAP, MCP, IntegrationSuite]
 
 영상의 JWD 모델·제품 방향 설명은 **당시 내부 데스크톱 UI의 설명**으로 읽는다. 현재 모든 SAP Joule 제품의 기능·출시 상태를 규정하는 근거로 사용하지 않는다.
 
+### 3.1 Kyma와 IS의 두 MCP 서버는 각각 무엇을 하는가
+
+> [!question] Kyma의 MCP와 Integration Suite의 MCP는 왜 따로 있는가?
+> 인계 당시 설계는 **조회·분석용 Business Insights MCP**와 **업무 실행용 Business Actions MCP**를 나눈다. JWD가 요청에 맞는 서버와 Tool을 선택한다.
+
+| 구분 | Kyma의 Business Insights MCP | IS의 Business Actions MCP |
+|---|---|---|
+| 역할 | SAP 데이터를 읽어 답변의 근거 제공 | SAP에 업무 실행 요청 |
+| 대표 요청 | 이번 달 미처리 결산 업무, 기존 실행의 결과 조회 | 감가상각 TEST, 외화평가 TEST/실제 기표 |
+| 처리 경로 | 허용된 OData 서비스의 metadata·데이터 GET 조회 | MCP Tool → API → iFlow → SAP 실행 API |
+| 결과 | 현황·오류·데이터·로그/스풀 등 조회 근거 | 실행 요청 응답·RequestID·오류 등 |
+
+**결산 대화 하나에서 두 경로를 번갈아 사용할 수 있다.** 예를 들어 ① “8월 결산 현황”은 Kyma 조회, ② “감가상각 시뮬레이션”은 IS 실행, ③ “방금 결과”는 Kyma의 동일 RequestID 조회, ④ “외화평가 실제 기표”는 명시적인 실행 모드로 IS에 요청하는 흐름이다. 실행 요청 응답과 최종 완료는 구별한다.
+
+**시뮬레이션도 실행 경로를 사용한다.** 회계 전표를 실제 반영하지 않아도 SAP 작업을 등록하고 프로그램을 수행하는 명령이기 때문이다. 기존 결과를 다시 읽는 것은 조회 경로다.
+
+이 분리는 조회와 영향 있는 실행에 서로 다른 통제 경계를 두려는 설계다. Kyma와 IS라는 플랫폼 자체가 각각 조회·실행 전용이라는 뜻은 아니다. 실제 사용자 권한 통제는 뒤의 인증·권한 계층까지 확인해야 한다.
+
+PPTX 슬라이드 9의 **Kyma MCP → IS MCP Gateway 전환**은 후속 과제다. 따라서 이 두 서버 구조는 인계 당시 구성을 설명하며, 최종 PoC의 배치가 확정됐다는 의미는 아니다.
+
+실행 도구의 내부 연결과 JWD 접속 위치는 [[삼성 결산 업무 AI 자동화 프로젝트/03 제공 자료 구조/05 Integration Suite/01 Integration Suite 실행 구조#2.1 실제 호출 방향과 JWD 연결|IS의 호출 방향과 JWD 연결]]에서 이어서 읽는다.
+
 ## 4. JWD Extensions, Skill, MCP는 서로 다른 층이다
 
 약 **08:00–10:30**에는 JWD의 Extensions와 Skill 화면을 보여 준다.
@@ -90,6 +112,8 @@ tags: [삼성물산, 인수인계, SAP, BTP, RAP, MCP, IntegrationSuite]
 ## 5. RAP Backend: 상태의 근거를 만든다
 
 약 **18:00–20:00**에는 ADT의 ABAP 객체와 OData 서비스를 소개한다.
+
+**`02_RAP`는 S/4HANA에 반영할 ABAP 백엔드 소스다.** 테이블·CDS·업무 상태 변경·OData 서비스를 정의하며, MCP 서버의 실행 장소는 별도의 Kyma 또는 IS다. 영상의 객체 트리는 Eclipse 기반 **SAP ADT**이고, AO90·SM37을 사용하던 화면은 **SAP GUI**다. 파일의 배포 대상과 두 도구의 차이는 [[삼성 결산 업무 AI 자동화 프로젝트/03 제공 자료 구조/02 RAP/01 RAP 백엔드 구조와 데이터 흐름#3.1 RAP의 배포 대상과 ADT 및 SAP GUI|RAP와 MCP 배포 대상 및 ADT·SAP GUI]]를 참고한다.
 
 ![[삼성 결산 업무 AI 자동화 프로젝트/첨부/V2-1806-ABAP-ADT.png|550]]
 
@@ -146,7 +170,9 @@ tags: [삼성물산, 인수인계, SAP, BTP, RAP, MCP, IntegrationSuite]
 
 ## 8. Integration Suite: API를 실행 도구로 노출한다
 
-약 **30:00–36:00**에는 **OpenAPI → API 아티팩트 → MCP Server**와 CSRF iFlow를 보여 준다.
+약 **30:00–36:00**에는 OpenAPI로 정의한 API를 MCP 도구로 노출하는 구성과 CSRF iFlow를 보여 준다. **실제 호출은 JWD → MCP Server → API → iFlow → SAP 방향**이다. JWD에 등록하는 접속 대상은 **MCP endpoint**이며, iFlow는 API 뒤에서 SAP 연계를 수행한다.
+
+`05_Integration_Suite`는 **OpenAPI 명세와 iFlow·Groovy·MCP 매핑 등 실제 IS 작업물을 내보낸 인계 패키지**다. 개발·검증 순서는 [[삼성 결산 업무 AI 자동화 프로젝트/03 제공 자료 구조/05 Integration Suite/01 Integration Suite 실행 구조#7.1 개발과 검증 순서|IS에서 개발하고 검증하는 순서]]에서 별도로 설명한다.
 
 ![[삼성 결산 업무 AI 자동화 프로젝트/첨부/V2-3215-IS-패키지.png|950]]
 
