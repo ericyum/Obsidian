@@ -1,0 +1,297 @@
+# RAP 백엔드 구조와 데이터 흐름
+
+[[삼성 결산 업무 AI 자동화 프로젝트/00 프로젝트 길잡이|00 프로젝트 길잡이]] · [[삼성 결산 업무 AI 자동화 프로젝트/03 제공 자료 구조/00 제공 자료 전체 지도|00 제공 자료 전체 지도]] · [[삼성 결산 업무 AI 자동화 프로젝트/03 제공 자료 구조/02 RAP/02 RAP 파일 안내|02 RAP 파일 안내]]
+
+> [!summary] 이 폴더가 맡는 일
+> `02_RAP`는 결산 템플릿, 월별 결산 차수, 업무별 실행 상태와 이력을 SAP에 저장하고 OData V4로 제공하는 **ABAP RAP 백엔드 소스 인계본**이다.
+> 화면은 JWD와 Fiori가 맡고, 이 폴더는 그 화면과 Insights가 조회할 데이터 및 상태 변경 액션을 정의한다.
+
+> [!important] 확인 범위
+> 이 문서는 제공된 로컬 소스를 읽고 작성했다. SAP 활성화·배포·권한 테스트·실제 OData 호출은 수행하지 않았다.
+> `RequestAgentExecution`은 요청 상태와 이력을 기록하며, 실제 Agent 디스패치 및 완료 콜백의 종단 간 구현을 증명하지 않는다.
+
+## 1. 프로젝트 안에서의 위치
+
+삼성물산 SAP FI 결산 PoC를 이해할 때 RAP를 **결산 진행상황의 기록 시스템**으로 보면 된다.
+업무 데이터 자체의 전표 처리와 결산 업무 체크리스트의 상태 관리는 서로 다른 책임이다.
+예를 들어 미결 항목 조회 결과는 SAP 표준 CDS를 통해 읽고, 결산 체크리스트의 검토 여부는 `ZCLS_TASKINST`에 기록한다.
+
+현재 인계의 배경은 SAP Korea 내부 시스템을 별도 복제하여 삼성물산 PoC용 환경을 구성하는 방향이다.
+고객 환경에서 실행·검증한 결과로 해석하지 않는다.
+Insights MCP는 **읽기 전용 활용 경로**, 쓰기 업무는 **IS Actions**를 통한 경로로 구분한다.
+다만 서비스 정의에 트랜잭션 projection이 포함되므로, 이름에 Insight가 있다는 사실만으로 SAP 엔드포인트 전체가 읽기 전용이라고 단정하지 않는다.
+
+| 관점 | RAP에서 확인할 것 |
+|---|---|
+| JWD/Fiori 화면 데이터 | `ZUI_CLS_DASHBOARD`, Dashboard CDS, Metadata Extensions |
+| 템플릿 설정 | `ZUI_CLS_CONFIG`, Template/TaskMaster/TaskDep |
+| Insights 조회 | `ZAPI_CLS_INSIGHT`, Dashboard 및 MCP 조회 CDS |
+| 업무 상태 변경 | Cycle/TaskInstance/Issue behavior action |
+| 실제 SAP 작업 실행 | 이 RAP 소스만으로는 디스패치·완료 동기화 확인 불가 |
+| 사용자 권한 전달 | PFCG 코드 존재와 BTP 사용자 신원 전달 완성은 별개 |
+
+## 2. 폴더 구조를 먼저 읽기
+
+```text
+02_RAP/
+├─ ZAPL_FINANCE.zip                 원본 압축 인계물
+└─ ZAPL_FINANCE/
+   └─ ZAPL_FINANCE/                 SAP 상위 패키지 표현
+      ├─ zapl_finance.devck.jsonc
+      ├─ Others/
+      │  └─ GW Service Builder Projects/ZAFAB_JOB/
+      └─ ZAPL_FI_CLOSE/             결산 PoC 중심 패키지
+         ├─ zapl_fi_close.devck.jsonc
+         ├─ Authorizations/
+         │  ├─ Authorization Objects/Z_FICLOSE/
+         │  └─ Authorization Defaults (TADIR)/…/
+         ├─ Business Services/
+         │  ├─ Service Definitions/
+         │  ├─ Service Bindings/
+         │  └─ Gateway V4 Service Groups/
+         ├─ Core Data Services/
+         │  ├─ Data Definitions/
+         │  ├─ Behavior Definitions/
+         │  ├─ Metadata Extensions/
+         │  └─ Access Controls/
+         ├─ Dictionary/Database Tables/
+         └─ Source Code Library/Classes/
+```
+
+바깥쪽 `ZAPL_FINANCE` 두 겹은 로컬 인계 디렉터리와 SAP 패키지 디렉터리가 겹쳐 보이는 형태다.
+이를 서로 다른 SAP 런타임이나 환경 두 개로 해석할 근거는 없다.
+`ZAPL_FINANCE` 패키지 설명은 Finance RAP Objects, 하위 `ZAPL_FI_CLOSE`는 Closing Dashboard RAP Objects다.
+`Others`의 `ZAFAB_JOB`는 Gateway 프로젝트 메타데이터만 제공되어 실제 구현 전체를 보여주지 않는다.
+ZIP은 보관 자료이고, 본 문서의 파일 분석 기준은 **이미 풀린 디렉터리**다.
+압축 내부를 또 하나의 신규 구현으로 더하지 않는다.
+
+## 3. RAP 용어와 파일의 연결
+
+**RAP(RESTful ABAP Programming Model)**은 데이터 모델, 변경 규칙, 서비스를 ABAP 객체로 나누어 구성하는 방식이다.
+이 인계본은 `managed implementation`을 사용하므로 저장 처리의 기본 골격은 RAP 프레임워크가 제공한다.
+업무 규칙은 behavior handler에서 보완한다.
+
+| 객체 | 여기서의 의미 | 주로 읽을 확장자 |
+|---|---|---|
+| Database Table | 실제 영속 저장 스키마 | `.tabl.ddic` |
+| CDS Interface | 테이블을 업무 엔터티와 연관관계로 표현 | `.ddls.acds`의 `ZI_` |
+| CDS Projection | 서비스 소비용 필드·관계 노출 | `.ddls.acds`의 일부 `ZC_` |
+| Dashboard/조회 CDS | 조인, 집계, 값 도움말 등 조회 모델 | `.ddls.acds` |
+| Behavior Definition | 생성·수정·액션·검증·잠금 선언 | `.bdef.abdl` |
+| Behavior Pool | 액션과 검증의 ABAP 구현 | `ZBP_…clas.implementations.abap` |
+| Metadata Extension | 화면 필드·섹션·액션 표시 annotation | `.ddlx.acds` |
+| Service Definition | 외부 entity 이름 및 expose 목록 | `.srvd.acds` |
+| Service Binding | OData V4 UI 또는 Web API 연결 | `.srvb.json` |
+| DCL | CDS 조회의 PFCG 조건 | `.dcls.acds` |
+
+`.json`은 객체 속성, `.jsonc`는 주석을 포함하는 메타데이터/지원 제한 안내가 주된 내용이다.
+`.clas.abap`만 읽으면 behavior 로직을 놓칠 수 있다. `ZBP_`의 실질 구현은 `.clas.implementations.abap`에 있다.
+반대로 seed·diagnostic 일반 클래스는 `.clas.abap`가 주요 실행 코드다.
+
+## 4. 일곱 개 커스텀 테이블
+
+모든 테이블은 client 필드와 UUID 키를 가진 transparent table이다.
+`deliveryClass #A`, `dataMaintenance #RESTRICTED`가 선언된다.
+UUID가 실제 SAP 표준 전표 번호라는 뜻은 아니다.
+
+| 테이블 | 업무 단위와 주요 필드 | 관계 |
+|---|---|---|
+| `ZCLS_TEMPLATE` | 결산 템플릿명, 결산 유형, 버전, 유효기간, 활성 여부 | TaskMaster와 Cycle의 기준 |
+| `ZCLS_TASKMASTER` | 업무 코드·명·분류, 실행 유형, 담당/승인 기본값, 계획 시간, 검토·승인 플래그 | Template 아래 업무 정의 |
+| `ZCLS_TASKDEP` | 선행 업무 UUID, 필요 상태, lag, 필수·활성 여부 | TaskMaster 간 선행 관계 |
+| `ZCLS_CYCLE` | 회사코드, 회계연도·기간, 원장, 기준일, 담당자, 차수 상태 | 특정 기간의 결산 실행 단위 |
+| `ZCLS_TASKINST` | 차수별 업무, 담당자, 계획/실제 시간, 상태, 실행 모드·참조, 결과·오류 | Cycle 아래 업무 인스턴스 |
+| `ZCLS_STATHIST` | 이벤트 순번·유형, 이전/다음 상태, 변경자·시간·이유 | TaskInstance의 상태 변경 기록 |
+| `ZCLS_TASKISSUE` | 이슈 유형·심각도·제목, SAP 객체 참조, 담당자·해결 상태 | TaskInstance 및 선택적 History 연결 |
+
+**정의 데이터**는 Template → TaskMaster → TaskDep로 읽는다.
+**실행 데이터**는 Cycle → TaskInstance → StatusHistory/Issue로 읽는다.
+TaskMaster 하나가 여러 기간의 TaskInstance로 복제될 수 있으므로 마스터의 실행 유형과 실행 건의 모드를 구별해야 한다.
+`ExecutionType=AI_AGENT`는 마스터 분류, `ExecutionMode=AGENT`는 인스턴스의 정규화된 실행 모드다.
+`ExecutionRef`, `ResultSummary`, `ErrorCode` 필드가 존재해도 외부 실행 결과가 자동 수신된다는 증거는 아니다.
+
+## 5. CDS 계층
+
+### 5.1 기본 업무 인터페이스와 projection
+
+일곱 테이블 각각에 `ZI_Cls_*` 인터페이스가 있다.
+`ZI_Cls_Template`와 `ZI_Cls_Cycle`은 각각 root view다.
+Template는 TaskMaster, TaskMaster는 TaskDep를 composition으로 가진다.
+Cycle은 TaskInst, TaskInst는 StatHist와 TaskIssue를 composition으로 가진다.
+
+대응되는 `ZC_Cls_Template/TaskMaster/TaskDep`는 설정 서비스에서 소비한다.
+`ZC_Cls_Cycle/TaskInst/StatHist/TaskIssue`는 실행 상태 서비스에서 소비한다.
+이 projection들은 원래 인터페이스의 association을 서비스용 projection으로 redirect한다.
+`ZI_Cls_TaskInst`는 마스터와 차수의 연관관계에서 회사코드·업무명·우선순위 등을 가져온다.
+상태 원문뿐 아니라 `StatusText`, `StatusCriticality`, `IsCompleted`, `IsAttention`, `IsError`도 계산한다.
+
+### 5.2 대시보드 조회
+
+`ZI_Cls_DashTaskBase`는 TaskInst, Cycle, TaskMaster를 조인하는 공통 fact view다.
+`ZC_Cls_DashTask`는 업무별 행과 탐색 관계를 내보낸다.
+해당 소스는 analytical cube가 아니라 **행별 조회 모델**임을 명시한다.
+`ZC_Cls_DashCycle`은 차수별 전체 업무 수, 완료·자동화·Agent·오류 업무 수와 비율을 계산한다.
+`ZC_Cls_DashExec`은 실행 모드와 업무 분류·담당자·상태·우선순위를 포함한 단위로 집계한다.
+`ZC_Cls_DashAgent`는 `ExecutionMode='AGENT'`에 한정한 집계다.
+집계 키가 여러 개이므로, 차수 하나당 응답 행이 반드시 하나인 것은 아니다.
+
+> [!note] 완료 수치 해석
+> `DashCycle`의 완료 수는 `COMPLETED`와 `SKIPPED`를 합산한다.
+> `DashTask`의 `CompletedCount`, `DashExec`, `DashAgent`의 완료 수는 `COMPLETED`만 센다.
+> 따라서 화면별 숫자를 비교할 때 집계 정의를 먼저 확인해야 한다.
+
+### 5.3 값 도움말
+
+`CompanyCodesVH`, `AssigneeVH`, `TaskStatusVH`, `ExecutionModeVH`, `PriorityVH`, `TaskCategoryVH`, `TemplateVH`가 있다.
+고정 enum 목록만 있는 것이 아니라 기존 테이블에서 distinct 값을 읽는 형태다.
+예를 들어 실행 데이터가 없으면 상태·실행 모드 값 도움말의 후보도 제한될 수 있다.
+회사코드는 결산 차수 테이블에서 읽으므로 SAP 전체 회사코드 마스터 목록과 동일하다고 볼 수 없다.
+
+### 5.4 MCP용 재무 조회
+
+`ZI_Cls_Mcp_OpenItem`는 표준 `I_OperationalAcctgDocItem`과 `I_JournalEntry`를 조인한다.
+`ClearingJournalEntry=''` 조건의 항목을 조회한다.
+`ZC_Cls_Mcp_OpenItem`는 상세, `ZC_Cls_Mcp_OpenItemAgg`는 회사코드·계정·담당자·통화별 집계를 제공한다.
+집계는 통화를 키로 유지하므로 서로 다른 통화를 단순 합산하지 않는다.
+`ZI_Cls_Mcp_SuppInv`는 표준 `I_SupplierInvoiceAPI01`을 바탕으로 한다.
+`ZC_Cls_Mcp_SuppInv`는 공급업체 송장 상태가 `A` 또는 `B`인 행만 노출한다.
+상태 코드의 업무 의미와 표준 CDS 가용성은 대상 SAP 릴리스에서 별도 확인해야 한다.
+
+## 6. 서비스 정의와 바인딩
+
+| Service Definition | Binding | 종류 | 노출 범위 |
+|---|---|---|---|
+| `ZUI_CLS_CONFIG` | `ZUI_CLS_CONFIG_O4` | OData V4 UI | Templates, Tasks, Dependencies |
+| `ZUI_CLS_DASHBOARD` | `ZUI_CLS_DASH_O4` | OData V4 UI | 대시보드·실행 엔터티·값 도움말 15종 |
+| `ZAPI_CLS_INSIGHT` | `ZAPI_CLS_INSIGHT_O4` | OData V4 Web API | 결산 조회·실행 엔터티·MCP 재무 조회 11종 |
+
+Service Definition의 alias가 클라이언트에서 보게 되는 entity 이름이다.
+예를 들어 동일한 `ZC_Cls_DashTask`가 UI에서는 `DashboardTasks`, Insight에서는 `ClosingTasks`로 expose된다.
+`Cycles`, `TaskInstances`, `StatusHistory`, `TaskIssues`는 두 서비스에 공통으로 등장한다.
+바인딩 JSON은 서비스 버전 `1.0.0`과 UI/Web API 구분을 제공한다.
+로컬 바인딩 파일이 있다는 사실은 실제 시스템의 publish 상태, URL 접근성, destination 연결 성공을 증명하지 않는다.
+`Gateway V4 Service Groups/ZUI_CLS_CONFIG_O4`는 지원 제한이 적힌 객체 메타데이터다.
+
+## 7. Behavior: 상태 변경이 실제로 일어나는 곳
+
+### 7.1 결산 차수
+
+`ZI_CLS_CYCLE` behavior가 `ZBP_I_CLS_CYCLE` 구현을 지정한다.
+생성 시 `setInitialStatus`가 `PLANNED`를 설정한다.
+저장 검증에는 회사코드 생성 권한과 중복 차수 검사가 있다.
+중복 검사는 Template/CompanyCode/FiscalYear/FiscalPeriod/Ledger 조합으로 기존 DB 행을 조회한다.
+
+| 액션 | 소스상 조건 | 변경 |
+|---|---|---|
+| `OpenCycle` | PLANNED | OPEN, OpenedAt 기록 |
+| `CloseCycle` | OPEN | CLOSED, ClosedAt 기록 |
+| `ReopenCycle` | CLOSED | OPEN, ClosedAt 초기화 |
+| `GenerateTaskInstances` | OPEN | 활성 마스터에서 아직 없는 업무 인스턴스 생성 |
+
+`CloseCycle`에서 모든 자식 업무 완료 여부를 검사하는 코드는 확인되지 않는다.
+따라서 CLOSED를 전표 결산 처리 완료나 모든 업무의 자동 완료 보증으로 읽으면 안 된다.
+`GenerateTaskInstances`는 기존 Cycle/Task 쌍을 읽어 이미 있는 업무를 건너뛴다.
+생성은 직접 INSERT 대신 RAP create-by-association을 사용한다.
+계획 시작은 기준일+offset과 시작 시각을 조합하고 `sy-zonlo` 시간대로 UTC timestamp로 변환한다.
+계획 종료는 계획 소요시간, SLA, 기본 60분 순으로 정한다.
+마스터 실행 유형 AI_AGENT→AGENT, BACKGROUND_JOB→AUTOMATIC, 나머지→MANUAL로 매핑한다.
+업무 초기 상태는 NOT_STARTED이며, 선행 관계 테이블만으로 READY 자동 전환이 완성된다고 추정하지 않는다.
+
+### 7.2 업무 인스턴스
+
+| 액션 | 허용 상태 | 결과 |
+|---|---|---|
+| `StartTask` | NOT_STARTED, READY, REOPENED | IN_PROGRESS와 실제 시작 시각 |
+| `CompleteTask` | IN_PROGRESS, AGENT_RUNNING | 검토 필요→REVIEW_REQUIRED, 승인 필요→APPROVAL_REQUIRED, 그 외 COMPLETED |
+| `RequestReview` | REVIEW_REQUIRED | 승인 필요→APPROVAL_REQUIRED, 그 외 COMPLETED |
+| `ApproveTask` | APPROVAL_REQUIRED | COMPLETED, 승인자·시각·완료자 기록 |
+| `ReopenTask` | COMPLETED, FAILED, BLOCKED | REOPENED, 종료·완료·승인 필드 초기화 |
+| `RequestAgentExecution` | AGENT 모드의 NOT_STARTED, READY, REOPENED | AGENT_RUNNING과 AGENT_START 이력 |
+
+`RequestReview`는 이름과 달리 소스상 이미 검토 대기인 업무의 **검토 완료 후 전이**를 처리한다.
+상태에 따른 UI 액션 활성화와 액션 내부의 상태 검사 둘 다 구현되어 있다.
+액션 처리 후 helper `append_status_history`가 다음 이벤트 순번을 계산하고 composition으로 이력을 추가한다.
+수동 사용자 액션은 ABAP user alias를 기록하며 Agent 요청 이력은 SYSTEM을 기록한다.
+이 기록값이 최종 사용자 인증·위임을 보장하는 것은 아니다.
+
+> [!warning] Agent 요청의 구현 경계
+> `RequestAgentExecution` 구현은 `Status='AGENT_RUNNING'` 변경과 이력 추가를 수행한다.
+> 이력 사유는 `Execution request accepted; external runtime callback is pending`이다.
+> 이 메서드에 HTTP 호출·잡 제출·외부 Agent 디스패치가 없다. 실제 실행 요청 전달과 완료 결과 동기화는 별도 연결 과제다.
+> `CompleteTask`가 AGENT_RUNNING을 허용한다는 사실도 자동 콜백 구현의 증거가 아니다.
+
+### 7.3 이슈와 템플릿
+
+Issue 생성 시 OPEN을 설정하고 `ResolveIssue`로 RESOLVED 및 해결 시각을 기록한다.
+Template behavior는 Template/Task/Dependency의 managed CRUD와 parent 종속 관계를 정의한다.
+Cycle 인터페이스 behavior에는 delete가 있지만 소비용 Cycle projection에는 `use delete`가 없다.
+화면/API 허용 동작은 인터페이스 정의만 보지 말고 projection behavior까지 함께 읽어야 한다.
+
+## 8. 권한: 구현된 부분과 미완성인 부분
+
+`Z_FICLOSE`는 결산용 권한 객체이고 handler는 `BUKRS`, `ACTVT`를 사용한다.
+조회 DCL은 이 인계본에서 `ZC_Cls_DashExec`, `ZC_Cls_DashAgent` 두 객체만 제공된다.
+두 DCL은 회사코드와 `ACTVT='03'`를 PFCG 권한에 연결한다.
+Cycle handler는 회사코드별 변경(02), 삭제(06), 생성(01)을 검사한다.
+Template handler는 생성·수정·삭제 권한을 검사하면서 BUKRS는 DUMMY로 둔다.
+TaskInstance와 Issue는 behavior에서 Cycle 권한에 종속된다.
+
+> [!important] 사용자 권한 전파는 완료되지 않음
+> `@AccessControl.authorizationCheck: #CHECK` annotation이나 PFCG 검사 코드의 존재만으로 전체 읽기/쓰기 보안을 검증했다고 할 수 없다.
+> 다른 CHECK CDS에 대응하는 DCL은 이 인계 디렉터리에서 확인되지 않으며 MCP 재무 조회 CDS는 NOT_REQUIRED다.
+> BTP 기술 사용자와 실제 업무 사용자 신원을 연결하는 방식, 최종 사용자 권한의 SAP 전파는 종단 간 확인하지 않았다.
+> 이 부분은 후속 설계·구현·검증 항목으로 남아 있다.
+
+`Authorization Defaults (TADIR)`의 SUSH는 설정 서비스 그룹 관련 객체 메타데이터다.
+PFCG role 정의·할당·실제 사용자별 테스트 결과는 제공 파일만으로 확인할 수 없다.
+읽기 전용 MCP 정책은 소비 경로의 계약이며 SAP 서비스 권한 설계와 함께 검증해야 한다.
+
+## 9. Seed·migration·diagnostic을 구분하기
+
+| 클래스 | 역할 | 읽기/쓰기 특성 |
+|---|---|---|
+| `ZCL_CLS_SEED_DATA` | 고정 템플릿·업무·선행 관계 샘플 생성 | INSERT, COMMIT/ROLLBACK |
+| `ZCL_CLS_RUNTIME_SEED` | 과거/현재 기간 차수·상태·이슈·이력 시나리오 생성 | 직접 INSERT, COMMIT |
+| `ZCL_CLS_MIGRATE_P1` | MONTH/APP/JOB/AGENT의 이전 코드 정규화 | 직접 UPDATE, COMMIT |
+| `ZCL_CLS_P1_SELFTEST` | 코드·기초 데이터·상태·집계 관련 PASS/WARN/FAIL 출력 | 조회용 classrun |
+| `ZCL_CLS_DIAG_EXECMODE` | 비정규 실행 모드와 예상 매핑 조회 | 조회용 classrun |
+| `ZCL_CLS_DIAG_LEGACY_STATE` | 비정규 상태와 최근 이력 조회 | 조회용 classrun |
+| `ZCL_CLS_DIAG_FA030` | 특정 FA030/SIMULATION 행 보정 | **이름과 달리 UPDATE 수행** |
+| `ZCL_CLS_FIX_LEGACY_STATE` | 고정 대상 UUID의 스냅샷을 최신 이력에 맞춰 보정 | 보호 조건을 가진 UPDATE |
+
+Seed는 업무 동작을 재현한 실행 결과가 아니라 화면 시나리오용 데이터다.
+Runtime seed는 기존 차수·업무를 건너뛰지만 모든 기존 상태를 최신 시나리오로 갱신하는 동기화 도구는 아니다.
+기본 seed에 이전 코드가 있으므로 migration과 현재 코드 체계의 관계를 함께 이해해야 한다.
+`DIAG_FA030`와 `FIX_LEGACY_STATE`를 일반 점검 도구처럼 실행하면 실제 데이터를 바꾼다.
+고정 UUID를 사용하는 보정 스크립트는 다른 시스템 복제본에서 대상이 같다고 가정하지 않는다.
+Selftest 소스 존재는 현재 시스템에서 테스트가 통과했다는 뜻이 아니며, 여기서는 실행하지 않았다.
+
+## 10. 추천 읽기 순서
+
+1. 일곱 `.tabl.ddic`에서 마스터/실행 데이터의 경계를 파악한다.
+2. `ZI_Cls_Template`, `ZI_Cls_Cycle`, `ZI_Cls_TaskInst`에서 관계를 읽는다.
+3. `.bdef.abdl` 네 개와 `ZBP_I_CLS_CYCLE` 구현을 함께 읽는다.
+4. `ZI_Cls_DashTaskBase`와 네 Dashboard CDS의 집계 단위를 확인한다.
+5. 세 `.srvd.acds`에서 화면·Insights에 보이는 entity alias를 찾는다.
+6. Metadata Extensions에서 표시 필드·액션과 필터 annotation을 확인한다.
+7. DCL/PFCG와 BTP 신원 전파의 미완성 경계를 기록한다.
+8. 마지막으로 seed·migration·diagnostic을 읽어 샘플 데이터의 출처를 구분한다.
+
+예를 들어 화면의 Agent 버튼을 이해하려면 `ZC_CLS_CYCLE.bdef.abdl`의 use action → `ZI_CLS_CYCLE.bdef.abdl`의 선언 → `ZBP_I_CLS_CYCLE`의 `requestagentexecution` 순으로 따라간다.
+업무 수치 차이를 조사하려면 DashCycle과 DashExec의 완료 조건을 비교한다.
+전체 객체와 실제 파일명은 [[삼성 결산 업무 AI 자동화 프로젝트/03 제공 자료 구조/02 RAP/02 RAP 파일 안내|02 RAP 파일 안내]]를 이용한다.
+
+## 11. 원본과 추적 경로
+
+원본 루트: `C:\Users\ericy\github\POC\ASPN\02_RAP`.
+저장소 상대 루트: `02_RAP/ZAPL_FINANCE/ZAPL_FINANCE/ZAPL_FI_CLOSE/`.
+아래 경로는 읽기 위치이며 복사본 배포·실행 지침이 아니다.
+
+- 패키지: `02_RAP/ZAPL_FINANCE/ZAPL_FINANCE/zapl_finance.devck.jsonc`
+- 테이블: `02_RAP/ZAPL_FINANCE/ZAPL_FINANCE/ZAPL_FI_CLOSE/Dictionary/Database Tables/`
+- 상태 액션: `02_RAP/ZAPL_FINANCE/ZAPL_FINANCE/ZAPL_FI_CLOSE/Source Code Library/Classes/ZBP_I_CLS_CYCLE/zbp_i_cls_cycle.clas.implementations.abap`
+- 서비스: `02_RAP/ZAPL_FINANCE/ZAPL_FINANCE/ZAPL_FI_CLOSE/Business Services/Service Definitions/`
+- 권한 DCL: `02_RAP/ZAPL_FINANCE/ZAPL_FINANCE/ZAPL_FI_CLOSE/Core Data Services/Access Controls/`
+
+[원본 RAP 폴더 열기](<file:///C:/Users/ericy/github/POC/ASPN/02_RAP/>)
+[상태 액션 구현 열기](<file:///C:/Users/ericy/github/POC/ASPN/02_RAP/ZAPL_FINANCE/ZAPL_FINANCE/ZAPL_FI_CLOSE/Source%20Code%20Library/Classes/ZBP_I_CLS_CYCLE/zbp_i_cls_cycle.clas.implementations.abap>)
