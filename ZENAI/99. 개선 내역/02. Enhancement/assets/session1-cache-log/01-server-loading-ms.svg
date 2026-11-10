@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="735" viewBox="0 0 1200 735" role="img"><title>서버 조회 로직: 최초 조회와 반복 조회</title><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#475b6b"/></marker></defs><rect width="100%" height="100%" fill="#ffffff"/><g font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif"><text x="35" y="56" font-size="31" font-weight="500" fill="#172b3a" text-anchor="start">서버 조회 로직: 최초 조회와 반복 조회</text>
+<text x="35" y="100" font-size="21" font-weight="400" fill="#475b6b" text-anchor="start">로컬 합성 실행 148건 · 같은 기간 · 단위 ms · Chrome 화면 표시 시간은 아님</text>
+<path d="M335,140V580" stroke="#c5d0d8" stroke-width="1"/>
+<text x="335" y="614" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">0</text>
+<path d="M452.6923076923077,140V580" stroke="#c5d0d8" stroke-width="1"/>
+<text x="452.6923076923077" y="614" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">200</text>
+<path d="M570.3846153846154,140V580" stroke="#c5d0d8" stroke-width="1"/>
+<text x="570.3846153846154" y="614" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">400</text>
+<path d="M688.0769230769231,140V580" stroke="#c5d0d8" stroke-width="1"/>
+<text x="688.0769230769231" y="614" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">600</text>
+<path d="M805.7692307692307,140V580" stroke="#c5d0d8" stroke-width="1"/>
+<text x="805.7692307692307" y="614" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">800</text>
+<path d="M923.4615384615385,140V580" stroke="#c5d0d8" stroke-width="1"/>
+<text x="923.4615384615385" y="614" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">1000</text>
+<path d="M1041.1538461538462,140V580" stroke="#c5d0d8" stroke-width="1"/>
+<text x="1041.1538461538462" y="614" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">1200</text>
+<text x="315" y="194.83333333333334" font-size="23" font-weight="400" fill="#172b3a" text-anchor="end">통계 최초 · 개선 전</text>
+<rect x="335" y="165.83333333333334" width="681.4149230769231" height="40" fill="#8a99a7"/>
+<text x="1028.414923076923" y="194.33333333333334" font-size="22" font-weight="400" fill="#172b3a" text-anchor="start">1,157.96</text>
+<text x="315" y="266.5" font-size="23" font-weight="400" fill="#172b3a" text-anchor="end">통계 최초 · 개선 후</text>
+<rect x="335" y="237.50000000000003" width="334.4109230769231" height="40" fill="#2465a4"/>
+<text x="681.4109230769232" y="266" font-size="22" font-weight="400" fill="#172b3a" text-anchor="start">568.28</text>
+<text x="315" y="338.1666666666667" font-size="23" font-weight="400" fill="#172b3a" text-anchor="end">통계 · 캐시 반복</text>
+<rect x="335" y="309.1666666666667" width="12.128192307692306" height="40" fill="#2465a4"/>
+<text x="359.1281923076923" y="337.6666666666667" font-size="22" font-weight="400" fill="#172b3a" text-anchor="start">20.61</text>
+<text x="315" y="409.8333333333333" font-size="23" font-weight="400" fill="#172b3a" text-anchor="end">통계 · 다른 조건 후 복귀</text>
+<rect x="335" y="380.8333333333333" width="12.22823076923077" height="40" fill="#2465a4"/>
+<text x="359.2282307692308" y="409.3333333333333" font-size="22" font-weight="400" fill="#172b3a" text-anchor="start">20.78</text>
+<text x="315" y="481.5" font-size="23" font-weight="400" fill="#172b3a" text-anchor="end">비용 최초 · 개선 전</text>
+<rect x="335" y="452.5" width="164.06896153846154" height="40" fill="#8a99a7"/>
+<text x="511.0689615384615" y="481" font-size="22" font-weight="400" fill="#172b3a" text-anchor="start">278.81</text>
+<text x="315" y="553.1666666666667" font-size="23" font-weight="400" fill="#172b3a" text-anchor="end">비용 최초 · 개선 후</text>
+<rect x="335" y="524.1666666666667" width="169.98888461538462" height="40" fill="#2465a4"/>
+<text x="516.9888846153847" y="552.6666666666667" font-size="22" font-weight="400" fill="#172b3a" text-anchor="start">288.87</text>
+<text x="1100" y="649" font-size="21" font-weight="400" fill="#475b6b" text-anchor="end">조회 시간 (ms)</text>
+<text x="35" y="676" font-size="20" font-weight="400" fill="#475b6b" text-anchor="start">출처: 본문 「전후 비교」 · PR #374의 같은 데이터·기간을 이용한 서버 측 측정</text>
+<text x="35" y="706" font-size="20" font-weight="400" fill="#475b6b" text-anchor="start">비용 최초 조회는 개선되지 않았다. 브라우저 캐시의 복원 시간은 별도 실측하지 않았다.</text></g></svg>

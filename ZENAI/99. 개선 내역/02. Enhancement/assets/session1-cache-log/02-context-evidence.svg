@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1040" viewBox="0 0 1200 1040" role="img"><title>02-context-evidence</title><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#475b6b"/></marker></defs><rect width="100%" height="100%" fill="#ffffff"/><g font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif"><text x="35" y="55" font-size="31" font-weight="400" fill="#172b3a" text-anchor="start">4단계 | 문맥의 내용은 남기고, 같은 본문 복사는 줄인다</text>
+<text x="35" y="98" font-size="21" font-weight="400" fill="#475b6b" text-anchor="start">권장 B안의 설명 그림 · 아직 제품에 적용하지 않은 정책 후보</text>
+<rect x="35" y="135" width="340" height="170" rx="13" fill="#edf4fa" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="55" y="176" font-size="25" font-weight="400" fill="#2465a4" text-anchor="start">입력 재료</text>
+<text x="55" y="216" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">지침·스킬·최근 대화</text>
+<text x="55" y="245.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">요약·도구 결과·scratchpad</text>
+<text x="55" y="274.8" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">각 본문은 한도 안에서 1회</text>
+<rect x="430" y="135" width="340" height="170" rx="13" fill="#edf4fa" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="450" y="176" font-size="25" font-weight="400" fill="#2465a4" text-anchor="start">문맥 조립</text>
+<text x="450" y="216" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">선택·제외 이유 / 순서</text>
+<text x="450" y="245.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">본문 참조와 예산</text>
+<text x="450" y="274.8" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">실제 들어간 내용 연결</text>
+<rect x="825" y="135" width="340" height="170" rx="13" fill="#edf4fa" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="845" y="176" font-size="25" font-weight="400" fill="#2465a4" text-anchor="start">실제 모델 전송</text>
+<text x="845" y="216" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">실제 입력 기준본</text>
+<text x="845" y="245.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">모델·추론 강도·도구 선택</text>
+<text x="845" y="274.8" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">응답·도구 호출과 연결</text>
+<path d="M375,205 L420,205" fill="none" stroke="#475b6b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M770,205 L815,205" fill="none" stroke="#475b6b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="35" y="355" width="535" height="180" rx="13" fill="#edf4fa" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="55" y="396" font-size="25" font-weight="400" fill="#2465a4" text-anchor="start">압축이 일어나면: 전후를 연결</text>
+<text x="55" y="436" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">LLM 요약 / 단순 절단 / 상태 정리를 구분</text>
+<text x="55" y="465.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">무엇을 빼고 유지했나? 왜 그랬나?</text>
+<text x="55" y="494.8" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">결과 텍스트와 다음 입력의 사용 위치</text>
+<rect x="630" y="355" width="535" height="180" rx="13" fill="#edf4fa" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="650" y="396" font-size="25" font-weight="400" fill="#2465a4" text-anchor="start">루프가 끝나면: scratchpad 갱신</text>
+<text x="650" y="436" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">새로 추가·삭제한 맥락과 상태 버전</text>
+<text x="650" y="465.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">실제 저장 성공과 다음 실행의 복원</text>
+<text x="650" y="494.8" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">같은 전체 문맥을 매번 복사하지 않음</text>
+<path d="M210,305 L210,345" fill="none" stroke="#475b6b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M995,305 L995,345" fill="none" stroke="#475b6b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="35" y="605" width="1130" height="165" rx="13" fill="#fff5df" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="55" y="646" font-size="25" font-weight="400" fill="#9a6500" text-anchor="start">한도에 걸렸다면: ‘생략’을 증거의 일부로 남긴다</text>
+<text x="55" y="686" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">원래 크기 / 보존 크기 / 빠진 범위 / 정책·한도·저장 실패 사유</text>
+<text x="55" y="715.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">본문이 없으면 길이·해시만으로 그 내용까지 판단할 수 없음</text>
+<text x="55" y="744.8" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">현재 대화를 다시 읽어 당시 전송 입력이었다고 간주하지 않음</text>
+<path d="M300,535 L300,595" fill="none" stroke="#475b6b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M900,535 L900,595" fill="none" stroke="#475b6b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="35" y="830" width="1130" height="135" rx="13" fill="#eff2f5" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="55" y="871" font-size="25" font-weight="400" fill="#475b6b" text-anchor="start">문서 안의 합성 예시와 연결해 읽기</text>
+<text x="55" y="911" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">요약에서 “외부 전송 금지” 조건이 빠졌다면 → 요약 전후 + 실제 전송 입력으로 위치를 좁힘</text>
+<text x="55" y="940.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">길이만 달라졌다는 기록만 있으면 → 어떤 조건이 빠졌는지 내용 진단은 어려움</text></g></svg>

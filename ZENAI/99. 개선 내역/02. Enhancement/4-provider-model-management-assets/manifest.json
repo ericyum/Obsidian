@@ -1,0 +1,89 @@
+{
+  "document": "4. 프로바이더와 모델 관리 페이지의 현실성 조사와 도입 기준 (2026-11-10).md",
+  "date": "2026-11-10",
+  "codeBaseline": "1ee6a67c243fe19c76c6913f1080e3a959689418",
+  "renderer": "@excalidraw/excalidraw 0.18.1 convertToExcalidrawElements + exportToSvg; PNG via sharp",
+  "officialScreenshots": {
+    "page": "https://docs.litellm.ai/docs/proxy/model_management",
+    "note": "Official examples, not ZEN operating screens; UI versions differ from investigated 1.92.0.",
+    "images": [
+      {
+        "file": "litellm-official-model-list.png",
+        "uiVersion": "1.91.0",
+        "source": "https://docs.litellm.ai/assets/ideal-img/ui_models_table.3a18c28.1280.png"
+      },
+      {
+        "file": "litellm-official-model-detail.png",
+        "uiVersion": "1.91.0",
+        "source": "https://docs.litellm.ai/assets/ideal-img/ui_model_detail.edbd985.1280.png"
+      },
+      {
+        "file": "litellm-official-credential.png",
+        "uiVersion": "1.105.0",
+        "source": "https://docs.litellm.ai/assets/ideal-img/ui_add_credential.0f06f2a.1280.png"
+      }
+    ]
+  },
+  "files": [
+    {
+      "file": "01-registration-boundaries.excalidraw",
+      "sha256": "82628adf62003f5c3eb03f6a5fc4f18179275a52132bec5de283cd4a3cd25d25"
+    },
+    {
+      "file": "01-registration-boundaries.png",
+      "sha256": "9c30d5b077d6da456a0140c771e45c3301e2c5192d5881bcd510f3c45d837896"
+    },
+    {
+      "file": "01-registration-boundaries.svg",
+      "sha256": "7c87ca144d9408532f9f8b2b809ea1fb8a65aacd75ea87a74f5e54283b682e21"
+    },
+    {
+      "file": "02-ownership-options.excalidraw",
+      "sha256": "53e0494633b87f58c24fb39f3642b3391b4b2a2bb877b3890666904be59854bd"
+    },
+    {
+      "file": "02-ownership-options.png",
+      "sha256": "d5798003168001708bd137c1e4d5611819c90ec20871e909eaee5c2d5272495c"
+    },
+    {
+      "file": "02-ownership-options.svg",
+      "sha256": "3fbb03654c0580176b8c295d24d07d1e201db1c01dd1d620bbf66362d23f12ac"
+    },
+    {
+      "file": "03-model-lifecycle.excalidraw",
+      "sha256": "796d8f6a708f93b3eafe8d608105d3f4cb5839b3404f1534b5c92625e1317c00"
+    },
+    {
+      "file": "03-model-lifecycle.png",
+      "sha256": "5f512572c175fcc7149d9c4f68e997a592665ecf609662eac7837a509528d7f9"
+    },
+    {
+      "file": "03-model-lifecycle.svg",
+      "sha256": "b7ef6de12addbb4cef9d3948d197ba12afa38b9051e0c24151f8b81ce8b918a0"
+    },
+    {
+      "file": "04-recording-scope.excalidraw",
+      "sha256": "b0e6c34ab781509f52ade03f5042f6b0279db427c71de1b80a2f192d35aed91a"
+    },
+    {
+      "file": "04-recording-scope.png",
+      "sha256": "862b69738fa3135e9cddc0705cdf1eb32c67c54d02643e1fc708c79dc420749a"
+    },
+    {
+      "file": "04-recording-scope.svg",
+      "sha256": "2a9cd9ef861facaf313a1cf4921869d2bb9a4e8b663fb3c038d10bd46808e3cd"
+    },
+    {
+      "file": "litellm-official-credential.png",
+      "sha256": "2d79310823d23126d9259721dc830da17ecb601da811a2439467d1f93e63196b"
+    },
+    {
+      "file": "litellm-official-model-detail.png",
+      "sha256": "37b17d4b28b7b8f8ea48463c49d127565ab3a8a7115d2d9188b09ab85b06a8f4"
+    },
+    {
+      "file": "litellm-official-model-list.png",
+      "sha256": "92a6ad52047e5a04b69d5bbd852caef67ada8cf1b8e9291577f6d8f1ec3de027"
+    }
+  ]
+}

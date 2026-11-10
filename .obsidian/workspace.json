@@ -4,67 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "fb91b22e99159a12",
+        "id": "c6c27244108601c0",
         "type": "tabs",
         "children": [
           {
-            "id": "bf5cc95766a7b4d6",
+            "id": "b6fd5f551d7c63de",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/01. 목표·상태·상황과 행동 플랜.md",
+                "file": "ZENAI/99. 개선 내역/02. Enhancement/2. 에이전트 구동 로그 기록 범위 재정의와 후보 기준 (2026-11-09).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01. 목표·상태·상황과 행동 플랜"
+              "title": "2. 에이전트 구동 로그 기록 범위 재정의와 후보 기준 (2026-11-09)"
             }
           },
           {
-            "id": "c76f2cecda3a3779",
+            "id": "d434e060724080ff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/02. 운영 보호 조건과 구체 설계.md",
+                "file": "ZENAI/99. 개선 내역/02. Enhancement/3. 사용자 리스크 관리 기준과 청사진 후보 (2026-11-09).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02. 운영 보호 조건과 구체 설계"
+              "title": "3. 사용자 리스크 관리 기준과 청사진 후보 (2026-11-09)"
             }
           },
           {
-            "id": "febd9a70ba37cdf5",
+            "id": "04caec435eda94d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/03. 구현 순서와 E2E 검증 기준.md",
+                "file": "ZENAI/99. 개선 내역/02. Enhancement/4. 프로바이더와 모델 관리 페이지의 현실성 조사와 도입 기준 (2026-11-10).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03. 구현 순서와 E2E 검증 기준"
-            }
-          },
-          {
-            "id": "cc52ab5958baafc3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/04. 구현 및 테스트 결과.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04. 구현 및 테스트 결과"
+              "title": "4. 프로바이더와 모델 관리 페이지의 현실성 조사와 도입 기준 (2026-11-10)"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -214,53 +200,53 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4c30d6e97cc58ab6",
+  "active": "04caec435eda94d2",
   "lastOpenFiles": [
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷/대시보드-production-기본조회복원-20261023.jpg",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷/대시보드-production-차트키보드-20261023.jpg",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷/공지관리-멤버서비스소식-20261023.png",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷/공지관리-편집기-20261023.png",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷/공지관리-게시목록-20261023.png",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷/대시보드-기본조회복원-20261023.png",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷/대시보드-53일차트-20261023.png",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷/대시보드-비교표-마지막행-20261023.png",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷/서비스공지-기존공지보존-20261023.png",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷/서비스공지-5종-최종회수-20261023.png",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷/서비스공지-Markdown상세-20261023.png",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/03. 구현 순서와 E2E 검증 기준.md",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/02. 운영 보호 조건과 구체 설계.md",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/01. 목표·상태·상황과 행동 플랜.md",
-    "ZENAI/04. UI UX 개선/03. 구현 및 테스트(튜토리얼과 공지 사항 일부까지))/04. 구현 및 테스트 결과.md",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/스크린샷",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/Excalidraw/01-공지와-대시보드-데이터-경계.excalidraw",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/Excalidraw",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)/04. 구현 및 테스트 결과.md",
-    "ZENAI/04. UI UX 개선/04. 구현 및 테스트(공지 사항과 에이전트 대시보트까지)",
-    "ZENAI/04. UI UX 개선/03. 구현 및 테스트(튜토리얼과 공지 사항 일부까지))/03. 구현 순서와 E2E 검증 기준.md",
-    "ZENAI/04. UI UX 개선/03. 구현 및 테스트(튜토리얼과 공지 사항 일부까지))/스크린샷",
-    "ZENAI/04. UI UX 개선/03. 구현 및 테스트(튜토리얼과 공지 사항 일부까지))/02. 운영 보호 조건과 구체 설계.md",
-    "ZENAI/04. UI UX 개선/03. 구현 및 테스트(튜토리얼과 공지 사항 일부까지))/01. 목표·상태·상황과 행동 플랜.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/03 대시보드/02. 대시보드 시안 핵심 요약.md",
-    "ZENAI/04. UI UX 개선/03. 구현 및 테스트(튜토리얼과 공지 사항 일부까지))/Excalidraw/03-튜토리얼-진행과-실제-AI.excalidraw",
-    "ZENAI/04. UI UX 개선/03. 구현 및 테스트(튜토리얼과 공지 사항 일부까지))/Excalidraw/02-공지-작성과-열람.excalidraw",
-    "ZENAI/04. UI UX 개선/03. 구현 및 테스트(튜토리얼과 공지 사항 일부까지))/Excalidraw/01-목표에서-검증까지.excalidraw",
-    "ZENAI/04. UI UX 개선/03. 구현 및 테스트(튜토리얼과 공지 사항 일부까지))/Excalidraw",
-    "ZENAI/04. UI UX 개선/03. 구현 및 테스트(튜토리얼과 공지 사항 일부까지))",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/03 대시보드/01. 개발자 대시보드 방향과 시안 비교.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/01. 공지사항/01. ZEN AI 공지사항 UI 형식 비교와 권장 방향.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/02. 튜토리얼/01. ZEN AI 튜토리얼 UI 비교와 권장 방향.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/02. 튜토리얼/02. 튜토리얼 시안 핵심 요약.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/01. 공지사항/02. 공지사항 시안 핵심 요약.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/00. ZEN AI의 현재 상황과 공지사항 방향.md",
-    "ZENAI/04. UI UX 개선/01. UI 조사/01. 공지 사항 UI 조사.md",
-    "ZENAI/04. UI UX 개선/01. UI 조사/02. 튜토리얼 UI.md",
-    "ZENAI/04. UI UX 개선/01. UI 조사/03. 에이전트 현황 대시보드 UI.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/03 대시보드/03. 지표 정의와 구현 전 확인사항.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/03 대시보드/대시보드 HTML 시안/검증 결과.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/03 대시보드/대시보드 HTML 시안/README.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/02. 튜토리얼/튜토리얼 HTML 시안/검증 결과.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/02. 튜토리얼/튜토리얼 HTML 시안/README.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/01. 공지사항/공지사항 HTML 시안/검증 결과.md",
-    "ZENAI/04. UI UX 개선/02. 현재의 상황 정리 및 방향성 정립/01. 공지사항/공지사항 HTML 시안/README.md"
+    "ZENAI/99. 개선 내역/02. Enhancement/2. 에이전트 구동 로그 기록 범위 재정의와 후보 기준 (2026-11-09).md",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/v2-manifest.json",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/v2-03-recommended-architecture.svg",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/v2-03-recommended-architecture.excalidraw",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/v2-03-recommended-architecture.png",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/v2-02-builtin-separation.svg",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/v2-02-builtin-separation.excalidraw",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/v2-02-builtin-separation.png",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/v2-01-three-model-layers.svg",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/v2-01-three-model-layers.excalidraw",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/v2-01-three-model-layers.png",
+    "ZENAI/99. 개선 내역/02. Enhancement/4. 프로바이더와 모델 관리 페이지의 현실성 조사와 도입 기준 (2026-11-10).md",
+    "ZENAI/99. 개선 내역/02. Enhancement/3. 사용자 리스크 관리 기준과 청사진 후보 (2026-11-09).md",
+    "ZENAI/99. 개선 내역/02. Enhancement/assets/session1-cache-log/runtime-log-detailed-research-before-rewrite-20261110.md",
+    "ZENAI/99. 개선 내역/02. Enhancement/assets/session1-cache-log/02-log-scope-summary.svg",
+    "ZENAI/99. 개선 내역/02. Enhancement/assets/session1-cache-log/02-log-scope-summary.png",
+    "ZENAI/99. 개선 내역/02. Enhancement/assets/session1-cache-log/02-log-scope-summary.excalidraw",
+    "ZENAI/99. 개선 내역/02. Enhancement/1. 에이전트 대시보드 조회 최적화와 브라우저 캐시 (2026-11-09).md",
+    "삼성 결산 업무 AI 자동화 프로젝트/01. 제공 자료 구조/01. Architecture/01. 아키텍처 그림 읽기.md",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/README.md",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/manifest.json",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/litellm-official-model-list.png",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/litellm-official-model-detail.png",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/04-recording-scope.excalidraw",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/03-model-lifecycle.excalidraw",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/02-ownership-options.excalidraw",
+    "ZENAI/99. 개선 내역/02. Enhancement/4-provider-model-management-assets/01-registration-boundaries.excalidraw",
+    "삼성 결산 업무 AI 자동화 프로젝트/01. 제공 자료 구조/00. 제공 자료 전체 지도.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/02. 추가 이해를 위한 자료/PoC_업무와_결산_이해하기.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/02. 추가 이해를 위한 자료/수행과제별_확인사항과_공수.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/01. 제공 자료 구조/02. RAP/02. RAP 파일 안내.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/01. 제공 자료 구조/02. RAP/01. RAP 백엔드 구조와 데이터 흐름.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/01. 제공 자료 구조/03. Fiori App/02. 전체 파일 목록.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/01. 제공 자료 구조/03. Fiori App/01. Fiori 앱 구조와 역할.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/01. 제공 자료 구조/04. MCP on Kyma/01. 내부 폴더와 파일 역할.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/01. 제공 자료 구조/04. MCP on Kyma/00. Kyma MCP 역할과 구조.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/01. 제공 자료 구조/05. Integration Suite/02. 패키지와 내부 파일 안내.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/01. 제공 자료 구조/05. Integration Suite/01. Integration Suite 실행 구조.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/01. 제공 자료 구조/06. Destination/01. Destination과 연결 설정의 역할.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/00. 개요/00. 프로젝트 길잡이.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/00. 개요/02. 구현 인수인계와 SAP 시스템 이해.md",
+    "삼성 결산 업무 AI 자동화 프로젝트/00. 개요/01. 삼성물산 PoC 목적과 업무 흐름.md",
+    "SAP Integration Suite/4. S4HANA OData 직접 연계와 Integration Suite 비교.md",
+    "SAP Integration Suite/3. Integration Suite 사용 이유.md",
+    "SAP Integration Suite/2. Integration Suite 기능.md",
+    "무제.canvas"
   ]
 }

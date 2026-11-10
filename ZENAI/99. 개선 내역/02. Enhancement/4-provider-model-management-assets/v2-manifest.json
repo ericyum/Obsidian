@@ -1,0 +1,47 @@
+{
+  "document": "4. 프로바이더와 모델 관리 페이지의 현실성 조사와 도입 기준 (2026-11-10).md",
+  "date": "2026-11-10",
+  "codeBaseline": "1ee6a67c243fe19c76c6913f1080e3a959689418",
+  "upstreamBaseline": "b3086ccd74553565c9a39716e72303ae985555f9",
+  "renderer": "@excalidraw/excalidraw 0.18.1; PNG via sharp",
+  "note": "Diagram 1: current code. Diagrams 2–3: proposals, not implemented. Existing assets are retained; this manifest covers the rewritten document only.",
+  "reportSha256": "ac1c2964f5ebca01bf5ad1b70f71e76cea30481b9d07c98f0c5f687217667aac",
+  "files": [
+    {
+      "file": "v2-01-three-model-layers.png",
+      "sha256": "007cee4c3e11b152e66df7b8d8536eaaf90d47722e76604f717e07ab4fd7aad5"
+    },
+    {
+      "file": "v2-01-three-model-layers.excalidraw",
+      "sha256": "d26d6fd5fd0f4005cd116efc84b29debf41f744e6b8a68307030a0486a86d82b"
+    },
+    {
+      "file": "v2-01-three-model-layers.svg",
+      "sha256": "d0a7b7210adca2d218712b4069bc2f5766195fcc6e0cedde57157f2758704380"
+    },
+    {
+      "file": "v2-02-builtin-separation.png",
+      "sha256": "bd3f7f19aa9c093f7d91a6adc87d873d44a2a77ee311de31d60ae603b67c9669"
+    },
+    {
+      "file": "v2-02-builtin-separation.excalidraw",
+      "sha256": "aa35460836f2f1cba96a89202e704378dc5b497e107370ab512a26c1087da46f"
+    },
+    {
+      "file": "v2-02-builtin-separation.svg",
+      "sha256": "41dd39ef87417b234ddeba997b461d372bdeef10136a00f3390e9a6f2b620f3b"
+    },
+    {
+      "file": "v2-03-recommended-architecture.png",
+      "sha256": "e4459569b6585d6e4db8d0988a9876bcf9bce45ea766cfc8aa6850f0c8b1a90d"
+    },
+    {
+      "file": "v2-03-recommended-architecture.excalidraw",
+      "sha256": "bbc66cc6393692a841a7b634d518498d7b18191d5fed9961e89091e3040d8b6c"
+    },
+    {
+      "file": "v2-03-recommended-architecture.svg",
+      "sha256": "51f7f86d1aa720beb593c85302d5a90de3d2dd6f41cfe25ec4c3d9dcece171d6"
+    }
+  ]
+}

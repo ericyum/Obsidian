@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="895" viewBox="0 0 1200 895" role="img"><title>01-cache-layers</title><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#475b6b"/></marker></defs><rect width="100%" height="100%" fill="#ffffff"/><g font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif"><text x="35" y="55" font-size="31" font-weight="400" fill="#172b3a" text-anchor="start">대시보드 재조회: 어떤 결과를 다시 쓰나?</text>
+<text x="35" y="98" font-size="21" font-weight="400" fill="#475b6b" text-anchor="start">구현된 캐시 흐름 · 현재 권한과 변경 여부를 확인한 뒤 집계를 재사용</text>
+<rect x="35" y="135" width="310" height="135" rx="13" fill="#edf4fa" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="55" y="176" font-size="25" font-weight="400" fill="#2465a4" text-anchor="start">① 조건 선택 / 재진입</text>
+<text x="55" y="216" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">커뮤니티·기간·모델 등</text>
+<text x="55" y="245.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">실제 조회 조건</text>
+<rect x="400" y="135" width="350" height="135" rx="13" fill="#edf4fa" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="420" y="176" font-size="25" font-weight="400" fill="#2465a4" text-anchor="start">② 서버에서 유효성 확인</text>
+<text x="420" y="216" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">현재 계정·권한</text>
+<text x="420" y="245.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">원본·가림·이름·가격 변경</text>
+<rect x="805" y="135" width="360" height="135" rx="13" fill="#edf4fa" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="825" y="176" font-size="25" font-weight="400" fill="#2465a4" text-anchor="start">③ 브라우저 사본 확인</text>
+<text x="825" y="216" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">IndexedDB</text>
+<text x="825" y="245.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">유효 조건이 같은 집계만</text>
+<path d="M345,200 L390,200" fill="none" stroke="#475b6b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M750,200 L795,200" fill="none" stroke="#475b6b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="35" y="340" width="530" height="150" rx="13" fill="#eff2f5" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="55" y="381" font-size="25" font-weight="400" fill="#475b6b" text-anchor="start">사본이 없거나 무효이면</text>
+<text x="55" y="421" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">서버 집계 캐시 → 필요할 때 원본 재집계</text>
+<text x="55" y="450.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">결과 표시 후 허용된 집계만 브라우저에 저장</text>
+<rect x="635" y="340" width="530" height="150" rx="13" fill="#edf4fa" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="655" y="381" font-size="25" font-weight="400" fill="#2465a4" text-anchor="start">유효한 사본이 있으면</text>
+<text x="655" y="421" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">고정기간: 재집계 생략 가능</text>
+<text x="655" y="450.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">상대기간: 30초 초과면 먼저 복원 후 갱신</text>
+<path d="M925,270 L925,325" fill="none" stroke="#475b6b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M825,285 L825,305 L300,305 L300,325" fill="none" stroke="#475b6b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="35" y="545" width="530" height="170" rx="13" fill="#edf4fa" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="55" y="586" font-size="25" font-weight="400" fill="#2465a4" text-anchor="start">저장하는 것</text>
+<text x="55" y="626" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">실제로 조회한 통계</text>
+<text x="55" y="655.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">에이전트별·사용자별 비용 집계 목록</text>
+<text x="55" y="684.8" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">모든 조건 조합을 미리 만들지는 않음</text>
+<rect x="635" y="545" width="530" height="170" rx="13" fill="#fff5df" stroke="#c5d0d8" stroke-width="1.5"/>
+<text x="655" y="586" font-size="25" font-weight="400" fill="#9a6500" text-anchor="start">저장하지 않는 것</text>
+<text x="655" y="626" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">요청·응답 원문 / 사용자별 기록</text>
+<text x="655" y="655.4" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">호출·실행 상세 / trace·구동 로그</text>
+<text x="655" y="684.8" font-size="21" font-weight="400" fill="#172b3a" text-anchor="start">다운로드 파일 / 인증정보</text>
+<text x="40" y="781" font-size="23" font-weight="400" fill="#172b3a" text-anchor="start">앱의 재사용 한도: 생성부터 24시간 · 사이트 전체 32개 / 추정 4MiB · 개별 512KiB</text>
+<text x="40" y="824" font-size="21" font-weight="400" fill="#475b6b" text-anchor="start">Chrome의 보존 보장은 아님 · 명시적 새로고침은 양쪽 캐시 우회 · 현재 권한 확인 통신은 남음</text></g></svg>

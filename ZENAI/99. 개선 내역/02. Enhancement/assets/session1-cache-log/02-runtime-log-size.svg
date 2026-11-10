@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="655" viewBox="0 0 1200 655" role="img"><title>같은 운영 다운로드 표본 5개의 저장 표현 비교</title><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#475b6b"/></marker></defs><rect width="100%" height="100%" fill="#ffffff"/><g font-family="Malgun Gothic, Noto Sans KR, Arial, sans-serif"><text x="35" y="56" font-size="31" font-weight="500" fill="#172b3a" text-anchor="start">같은 운영 다운로드 표본 5개의 저장 표현 비교</text>
+<text x="35" y="100" font-size="21" font-weight="400" fill="#475b6b" text-anchor="start">오프라인 재직렬화·압축 실험 · MB = 1,000,000B · 운영 디스크 점유 실측은 아님</text>
+<path d="M335,140V500" stroke="#c5d0d8" stroke-width="1"/>
+<text x="335" y="534" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">0</text>
+<path d="M480.71428571428567,140V500" stroke="#c5d0d8" stroke-width="1"/>
+<text x="480.71428571428567" y="534" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">2</text>
+<path d="M626.4285714285713,140V500" stroke="#c5d0d8" stroke-width="1"/>
+<text x="626.4285714285713" y="534" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">4</text>
+<path d="M772.1428571428571,140V500" stroke="#c5d0d8" stroke-width="1"/>
+<text x="772.1428571428571" y="534" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">6</text>
+<path d="M917.8571428571428,140V500" stroke="#c5d0d8" stroke-width="1"/>
+<text x="917.8571428571428" y="534" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">8</text>
+<path d="M1063.5714285714284,140V500" stroke="#c5d0d8" stroke-width="1"/>
+<text x="1063.5714285714284" y="534" font-size="20" font-weight="400" fill="#475b6b" text-anchor="middle">10</text>
+<text x="315" y="202.75" font-size="23" font-weight="400" fill="#172b3a" text-anchor="end">전체 본문 · JSONL</text>
+<rect x="335" y="173.75" width="692.1596871428571" height="40" fill="#8a99a7"/>
+<text x="1039.1596871428571" y="202.25" font-size="22" font-weight="400" fill="#172b3a" text-anchor="start">9.500 MB</text>
+<text x="315" y="290.25" font-size="23" font-weight="400" fill="#172b3a" text-anchor="end">전체 본문 · gzip</text>
+<rect x="335" y="261.25" width="130.34011714285717" height="40" fill="#2465a4"/>
+<text x="477.34011714285714" y="289.75" font-size="22" font-weight="400" fill="#172b3a" text-anchor="start">1.789 MB</text>
+<text x="315" y="377.75" font-size="23" font-weight="400" fill="#172b3a" text-anchor="end">본문 제거 + 요약</text>
+<rect x="335" y="348.75" width="135.73453285714288" height="40" fill="#9a6500"/>
+<text x="482.7345328571429" y="377.25" font-size="22" font-weight="400" fill="#172b3a" text-anchor="start">1.863 MB</text>
+<text x="315" y="465.25" font-size="23" font-weight="400" fill="#172b3a" text-anchor="end">본문 제거 + 요약 · gzip</text>
+<rect x="335" y="436.25" width="12.914438571428573" height="40" fill="#9a6500"/>
+<text x="359.91443857142855" y="464.75" font-size="22" font-weight="400" fill="#172b3a" text-anchor="start">0.177 MB</text>
+<text x="1100" y="569" font-size="21" font-weight="400" fill="#475b6b" text-anchor="end">바이트 크기 (MB)</text>
+<text x="35" y="596" font-size="20" font-weight="400" fill="#475b6b" text-anchor="start">전체 gzip: 같은 내용을 유지하는 저장 표현 비교. 본문 제거 행: 내용 진단을 잃는 비교용 실험.</text>
+<text x="35" y="626" font-size="20" font-weight="400" fill="#475b6b" text-anchor="start">권장 B안의 구현 결과가 아니다. 실제 운영 부하·보관기간·향후 절감률은 확정하지 않았다.</text></g></svg>
