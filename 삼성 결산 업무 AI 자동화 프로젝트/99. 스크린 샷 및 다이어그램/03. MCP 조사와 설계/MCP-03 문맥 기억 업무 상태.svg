@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050"><rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="60" y="71" font-family="Malgun Gothic, sans-serif" font-size="36" fill="#17304b" font-weight="700">메모리라는 한 단어 안에 서로 다른 책임이 있다</text>
+<text x="60" y="113" font-family="Malgun Gothic, sans-serif" font-size="21" fill="#52627a" font-weight="400">현재 사실은 원천 조회 · 실행 상태는 영속 보존 · 경험 지식은 출처와 검증</text>
+<rect x="60" y="170" width="710" height="245" rx="15" fill="#eaf2ff" stroke="#b8c8da"/>
+<text x="84" y="217" font-family="Malgun Gothic, sans-serif" font-size="27" fill="#17304b" font-weight="700">모델 컨텍스트 / Host</text>
+<text x="84" y="264" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">지금 판단할 질문·도구·선별한 결과</text>
+<text x="84" y="298" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">압축·노트·tool clearing은 Host 기능</text>
+<text x="84" y="332" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">MCP는 작은 결과와 재조회 ID로 돕는다</text>
+<rect x="830" y="170" width="710" height="245" rx="15" fill="#e8f6ef" stroke="#b8c8da"/>
+<text x="854" y="217" font-family="Malgun Gothic, sans-serif" font-size="27" fill="#17304b" font-weight="700">업무 상태 / 권위 있는 저장소</text>
+<text x="854" y="264" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">scope·TEST 모드·operation·RequestID</text>
+<text x="854" y="298" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">접수/실행/업무 결과/Task 반영을 구분</text>
+<text x="854" y="332" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">대화가 사라져도 다시 조회 가능해야 한다</text>
+<rect x="60" y="485" width="710" height="245" rx="15" fill="#fff2df" stroke="#b8c8da"/>
+<text x="84" y="532" font-family="Malgun Gothic, sans-serif" font-size="27" fill="#17304b" font-weight="700">경험 지식 / 검토 가능한 기억</text>
+<text x="84" y="579" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">오류 조치·적용 조건·출처·버전</text>
+<text x="84" y="613" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">피드백은 후보, 검증된 해결과 구별</text>
+<text x="84" y="647" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">현재 잔액·권한의 정답 저장소가 아니다</text>
+<rect x="830" y="485" width="710" height="245" rx="15" fill="#f1ecfa" stroke="#b8c8da"/>
+<text x="854" y="532" font-family="Malgun Gothic, sans-serif" font-size="27" fill="#17304b" font-weight="700">서버 RAM / 캐시</text>
+<text x="854" y="579" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">버퍼·연결·동시 요청에 상한</text>
+<text x="854" y="613" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">캐시는 권한·scope·현재성을 보존</text>
+<text x="854" y="647" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">프로세스 RAM에만 Job을 남기지 않는다</text>
+<rect x="60" y="805" width="1480" height="150" rx="15" fill="#eef0f5" stroke="#b8c8da"/>
+<text x="84" y="852" font-family="Malgun Gothic, sans-serif" font-size="27" fill="#17304b" font-weight="700">우리 우선순위</text>
+<text x="84" y="899" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">영속 실행 상태 → 작은 응답과 상세 조회 → 검토된 오류 지식 → 측정 후 캐시·검색 고도화</text>
+</svg>

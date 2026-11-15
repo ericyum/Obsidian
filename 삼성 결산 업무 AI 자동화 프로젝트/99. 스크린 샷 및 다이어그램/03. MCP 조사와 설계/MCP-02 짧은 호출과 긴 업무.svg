@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080"><rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="60" y="71" font-family="Malgun Gothic, sans-serif" font-size="36" fill="#17304b" font-weight="700">짧은 MCP 호출로 긴 TEST 업무를 이어가는 제안</text>
+<text x="60" y="113" font-family="Malgun Gothic, sans-serif" font-size="21" fill="#52627a" font-weight="400">각 호출의 완료와 SAP 업무의 완료를 구분한다 · 시간은 가상 예시</text>
+<rect x="60" y="160" width="440" height="150" rx="15" fill="#eaf2ff" stroke="#b8c8da"/>
+<text x="84" y="207" font-family="Malgun Gothic, sans-serif" font-size="27" fill="#17304b" font-weight="700">Joule</text>
+<text x="84" y="254" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">질문·확인·사용자 답변</text>
+<rect x="580" y="160" width="440" height="150" rx="15" fill="#e8f6ef" stroke="#b8c8da"/>
+<text x="604" y="207" font-family="Malgun Gothic, sans-serif" font-size="27" fill="#17304b" font-weight="700">MCP</text>
+<text x="604" y="254" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">prepare / submit / get</text>
+<rect x="1100" y="160" width="440" height="150" rx="15" fill="#fff2df" stroke="#b8c8da"/>
+<text x="1124" y="207" font-family="Malgun Gothic, sans-serif" font-size="27" fill="#17304b" font-weight="700">영속 실행 / SAP Job</text>
+<text x="1124" y="254" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">의도 ID·operation ID·결과</text>
+<line x1="280" y1="330" x2="280" y2="850" stroke="#456783" stroke-width="3"/><polygon points="280,850 274.15872486537023,836.1840850899567 285.84127513462977,836.1840850899567" fill="#456783"/>
+<line x1="800" y1="330" x2="800" y2="850" stroke="#456783" stroke-width="3"/><polygon points="800,850 794.1587248653702,836.1840850899567 805.8412751346298,836.1840850899567" fill="#456783"/>
+<line x1="1320" y1="330" x2="1320" y2="850" stroke="#456783" stroke-width="3"/><polygon points="1320,850 1314.1587248653702,836.1840850899567 1325.8412751346298,836.1840850899567" fill="#456783"/>
+<line x1="280" y1="385" x2="800" y2="385" stroke="#456783" stroke-width="3"/><polygon points="800,385 786.1840850899567,390.84127513462977 786.1840850899567,379.15872486537023" fill="#456783"/>
+<text x="295" y="370" font-family="Malgun Gothic, sans-serif" font-size="20" fill="#17304b" font-weight="400">1. 준비·TEST 접수</text>
+<line x1="800" y1="445" x2="1320" y2="445" stroke="#456783" stroke-width="3"/><polygon points="1320,445 1306.1840850899566,450.84127513462977 1306.1840850899566,439.15872486537023" fill="#456783"/>
+<text x="815" y="430" font-family="Malgun Gothic, sans-serif" font-size="20" fill="#17304b" font-weight="400">2. 영속 접수</text>
+<line x1="1320" y1="510" x2="800" y2="510" stroke="#456783" stroke-width="3"/><polygon points="800,510 813.8159149100433,504.15872486537023 813.8159149100433,515.8412751346298" fill="#456783"/>
+<text x="815" y="495" font-family="Malgun Gothic, sans-serif" font-size="20" fill="#17304b" font-weight="400">3. accepted + ID</text>
+<line x1="800" y1="575" x2="280" y2="575" stroke="#456783" stroke-width="3"/><polygon points="280,575 293.81591491004326,569.1587248653702 293.81591491004326,580.8412751346298" fill="#456783"/>
+<text x="295" y="560" font-family="Malgun Gothic, sans-serif" font-size="20" fill="#17304b" font-weight="400">4. 짧게 응답, 완료 아님</text>
+<text x="1090" y="642" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#8a5918" font-weight="400">Job은 계속 실행</text>
+<text x="1090" y="676" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#8a5918" font-weight="400">예: 총 90초</text>
+<line x1="280" y1="725" x2="800" y2="725" stroke="#456783" stroke-width="3"/><polygon points="800,725 786.1840850899567,730.8412751346298 786.1840850899567,719.1587248653702" fill="#456783"/>
+<text x="295" y="710" font-family="Malgun Gothic, sans-serif" font-size="20" fill="#17304b" font-weight="400">5. 다음 turn에서 ID 조회</text>
+<line x1="800" y1="790" x2="1320" y2="790" stroke="#456783" stroke-width="3"/><polygon points="1320,790 1306.1840850899566,795.8412751346298 1306.1840850899566,784.1587248653702" fill="#456783"/>
+<text x="815" y="775" font-family="Malgun Gothic, sans-serif" font-size="20" fill="#17304b" font-weight="400">6. 상태·결과 대조</text>
+<rect x="60" y="895" width="1480" height="130" rx="15" fill="#eef0f5" stroke="#b8c8da"/>
+<text x="84" y="942" font-family="Malgun Gothic, sans-serif" font-size="27" fill="#17304b" font-weight="700">재개는 누가 하는가?</text>
+<text x="84" y="989" font-family="Malgun Gothic, sans-serif" font-size="22" fill="#17304b" font-weight="400">사용자의 후속 질문이 기본 대안. 자동 polling·알림·resume는 지원과 운영 책임 확인 후 추가.</text>
+</svg>
