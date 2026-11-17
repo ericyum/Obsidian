@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080">
+<rect width="100%" height="100%" fill="#f7f9fc"/>
+<text x="60" y="32" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="36" font-weight="700" fill="#17304b">동기 루프와 비동기 업무는 완료 계약으로 연결한다</text>
+<text x="60" y="93" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="23" font-weight="400" fill="#52627a">문제의 핵심은 유효 응답 시점·형식·후속 조회 · 시간은 설명용 가상 예시</text>
+<text x="65" y="160" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">호스트의 실행·대기 방식</text>
+<text x="560" y="160" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">Tool이 반환하는 결과</text>
+<text x="1065" y="160" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">호환 조건과 다음 행동</text>
+<rect x="60" y="225" width="440" height="155" rx="16" fill="#eaf2ff" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="245" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">Host</text>
+<text x="83" y="290" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">interrupt / resume 지원</text>
+<rect x="555" y="225" width="440" height="155" rx="16" fill="#eaf2ff" stroke="#b5c8dd" stroke-width="2"/>
+<text x="578" y="245" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">MCP Tool</text>
+<text x="578" y="290" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">짧은 일반 Tool 결과</text>
+<rect x="1050" y="225" width="490" height="155" rx="16" fill="#eaf2ff" stroke="#b5c8dd" stroke-width="2"/>
+<text x="1073" y="245" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">판단</text>
+<text x="1073" y="290" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">대체로 호환</text>
+<text x="1073" y="324" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">형식·deadline 확인</text>
+<polyline points="500,305 555,305" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="555,305 542.1051460839597,310.4518567923211 542.1051460839597,299.5481432076789" fill="#52708e"/>
+<polyline points="995,305 1050,305" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="1050,305 1037.1051460839597,310.4518567923211 1037.1051460839597,299.5481432076789" fill="#52708e"/>
+<rect x="60" y="430" width="440" height="155" rx="16" fill="#eaf2ff" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="450" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">Host</text>
+<text x="83" y="495" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">동기식 모델 → Tool → 모델</text>
+<rect x="555" y="430" width="440" height="155" rx="16" fill="#fff0ee" stroke="#b5c8dd" stroke-width="2"/>
+<text x="578" y="450" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">MCP Tool</text>
+<text x="578" y="495" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">SAP Job 완료까지 90초 대기</text>
+<rect x="1050" y="430" width="490" height="155" rx="16" fill="#fff0ee" stroke="#b5c8dd" stroke-width="2"/>
+<text x="1073" y="450" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">판단</text>
+<text x="1073" y="495" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">예산을 넘으면 timeout 가능</text>
+<text x="1073" y="529" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">기존 접수 여부부터 확인</text>
+<polyline points="500,510 555,510" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="555,510 542.1051460839597,515.4518567923211 542.1051460839597,504.5481432076789" fill="#52708e"/>
+<polyline points="995,510 1050,510" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="1050,510 1037.1051460839597,515.4518567923211 1037.1051460839597,504.5481432076789" fill="#52708e"/>
+<rect x="60" y="635" width="440" height="155" rx="16" fill="#eaf2ff" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="655" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">Host</text>
+<text x="83" y="700" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">동기식 모델 → Tool → 모델</text>
+<rect x="555" y="635" width="440" height="155" rx="16" fill="#e7f6ef" stroke="#b5c8dd" stroke-width="2"/>
+<text x="578" y="655" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">MCP Tool</text>
+<text x="578" y="700" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">2초에 accepted + RequestID</text>
+<text x="578" y="734" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">SAP Job은 별도로 계속</text>
+<rect x="1050" y="635" width="490" height="155" rx="16" fill="#e7f6ef" stroke="#b5c8dd" stroke-width="2"/>
+<text x="1073" y="655" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">판단</text>
+<text x="1073" y="700" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">일반 결과를 받고 turn 종료</text>
+<text x="1073" y="734" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">후속 turn에서 같은 ID 조회</text>
+<polyline points="500,715 555,715" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="555,715 542.1051460839597,720.4518567923211 542.1051460839597,709.5481432076789" fill="#52708e"/>
+<polyline points="995,715 1050,715" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="1050,715 1037.1051460839597,720.4518567923211 1037.1051460839597,709.5481432076789" fill="#52708e"/>
+<rect x="60" y="860" width="1480" height="165" rx="16" fill="#eef1f7" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="880" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">실행 계약 불일치 · 비가역성으로 부르지 않는다</text>
+<text x="83" y="925" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">async 함수 ≠ Tasks ≠ SAP Job ≠ Host 자동 재개. 각 계층의 지원을 나눠 확인한다.</text>
+<text x="83" y="959" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">Tasks 미지원 Host에 전용 결과·나중 callback만 주면 호환되지 않을 수 있다.</text>
+<text x="83" y="993" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">Joule의 실제 Tool/turn 한도·후속 조회·interrupt/resume 지원은 제품과 환경에서 검증한다.</text>
+</svg>

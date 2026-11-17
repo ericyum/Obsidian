@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1090" viewBox="0 0 1600 1090">
+<rect width="100%" height="100%" fill="#f7f9fc"/>
+<text x="60" y="32" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="36" font-weight="700" fill="#17304b">삼성물산 설계 후보와 책임 경계</text>
+<text x="60" y="93" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="23" font-weight="400" fill="#52627a">두 문서의 목적과 경로를 구분 · 직렬 연결·현재 배포·SAP 수용을 뜻하지 않음</text>
+<rect x="60" y="155" width="1480" height="120" rx="16" fill="#e7f6ef" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="175" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">사용자 확인 기준</text>
+<text x="83" y="220" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="23" font-weight="400" fill="#17304b">홍종화 RAP·ABAP·OData / 염정운 MCP / 차재영 Fiori / SAP Korea Joule·Skill·IS</text>
+<text x="60" y="310" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">A · v0.4-S SAP 협의용 — 신규 Custom MCP 설명 제외</text>
+<rect x="60" y="365" width="325" height="150" rx="16" fill="#eaf2ff" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="385" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">Joule · Skill</text>
+<text x="83" y="430" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">대화·선택·확인</text>
+<rect x="445" y="365" width="325" height="150" rx="16" fill="#e7f6ef" stroke="#b5c8dd" stroke-width="2"/>
+<text x="468" y="385" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">SAP IS MCP</text>
+<text x="468" y="430" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">SAP 측 Tool 경로</text>
+<rect x="830" y="365" width="325" height="150" rx="16" fill="#eaf2ff" stroke="#b5c8dd" stroke-width="2"/>
+<text x="853" y="385" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">연결·사용자 전파</text>
+<text x="853" y="430" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">Destination</text>
+<text x="853" y="464" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">Cloud Connector</text>
+<rect x="1215" y="365" width="325" height="150" rx="16" fill="#fff3df" stroke="#b5c8dd" stroke-width="2"/>
+<text x="1238" y="385" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">S/4 HE4 / 400</text>
+<text x="1238" y="430" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">CDS·RAP·Job</text>
+<text x="1238" y="464" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">업무 정답·권한</text>
+<polyline points="385,440 445,440" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="445,440 432.1051460839596,445.4518567923211 432.1051460839596,434.5481432076789" fill="#52708e"/>
+<polyline points="770,440 830,440" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="830,440 817.1051460839597,445.4518567923211 817.1051460839597,434.5481432076789" fill="#52708e"/>
+<polyline points="1155,440 1215,440" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="1215,440 1202.1051460839597,445.4518567923211 1202.1051460839597,434.5481432076789" fill="#52708e"/>
+<text x="60" y="555" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">B · v0.6-Z 내부 수행용 — CF Custom MCP 신규 · Kyma 코드 미사용</text>
+<rect x="60" y="610" width="325" height="160" rx="16" fill="#eaf2ff" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="630" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">기존 Joule</text>
+<text x="83" y="675" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">Connector로 연결</text>
+<text x="83" y="709" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">JWD 미사용은 내부 방향</text>
+<rect x="445" y="610" width="325" height="160" rx="16" fill="#e7f6ef" stroke="#b5c8dd" stroke-width="2"/>
+<text x="468" y="630" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">CF Custom MCP</text>
+<text x="468" y="675" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">도구·검증·질의·응답</text>
+<text x="468" y="709" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">§12는 검토안</text>
+<rect x="830" y="610" width="325" height="160" rx="16" fill="#eaf2ff" stroke="#b5c8dd" stroke-width="2"/>
+<text x="853" y="630" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">연결·사용자 전파</text>
+<text x="853" y="675" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">Destination</text>
+<text x="853" y="709" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">Cloud Connector</text>
+<rect x="1215" y="610" width="325" height="160" rx="16" fill="#fff3df" stroke="#b5c8dd" stroke-width="2"/>
+<text x="1238" y="630" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="24" font-weight="700" fill="#17304b">S/4 HE4 / 400</text>
+<text x="1238" y="675" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">CDS·RAP·Job</text>
+<text x="1238" y="709" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">업무 정답·권한</text>
+<polyline points="385,690 445,690" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="445,690 432.1051460839596,695.4518567923211 432.1051460839596,684.5481432076789" fill="#52708e"/>
+<polyline points="770,690 830,690" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="830,690 817.1051460839597,695.4518567923211 817.1051460839597,684.5481432076789" fill="#52708e"/>
+<polyline points="1155,690 1215,690" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="1215,690 1202.1051460839597,695.4518567923211 1202.1051460839597,684.5481432076789" fill="#52708e"/>
+<rect x="60" y="815" width="1480" height="105" rx="16" fill="#eef1f7" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="835" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">S2 검색 · 별도 계약</text>
+<text x="83" y="880" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">Custom MCP → CAP 검색 API. 근거·입출력·운영 담당은 별도로 인수한다.</text>
+<rect x="60" y="950" width="1480" height="105" rx="16" fill="#fff0ee" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="970" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">남은 결정</text>
+<text x="83" y="1015" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">D-09 스택·SDK·전송 방식 / 실제 Connector·인증·CF 준비 / Skill 담당 충돌·최종 회의 합의</text>
+</svg>

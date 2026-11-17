@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1140" viewBox="0 0 1600 1140">
+<rect width="100%" height="100%" fill="#f7f9fc"/>
+<text x="60" y="32" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="36" font-weight="700" fill="#17304b">보통예금은 항목별 효과와 실패를 보존한다</text>
+<text x="60" y="93" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="23" font-weight="400" fill="#52627a">명세 + 설계 제안 · HE4 RAP/OData 미반영 기재 · 실제 쓰기 검증 아님</text>
+<rect x="60" y="160" width="1480" height="125" rx="16" fill="#e7f6ef" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="180" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">1. 범위·권한을 확인해 CheckResult 조회</text>
+<text x="83" y="225" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="23" font-weight="400" fill="#17304b">회사·연도·기간 → 계좌·금액·대사/확정 상태·차단 사유·확정자·시각·경로</text>
+<polyline points="450,285 450,335" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="450,335 444.5481432076789,322.1051460839596 455.4518567923211,322.1051460839596" fill="#52708e"/>
+<polyline points="1150,285 1150,335" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="1150,335 1144.548143207679,322.1051460839596 1155.451856792321,322.1051460839596" fill="#52708e"/>
+<rect x="60" y="335" width="700" height="135" rx="16" fill="#eaf2ff" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="355" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">조회 질문이면 여기서 답변</text>
+<text x="83" y="400" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">현재 확정자·시각·경로가 이미 있으면</text>
+<text x="83" y="434" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">불필요한 이력 Tool 호출을 생략한다.</text>
+<rect x="840" y="335" width="700" height="135" rx="16" fill="#fff3df" stroke="#b5c8dd" stroke-width="2"/>
+<text x="863" y="355" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">2. 확정 요청이면 선택·사유 확인</text>
+<text x="863" y="400" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">선택한 UUID·회사·기간·현재 값과</text>
+<text x="863" y="434" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">사용자가 확인한 내용을 결합한다.</text>
+<polyline points="1190,470 1190,520" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="1190,520 1184.548143207679,507.1051460839596 1195.451856792321,507.1051460839596" fill="#52708e"/>
+<rect x="840" y="520" width="700" height="145" rx="16" fill="#e7f6ef" stroke="#b5c8dd" stroke-width="2"/>
+<text x="863" y="540" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">3. 서버 검사 → CSRF → confirmMultiple</text>
+<text x="863" y="585" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">범위·권한·현재 상태를 재검사한다.</text>
+<text x="863" y="619" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">API 동시변경 방어는 별도 합의·검증 필요.</text>
+<polyline points="1190,665 1190,705 285,705 285,750" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="285,750 279.5481432076789,737.1051460839597 290.4518567923211,737.1051460839597" fill="#52708e"/>
+<polyline points="790,705 790,750" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="790,750 784.5481432076789,737.1051460839597 795.4518567923211,737.1051460839597" fill="#52708e"/>
+<polyline points="1190,705 1295,705 1295,750" fill="none" stroke="#52708e" stroke-width="3"/>
+<polygon points="1295,750 1289.548143207679,737.1051460839597 1300.451856792321,737.1051460839597" fill="#52708e"/>
+<rect x="60" y="750" width="450" height="160" rx="16" fill="#e7f6ef" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="770" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">성공 UUID</text>
+<text x="83" y="815" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">해당 건의 성공을 유지</text>
+<text x="83" y="849" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">성공 건 전체 재전송 금지</text>
+<rect x="565" y="750" width="450" height="160" rx="16" fill="#fff3df" stroke="#b5c8dd" stroke-width="2"/>
+<text x="588" y="770" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">거절 UUID</text>
+<text x="588" y="815" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">사유·권한·미수령 구분</text>
+<text x="588" y="849" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">보정한 해당 건만 재확인</text>
+<rect x="1070" y="750" width="470" height="160" rx="16" fill="#fff0ee" stroke="#b5c8dd" stroke-width="2"/>
+<text x="1093" y="770" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">결과 불명 UUID</text>
+<text x="1093" y="815" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="21" font-weight="400" fill="#17304b">누락·COMMIT 실패·응답 유실</text>
+<text x="1093" y="848" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="21" font-weight="400" fill="#17304b">기존 상태/이력 먼저 대조</text>
+<rect x="60" y="960" width="1480" height="125" rx="16" fill="#eef1f7" stroke="#b5c8dd" stroke-width="2"/>
+<text x="83" y="980" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#17304b">핵심 보호 조건</text>
+<text x="83" y="1025" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">HTTP 200 ≠ 전체 성공 / NOT_RECON의 0 ≠ 실제 잔액 0 / RequestedBy ≠ 권한 증거</text>
+<text x="83" y="1059" dominant-baseline="text-before-edge" font-family="Malgun Gothic, sans-serif" font-size="22" font-weight="400" fill="#17304b">차이가 있어도 사유가 있으면 확정 가능. 확정 취소가 없으므로 테스트 대상을 따로 준비한다.</text>
+</svg>
